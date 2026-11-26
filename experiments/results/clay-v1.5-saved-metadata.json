@@ -1,0 +1,39 @@
+{
+  "epoch": 7,
+  "global_step": 106700,
+  "pytorch-lightning_version": "2.4.0",
+  "hparams_name": "kwargs",
+  "hyper_parameters": {
+    "model_size": "large",
+    "mask_ratio": 0.75,
+    "norm_pix_loss": false,
+    "patch_size": 8,
+    "shuffle": true,
+    "metadata_path": "configs/metadata.yaml",
+    "teacher": "vit_large_patch14_reg4_dinov2.lvd142m",
+    "dolls": [
+      16,
+      32,
+      64,
+      128,
+      256,
+      768,
+      1024
+    ],
+    "doll_weights": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "lr": 5e-06,
+    "wd": 0.05,
+    "b1": 0.9,
+    "b2": 0.95,
+    "embeddings_level": "mean",
+    "_instantiator": "lightning.pytorch.cli.instantiate_module"
+  }
+}

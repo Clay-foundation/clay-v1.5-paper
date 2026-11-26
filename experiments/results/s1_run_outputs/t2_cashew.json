@@ -1,0 +1,271 @@
+{
+  "m-cashew-plant": {
+    "olmo_v13": {
+      "miou": 19.17,
+      "val_miou": 27.04,
+      "best_C": 10.0
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "olmo_COMPUTED_x1.0",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 256,
+        "input_check": {
+          "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "olmo_v13_trainz": {
+        "model": "olmo_v13_trainz",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 256,
+        "input_check": {
+          "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 256,
+        "input_check": {
+          "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "bandwidths_nm": [
+          65,
+          35,
+          30,
+          15,
+          15,
+          20,
+          115,
+          20,
+          90,
+          180
+        ],
+        "gsd_m": 10.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 256,
+        "area_km2": 6.5536,
+        "input_check": {
+          "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      }
+    },
+    "olmo_v13_trainz": {
+      "miou": 16.32,
+      "val_miou": 23.77,
+      "best_C": 10.0
+    },
+    "panopticon": {
+      "miou": 14.92,
+      "val_miou": 22.78,
+      "best_C": 0.01
+    },
+    "copernicus_fm": {
+      "miou": 13.18,
+      "val_miou": 20.01,
+      "best_C": 1.0
+    }
+  },
+  "_producers": {
+    "m-cashew-plant/olmo_v13": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "9ea6a11fa7f4c34a",
+      "utc_timestamp": "2026-11-18T01:47:34Z"
+    },
+    "m-cashew-plant/olmo_v13_trainz": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "264efdfd32d3c14f",
+      "utc_timestamp": "2026-11-18T01:47:46Z"
+    },
+    "m-cashew-plant/panopticon": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "3d3393ec88606bc3",
+      "utc_timestamp": "2026-11-18T01:48:01Z"
+    },
+    "m-cashew-plant/copernicus_fm": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "7f63b1e9b251b4c0",
+      "utc_timestamp": "2026-11-18T01:48:09Z"
+    }
+  },
+  "_meta": {
+    "script": "run_all_doable_table2.py",
+    "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+    "git_commit": "unknown",
+    "argv": [
+      "--output-dir",
+      "t2_cashew",
+      "--resume",
+      "--parts",
+      "tasks",
+      "--tasks",
+      "m-cashew-plant"
+    ],
+    "utc_timestamp": "2026-11-18T01:48:09Z",
+    "packages": {
+      "torch": "2.5.1+cu124",
+      "torchgeo": "0.7.0",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.9.1",
+      "timm": "1.0.25",
+      "h5py": "n/a",
+      "rasterio": "1.4.4",
+      "olmoearth_pretrain": "0.1.2"
+    },
+    "python": "3.11.18",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "olmoearth_repo_revision": "pinned in run_standard_benchmarks.OLMO_REVISION"
+  }
+}

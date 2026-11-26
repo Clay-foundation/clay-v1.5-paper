@@ -1,0 +1,139 @@
+{
+  "sen1floods11_s2_dofa_frozen_upernet": 80.3,
+  "_settings": {
+    "sen1floods11_s2_dofa_frozen_upernet": {
+      "arm": "dofa_frozen_upernet",
+      "epochs": 100,
+      "seeds": [
+        0
+      ],
+      "val_every": 5,
+      "batch": 8,
+      "lr_decoder": 0.0001,
+      "lr_encoder_ratio": 0.1,
+      "warmup_epochs": 5,
+      "tile": "256 random crop, flips + rot90",
+      "protocol": "E7 PROTOCOL.md (100 epochs, valid every 5, seeds 0-2)",
+      "matched_to_clay_e7": false,
+      "per_seed_test_water_iou": {
+        "0": 80.3
+      },
+      "seed_min": 80.3,
+      "seed_max": 80.3
+    },
+    "sen1floods11_s2_olmo_frozen_upernet": {
+      "arm": "olmo_frozen_upernet",
+      "epochs": 100,
+      "seeds": [
+        0
+      ],
+      "val_every": 5,
+      "batch": 8,
+      "lr_decoder": 0.0001,
+      "lr_encoder_ratio": 0.1,
+      "warmup_epochs": 5,
+      "tile": "256 random crop, flips + rot90",
+      "protocol": "E7 PROTOCOL.md (100 epochs, valid every 5, seeds 0-2)",
+      "matched_to_clay_e7": false,
+      "per_seed_test_water_iou": {
+        "0": 81.6
+      },
+      "seed_min": 81.6,
+      "seed_max": 81.6
+    },
+    "sen1floods11_s2_prithvi_frozen_upernet": {
+      "arm": "prithvi_frozen_upernet",
+      "epochs": 100,
+      "seeds": [
+        0
+      ],
+      "val_every": 5,
+      "batch": 8,
+      "lr_decoder": 0.0001,
+      "lr_encoder_ratio": 0.1,
+      "warmup_epochs": 5,
+      "tile": "256 random crop, flips + rot90",
+      "protocol": "E7 PROTOCOL.md (100 epochs, valid every 5, seeds 0-2)",
+      "matched_to_clay_e7": false,
+      "per_seed_test_water_iou": {
+        "0": 82.4
+      },
+      "seed_min": 82.4,
+      "seed_max": 82.4
+    },
+    "sen1floods11_s2_dinov2_frozen_upernet": {
+      "arm": "dinov2_frozen_upernet",
+      "epochs": 100,
+      "seeds": [
+        0
+      ],
+      "val_every": 5,
+      "batch": 8,
+      "lr_decoder": 0.0001,
+      "lr_encoder_ratio": 0.1,
+      "warmup_epochs": 5,
+      "tile": "256 random crop, flips + rot90",
+      "protocol": "E7 PROTOCOL.md (100 epochs, valid every 5, seeds 0-2)",
+      "matched_to_clay_e7": false,
+      "per_seed_test_water_iou": {
+        "0": 57.4
+      },
+      "seed_min": 57.4,
+      "seed_max": 57.4
+    }
+  },
+  "_producers": {
+    "sen1floods11_s2_dofa_frozen_upernet": {
+      "script_sha256": "f7b472f4747451c4dc7dfc7ddb327e3e22e39fd01caecccb4bb752a49a6785a5",
+      "cfg": "5e2ffcc21d0fc486",
+      "utc_timestamp": "2026-11-18T03:02:20Z"
+    },
+    "sen1floods11_s2_olmo_frozen_upernet": {
+      "script_sha256": "f7b472f4747451c4dc7dfc7ddb327e3e22e39fd01caecccb4bb752a49a6785a5",
+      "cfg": "246a21ec4d0bb5c9",
+      "utc_timestamp": "2026-11-18T03:06:57Z"
+    },
+    "sen1floods11_s2_prithvi_frozen_upernet": {
+      "script_sha256": "f7b472f4747451c4dc7dfc7ddb327e3e22e39fd01caecccb4bb752a49a6785a5",
+      "cfg": "891db013b7f404c9",
+      "utc_timestamp": "2026-11-18T03:23:29Z"
+    },
+    "sen1floods11_s2_dinov2_frozen_upernet": {
+      "script_sha256": "f7b472f4747451c4dc7dfc7ddb327e3e22e39fd01caecccb4bb752a49a6785a5",
+      "cfg": "781aaa16a1f658fa",
+      "utc_timestamp": "2026-11-18T03:30:09Z"
+    }
+  },
+  "_meta": {
+    "script": "run_geobench_and_e7_complete.py",
+    "script_sha256": "f7b472f4747451c4dc7dfc7ddb327e3e22e39fd01caecccb4bb752a49a6785a5",
+    "git_commit": "unknown",
+    "argv": [
+      "--resume",
+      "--parts",
+      "e7",
+      "--output-dir",
+      "e7f_s0",
+      "--e7-seeds",
+      "0",
+      "--e7-arms",
+      "dofa_frozen_upernet,olmo_frozen_upernet,prithvi_frozen_upernet,dinov2_frozen_upernet"
+    ],
+    "utc_timestamp": "2026-11-18T03:30:09Z",
+    "packages": {
+      "torch": "2.5.1+cu124",
+      "torchgeo": "0.7.0",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.9.1",
+      "timm": "1.0.25",
+      "h5py": "n/a",
+      "rasterio": "1.4.4",
+      "olmoearth_pretrain": "0.1.2"
+    },
+    "python": "3.11.18",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  "sen1floods11_s2_olmo_frozen_upernet": 81.6,
+  "sen1floods11_s2_prithvi_frozen_upernet": 82.4,
+  "sen1floods11_s2_dinov2_frozen_upernet": 57.4
+}

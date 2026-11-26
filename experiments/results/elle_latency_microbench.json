@@ -1,0 +1,13 @@
+{
+ "n_chips": 100000,
+ "blas_threads": 1,
+ "load_avg_1min_at_start": 142.462890625,
+ "seconds_per_chip": {
+  "batched_dot_float32": 4.231643159873784e-07,
+  "batched_dot_float64": 8.201827299781143e-07,
+  "single_vector_dot_float32": 2.327464398695156e-06
+ },
+ "load_avg_1min_at_end": 142.185546875,
+ "numpy": "2.5.5",
+ "note": "synthetic data of the right shape; the probe is a 1,024-term dot product after folding the scaler into the weights"
+}

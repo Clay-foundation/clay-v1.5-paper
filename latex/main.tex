@@ -1,0 +1,174 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{iftex}
+\ifTUTeX
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures={TeX,NoCommon}}
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont=lmroman10-bold.otf,
+    ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf
+  ]
+  \setsansfont{lmsans10-regular.otf}[
+    BoldFont=lmsans10-bold.otf,
+    ItalicFont=lmsans10-oblique.otf
+  ]
+  \setmonofont{lmmono10-regular.otf}[
+    ItalicFont=lmmono10-italic.otf
+  ]
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+\usepackage[margin=0.75in,columnsep=0.25in]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx,booktabs,tabularx,multirow,array}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{caption,placeins,fancyhdr,enumitem,stfloats}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true]{hyperref}
+\def\UrlBreaks{\do\/\do\-\do\_\do\.\do\:\do\=}
+
+\graphicspath{{../figures/}{figures/}}
+
+\definecolor{ClayNavy}{HTML}{163E64}
+\definecolor{ClayTeal}{HTML}{0F766E}
+\definecolor{ClaySlate}{HTML}{334155}
+\definecolor{ClayAmber}{HTML}{B45309}
+\definecolor{RuleGrey}{HTML}{CBD5E1}
+\definecolor{SoftBg}{HTML}{F8FAFC}
+
+\hypersetup{
+  pdftitle={Clay v1.5: An Open Sensor-Agnostic Earth Observation Foundation Model},
+  pdfauthor={Bruno Sanchez-Andrade Nuno, Soumya Ranjan Mohanty, Daniel Wiesmann, Mason Grimshaw, Dan Hammer, Samuel Barrett, Konstantin Klemmer, Avery Cohn, and Laura Chen},
+  pdfsubject={Geospatial Foundation Models, Sensor-Agnostic Earth Observation Embeddings, Multi-Sensor Vision Transformer, Remote Sensing Machine Learning},
+  pdfkeywords={Clay v1.5, made-with-clay/Clay, sensor-agnostic Earth observation foundation model, geospatial foundation model, remote sensing embeddings, multi-sensor Vision Transformer, Masked Autoencoder, DynamicEmbedding, DOFA, Scale-MAE, AlphaEarth Foundations, TESSERA, OlmoEarth, Prithvi-EO-2.0, Copernicus-FM, Panopticon, DINOv2, Segment Anything Model, Matryoshka Representation Learning, Sentinel-2, Sentinel-1 SAR, Landsat 8/9, NAIP, LINZ, MODIS, Sentinel-3 OLCI, GEO-Bench, Copernicus-Bench, Source Cooperative, Major TOM, STAC, Apache-2.0},
+  linkcolor=ClayNavy,
+  citecolor=ClayTeal,
+  urlcolor=ClayNavy
+}
+
+\captionsetup{
+  font=footnotesize,
+  labelfont={bf,color=ClayNavy},
+  labelsep=period,
+  skip=2pt
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\textcolor{ClaySlate}{\textbf{Clay v1.5}: Sensor-Agnostic EO Foundation Model}}
+\fancyhead[R]{\footnotesize\textcolor{ClaySlate}{arXiv Preprint $\cdot$ November 2026}}
+\fancyfoot[C]{\footnotesize\textcolor{ClaySlate}{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{RuleGrey}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\headheight}{19pt}
+
+\setlength{\parindent}{1.0em}
+\setlength{\parskip}{0.8pt plus 0.3pt}
+\linespread{1.0}
+\setlength{\emergencystretch}{3em}
+\hyphenpenalty=400
+\exhyphenpenalty=400
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
+\AtBeginDocument{%
+  \raggedbottom
+  \setlength{\abovedisplayskip}{2.5pt}%
+  \setlength{\belowdisplayskip}{2.5pt}%
+  \setlength{\abovedisplayshortskip}{1.5pt}%
+  \setlength{\belowdisplayshortskip}{1.5pt}%
+}
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{4}
+\setcounter{totalnumber}{6}
+\setcounter{dbltopnumber}{4}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\dbltopfraction}{0.95}
+\renewcommand{\textfraction}{0.04}
+\renewcommand{\floatpagefraction}{0.88}
+\renewcommand{\dblfloatpagefraction}{0.88}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\dblfloatsep}{6pt plus 2pt minus 2pt}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname.\quad}
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+  {-2.8pt plus -1pt minus -0.5pt}%
+  {1.2pt}%
+  {\normalfont\normalsize\bfseries\raggedright\color{ClayNavy}}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {-2.2pt plus -0.8pt minus -0.5pt}%
+  {0.8pt}%
+  {\normalfont\normalsize\bfseries\raggedright}}
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {1.2pt plus 0.4pt}%
+  {-0.5em}%
+  {\normalfont\normalsize\bfseries}}
+\makeatother
+
+\setlist[itemize]{leftmargin=*,labelsep=0.35em,itemsep=0.5pt,topsep=1pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=*,labelsep=0.35em,itemsep=0.5pt,topsep=1pt,parsep=0pt}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\begin{document}
+
+\twocolumn[{%
+\begin{@twocolumnfalse}
+\thispagestyle{plain}
+{\noindent\color{ClayNavy}\rule{\textwidth}{1.5pt}\par\smallskip}
+{\LARGE\bfseries\color{ClayNavy}\noindent Clay v1.5: An Open Sensor-Agnostic Earth Observation \mbox{Foundation} Model\par\smallskip}
+{\normalsize\bfseries\raggedright\noindent
+Bruno S\'anchez-Andrade Nu\~no$^{1,3,\ast}$,
+Soumya Ranjan Mohanty$^{2}$,
+Daniel Wiesmann$^{2}$,
+Mason Grimshaw$^{4}$,
+Dan Hammer$^{1,3,4}$,
+Samuel Barrett$^{1}$,
+Konstantin Klemmer$^{1,3}$,
+Avery Cohn$^{1,3,4}$,
+and Laura Chen$^{3,4}$\par\smallskip}
+{\footnotesize\color{ClaySlate}\noindent
+$^{1}$Legend AI \quad
+$^{2}$Development Seed \quad
+$^{3}$Clay \quad
+$^{4}$Ode\par\smallskip}
+{\noindent\color{RuleGrey}\rule{\textwidth}{0.6pt}\par\smallskip}
+{\small\leftskip=1.8em\rightskip=1.8em\parindent=0pt
+\textbf{\textcolor{ClayNavy}{Abstract.}}
+Earth observation imagery serves environmental, climate, and humanitarian work at global scale, but turning it into actionable insights often takes specialist pipelines and large amounts of compute. Foundation models aim to provide one reusable backbone generalizing across tasks. Clay v1.5 is an open (Apache-2.0), $311\text{M}$-parameter ViT-L/8 masked autoencoder for Earth observation. It is conditioned on band wavelengths and ground sample distance (GSD), so one frozen checkpoint embeds optical and SAR band combinations across resolutions. It was pretrained on $72.1\text{M}$ $256\times 256$ pixel chips from seven public collections (LINZ, NAIP, Sentinel-1/2, Landsat 8/9 L1 and L2, and MODIS). The Clay project released it in November 2024 without a technical report until this one. We document the released model and its two-stage training. We evaluate the model on 43 benchmarks ($0.1\text{--}300\,\text{m}$ GSD, $2\text{--}21$ bands). We take classification scores from an independent leaderboard, run Clay v1.5's segmentation through the same harness, and run the tasks the leaderboard does not cover ourselves. General RGB backbones lead on RGB scenes. Multi-temporal Sentinel models lead on seasonal crop, land-cover, and tree-genus tasks, where Clay is weakest. Clay's median score on the leaderboard's 15 classification datasets is $98\%$ of the best model, and its median over all 43 benchmarks is $94\%$. With a frozen linear probe, it leads two $0.1\text{--}1\,\text{m}$ segmentation tasks, where models with multi-scale decoders score higher. We close with four lessons from two years of use, on decoders, readout and cross-sensor alignment, dimensionality reduction, and probe choice.\par\smallskip
+\footnotesize\textcolor{ClaySlate}{\textbf{Keywords:} Earth observation foundation model $\cdot$ geospatial embeddings $\cdot$ multi-sensor Vision Transformer $\cdot$ masked autoencoder $\cdot$ wavelength hypernetwork $\cdot$ Apache-2.0}\\
+\textbf{Artifacts:} Code: \url{https://github.com/Clay-foundation/model}~\cite{clay2024model} $\cdot$ Weights: \url{https://huggingface.co/made-with-clay/Clay}~\cite{clay2024hf} $\cdot$ Catalogs: \url{https://source.coop/clay} $\cdot$ Reproduction: \url{https://github.com/Clay-foundation/clay-v1.5-paper}\par}
+{\smallskip\noindent\color{RuleGrey}\rule{\textwidth}{0.6pt}\par\medskip}
+\end{@twocolumnfalse}
+}]
+\raggedbottom
+\input{sections/01_introduction}
+\input{sections/02_model}
+\input{sections/03_comparative}
+\input{sections/04_discussion}
+\input{sections/05_conclusion}
+
+\FloatBarrier
+\bibliographystyle{plainnat}
+{\footnotesize\raggedright\setlength{\bibsep}{1.5pt plus 1.5pt minus 0.5pt}\bibliography{references}}
+
+\end{document}

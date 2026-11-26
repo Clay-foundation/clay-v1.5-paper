@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Model, weights or embedding catalogs
+    url: https://github.com/Clay-foundation/model/issues
+    about: Issues about the Clay model code or weights belong in the model repository.

@@ -1,0 +1,14 @@
+
+===== ft_m-cashew-plant =====
+[m-cashew-plant s0] ep 5/50 loss 0.7286 val mIoU 42.45 best_ep 5 t 537s
+[m-cashew-plant s0] ep 10/50 loss 0.4936 val mIoU 49.97 best_ep 10 t 1073s
+[m-cashew-plant s0] ep 15/50 loss 0.3889 val mIoU 59.39 best_ep 15 t 1658s
+[m-cashew-plant s0] ep 20/50 loss 0.3253 val mIoU 61.76 best_ep 20 t 2193s
+[m-cashew-plant s0] ep 25/50 loss 0.2868 val mIoU 63.78 best_ep 25 t 3694s
+[m-cashew-plant s0] ep 30/50 loss 0.2563 val mIoU 67.02 best_ep 30 t 5428s
+[m-cashew-plant s0] ep 35/50 loss 0.2374 val mIoU 69.17 best_ep 35 t 7188s
+[m-cashew-plant s0] ep 40/50 loss 0.2245 val mIoU 69.35 best_ep 40 t 8952s
+[m-cashew-plant s0] ep 45/50 loss 0.2185 val mIoU 69.96 best_ep 45 t 10712s
+[m-cashew-plant s0] ep 50/50 loss 0.2161 val mIoU 70.02 best_ep 50 t 12467s
+[written] m-cashew-plant/FT -> <out>/ft_m-cashew-plant_sweep_lr0.0001_s0.json
+===== ft_m-cashew-plant done in 12545s =====

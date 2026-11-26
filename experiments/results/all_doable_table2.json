@@ -1,0 +1,3549 @@
+{
+  "m-pv4ger-seg": {
+    "olmo_v13": {
+      "miou": 80.0,
+      "val_miou": 81.36,
+      "best_C": 0.01,
+      "fg_iou": 67.51
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B04"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B02"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.65,
+          0.56,
+          0.48
+        ],
+        "native_hw": 320,
+        "input_check": {
+          "archive": "621e00b64198ba4a4abef263ae0af6df9f657428b2e895fc87a54c4ffb378555",
+          "archive_sha256": "621e00b64198ba4a4abef263ae0af6df9f657428b2e895fc87a54c4ffb378555",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 320,
+        "input_check": {
+          "archive": "621e00b64198ba4a4abef263ae0af6df9f657428b2e895fc87a54c4ffb378555",
+          "archive_sha256": "621e00b64198ba4a4abef263ae0af6df9f657428b2e895fc87a54c4ffb378555",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0
+        ],
+        "bandwidths_nm": [
+          30,
+          35,
+          65
+        ],
+        "gsd_m": 0.1,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 320,
+        "area_km2": 0.001024,
+        "input_check": {
+          "archive": "621e00b64198ba4a4abef263ae0af6df9f657428b2e895fc87a54c4ffb378555",
+          "archive_sha256": "621e00b64198ba4a4abef263ae0af6df9f657428b2e895fc87a54c4ffb378555",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      }
+    },
+    "panopticon": {
+      "miou": 78.94,
+      "val_miou": 81.23,
+      "best_C": 0.01,
+      "fg_iou": 65.76
+    },
+    "copernicus_fm": {
+      "miou": 76.4,
+      "val_miou": 78.47,
+      "best_C": 0.01,
+      "fg_iou": 61.68
+    }
+  },
+  "_producers": {
+    "m-pv4ger-seg/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "67ee5dea71c560d9",
+      "utc_timestamp": "2026-11-17T23:06:17Z"
+    },
+    "m-pv4ger-seg/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "aa857a1749a61e7a",
+      "utc_timestamp": "2026-11-17T23:06:49Z"
+    },
+    "m-pv4ger-seg/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "822964e5cb32d1b8",
+      "utc_timestamp": "2026-11-17T23:07:12Z"
+    },
+    "m-chesapeake/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "719426fe90d61ba1",
+      "utc_timestamp": "2026-11-17T23:08:43Z"
+    },
+    "m-chesapeake/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "98be9a44e5b9d7e4",
+      "utc_timestamp": "2026-11-17T23:09:39Z"
+    },
+    "m-chesapeake/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "03bd7789b13d4739",
+      "utc_timestamp": "2026-11-17T23:10:19Z"
+    },
+    "biomass-s3/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "00f2b7648dee572f",
+      "utc_timestamp": "2026-11-17T23:11:46Z"
+    },
+    "biomass-s3/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "9f1b05f2adff727e",
+      "utc_timestamp": "2026-11-17T23:12:36Z"
+    },
+    "biomass-s3/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "1ccfc2670ce919ac",
+      "utc_timestamp": "2026-11-17T23:12:50Z"
+    },
+    "lc100cls-s3/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "00f2b7648dee572f",
+      "utc_timestamp": "2026-11-17T23:15:34Z"
+    },
+    "lc100cls-s3/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "9f1b05f2adff727e",
+      "utc_timestamp": "2026-11-17T23:17:10Z"
+    },
+    "lc100cls-s3/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "1ccfc2670ce919ac",
+      "utc_timestamp": "2026-11-17T23:17:53Z"
+    },
+    "m-pv4ger/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "5ed7e9dfeeb7ae28",
+      "utc_timestamp": "2026-11-17T23:19:50Z"
+    },
+    "m-pv4ger/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "3be0687e1ff6351b",
+      "utc_timestamp": "2026-11-17T23:21:11Z"
+    },
+    "m-pv4ger/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "9c0c18e6f9022ba6",
+      "utc_timestamp": "2026-11-17T23:22:08Z"
+    },
+    "ucmerced/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "2c17cf2d33aa9793",
+      "utc_timestamp": "2026-11-17T23:23:05Z"
+    },
+    "ucmerced/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "3949a737d4165fa3",
+      "utc_timestamp": "2026-11-17T23:23:50Z"
+    },
+    "ucmerced/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "82849b23bbee37ae",
+      "utc_timestamp": "2026-11-17T23:24:34Z"
+    },
+    "resisc45/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "2c17cf2d33aa9793",
+      "utc_timestamp": "2026-11-18T00:01:45Z"
+    },
+    "resisc45/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "3949a737d4165fa3",
+      "utc_timestamp": "2026-11-18T00:04:25Z"
+    },
+    "resisc45/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "88b7279e25290db2",
+      "utc_timestamp": "2026-11-18T00:05:01Z"
+    },
+    "m-brick-kiln/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "cebac98bfc31557c",
+      "utc_timestamp": "2026-11-18T00:08:31Z"
+    },
+    "m-brick-kiln/olmo_v13_trainz": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "634cf026c369c362",
+      "utc_timestamp": "2026-11-18T00:10:29Z"
+    },
+    "m-brick-kiln/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "d82273aad2e50c5f",
+      "utc_timestamp": "2026-11-18T00:11:42Z"
+    },
+    "m-brick-kiln/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "609ac1e2d6f729b2",
+      "utc_timestamp": "2026-11-18T00:12:04Z"
+    },
+    "m-eurosat/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "4f24edfe923ae9b5",
+      "utc_timestamp": "2026-11-18T00:12:34Z"
+    },
+    "m-eurosat/olmo_v13_trainz": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "5f501875fa605a79",
+      "utc_timestamp": "2026-11-18T00:13:46Z"
+    },
+    "m-eurosat/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "025d4c634575d652",
+      "utc_timestamp": "2026-11-18T00:14:26Z"
+    },
+    "m-eurosat/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "e08cdd22f2d11faa",
+      "utc_timestamp": "2026-11-18T00:15:56Z"
+    },
+    "m-so2sat/olmo_v13": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "2f480ffd06c72863",
+      "utc_timestamp": "2026-11-18T00:19:14Z"
+    },
+    "m-so2sat/olmo_v13_trainz": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "c4d740ca6c85e727",
+      "utc_timestamp": "2026-11-18T00:21:20Z"
+    },
+    "m-so2sat/panopticon": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "49aa525fc88890af",
+      "utc_timestamp": "2026-11-18T00:23:27Z"
+    },
+    "m-so2sat/copernicus_fm": {
+      "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+      "cfg": "6019b8749764bba0",
+      "utc_timestamp": "2026-11-18T00:23:56Z"
+    },
+    "m-forestnet/olmo_v13": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "8edaf2926472db67",
+      "utc_timestamp": "2026-11-18T00:50:30Z"
+    },
+    "m-forestnet/panopticon": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "8d8aa2c992123676",
+      "utc_timestamp": "2026-11-18T00:52:00Z"
+    },
+    "m-forestnet/copernicus_fm": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "5802bf0bfa23e296",
+      "utc_timestamp": "2026-11-18T00:53:15Z"
+    },
+    "m-bigearthnet/olmo_v13": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "c0489eb803f071c1",
+      "utc_timestamp": "2026-11-18T00:59:49Z"
+    },
+    "m-bigearthnet/olmo_v13_trainz": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "dad0c143dec59e05",
+      "utc_timestamp": "2026-11-18T01:01:46Z"
+    },
+    "m-bigearthnet/panopticon": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "6d47874108dba080",
+      "utc_timestamp": "2026-11-18T01:03:20Z"
+    },
+    "m-bigearthnet/copernicus_fm": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "06f0d8e66d01129d",
+      "utc_timestamp": "2026-11-18T01:03:42Z"
+    },
+    "m-cashew-plant/olmo_v13": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "9ea6a11fa7f4c34a",
+      "utc_timestamp": "2026-11-18T01:47:34Z"
+    },
+    "m-cashew-plant/olmo_v13_trainz": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "264efdfd32d3c14f",
+      "utc_timestamp": "2026-11-18T01:47:46Z"
+    },
+    "m-cashew-plant/panopticon": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "3d3393ec88606bc3",
+      "utc_timestamp": "2026-11-18T01:48:01Z"
+    },
+    "m-cashew-plant/copernicus_fm": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "7f63b1e9b251b4c0",
+      "utc_timestamp": "2026-11-18T01:48:09Z"
+    },
+    "eurosat-s1/copernicus_fm": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "300c4559aeefc6ed",
+      "utc_timestamp": "2026-11-18T01:44:53Z"
+    },
+    "eurosat-s1/olmo_v13": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "6fa41507010e894e",
+      "utc_timestamp": "2026-11-18T01:45:18Z"
+    },
+    "eurosat-s1/panopticon": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "af360afd0b39aac9",
+      "utc_timestamp": "2026-11-18T01:45:58Z"
+    },
+    "eurosat-s1/dinov2": {
+      "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+      "cfg": "83c1aa1cbf364e65",
+      "utc_timestamp": "2026-11-18T01:46:54Z"
+    },
+    "cropharvest_togo/clay": {
+      "script_sha256": "22d05875ac0ea195fb3fc3c0d252e2473732b2ffc2c17d18bf293dcb83a31ce5",
+      "cfg": "729af50ce40bd2dc",
+      "utc_timestamp": "2026-11-18T00:28:59Z"
+    },
+    "cropharvest_togo/dofa_s1": {
+      "script_sha256": "22d05875ac0ea195fb3fc3c0d252e2473732b2ffc2c17d18bf293dcb83a31ce5",
+      "cfg": "bab4774cd7c38fa5",
+      "utc_timestamp": "2026-11-18T00:30:00Z"
+    },
+    "cropharvest_togo/dofa_s1_clay_waves_diag": {
+      "script_sha256": "22d05875ac0ea195fb3fc3c0d252e2473732b2ffc2c17d18bf293dcb83a31ce5",
+      "cfg": "68fd3627283e21f7",
+      "utc_timestamp": "2026-11-18T00:30:41Z"
+    },
+    "cropharvest_togo/panopticon_s1": {
+      "script_sha256": "22d05875ac0ea195fb3fc3c0d252e2473732b2ffc2c17d18bf293dcb83a31ce5",
+      "cfg": "12705a1bbfb9f004",
+      "utc_timestamp": "2026-11-18T00:36:59Z"
+    },
+    "cropharvest_togo/copernicus_fm_s1": {
+      "script_sha256": "22d05875ac0ea195fb3fc3c0d252e2473732b2ffc2c17d18bf293dcb83a31ce5",
+      "cfg": "ec95558c30fd4cc3",
+      "utc_timestamp": "2026-11-18T00:37:30Z"
+    },
+    "cropharvest_togo/dinov2_s1": {
+      "script_sha256": "22d05875ac0ea195fb3fc3c0d252e2473732b2ffc2c17d18bf293dcb83a31ce5",
+      "cfg": "2432fd8ebc9f1f91",
+      "utc_timestamp": "2026-11-18T00:38:20Z"
+    }
+  },
+  "m-chesapeake": {
+    "olmo_v13": {
+      "miou": 50.7,
+      "val_miou": 60.8,
+      "best_C": 0.01
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B04"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B02"
+          ],
+          [
+            3,
+            "B08"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.65,
+          0.56,
+          0.48,
+          0.842
+        ],
+        "native_hw": 256,
+        "input_check": {
+          "archive": "64aa9e0b28e18e7dd28874797914eeb23a93011aa90a5a4a629a802aed677bb9",
+          "archive_sha256": "64aa9e0b28e18e7dd28874797914eeb23a93011aa90a5a4a629a802aed677bb9",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0,
+          842.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 256,
+        "input_check": {
+          "archive": "64aa9e0b28e18e7dd28874797914eeb23a93011aa90a5a4a629a802aed677bb9",
+          "archive_sha256": "64aa9e0b28e18e7dd28874797914eeb23a93011aa90a5a4a629a802aed677bb9",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0,
+          842.0
+        ],
+        "bandwidths_nm": [
+          30,
+          35,
+          65,
+          115
+        ],
+        "gsd_m": 1.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 256,
+        "area_km2": 0.065536,
+        "input_check": {
+          "archive": "64aa9e0b28e18e7dd28874797914eeb23a93011aa90a5a4a629a802aed677bb9",
+          "archive_sha256": "64aa9e0b28e18e7dd28874797914eeb23a93011aa90a5a4a629a802aed677bb9",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      }
+    },
+    "panopticon": {
+      "miou": 59.92,
+      "val_miou": 63.89,
+      "best_C": 0.01
+    },
+    "copernicus_fm": {
+      "miou": 46.19,
+      "val_miou": 59.28,
+      "best_C": 0.01
+    }
+  },
+  "biomass-s3": {
+    "olmo_v13": {
+      "dense": {
+        "pixel_rmse": 76.31,
+        "pixel_r2": 0.594,
+        "val_pixel_rmse": 76.04,
+        "best_alpha": 1.0
+      },
+      "chip": {
+        "chip_r2": 0.8474,
+        "chip_rmse": 39.1
+      }
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            3,
+            "B02"
+          ],
+          [
+            5,
+            "B03"
+          ],
+          [
+            7,
+            "B04"
+          ],
+          [
+            16,
+            "B08"
+          ],
+          [
+            10,
+            "B05"
+          ],
+          [
+            11,
+            "B06"
+          ],
+          [
+            15,
+            "B07"
+          ],
+          [
+            17,
+            "B8A"
+          ],
+          [
+            1,
+            "B01"
+          ],
+          [
+            19,
+            "B09"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.4,
+          0.4125,
+          0.4425,
+          0.49,
+          0.51,
+          0.56,
+          0.62,
+          0.665,
+          0.67375,
+          0.68125,
+          0.70875,
+          0.75375,
+          0.76125,
+          0.764375,
+          0.7675,
+          0.77875,
+          0.865,
+          0.885,
+          0.9,
+          0.94,
+          1.02
+        ],
+        "native_hw": 94
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          400.0,
+          412.5,
+          442.5,
+          490.0,
+          510.0,
+          560.0,
+          620.0,
+          665.0,
+          673.75,
+          681.25,
+          708.75,
+          753.75,
+          761.25,
+          764.375,
+          767.5,
+          778.75,
+          865.0,
+          885.0,
+          900.0,
+          940.0,
+          1020.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 94
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          400.0,
+          412.5,
+          442.5,
+          490.0,
+          510.0,
+          560.0,
+          620.0,
+          665.0,
+          673.75,
+          681.25,
+          708.75,
+          753.75,
+          761.25,
+          764.375,
+          767.5,
+          778.75,
+          865.0,
+          885.0,
+          900.0,
+          940.0,
+          1020.0
+        ],
+        "bandwidths_nm": [
+          15,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          7.5,
+          7.5,
+          10,
+          7.5,
+          7.5,
+          3.75,
+          2.5,
+          15,
+          20,
+          10,
+          10,
+          20,
+          40
+        ],
+        "gsd_m": 300.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 94,
+        "area_km2": 795.24
+      }
+    },
+    "panopticon": {
+      "dense": {
+        "pixel_rmse": 77.2,
+        "pixel_r2": 0.5845,
+        "val_pixel_rmse": 78.7,
+        "best_alpha": 1.0
+      },
+      "chip": {
+        "chip_r2": 0.8052,
+        "chip_rmse": 44.17
+      }
+    },
+    "copernicus_fm": {
+      "dense": {
+        "pixel_rmse": 77.74,
+        "pixel_r2": 0.5786,
+        "val_pixel_rmse": 77.3,
+        "best_alpha": 1.0
+      },
+      "chip": {
+        "chip_r2": 0.8284,
+        "chip_rmse": 41.47
+      }
+    }
+  },
+  "lc100cls-s3": {
+    "olmo_v13": {
+      "macro_map": 72.74,
+      "micro_map": 90.64,
+      "val_macro_map": 73.77,
+      "n_eval_classes": 23,
+      "best_C": 0.1
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            3,
+            "B02"
+          ],
+          [
+            5,
+            "B03"
+          ],
+          [
+            7,
+            "B04"
+          ],
+          [
+            16,
+            "B08"
+          ],
+          [
+            10,
+            "B05"
+          ],
+          [
+            11,
+            "B06"
+          ],
+          [
+            15,
+            "B07"
+          ],
+          [
+            17,
+            "B8A"
+          ],
+          [
+            1,
+            "B01"
+          ],
+          [
+            19,
+            "B09"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.4,
+          0.4125,
+          0.4425,
+          0.49,
+          0.51,
+          0.56,
+          0.62,
+          0.665,
+          0.67375,
+          0.68125,
+          0.70875,
+          0.75375,
+          0.76125,
+          0.764375,
+          0.7675,
+          0.77875,
+          0.865,
+          0.885,
+          0.9,
+          0.94,
+          1.02
+        ],
+        "native_hw": 94
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          400.0,
+          412.5,
+          442.5,
+          490.0,
+          510.0,
+          560.0,
+          620.0,
+          665.0,
+          673.75,
+          681.25,
+          708.75,
+          753.75,
+          761.25,
+          764.375,
+          767.5,
+          778.75,
+          865.0,
+          885.0,
+          900.0,
+          940.0,
+          1020.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 94
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          400.0,
+          412.5,
+          442.5,
+          490.0,
+          510.0,
+          560.0,
+          620.0,
+          665.0,
+          673.75,
+          681.25,
+          708.75,
+          753.75,
+          761.25,
+          764.375,
+          767.5,
+          778.75,
+          865.0,
+          885.0,
+          900.0,
+          940.0,
+          1020.0
+        ],
+        "bandwidths_nm": [
+          15,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          7.5,
+          7.5,
+          10,
+          7.5,
+          7.5,
+          3.75,
+          2.5,
+          15,
+          20,
+          10,
+          10,
+          20,
+          40
+        ],
+        "gsd_m": 300.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 94,
+        "area_km2": 795.24
+      }
+    },
+    "panopticon": {
+      "macro_map": 76.44,
+      "micro_map": 92.22,
+      "val_macro_map": 76.63,
+      "n_eval_classes": 23,
+      "best_C": 0.01
+    },
+    "copernicus_fm": {
+      "macro_map": 73.52,
+      "micro_map": 90.57,
+      "val_macro_map": 73.25,
+      "n_eval_classes": 23,
+      "best_C": 0.1
+    }
+  },
+  "m-pv4ger": {
+    "olmo_v13": {
+      "oa": 93.99,
+      "macro_f1": 87.07,
+      "val_oa": 92.69,
+      "best_C": 1.0,
+      "lsvm_oa": 94.09,
+      "lsvm_macro_f1": 87.25
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B04"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B02"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.65,
+          0.56,
+          0.48
+        ],
+        "native_hw": 320,
+        "input_check": {
+          "archive": "b7f2ebb77e543b3bb7c38f498180976b64d72d541ec712c853e39e5d33e01dca",
+          "archive_sha256": "b7f2ebb77e543b3bb7c38f498180976b64d72d541ec712c853e39e5d33e01dca",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 320,
+        "input_check": {
+          "archive": "b7f2ebb77e543b3bb7c38f498180976b64d72d541ec712c853e39e5d33e01dca",
+          "archive_sha256": "b7f2ebb77e543b3bb7c38f498180976b64d72d541ec712c853e39e5d33e01dca",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0
+        ],
+        "bandwidths_nm": [
+          30,
+          35,
+          65
+        ],
+        "gsd_m": 0.1,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 320,
+        "area_km2": 0.001024,
+        "input_check": {
+          "archive": "b7f2ebb77e543b3bb7c38f498180976b64d72d541ec712c853e39e5d33e01dca",
+          "archive_sha256": "b7f2ebb77e543b3bb7c38f498180976b64d72d541ec712c853e39e5d33e01dca",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      }
+    },
+    "panopticon": {
+      "oa": 96.4,
+      "macro_f1": 92.61,
+      "val_oa": 95.6,
+      "best_C": 0.01,
+      "lsvm_oa": 96.6,
+      "lsvm_macro_f1": 92.98
+    },
+    "copernicus_fm": {
+      "oa": 96.4,
+      "macro_f1": 92.74,
+      "val_oa": 94.79,
+      "best_C": 0.1,
+      "lsvm_oa": 96.2,
+      "lsvm_macro_f1": 92.06
+    }
+  },
+  "ucmerced": {
+    "olmo_v13": {
+      "oa": 81.19,
+      "macro_f1": 81.03,
+      "val_oa": 82.62,
+      "best_C": 1.0,
+      "lsvm_oa": 84.05,
+      "lsvm_macro_f1": 84.22
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B04"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B02"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.65,
+          0.56,
+          0.48
+        ],
+        "native_hw": 256
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 256
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0
+        ],
+        "bandwidths_nm": [
+          30,
+          35,
+          65
+        ],
+        "gsd_m": 0.3,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 256,
+        "area_km2": 0.005898239999999999
+      }
+    },
+    "panopticon": {
+      "oa": 97.38,
+      "macro_f1": 97.25,
+      "val_oa": 97.14,
+      "best_C": 1.0,
+      "lsvm_oa": 95.95,
+      "lsvm_macro_f1": 95.59
+    },
+    "copernicus_fm": {
+      "oa": 95.71,
+      "macro_f1": 95.23,
+      "val_oa": 97.14,
+      "best_C": 10.0,
+      "lsvm_oa": 95.48,
+      "lsvm_macro_f1": 94.79
+    }
+  },
+  "resisc45": {
+    "olmo_v13": {
+      "oa": 70.4,
+      "macro_f1": 70.15,
+      "val_oa": 71.81,
+      "best_C": 1.0,
+      "lsvm_oa": 70.78,
+      "lsvm_macro_f1": 70.33
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B04"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B02"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.65,
+          0.56,
+          0.48
+        ],
+        "native_hw": 256
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 256
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0
+        ],
+        "bandwidths_nm": [
+          30,
+          35,
+          65
+        ],
+        "gsd_m": 1.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 256,
+        "area_km2": 0.065536
+      }
+    },
+    "panopticon": {
+      "oa": 89.59,
+      "macro_f1": 89.57,
+      "val_oa": 91.25,
+      "best_C": 0.1,
+      "lsvm_oa": 90.21,
+      "lsvm_macro_f1": 90.16
+    },
+    "copernicus_fm": {
+      "oa": 89.73,
+      "macro_f1": 89.76,
+      "val_oa": 91.16,
+      "best_C": 1.0,
+      "lsvm_oa": 90.67,
+      "lsvm_macro_f1": 90.66
+    }
+  },
+  "m-brick-kiln": {
+    "olmo_v13": {
+      "oa": 97.9,
+      "macro_f1": 97.65,
+      "val_oa": 98.5,
+      "best_C": 0.1,
+      "lsvm_oa": 97.9,
+      "lsvm_macro_f1": 97.64
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B07"
+          ],
+          [
+            5,
+            "B08"
+          ],
+          [
+            6,
+            "B8A"
+          ],
+          [
+            7,
+            "B11"
+          ],
+          [
+            8,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "olmo_COMPUTED_x1.0",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 64,
+        "input_check": {
+          "archive": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+          "archive_sha256": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+          "band_check": {
+            "stored_names_ok": true,
+            "n_chips": 300,
+            "true_order": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B07",
+              "B8A",
+              "B08",
+              "B11",
+              "B12",
+              "TCI_R",
+              "TCI_G",
+              "TCI_B"
+            ],
+            "channel_min_mean_max": [
+              [
+                76.77,
+                573.43,
+                1915.58
+              ],
+              [
+                98.09,
+                672.06,
+                3012.8
+              ],
+              [
+                155.0,
+                887.37,
+                3183.6
+              ],
+              [
+                104.25,
+                810.19,
+                3515.2
+              ],
+              [
+                154.75,
+                1124.16,
+                3438.7
+              ],
+              [
+                106.33,
+                1936.51,
+                5831.67
+              ],
+              [
+                95.58,
+                2044.43,
+                6264.17
+              ],
+              [
+                104.25,
+                2010.61,
+                7107.0
+              ],
+              [
+                78.42,
+                1584.01,
+                5034.0
+              ],
+              [
+                59.08,
+                1105.29,
+                5207.0
+              ],
+              [
+                11.08,
+                82.78,
+                255.0
+              ],
+              [
+                16.14,
+                90.65,
+                255.0
+              ],
+              [
+                9.82,
+                68.77,
+                248.8
+              ]
+            ],
+            "corr": {
+              "TCI_R~B04": 0.9997,
+              "TCI_G~B03": 0.9999,
+              "TCI_B~B02": 0.9997,
+              "B8A~B08": 0.9848,
+              "B07~B08": 0.9844,
+              "B11~B12": 0.9441
+            },
+            "physical_check_passed": true
+          }
+        }
+      },
+      "olmo_v13_trainz": {
+        "model": "olmo_v13_trainz",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B07"
+          ],
+          [
+            5,
+            "B08"
+          ],
+          [
+            6,
+            "B8A"
+          ],
+          [
+            7,
+            "B11"
+          ],
+          [
+            8,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 64,
+        "input_check": {
+          "archive": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+          "archive_sha256": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+          "band_check": {
+            "stored_names_ok": true,
+            "n_chips": 300,
+            "true_order": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B07",
+              "B8A",
+              "B08",
+              "B11",
+              "B12",
+              "TCI_R",
+              "TCI_G",
+              "TCI_B"
+            ],
+            "channel_min_mean_max": [
+              [
+                76.77,
+                573.43,
+                1915.58
+              ],
+              [
+                98.09,
+                672.06,
+                3012.8
+              ],
+              [
+                155.0,
+                887.37,
+                3183.6
+              ],
+              [
+                104.25,
+                810.19,
+                3515.2
+              ],
+              [
+                154.75,
+                1124.16,
+                3438.7
+              ],
+              [
+                106.33,
+                1936.51,
+                5831.67
+              ],
+              [
+                95.58,
+                2044.43,
+                6264.17
+              ],
+              [
+                104.25,
+                2010.61,
+                7107.0
+              ],
+              [
+                78.42,
+                1584.01,
+                5034.0
+              ],
+              [
+                59.08,
+                1105.29,
+                5207.0
+              ],
+              [
+                11.08,
+                82.78,
+                255.0
+              ],
+              [
+                16.14,
+                90.65,
+                255.0
+              ],
+              [
+                9.82,
+                68.77,
+                248.8
+              ]
+            ],
+            "corr": {
+              "TCI_R~B04": 0.9997,
+              "TCI_G~B03": 0.9999,
+              "TCI_B~B02": 0.9997,
+              "B8A~B08": 0.9848,
+              "B07~B08": 0.9844,
+              "B11~B12": 0.9441
+            },
+            "physical_check_passed": true
+          }
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 64,
+        "input_check": {
+          "archive": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+          "archive_sha256": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+          "band_check": {
+            "stored_names_ok": true,
+            "n_chips": 300,
+            "true_order": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B07",
+              "B8A",
+              "B08",
+              "B11",
+              "B12",
+              "TCI_R",
+              "TCI_G",
+              "TCI_B"
+            ],
+            "channel_min_mean_max": [
+              [
+                76.77,
+                573.43,
+                1915.58
+              ],
+              [
+                98.09,
+                672.06,
+                3012.8
+              ],
+              [
+                155.0,
+                887.37,
+                3183.6
+              ],
+              [
+                104.25,
+                810.19,
+                3515.2
+              ],
+              [
+                154.75,
+                1124.16,
+                3438.7
+              ],
+              [
+                106.33,
+                1936.51,
+                5831.67
+              ],
+              [
+                95.58,
+                2044.43,
+                6264.17
+              ],
+              [
+                104.25,
+                2010.61,
+                7107.0
+              ],
+              [
+                78.42,
+                1584.01,
+                5034.0
+              ],
+              [
+                59.08,
+                1105.29,
+                5207.0
+              ],
+              [
+                11.08,
+                82.78,
+                255.0
+              ],
+              [
+                16.14,
+                90.65,
+                255.0
+              ],
+              [
+                9.82,
+                68.77,
+                248.8
+              ]
+            ],
+            "corr": {
+              "TCI_R~B04": 0.9997,
+              "TCI_G~B03": 0.9999,
+              "TCI_B~B02": 0.9997,
+              "B8A~B08": 0.9848,
+              "B07~B08": 0.9844,
+              "B11~B12": 0.9441
+            },
+            "physical_check_passed": true
+          }
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "bandwidths_nm": [
+          65,
+          35,
+          30,
+          15,
+          20,
+          115,
+          20,
+          90,
+          180
+        ],
+        "gsd_m": 10.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 64,
+        "area_km2": 0.4096,
+        "input_check": {
+          "archive": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+          "archive_sha256": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+          "band_check": {
+            "stored_names_ok": true,
+            "n_chips": 300,
+            "true_order": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B07",
+              "B8A",
+              "B08",
+              "B11",
+              "B12",
+              "TCI_R",
+              "TCI_G",
+              "TCI_B"
+            ],
+            "channel_min_mean_max": [
+              [
+                76.77,
+                573.43,
+                1915.58
+              ],
+              [
+                98.09,
+                672.06,
+                3012.8
+              ],
+              [
+                155.0,
+                887.37,
+                3183.6
+              ],
+              [
+                104.25,
+                810.19,
+                3515.2
+              ],
+              [
+                154.75,
+                1124.16,
+                3438.7
+              ],
+              [
+                106.33,
+                1936.51,
+                5831.67
+              ],
+              [
+                95.58,
+                2044.43,
+                6264.17
+              ],
+              [
+                104.25,
+                2010.61,
+                7107.0
+              ],
+              [
+                78.42,
+                1584.01,
+                5034.0
+              ],
+              [
+                59.08,
+                1105.29,
+                5207.0
+              ],
+              [
+                11.08,
+                82.78,
+                255.0
+              ],
+              [
+                16.14,
+                90.65,
+                255.0
+              ],
+              [
+                9.82,
+                68.77,
+                248.8
+              ]
+            ],
+            "corr": {
+              "TCI_R~B04": 0.9997,
+              "TCI_G~B03": 0.9999,
+              "TCI_B~B02": 0.9997,
+              "B8A~B08": 0.9848,
+              "B07~B08": 0.9844,
+              "B11~B12": 0.9441
+            },
+            "physical_check_passed": true
+          }
+        }
+      }
+    },
+    "olmo_v13_trainz": {
+      "oa": 96.2,
+      "macro_f1": 95.73,
+      "val_oa": 96.7,
+      "best_C": 0.1,
+      "lsvm_oa": 96.4,
+      "lsvm_macro_f1": 95.95
+    },
+    "panopticon": {
+      "oa": 96.5,
+      "macro_f1": 96.05,
+      "val_oa": 97.8,
+      "best_C": 0.1,
+      "lsvm_oa": 96.8,
+      "lsvm_macro_f1": 96.39
+    },
+    "copernicus_fm": {
+      "oa": 96.9,
+      "macro_f1": 96.49,
+      "val_oa": 97.3,
+      "best_C": 0.1,
+      "lsvm_oa": 96.3,
+      "lsvm_macro_f1": 95.82
+    }
+  },
+  "m-eurosat": {
+    "olmo_v13": {
+      "oa": 97.1,
+      "macro_f1": 97.09,
+      "val_oa": 97.2,
+      "best_C": 0.1,
+      "lsvm_oa": 96.6,
+      "lsvm_macro_f1": 96.58
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "olmo_COMPUTED_x1.0",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 64,
+        "input_check": {
+          "archive": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+          "archive_sha256": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+          "band_check": {
+            "stored_names_ok": true,
+            "n_chips": 300,
+            "true_order": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B09",
+              "B10",
+              "B11",
+              "B12",
+              "B8A"
+            ],
+            "channel_min_mean_max": [
+              [
+                876.0,
+                1338.22,
+                3167.0
+              ],
+              [
+                562.0,
+                1103.44,
+                8027.0
+              ],
+              [
+                361.0,
+                1036.71,
+                8102.0
+              ],
+              [
+                210.0,
+                937.69,
+                11457.0
+              ],
+              [
+                182.0,
+                1206.51,
+                5858.0
+              ],
+              [
+                163.0,
+                2063.59,
+                10568.0
+              ],
+              [
+                133.0,
+                2455.35,
+                13501.0
+              ],
+              [
+                105.0,
+                2384.8,
+                10645.0
+              ],
+              [
+                41.0,
+                770.24,
+                2362.0
+              ],
+              [
+                2.0,
+                12.46,
+                46.0
+              ],
+              [
+                10.0,
+                1829.56,
+                11613.0
+              ],
+              [
+                1.0,
+                1112.5,
+                8931.0
+              ],
+              [
+                100.0,
+                2691.15,
+                13065.0
+              ]
+            ],
+            "corr": {
+              "B8A~B08": 0.9788,
+              "B06~B07": 0.9852,
+              "B11~B12": 0.9431
+            },
+            "physical_check_passed": true
+          }
+        }
+      },
+      "olmo_v13_trainz": {
+        "model": "olmo_v13_trainz",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 64,
+        "input_check": {
+          "archive": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+          "archive_sha256": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+          "band_check": {
+            "stored_names_ok": true,
+            "n_chips": 300,
+            "true_order": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B09",
+              "B10",
+              "B11",
+              "B12",
+              "B8A"
+            ],
+            "channel_min_mean_max": [
+              [
+                876.0,
+                1338.22,
+                3167.0
+              ],
+              [
+                562.0,
+                1103.44,
+                8027.0
+              ],
+              [
+                361.0,
+                1036.71,
+                8102.0
+              ],
+              [
+                210.0,
+                937.69,
+                11457.0
+              ],
+              [
+                182.0,
+                1206.51,
+                5858.0
+              ],
+              [
+                163.0,
+                2063.59,
+                10568.0
+              ],
+              [
+                133.0,
+                2455.35,
+                13501.0
+              ],
+              [
+                105.0,
+                2384.8,
+                10645.0
+              ],
+              [
+                41.0,
+                770.24,
+                2362.0
+              ],
+              [
+                2.0,
+                12.46,
+                46.0
+              ],
+              [
+                10.0,
+                1829.56,
+                11613.0
+              ],
+              [
+                1.0,
+                1112.5,
+                8931.0
+              ],
+              [
+                100.0,
+                2691.15,
+                13065.0
+              ]
+            ],
+            "corr": {
+              "B8A~B08": 0.9788,
+              "B06~B07": 0.9852,
+              "B11~B12": 0.9431
+            },
+            "physical_check_passed": true
+          }
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 64,
+        "input_check": {
+          "archive": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+          "archive_sha256": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+          "band_check": {
+            "stored_names_ok": true,
+            "n_chips": 300,
+            "true_order": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B09",
+              "B10",
+              "B11",
+              "B12",
+              "B8A"
+            ],
+            "channel_min_mean_max": [
+              [
+                876.0,
+                1338.22,
+                3167.0
+              ],
+              [
+                562.0,
+                1103.44,
+                8027.0
+              ],
+              [
+                361.0,
+                1036.71,
+                8102.0
+              ],
+              [
+                210.0,
+                937.69,
+                11457.0
+              ],
+              [
+                182.0,
+                1206.51,
+                5858.0
+              ],
+              [
+                163.0,
+                2063.59,
+                10568.0
+              ],
+              [
+                133.0,
+                2455.35,
+                13501.0
+              ],
+              [
+                105.0,
+                2384.8,
+                10645.0
+              ],
+              [
+                41.0,
+                770.24,
+                2362.0
+              ],
+              [
+                2.0,
+                12.46,
+                46.0
+              ],
+              [
+                10.0,
+                1829.56,
+                11613.0
+              ],
+              [
+                1.0,
+                1112.5,
+                8931.0
+              ],
+              [
+                100.0,
+                2691.15,
+                13065.0
+              ]
+            ],
+            "corr": {
+              "B8A~B08": 0.9788,
+              "B06~B07": 0.9852,
+              "B11~B12": 0.9431
+            },
+            "physical_check_passed": true
+          }
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "bandwidths_nm": [
+          65,
+          35,
+          30,
+          15,
+          15,
+          20,
+          115,
+          20,
+          90,
+          180
+        ],
+        "gsd_m": 10.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 64,
+        "area_km2": 0.4096,
+        "input_check": {
+          "archive": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+          "archive_sha256": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+          "band_check": {
+            "stored_names_ok": true,
+            "n_chips": 300,
+            "true_order": [
+              "B01",
+              "B02",
+              "B03",
+              "B04",
+              "B05",
+              "B06",
+              "B07",
+              "B08",
+              "B09",
+              "B10",
+              "B11",
+              "B12",
+              "B8A"
+            ],
+            "channel_min_mean_max": [
+              [
+                876.0,
+                1338.22,
+                3167.0
+              ],
+              [
+                562.0,
+                1103.44,
+                8027.0
+              ],
+              [
+                361.0,
+                1036.71,
+                8102.0
+              ],
+              [
+                210.0,
+                937.69,
+                11457.0
+              ],
+              [
+                182.0,
+                1206.51,
+                5858.0
+              ],
+              [
+                163.0,
+                2063.59,
+                10568.0
+              ],
+              [
+                133.0,
+                2455.35,
+                13501.0
+              ],
+              [
+                105.0,
+                2384.8,
+                10645.0
+              ],
+              [
+                41.0,
+                770.24,
+                2362.0
+              ],
+              [
+                2.0,
+                12.46,
+                46.0
+              ],
+              [
+                10.0,
+                1829.56,
+                11613.0
+              ],
+              [
+                1.0,
+                1112.5,
+                8931.0
+              ],
+              [
+                100.0,
+                2691.15,
+                13065.0
+              ]
+            ],
+            "corr": {
+              "B8A~B08": 0.9788,
+              "B06~B07": 0.9852,
+              "B11~B12": 0.9431
+            },
+            "physical_check_passed": true
+          }
+        }
+      }
+    },
+    "olmo_v13_trainz": {
+      "oa": 92.1,
+      "macro_f1": 92.13,
+      "val_oa": 93.0,
+      "best_C": 1.0,
+      "lsvm_oa": 93.4,
+      "lsvm_macro_f1": 93.38
+    },
+    "panopticon": {
+      "oa": 97.5,
+      "macro_f1": 97.49,
+      "val_oa": 97.8,
+      "best_C": 0.1,
+      "lsvm_oa": 97.7,
+      "lsvm_macro_f1": 97.69
+    },
+    "copernicus_fm": {
+      "oa": 94.1,
+      "macro_f1": 94.13,
+      "val_oa": 94.8,
+      "best_C": 1.0,
+      "lsvm_oa": 94.2,
+      "lsvm_macro_f1": 94.19
+    }
+  },
+  "m-so2sat": {
+    "olmo_v13": {
+      "oa": 62.07,
+      "macro_f1": 60.88,
+      "val_oa": 60.85,
+      "best_C": 0.01,
+      "lsvm_oa": 63.59,
+      "lsvm_macro_f1": 62.05
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "olmo_COMPUTED_x10000.0",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 32,
+        "input_check": {
+          "archive": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+          "archive_sha256": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "olmo_v13_trainz": {
+        "model": "olmo_v13_trainz",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 32,
+        "input_check": {
+          "archive": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+          "archive_sha256": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 32,
+        "input_check": {
+          "archive": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+          "archive_sha256": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "bandwidths_nm": [
+          65,
+          35,
+          30,
+          15,
+          15,
+          20,
+          115,
+          20,
+          90,
+          180
+        ],
+        "gsd_m": 10.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 32,
+        "area_km2": 0.1024,
+        "input_check": {
+          "archive": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+          "archive_sha256": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      }
+    },
+    "olmo_v13_trainz": {
+      "oa": 54.67,
+      "macro_f1": 54.5,
+      "val_oa": 50.3,
+      "best_C": 0.1,
+      "lsvm_oa": 52.84,
+      "lsvm_macro_f1": 52.63
+    },
+    "panopticon": {
+      "oa": 61.87,
+      "macro_f1": 60.88,
+      "val_oa": 62.47,
+      "best_C": 0.01,
+      "lsvm_oa": 60.95,
+      "lsvm_macro_f1": 59.9
+    },
+    "copernicus_fm": {
+      "oa": 56.19,
+      "macro_f1": 54.86,
+      "val_oa": 55.17,
+      "best_C": 0.1,
+      "lsvm_oa": 56.29,
+      "lsvm_macro_f1": 55.26
+    }
+  },
+  "m-forestnet": {
+    "olmo_v13": {
+      "oa": 50.96,
+      "macro_f1": 41.63,
+      "val_oa": 49.54,
+      "best_C": 0.01,
+      "lsvm_oa": 51.66,
+      "lsvm_macro_f1": 40.61
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B4"
+          ],
+          [
+            1,
+            "B3"
+          ],
+          [
+            2,
+            "B2"
+          ],
+          [
+            3,
+            "B5"
+          ],
+          [
+            4,
+            "B6"
+          ],
+          [
+            5,
+            "B7"
+          ]
+        ],
+        "modality": "landsat",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.65,
+          0.56,
+          0.48,
+          0.86,
+          1.6,
+          2.2
+        ],
+        "native_hw": 332,
+        "input_check": {
+          "archive": "7ae883180a5e64b0e30849419fc04f13cbef840f5dcc7dbddf63ac02027e7994",
+          "archive_sha256": "7ae883180a5e64b0e30849419fc04f13cbef840f5dcc7dbddf63ac02027e7994",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0,
+          860.0,
+          1600.0,
+          2200.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 332,
+        "input_check": {
+          "archive": "7ae883180a5e64b0e30849419fc04f13cbef840f5dcc7dbddf63ac02027e7994",
+          "archive_sha256": "7ae883180a5e64b0e30849419fc04f13cbef840f5dcc7dbddf63ac02027e7994",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          650.0,
+          560.0,
+          480.0,
+          860.0,
+          1600.0,
+          2200.0
+        ],
+        "bandwidths_nm": [
+          30,
+          35,
+          65,
+          20,
+          90,
+          180
+        ],
+        "gsd_m": 15.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 332,
+        "area_km2": 24.800400000000003,
+        "input_check": {
+          "archive": "7ae883180a5e64b0e30849419fc04f13cbef840f5dcc7dbddf63ac02027e7994",
+          "archive_sha256": "7ae883180a5e64b0e30849419fc04f13cbef840f5dcc7dbddf63ac02027e7994",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      }
+    },
+    "panopticon": {
+      "oa": 51.86,
+      "macro_f1": 45.67,
+      "val_oa": 54.9,
+      "best_C": 0.01,
+      "lsvm_oa": 53.88,
+      "lsvm_macro_f1": 46.19
+    },
+    "copernicus_fm": {
+      "oa": 52.77,
+      "macro_f1": 43.97,
+      "val_oa": 52.78,
+      "best_C": 0.01,
+      "lsvm_oa": 53.37,
+      "lsvm_macro_f1": 42.55
+    }
+  },
+  "m-bigearthnet": {
+    "olmo_v13": {
+      "mean": 67.66
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "olmo_COMPUTED_x1.0",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 120,
+        "input_check": {
+          "archive": "a72d3b7a60ec8fec67b5c4143d18ad7e10858d9633621b1f5db82e955d77f658",
+          "archive_sha256": "a72d3b7a60ec8fec67b5c4143d18ad7e10858d9633621b1f5db82e955d77f658",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "olmo_v13_trainz": {
+        "model": "olmo_v13_trainz",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 120,
+        "input_check": {
+          "archive": "a72d3b7a60ec8fec67b5c4143d18ad7e10858d9633621b1f5db82e955d77f658",
+          "archive_sha256": "a72d3b7a60ec8fec67b5c4143d18ad7e10858d9633621b1f5db82e955d77f658",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 120,
+        "input_check": {
+          "archive": "a72d3b7a60ec8fec67b5c4143d18ad7e10858d9633621b1f5db82e955d77f658",
+          "archive_sha256": "a72d3b7a60ec8fec67b5c4143d18ad7e10858d9633621b1f5db82e955d77f658",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "bandwidths_nm": [
+          65,
+          35,
+          30,
+          15,
+          15,
+          20,
+          115,
+          20,
+          90,
+          180
+        ],
+        "gsd_m": 10.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 120,
+        "area_km2": 1.44,
+        "input_check": {
+          "archive": "a72d3b7a60ec8fec67b5c4143d18ad7e10858d9633621b1f5db82e955d77f658",
+          "archive_sha256": "a72d3b7a60ec8fec67b5c4143d18ad7e10858d9633621b1f5db82e955d77f658",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      }
+    },
+    "olmo_v13_trainz": {
+      "mean": 59.93
+    },
+    "panopticon": {
+      "cls": 64.31,
+      "mean": 65.22
+    },
+    "copernicus_fm": {
+      "cls": 61.6,
+      "mean": 60.38
+    }
+  },
+  "m-cashew-plant": {
+    "olmo_v13": {
+      "miou": 19.17,
+      "val_miou": 27.04,
+      "best_C": 10.0
+    },
+    "_contract": {
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "olmo_COMPUTED_x1.0",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 256,
+        "input_check": {
+          "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "olmo_v13_trainz": {
+        "model": "olmo_v13_trainz",
+        "bands_map": [
+          [
+            0,
+            "B02"
+          ],
+          [
+            1,
+            "B03"
+          ],
+          [
+            2,
+            "B04"
+          ],
+          [
+            3,
+            "B05"
+          ],
+          [
+            4,
+            "B06"
+          ],
+          [
+            5,
+            "B07"
+          ],
+          [
+            6,
+            "B08"
+          ],
+          [
+            7,
+            "B8A"
+          ],
+          [
+            8,
+            "B11"
+          ],
+          [
+            9,
+            "B12"
+          ]
+        ],
+        "modality": "sentinel2_l2a",
+        "normaliser": "train_zscore",
+        "olmoearth_revision": "pinned",
+        "waves_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "native_hw": 256,
+        "input_check": {
+          "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "normaliser": "train_zscore",
+        "native_hw": 256,
+        "input_check": {
+          "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      },
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          493.0,
+          560.0,
+          665.0,
+          704.0,
+          740.0,
+          783.0,
+          842.0,
+          865.0,
+          1610.0,
+          2190.0
+        ],
+        "bandwidths_nm": [
+          65,
+          35,
+          30,
+          15,
+          15,
+          20,
+          115,
+          20,
+          90,
+          180
+        ],
+        "gsd_m": 10.0,
+        "normaliser": "train_zscore",
+        "footprint": "native_hw*gsd (before 224 resize)",
+        "native_hw": 256,
+        "area_km2": 6.5536,
+        "input_check": {
+          "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+          "hf_repo": "recursix/geo-bench-1.0",
+          "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+        }
+      }
+    },
+    "olmo_v13_trainz": {
+      "miou": 16.32,
+      "val_miou": 23.77,
+      "best_C": 10.0
+    },
+    "panopticon": {
+      "miou": 14.92,
+      "val_miou": 22.78,
+      "best_C": 0.01
+    },
+    "copernicus_fm": {
+      "miou": 13.18,
+      "val_miou": 20.01,
+      "best_C": 1.0
+    }
+  },
+  "eurosat-s1": {
+    "copernicus_fm": {
+      "oa": 84.98,
+      "macro_f1": 84.61,
+      "val_oa": 84.85,
+      "best_C": 0.1,
+      "lsvm_oa": 84.89,
+      "lsvm_macro_f1": 84.46
+    },
+    "_contract": {
+      "copernicus_fm": {
+        "model": "copernicus_fm",
+        "waves_nm": [
+          50000000.0,
+          50000000.0
+        ],
+        "bandwidths_nm": [
+          1000000000.0,
+          1000000000.0
+        ],
+        "native_hw": 64,
+        "area_km2": 0.4096,
+        "normaliser": "train_zscore"
+      },
+      "olmo_v13": {
+        "model": "olmo_v13",
+        "modality": "sentinel1",
+        "normaliser": "olmo_COMPUTED(S1 dB)",
+        "patch_size": 4,
+        "native_hw": 64
+      },
+      "panopticon": {
+        "model": "panopticon",
+        "chn_ids": [
+          -1.0,
+          -2.0
+        ],
+        "normaliser": "train_zscore"
+      },
+      "dinov2": {
+        "model": "dinov2",
+        "input": "[VV,VH,(VV+VH)/2] train-zscore"
+      }
+    },
+    "olmo_v13": {
+      "oa": 86.91,
+      "macro_f1": 86.46,
+      "val_oa": 87.7,
+      "best_C": 0.01,
+      "lsvm_oa": 87.44,
+      "lsvm_macro_f1": 87.03
+    },
+    "panopticon": {
+      "oa": 88.65,
+      "macro_f1": 88.19,
+      "val_oa": 89.44,
+      "best_C": 0.01,
+      "lsvm_oa": 88.57,
+      "lsvm_macro_f1": 88.07
+    },
+    "dinov2": {
+      "oa": 83.96,
+      "macro_f1": 83.4,
+      "val_oa": 84.06,
+      "best_C": 0.01,
+      "lsvm_oa": 84.0,
+      "lsvm_macro_f1": 83.37
+    }
+  },
+  "cropharvest_togo": {
+    "clay": {
+      "oa": 77.12,
+      "val_oa": 74.74,
+      "best_C": 0.01,
+      "diag_split_fit_oa": 77.12,
+      "diag_lsvm_refit_oa": 78.1,
+      "lsvm_best_C": 0.001
+    },
+    "_contract": {
+      "clay": {
+        "split_seed": 42,
+        "val_fraction": 0.15,
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "head": "LR(L2) val-chosen C, refit on all train, test scored once",
+        "normaliser": "S1 z-score (train mean/std over months and chips)",
+        "pooling": "mean/std/max over 12 months of the per-month embedding",
+        "model": "clay_v15",
+        "waves_um": [
+          3.5,
+          4.0
+        ],
+        "gsd": 10.0,
+        "readout": "CLS",
+        "image": "1x1 pixel replicated to 224x224",
+        "data_identity": {
+          "labels_sha256": "a37b1c9b8bb6fb5a1768cd0110e4beb0d0a8de2807e9b7d5f9c954a01ba41889",
+          "features_sha256": "edaad97f4dc1f2df1645f2e4d20f6461a9b531a40465f1f8c2dd1dc6539e21e0",
+          "zenodo_record": 7257688
+        },
+        "n_train": 1272,
+        "n_test": 306
+      },
+      "dofa_s1": {
+        "split_seed": 42,
+        "val_fraction": 0.15,
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "head": "LR(L2) val-chosen C, refit on all train, test scored once",
+        "normaliser": "S1 z-score (train mean/std over months and chips)",
+        "pooling": "mean/std/max over 12 months of the per-month embedding",
+        "model": "dofa_l",
+        "waves_um": [
+          3.75,
+          3.75
+        ],
+        "readout": "fc_norm(CLS)",
+        "image": "1x1 pixel replicated to 224x224",
+        "data_identity": {
+          "labels_sha256": "a37b1c9b8bb6fb5a1768cd0110e4beb0d0a8de2807e9b7d5f9c954a01ba41889",
+          "features_sha256": "edaad97f4dc1f2df1645f2e4d20f6461a9b531a40465f1f8c2dd1dc6539e21e0",
+          "zenodo_record": 7257688
+        },
+        "n_train": 1272,
+        "n_test": 306
+      },
+      "dofa_s1_clay_waves_diag": {
+        "split_seed": 42,
+        "val_fraction": 0.15,
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "head": "LR(L2) val-chosen C, refit on all train, test scored once",
+        "normaliser": "S1 z-score (train mean/std over months and chips)",
+        "pooling": "mean/std/max over 12 months of the per-month embedding",
+        "model": "dofa_l",
+        "waves_um": [
+          3.5,
+          4.0
+        ],
+        "readout": "fc_norm(CLS)",
+        "note": "DIAGNOSTIC: original (Clay) SAR wavelength convention",
+        "data_identity": {
+          "labels_sha256": "a37b1c9b8bb6fb5a1768cd0110e4beb0d0a8de2807e9b7d5f9c954a01ba41889",
+          "features_sha256": "edaad97f4dc1f2df1645f2e4d20f6461a9b531a40465f1f8c2dd1dc6539e21e0",
+          "zenodo_record": 7257688
+        },
+        "n_train": 1272,
+        "n_test": 306
+      },
+      "panopticon_s1": {
+        "split_seed": 42,
+        "val_fraction": 0.15,
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "head": "LR(L2) val-chosen C, refit on all train, test scored once",
+        "normaliser": "S1 z-score (train mean/std over months and chips)",
+        "pooling": "mean/std/max over 12 months of the per-month embedding",
+        "model": "panopticon",
+        "chn_ids": [
+          -1.0,
+          -2.0
+        ],
+        "data_identity": {
+          "labels_sha256": "a37b1c9b8bb6fb5a1768cd0110e4beb0d0a8de2807e9b7d5f9c954a01ba41889",
+          "features_sha256": "edaad97f4dc1f2df1645f2e4d20f6461a9b531a40465f1f8c2dd1dc6539e21e0",
+          "zenodo_record": 7257688
+        },
+        "n_train": 1272,
+        "n_test": 306
+      },
+      "copernicus_fm_s1": {
+        "split_seed": 42,
+        "val_fraction": 0.15,
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "head": "LR(L2) val-chosen C, refit on all train, test scored once",
+        "normaliser": "S1 z-score (train mean/std over months and chips)",
+        "pooling": "mean/std/max over 12 months of the per-month embedding",
+        "model": "copernicus_fm",
+        "waves_nm": [
+          50000000.0,
+          50000000.0
+        ],
+        "bandwidths_nm": [
+          1000000000.0,
+          1000000000.0
+        ],
+        "area_km2": 0.001,
+        "note": "true pixel footprint is 10 m x 10 m = 1e-4 km2, below the model's supported area range [1e-3, 5.1e8] km2 (torchgeo FourierExpansion assert); clamped to the lower bound 1e-3 km2",
+        "data_identity": {
+          "labels_sha256": "a37b1c9b8bb6fb5a1768cd0110e4beb0d0a8de2807e9b7d5f9c954a01ba41889",
+          "features_sha256": "edaad97f4dc1f2df1645f2e4d20f6461a9b531a40465f1f8c2dd1dc6539e21e0",
+          "zenodo_record": 7257688
+        },
+        "n_train": 1272,
+        "n_test": 306
+      },
+      "dinov2_s1": {
+        "split_seed": 42,
+        "val_fraction": 0.15,
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "head": "LR(L2) val-chosen C, refit on all train, test scored once",
+        "normaliser": "S1 z-score (train mean/std over months and chips)",
+        "pooling": "mean/std/max over 12 months of the per-month embedding",
+        "model": "dinov2",
+        "input": "[VV,VH,(VV+VH)/2]",
+        "data_identity": {
+          "labels_sha256": "a37b1c9b8bb6fb5a1768cd0110e4beb0d0a8de2807e9b7d5f9c954a01ba41889",
+          "features_sha256": "edaad97f4dc1f2df1645f2e4d20f6461a9b531a40465f1f8c2dd1dc6539e21e0",
+          "zenodo_record": 7257688
+        },
+        "n_train": 1272,
+        "n_test": 306
+      }
+    },
+    "dofa_s1": {
+      "oa": 74.18,
+      "val_oa": 74.74,
+      "best_C": 0.01,
+      "diag_split_fit_oa": 74.18,
+      "diag_lsvm_refit_oa": 74.84,
+      "lsvm_best_C": 0.001
+    },
+    "dofa_s1_clay_waves_diag": {
+      "oa": 73.2,
+      "val_oa": 73.68,
+      "best_C": 0.01,
+      "diag_split_fit_oa": 74.51,
+      "diag_lsvm_refit_oa": 74.84,
+      "lsvm_best_C": 0.001
+    },
+    "panopticon_s1": {
+      "oa": 75.82,
+      "val_oa": 74.74,
+      "best_C": 0.01,
+      "diag_split_fit_oa": 74.51,
+      "diag_lsvm_refit_oa": 75.82,
+      "lsvm_best_C": 0.001
+    },
+    "copernicus_fm_s1": {
+      "oa": 72.22,
+      "val_oa": 73.16,
+      "best_C": 0.01,
+      "diag_split_fit_oa": 74.18,
+      "diag_lsvm_refit_oa": 74.18,
+      "lsvm_best_C": 0.001
+    },
+    "dinov2_s1": {
+      "oa": 69.28,
+      "val_oa": 74.21,
+      "best_C": 1.0,
+      "diag_split_fit_oa": 69.28,
+      "diag_lsvm_refit_oa": 77.12,
+      "lsvm_best_C": 0.001
+    }
+  },
+  "_merged_from": {
+    "merge_script": "merge_run_outputs.py",
+    "git_commit": "fe91721b5a6c8d0444cd7331de3d0e60d526daf7",
+    "argv": [
+      "--out",
+      "experiments/results/all_doable_table2.json",
+      "main=/private/tmp/claude-501/s1/pull/t2_main.json",
+      "rest=/private/tmp/claude-501/s1/pull/t2_rest.json",
+      "cashew=/private/tmp/claude-501/s1/pull/t2_cashew.json",
+      "s1=/private/tmp/claude-501/s1/pull/t2_s1.json",
+      "togo=/private/tmp/claude-501/s1/pull/t2_togo2.json"
+    ],
+    "utc_timestamp": "2026-11-18T04:23:08Z",
+    "sources": {
+      "main": {
+        "file": "t2_main.json",
+        "_meta": {
+          "script": "run_all_doable_table2.py",
+          "script_sha256": "21da27fcaded0ca26873353eb2781412c97160a7dee172dbf53f515ac05606ce",
+          "git_commit": "unknown",
+          "argv": [
+            "--output-dir",
+            "t2_main",
+            "--resume",
+            "--parts",
+            "tasks,s1"
+          ],
+          "utc_timestamp": "2026-11-18T00:23:56Z",
+          "packages": {
+            "torch": "2.5.1+cu124",
+            "torchgeo": "0.7.0",
+            "numpy": "1.26.4",
+            "scikit-learn": "1.9.1",
+            "timm": "1.0.25",
+            "h5py": "n/a",
+            "rasterio": "1.4.4",
+            "olmoearth_pretrain": "0.1.2"
+          },
+          "python": "3.11.18",
+          "gpu": "NVIDIA GeForce RTX 4090",
+          "olmoearth_repo_revision": "pinned in run_standard_benchmarks.OLMO_REVISION"
+        }
+      },
+      "rest": {
+        "file": "t2_rest.json",
+        "_meta": {
+          "script": "run_all_doable_table2.py",
+          "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+          "git_commit": "unknown",
+          "argv": [
+            "--output-dir",
+            "t2_rest",
+            "--parts",
+            "tasks",
+            "--tasks",
+            "m-forestnet,m-bigearthnet,m-cashew-plant"
+          ],
+          "utc_timestamp": "2026-11-18T01:03:42Z",
+          "packages": {
+            "torch": "2.5.1+cu124",
+            "torchgeo": "0.7.0",
+            "numpy": "1.26.4",
+            "scikit-learn": "1.9.1",
+            "timm": "1.0.25",
+            "h5py": "n/a",
+            "rasterio": "1.4.4",
+            "olmoearth_pretrain": "0.1.2"
+          },
+          "python": "3.11.18",
+          "gpu": "NVIDIA GeForce RTX 4090",
+          "olmoearth_repo_revision": "pinned in run_standard_benchmarks.OLMO_REVISION"
+        }
+      },
+      "cashew": {
+        "file": "t2_cashew.json",
+        "_meta": {
+          "script": "run_all_doable_table2.py",
+          "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+          "git_commit": "unknown",
+          "argv": [
+            "--output-dir",
+            "t2_cashew",
+            "--resume",
+            "--parts",
+            "tasks",
+            "--tasks",
+            "m-cashew-plant"
+          ],
+          "utc_timestamp": "2026-11-18T01:48:09Z",
+          "packages": {
+            "torch": "2.5.1+cu124",
+            "torchgeo": "0.7.0",
+            "numpy": "1.26.4",
+            "scikit-learn": "1.9.1",
+            "timm": "1.0.25",
+            "h5py": "n/a",
+            "rasterio": "1.4.4",
+            "olmoearth_pretrain": "0.1.2"
+          },
+          "python": "3.11.18",
+          "gpu": "NVIDIA GeForce RTX 4090",
+          "olmoearth_repo_revision": "pinned in run_standard_benchmarks.OLMO_REVISION"
+        }
+      },
+      "s1": {
+        "file": "t2_s1.json",
+        "_meta": {
+          "script": "run_all_doable_table2.py",
+          "script_sha256": "58954f16b35dac4e702746c4da6b50d5a53a8d2c38e2e66d9d14682a976ba143",
+          "git_commit": "unknown",
+          "argv": [
+            "--output-dir",
+            "t2_s1",
+            "--resume",
+            "--parts",
+            "s1"
+          ],
+          "utc_timestamp": "2026-11-18T01:46:54Z",
+          "packages": {
+            "torch": "2.5.1+cu124",
+            "torchgeo": "0.7.0",
+            "numpy": "1.26.4",
+            "scikit-learn": "1.9.1",
+            "timm": "1.0.25",
+            "h5py": "n/a",
+            "rasterio": "1.4.4",
+            "olmoearth_pretrain": "0.1.2"
+          },
+          "python": "3.11.18",
+          "gpu": "NVIDIA GeForce RTX 4090",
+          "olmoearth_repo_revision": "pinned in run_standard_benchmarks.OLMO_REVISION"
+        }
+      },
+      "togo": {
+        "file": "t2_togo2.json",
+        "_meta": {
+          "script": "run_all_doable_table2.py",
+          "script_sha256": "22d05875ac0ea195fb3fc3c0d252e2473732b2ffc2c17d18bf293dcb83a31ce5",
+          "git_commit": "unknown",
+          "argv": [
+            "--output-dir",
+            "t2_togo2",
+            "--parts",
+            "togo"
+          ],
+          "utc_timestamp": "2026-11-18T00:38:20Z",
+          "packages": {
+            "torch": "2.5.1+cu124",
+            "torchgeo": "0.7.0",
+            "numpy": "1.26.4",
+            "scikit-learn": "1.9.1",
+            "timm": "1.0.25",
+            "h5py": "n/a",
+            "rasterio": "1.4.4",
+            "olmoearth_pretrain": "0.1.2"
+          },
+          "python": "3.11.18",
+          "gpu": "NVIDIA GeForce RTX 4090",
+          "olmoearth_repo_revision": "pinned in run_standard_benchmarks.OLMO_REVISION"
+        }
+      }
+    },
+    "cell_owner": {
+      "m-pv4ger-seg": "main",
+      "m-chesapeake": "main",
+      "biomass-s3": "main",
+      "lc100cls-s3": "main",
+      "m-pv4ger": "main",
+      "ucmerced": "main",
+      "resisc45": "main",
+      "m-brick-kiln": "main",
+      "m-eurosat": "main",
+      "m-so2sat": "main",
+      "m-forestnet": "rest",
+      "m-bigearthnet": "rest",
+      "m-cashew-plant": "cashew",
+      "eurosat-s1": "s1",
+      "cropharvest_togo": "togo"
+    }
+  }
+}

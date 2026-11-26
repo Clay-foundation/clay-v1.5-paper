@@ -1,0 +1,79 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the technical report (preferred-citation). If you use the Clay v1.5 weights or code, please also cite the artifacts listed under references."
+type: software
+title: "Clay v1.5 paper companion repository: manuscript, evaluation code and results"
+abstract: "Manuscript sources, fact-source ledger, evaluation scripts and machine-readable results accompanying the Clay v1.5 technical report."
+repository-code: "https://github.com/Clay-foundation/clay-v1.5-paper"
+url: "https://github.com/Clay-foundation/clay-v1.5-paper"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+authors:
+  - family-names: "Sánchez-Andrade Nuño"
+    given-names: "Bruno"
+    affiliation: "Legend AI / Clay"
+  - family-names: "Mohanty"
+    given-names: "Soumya Ranjan"
+    affiliation: "Development Seed"
+  - family-names: "Wiesmann"
+    given-names: "Daniel"
+    affiliation: "Development Seed"
+  - family-names: "Grimshaw"
+    given-names: "Mason"
+    affiliation: "Ode"
+  - family-names: "Hammer"
+    given-names: "Dan"
+    affiliation: "Legend AI / Clay / Ode"
+  - family-names: "Barrett"
+    given-names: "Samuel"
+    affiliation: "Legend AI"
+  - family-names: "Klemmer"
+    given-names: "Konstantin"
+    affiliation: "Legend AI / Clay"
+  - family-names: "Cohn"
+    given-names: "Avery"
+    affiliation: "Legend AI / Clay / Ode"
+  - family-names: "Chen"
+    given-names: "Laura"
+    affiliation: "Clay / Ode"
+preferred-citation:
+  type: article
+  title: "Clay v1.5: An Open Sensor-Agnostic Earth Observation Foundation Model"
+  status: preprint
+  journal: "arXiv preprint"
+  year: 2026
+  # Add `identifiers` (type: other, value: arXiv:XXXX.XXXXX) and `url` once the arXiv id exists.
+  url: "https://github.com/Clay-foundation/clay-v1.5-paper"
+  authors:
+    - family-names: "Sánchez-Andrade Nuño"
+      given-names: "Bruno"
+    - family-names: "Mohanty"
+      given-names: "Soumya Ranjan"
+    - family-names: "Wiesmann"
+      given-names: "Daniel"
+    - family-names: "Grimshaw"
+      given-names: "Mason"
+    - family-names: "Hammer"
+      given-names: "Dan"
+    - family-names: "Barrett"
+      given-names: "Samuel"
+    - family-names: "Klemmer"
+      given-names: "Konstantin"
+    - family-names: "Cohn"
+      given-names: "Avery"
+    - family-names: "Chen"
+      given-names: "Laura"
+references:
+  - type: software
+    title: "Clay Foundation Model (model code)"
+    repository-code: "https://github.com/Clay-foundation/model"
+    license: Apache-2.0
+    authors:
+      - name: "Clay Contributors"
+  - type: software
+    title: "Clay Foundation Model weights (made-with-clay/Clay)"
+    url: "https://huggingface.co/made-with-clay/Clay"
+    doi: "10.57967/hf/1537"
+    license: Apache-2.0
+    authors:
+      - name: "Clay Contributors"

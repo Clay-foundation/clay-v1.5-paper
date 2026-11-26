@@ -1,0 +1,254 @@
+{
+  "n_seeds": 3,
+  "budgets_labels_per_class": [
+    50,
+    200
+  ],
+  "inner_cv": "3-fold stratified, macro-F1",
+  "test_split": "spatially blocked EuroSAT test blocks (same as run_probe_and_lsvm_benchmark.py)",
+  "n_test": 3176,
+  "results": {
+    "50": {
+      "per_seed_macro_f1": {
+        "lsvm_tuned": [
+          0.919,
+          0.9178,
+          0.9211
+        ],
+        "rf_fixed": [
+          0.8658,
+          0.8723,
+          0.8647
+        ],
+        "rf_tuned": [
+          0.877,
+          0.8818,
+          0.8672
+        ],
+        "hgb_fixed": [
+          0.8692,
+          0.891,
+          0.8648
+        ],
+        "hgb_tuned": [
+          0.8692,
+          0.8883,
+          0.8648
+        ],
+        "knn_fixed_k5": [
+          0.8567,
+          0.8703,
+          0.8422
+        ],
+        "knn_tuned": [
+          0.8567,
+          0.8672,
+          0.8419
+        ]
+      },
+      "mean_macro_f1": {
+        "lsvm_tuned": 0.9193,
+        "rf_fixed": 0.8676,
+        "rf_tuned": 0.8753,
+        "hgb_fixed": 0.875,
+        "hgb_tuned": 0.8741,
+        "knn_fixed_k5": 0.8564,
+        "knn_tuned": 0.8552
+      },
+      "lsvm_minus_other": {
+        "rf_fixed": 0.0517,
+        "rf_tuned": 0.044,
+        "hgb_fixed": 0.0443,
+        "hgb_tuned": 0.0452,
+        "knn_fixed_k5": 0.0629,
+        "knn_tuned": 0.0641
+      },
+      "chosen_hyperparameters": {
+        "lsvm_tuned": [
+          5.0,
+          5.0,
+          20.0
+        ],
+        "rf_tuned": [
+          {
+            "max_features": "sqrt",
+            "min_samples_leaf": 1
+          },
+          {
+            "max_features": 0.1,
+            "min_samples_leaf": 3
+          },
+          {
+            "max_features": 0.1,
+            "min_samples_leaf": 3
+          }
+        ],
+        "hgb_tuned": [
+          {
+            "learning_rate": 0.1,
+            "max_depth": 6
+          },
+          {
+            "learning_rate": 0.1,
+            "max_depth": 3
+          },
+          {
+            "learning_rate": 0.1,
+            "max_depth": 6
+          }
+        ],
+        "knn_tuned": [
+          {
+            "n_neighbors": 5,
+            "weights": "distance"
+          },
+          {
+            "n_neighbors": 3,
+            "weights": "distance"
+          },
+          {
+            "n_neighbors": 3,
+            "weights": "distance"
+          }
+        ]
+      }
+    },
+    "200": {
+      "per_seed_macro_f1": {
+        "lsvm_tuned": [
+          0.9475,
+          0.9389,
+          0.9368
+        ],
+        "rf_fixed": [
+          0.8972,
+          0.9024,
+          0.9021
+        ],
+        "rf_tuned": [
+          0.9022,
+          0.9038,
+          0.9007
+        ],
+        "hgb_fixed": [
+          0.9112,
+          0.9148,
+          0.9108
+        ],
+        "hgb_tuned": [
+          0.9116,
+          0.9148,
+          0.9155
+        ],
+        "knn_fixed_k5": [
+          0.8994,
+          0.8948,
+          0.9
+        ],
+        "knn_tuned": [
+          0.8941,
+          0.8913,
+          0.9035
+        ]
+      },
+      "mean_macro_f1": {
+        "lsvm_tuned": 0.9411,
+        "rf_fixed": 0.9006,
+        "rf_tuned": 0.9023,
+        "hgb_fixed": 0.9122,
+        "hgb_tuned": 0.914,
+        "knn_fixed_k5": 0.8981,
+        "knn_tuned": 0.8963
+      },
+      "lsvm_minus_other": {
+        "rf_fixed": 0.0405,
+        "rf_tuned": 0.0388,
+        "hgb_fixed": 0.0289,
+        "hgb_tuned": 0.0271,
+        "knn_fixed_k5": 0.043,
+        "knn_tuned": 0.0448
+      },
+      "chosen_hyperparameters": {
+        "lsvm_tuned": [
+          20.0,
+          5.0,
+          5.0
+        ],
+        "rf_tuned": [
+          {
+            "max_features": "sqrt",
+            "min_samples_leaf": 3
+          },
+          {
+            "max_features": 0.1,
+            "min_samples_leaf": 1
+          },
+          {
+            "max_features": 0.1,
+            "min_samples_leaf": 3
+          }
+        ],
+        "hgb_tuned": [
+          {
+            "learning_rate": 0.1,
+            "max_depth": 3
+          },
+          {
+            "learning_rate": 0.1,
+            "max_depth": 6
+          },
+          {
+            "learning_rate": 0.1,
+            "max_depth": 3
+          }
+        ],
+        "knn_tuned": [
+          {
+            "n_neighbors": 3,
+            "weights": "distance"
+          },
+          {
+            "n_neighbors": 3,
+            "weights": "distance"
+          },
+          {
+            "n_neighbors": 10,
+            "weights": "distance"
+          }
+        ]
+      }
+    }
+  },
+  "runtime_seconds": 362.1,
+  "provenance": {
+    "script": "probe_equal_tuning_control.py",
+    "git_commit": "3deb4bf",
+    "git_dirty": true,
+    "args": {
+      "feat_dir": "features",
+      "seeds": 3,
+      "out": "probe_equal_tuning_control.json"
+    },
+    "python": "3.12.14",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "packages": {
+      "torch": "2.7.1",
+      "torchvision": "0.22.1",
+      "numpy": "2.5.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "pandas": "3.1.1",
+      "timm": "1.0.31",
+      "rasterio": "1.5.2",
+      "pystac-client": "0.9.1",
+      "planetary-computer": "1.0.0",
+      "odc-stac": null,
+      "torchgeo": null
+    },
+    "cuda_available": true,
+    "torch_cuda": "12.6",
+    "device": "NVIDIA GeForce RTX 4090",
+    "utc": "2026-11-17T23:46:34Z",
+    "git_commit_note": "run on a plain copy of the working tree at base commit 3deb4bf plus the uncommitted audit edits; not a git checkout"
+  }
+}

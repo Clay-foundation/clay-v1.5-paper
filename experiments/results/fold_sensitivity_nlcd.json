@@ -1,0 +1,103 @@
+{
+ "n_chips_nlcd": 223,
+ "n_clusters": 171,
+ "results": {
+  "documented": {
+   "groupkfold_this_environment": {
+    "full_1024_mean_r2": 0.8256,
+    "prefix_64_mean_r2": 0.619,
+    "random_orthogonal_64_mean_r2_over_10_rotations_groupkfold": {
+     "mean": 0.6321,
+     "sd": 0.0343,
+     "min": 0.5742,
+     "max": 0.6904
+    }
+   },
+   "random_fold_assignments": {
+    "n": 100,
+    "full_1024_mean_r2": {
+     "mean": 0.8183,
+     "sd": 0.0183,
+     "min": 0.7051,
+     "max": 0.8477
+    },
+    "prefix_64_mean_r2": {
+     "mean": 0.6384,
+     "sd": 0.0269,
+     "min": 0.4829,
+     "max": 0.686
+    },
+    "prefix_minus_full": {
+     "mean": -0.1799,
+     "sd": 0.0175,
+     "min": -0.2222,
+     "max": -0.137
+    }
+   }
+  },
+  "training": {
+   "groupkfold_this_environment": {
+    "full_1024_mean_r2": 0.8378,
+    "prefix_64_mean_r2": 0.6372,
+    "random_orthogonal_64_mean_r2_over_10_rotations_groupkfold": {
+     "mean": 0.6548,
+     "sd": 0.0285,
+     "min": 0.6024,
+     "max": 0.6924
+    }
+   },
+   "random_fold_assignments": {
+    "n": 100,
+    "full_1024_mean_r2": {
+     "mean": 0.8298,
+     "sd": 0.0157,
+     "min": 0.7343,
+     "max": 0.8558
+    },
+    "prefix_64_mean_r2": {
+     "mean": 0.6371,
+     "sd": 0.03,
+     "min": 0.4646,
+     "max": 0.6818
+    },
+    "prefix_minus_full": {
+     "mean": -0.1927,
+     "sd": 0.022,
+     "min": -0.2698,
+     "max": -0.1557
+    }
+   }
+  }
+ },
+ "note": "random assignments split the same clusters into 5 folds of ~equal cluster counts; compare the sklearn GroupKFold values with the spread over random assignments",
+ "provenance": {
+  "script": "fold_sensitivity_nlcd.py",
+  "git_commit": "3deb4bf",
+  "git_dirty": true,
+  "args": {
+   "n_assign": 100,
+   "out": "fold_sensitivity_nlcd.json"
+  },
+  "python": "3.12.14",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "packages": {
+   "torch": "2.7.1",
+   "torchvision": "0.22.1",
+   "numpy": "2.5.5",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "pandas": "3.1.1",
+   "timm": "1.0.31",
+   "rasterio": "1.5.2",
+   "pystac-client": "0.9.1",
+   "planetary-computer": "1.0.0",
+   "odc-stac": null,
+   "torchgeo": null
+  },
+  "cuda_available": false,
+  "torch_cuda": "12.6",
+  "device": null,
+  "utc": "2026-11-17T23:52:49Z",
+  "git_commit_note": "run on a plain copy of the working tree at base commit 3deb4bf plus the uncommitted audit edits; not a git checkout"
+ }
+}

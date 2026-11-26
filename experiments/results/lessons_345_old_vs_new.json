@@ -1,0 +1,1001 @@
+{
+ "generated_by": "experiments/summarize_lessons_345.py",
+ "sources": {
+  "v15_old": "present",
+  "v15_new": "present",
+  "v15_training_order": "present",
+  "probe_old": "present",
+  "probe_new": "present"
+ },
+ "v15_clean_metrics": {
+  "pre_audit": {
+   "lesson2_expC": {
+    "eurosat_2x2_cls_4way_acc_built": {
+     "value": 0.4917,
+     "keys": "expC.../eurosat_2x2_compositional_binding/built_quadrant/cls_1024/acc_4way"
+    },
+    "eurosat_2x2_cls_4way_acc_water": {
+     "value": 0.4667,
+     "keys": ".../water_quadrant/cls_1024/acc_4way"
+    },
+    "eurosat_2x2_cls_4way_acc_mean_of_two": {
+     "value": 0.4792,
+     "keys": "mean of the two keys above"
+    },
+    "eurosat_2x2_zpatch_concat_4way_acc_built": {
+     "value": 1.0,
+     "keys": ".../built_quadrant/zpatch_concat_4096/acc_4way"
+    },
+    "eurosat_2x2_zpatch_concat_4way_acc_water": {
+     "value": 0.9958,
+     "keys": ".../water_quadrant/zpatch_concat_4096/acc_4way"
+    },
+    "within_chip_anomaly_r2_zpatch_aligned": {
+     "patch_ndvi": 0.9151,
+     "patch_ndwi": 0.8651,
+     "patch_swir_nir_index": 0.9032,
+     "patch_log_nir_texture": 0.8901
+    }
+   },
+   "lesson3": {
+    "var_first16_over_512_1024": {
+     "value": 7.979,
+     "keys": "expB_mrl_fossil_audit/variance_by_mrl_block/{0:16,512:1024}/cls_mean_var"
+    },
+    "var_first16_over_16_1024_mean_per_dim": {
+     "value": 7.63,
+     "keys": "same, weighted by block width"
+    },
+    "nlcd_full_1024_mean_r2": {
+     "value": 0.8392,
+     "keys": "expB.../exchangeability_by_d/1024/cls_prefix_mean_r2"
+    },
+    "nlcd_prefix64_mean_r2": {
+     "value": 0.6378,
+     "keys": ".../64/cls_prefix_mean_r2"
+    },
+    "nlcd_random64_mean_r2": {
+     "value": 0.6558,
+     "keys": ".../64/cls_random_mean_r2"
+    },
+    "nlcd_pca64_infold_mean_r2": {
+     "value": 0.8284,
+     "keys": ".../64/cls_infold_pca_mean_r2"
+    },
+    "nlcd_pca64_minus_prefix64": {
+     "value": 0.1906,
+     "keys": "difference of the two keys above"
+    },
+    "nlcd_prefix64_imp_ci95": {
+     "value": [
+      0.2883,
+      0.7464
+     ],
+     "keys": ".../64/cls_prefix_imp_ci95"
+    },
+    "nlcd_prefix64_can_ci95": {
+     "value": [
+      0.4508,
+      0.6908
+     ],
+     "keys": ".../64/cls_prefix_can_ci95"
+    },
+    "n_chips_nlcd": 223
+   },
+   "lesson5": {
+    "baseline_probe_mean_r2": {
+     "value": 0.8392,
+     "keys": "expD.../preprocessing_contracts/reference_metadata_boa_harmonized_um/matched_probe_mean_r2"
+    },
+    "wavelength_nm_instead_of_um_unchanged_probe_r2": {
+     "value": 0.1369,
+     "keys": ".../wavelength_nm_x1000_mismatch/unchanged_ref_probe_mean_r2"
+    },
+    "no_pb04_offset_unchanged_probe_r2": {
+     "value": 0.5494,
+     "keys": ".../unharmonized_pb04_plus1000_offset/unchanged_ref_probe_mean_r2"
+    },
+    "slc_off_22pct_dn0_probe_r2": {
+     "value": 0.0994,
+     "keys": "expD.../missing_pixel_cliff_and_rescue/22pct_slc_off/dn0_unchanged_probe_mean_r2"
+    },
+    "slc_off_22pct_scene_meanfill_probe_r2": {
+     "value": 0.656,
+     "keys": ".../22pct_slc_off/scene_meanfill_unchanged_probe_mean_r2"
+    },
+    "slc_off_22pct_global_meanfill_probe_r2": {
+     "value": 0.4362,
+     "keys": ".../22pct_slc_off/global_meanfill_unchanged_probe_mean_r2"
+    },
+    "slc_off_meanfill_gain_over_dn0": {
+     "value": 0.5566,
+     "keys": "difference of scene_meanfill and dn0 keys"
+    },
+    "jpeg2000_10to1_probe_r2": {
+     "value": 0.7552,
+     "keys": ".../jpeg2000_wavelet_compression/10to1/unchanged_probe_mean_r2"
+    },
+    "dn0_normalized_z_min": {
+     "value": -1.69,
+     "keys": ".../dn0_normalized_z_per_band"
+    },
+    "latlon_order": "documented (pre-audit file has no field)"
+   },
+   "issue22": {
+    "s1_vs_s2_mean_abs_cosine_stored_definition": 0.7358,
+    "all_definitions": null
+   }
+  },
+  "regenerated_documented_latlon_order": {
+   "lesson2_expC": {
+    "eurosat_2x2_cls_4way_acc_built": {
+     "value": 0.3792,
+     "keys": "expC.../eurosat_2x2_compositional_binding/built_quadrant/cls_1024/acc_4way"
+    },
+    "eurosat_2x2_cls_4way_acc_water": {
+     "value": 0.4583,
+     "keys": ".../water_quadrant/cls_1024/acc_4way"
+    },
+    "eurosat_2x2_cls_4way_acc_mean_of_two": {
+     "value": 0.4187,
+     "keys": "mean of the two keys above"
+    },
+    "eurosat_2x2_zpatch_concat_4way_acc_built": {
+     "value": 0.9875,
+     "keys": ".../built_quadrant/zpatch_concat_4096/acc_4way"
+    },
+    "eurosat_2x2_zpatch_concat_4way_acc_water": {
+     "value": 0.9917,
+     "keys": ".../water_quadrant/zpatch_concat_4096/acc_4way"
+    },
+    "within_chip_anomaly_r2_zpatch_aligned": {
+     "patch_ndvi": 0.9142,
+     "patch_ndwi": 0.8635,
+     "patch_swir_nir_index": 0.9035,
+     "patch_log_nir_texture": 0.888
+    }
+   },
+   "lesson3": {
+    "var_first16_over_512_1024": {
+     "value": 7.979,
+     "keys": "expB_mrl_fossil_audit/variance_by_mrl_block/{0:16,512:1024}/cls_mean_var"
+    },
+    "var_first16_over_16_1024_mean_per_dim": {
+     "value": 7.63,
+     "keys": "same, weighted by block width"
+    },
+    "nlcd_full_1024_mean_r2": {
+     "value": 0.8256,
+     "keys": "expB.../exchangeability_by_d/1024/cls_prefix_mean_r2"
+    },
+    "nlcd_prefix64_mean_r2": {
+     "value": 0.619,
+     "keys": ".../64/cls_prefix_mean_r2"
+    },
+    "nlcd_random64_mean_r2": {
+     "value": 0.6266,
+     "keys": ".../64/cls_random_mean_r2"
+    },
+    "nlcd_pca64_infold_mean_r2": {
+     "value": 0.8031,
+     "keys": ".../64/cls_infold_pca_mean_r2"
+    },
+    "nlcd_pca64_minus_prefix64": {
+     "value": 0.1841,
+     "keys": "difference of the two keys above"
+    },
+    "nlcd_prefix64_imp_ci95": {
+     "value": [
+      0.188,
+      0.6797
+     ],
+     "keys": ".../64/cls_prefix_imp_ci95"
+    },
+    "nlcd_prefix64_can_ci95": {
+     "value": [
+      0.5121,
+      0.7171
+     ],
+     "keys": ".../64/cls_prefix_can_ci95"
+    },
+    "n_chips_nlcd": 223
+   },
+   "lesson5": {
+    "baseline_probe_mean_r2": {
+     "value": 0.8256,
+     "keys": "expD.../preprocessing_contracts/reference_metadata_boa_harmonized_um/matched_probe_mean_r2"
+    },
+    "wavelength_nm_instead_of_um_unchanged_probe_r2": {
+     "value": 0.1194,
+     "keys": ".../wavelength_nm_x1000_mismatch/unchanged_ref_probe_mean_r2"
+    },
+    "no_pb04_offset_unchanged_probe_r2": {
+     "value": 0.5581,
+     "keys": ".../unharmonized_pb04_plus1000_offset/unchanged_ref_probe_mean_r2"
+    },
+    "slc_off_22pct_dn0_probe_r2": {
+     "value": 0.0662,
+     "keys": "expD.../missing_pixel_cliff_and_rescue/22pct_slc_off/dn0_unchanged_probe_mean_r2"
+    },
+    "slc_off_22pct_scene_meanfill_probe_r2": {
+     "value": 0.6768,
+     "keys": ".../22pct_slc_off/scene_meanfill_unchanged_probe_mean_r2"
+    },
+    "slc_off_22pct_global_meanfill_probe_r2": {
+     "value": 0.4555,
+     "keys": ".../22pct_slc_off/global_meanfill_unchanged_probe_mean_r2"
+    },
+    "slc_off_meanfill_gain_over_dn0": {
+     "value": 0.6106,
+     "keys": "difference of scene_meanfill and dn0 keys"
+    },
+    "jpeg2000_10to1_probe_r2": {
+     "value": 0.7475,
+     "keys": ".../jpeg2000_wavelet_compression/10to1/unchanged_probe_mean_r2"
+    },
+    "dn0_normalized_z_min": {
+     "value": -1.69,
+     "keys": ".../dn0_normalized_z_per_band"
+    },
+    "latlon_order": "documented"
+   },
+   "issue22": {
+    "s1_vs_s2_mean_abs_cosine_stored_definition": 0.7358,
+    "all_definitions": {
+     "stored_definition_uncentered_each_set_in_own_context": {
+      "mean_abs_cos": 0.7358,
+      "mean_signed_cos": 0.7358,
+      "max_abs_cos": 0.9033
+     },
+     "uncentered_joint_12band_context": {
+      "mean_abs_cos": 0.7946,
+      "mean_signed_cos": 0.7946,
+      "max_abs_cos": 0.9429
+     },
+     "centred_each_set_on_own_band_mean": {
+      "mean_abs_cos": 0.3876,
+      "mean_signed_cos": 0.0,
+      "max_abs_cos": 0.7427
+     },
+     "centred_joint_context_on_joint_band_mean": {
+      "mean_abs_cos": 0.2718,
+      "mean_signed_cos": -0.2252,
+      "max_abs_cos": 0.466
+     },
+     "both_centred_on_S2_band_mean": {
+      "mean_abs_cos": 0.2662,
+      "mean_signed_cos": -0.0599,
+      "max_abs_cos": 0.7334
+     },
+     "both_centred_on_EMIT285_band_mean": {
+      "mean_abs_cos": 0.3111,
+      "mean_signed_cos": 0.016,
+      "max_abs_cos": 0.6417
+     },
+     "row_centred_pearson_over_65536_weights": {
+      "mean_abs_cos": 0.6498,
+      "mean_signed_cos": 0.6498,
+      "max_abs_cos": 0.8689
+     },
+     "raw_sincos_wavelength_encodings": {
+      "mean_abs_cos": 0.8347,
+      "mean_signed_cos": 0.8347,
+      "max_abs_cos": 0.9513
+     },
+     "s2_vs_s2_within_optical_uncentred_offdiag_mean_abs": 0.6549,
+     "random_gaussian_65536d_baseline_mean_abs": 0.0041,
+     "s1_energy_fraction_inside_span_of_s2_filters": [
+      0.9855,
+      0.9729
+     ],
+     "definition_note": "No definition tested yields 0.044. The stored code implements the first entry (0.7358). Random 65,536-d vectors give ~0.004, so 0.04 would be near-orthogonal; the real S1 filters lie almost entirely inside the span of the S2 filters."
+    }
+   }
+  },
+  "regenerated_training_latlon_order": {
+   "lesson2_expC": {
+    "eurosat_2x2_cls_4way_acc_built": {
+     "value": 0.3792,
+     "keys": "expC.../eurosat_2x2_compositional_binding/built_quadrant/cls_1024/acc_4way"
+    },
+    "eurosat_2x2_cls_4way_acc_water": {
+     "value": 0.4583,
+     "keys": ".../water_quadrant/cls_1024/acc_4way"
+    },
+    "eurosat_2x2_cls_4way_acc_mean_of_two": {
+     "value": 0.4187,
+     "keys": "mean of the two keys above"
+    },
+    "eurosat_2x2_zpatch_concat_4way_acc_built": {
+     "value": 0.9875,
+     "keys": ".../built_quadrant/zpatch_concat_4096/acc_4way"
+    },
+    "eurosat_2x2_zpatch_concat_4way_acc_water": {
+     "value": 0.9917,
+     "keys": ".../water_quadrant/zpatch_concat_4096/acc_4way"
+    },
+    "within_chip_anomaly_r2_zpatch_aligned": {
+     "patch_ndvi": 0.9148,
+     "patch_ndwi": 0.8654,
+     "patch_swir_nir_index": 0.904,
+     "patch_log_nir_texture": 0.889
+    }
+   },
+   "lesson3": {
+    "var_first16_over_512_1024": {
+     "value": 8.002,
+     "keys": "expB_mrl_fossil_audit/variance_by_mrl_block/{0:16,512:1024}/cls_mean_var"
+    },
+    "var_first16_over_16_1024_mean_per_dim": {
+     "value": 7.67,
+     "keys": "same, weighted by block width"
+    },
+    "nlcd_full_1024_mean_r2": {
+     "value": 0.8378,
+     "keys": "expB.../exchangeability_by_d/1024/cls_prefix_mean_r2"
+    },
+    "nlcd_prefix64_mean_r2": {
+     "value": 0.6372,
+     "keys": ".../64/cls_prefix_mean_r2"
+    },
+    "nlcd_random64_mean_r2": {
+     "value": 0.6464,
+     "keys": ".../64/cls_random_mean_r2"
+    },
+    "nlcd_pca64_infold_mean_r2": {
+     "value": 0.8088,
+     "keys": ".../64/cls_infold_pca_mean_r2"
+    },
+    "nlcd_pca64_minus_prefix64": {
+     "value": 0.1716,
+     "keys": "difference of the two keys above"
+    },
+    "nlcd_prefix64_imp_ci95": {
+     "value": [
+      0.2408,
+      0.7105
+     ],
+     "keys": ".../64/cls_prefix_imp_ci95"
+    },
+    "nlcd_prefix64_can_ci95": {
+     "value": [
+      0.5283,
+      0.7175
+     ],
+     "keys": ".../64/cls_prefix_can_ci95"
+    },
+    "n_chips_nlcd": 223
+   },
+   "lesson5": {
+    "baseline_probe_mean_r2": {
+     "value": 0.8378,
+     "keys": "expD.../preprocessing_contracts/reference_metadata_boa_harmonized_um/matched_probe_mean_r2"
+    },
+    "wavelength_nm_instead_of_um_unchanged_probe_r2": {
+     "value": -0.0325,
+     "keys": ".../wavelength_nm_x1000_mismatch/unchanged_ref_probe_mean_r2"
+    },
+    "no_pb04_offset_unchanged_probe_r2": {
+     "value": 0.525,
+     "keys": ".../unharmonized_pb04_plus1000_offset/unchanged_ref_probe_mean_r2"
+    },
+    "slc_off_22pct_dn0_probe_r2": {
+     "value": 0.2215,
+     "keys": "expD.../missing_pixel_cliff_and_rescue/22pct_slc_off/dn0_unchanged_probe_mean_r2"
+    },
+    "slc_off_22pct_scene_meanfill_probe_r2": {
+     "value": 0.6512,
+     "keys": ".../22pct_slc_off/scene_meanfill_unchanged_probe_mean_r2"
+    },
+    "slc_off_22pct_global_meanfill_probe_r2": {
+     "value": 0.4839,
+     "keys": ".../22pct_slc_off/global_meanfill_unchanged_probe_mean_r2"
+    },
+    "slc_off_meanfill_gain_over_dn0": {
+     "value": 0.4297,
+     "keys": "difference of scene_meanfill and dn0 keys"
+    },
+    "jpeg2000_10to1_probe_r2": {
+     "value": 0.7476,
+     "keys": ".../jpeg2000_wavelet_compression/10to1/unchanged_probe_mean_r2"
+    },
+    "dn0_normalized_z_min": {
+     "value": -1.69,
+     "keys": ".../dn0_normalized_z_per_band"
+    },
+    "latlon_order": "training"
+   },
+   "issue22": {
+    "s1_vs_s2_mean_abs_cosine_stored_definition": 0.7358,
+    "all_definitions": {
+     "stored_definition_uncentered_each_set_in_own_context": {
+      "mean_abs_cos": 0.7358,
+      "mean_signed_cos": 0.7358,
+      "max_abs_cos": 0.9033
+     },
+     "uncentered_joint_12band_context": {
+      "mean_abs_cos": 0.7946,
+      "mean_signed_cos": 0.7946,
+      "max_abs_cos": 0.9429
+     },
+     "centred_each_set_on_own_band_mean": {
+      "mean_abs_cos": 0.3876,
+      "mean_signed_cos": 0.0,
+      "max_abs_cos": 0.7427
+     },
+     "centred_joint_context_on_joint_band_mean": {
+      "mean_abs_cos": 0.2718,
+      "mean_signed_cos": -0.2252,
+      "max_abs_cos": 0.466
+     },
+     "both_centred_on_S2_band_mean": {
+      "mean_abs_cos": 0.2662,
+      "mean_signed_cos": -0.0599,
+      "max_abs_cos": 0.7334
+     },
+     "both_centred_on_EMIT285_band_mean": {
+      "mean_abs_cos": 0.3111,
+      "mean_signed_cos": 0.016,
+      "max_abs_cos": 0.6417
+     },
+     "row_centred_pearson_over_65536_weights": {
+      "mean_abs_cos": 0.6498,
+      "mean_signed_cos": 0.6498,
+      "max_abs_cos": 0.8689
+     },
+     "raw_sincos_wavelength_encodings": {
+      "mean_abs_cos": 0.8347,
+      "mean_signed_cos": 0.8347,
+      "max_abs_cos": 0.9513
+     },
+     "s2_vs_s2_within_optical_uncentred_offdiag_mean_abs": 0.6549,
+     "random_gaussian_65536d_baseline_mean_abs": 0.0041,
+     "s1_energy_fraction_inside_span_of_s2_filters": [
+      0.9855,
+      0.9729
+     ],
+     "definition_note": "No definition tested yields 0.044. The stored code implements the first entry (0.7358). Random 65,536-d vectors give ~0.004, so 0.04 would be near-orthogonal; the real S1 filters lie almost entirely inside the span of the S2 filters."
+    }
+   }
+  }
+ },
+ "probe_and_lsvm": {
+  "pre_audit": {
+   "lesson4": {
+    "eurosat_f1_budget_5": {
+     "lsvm": 0.7828,
+     "logistic": 0.7848,
+     "mlp_2layer": 0.7861,
+     "random_forest": 0.7677,
+     "hist_gbdt": 0.734,
+     "knn_cosine": 0.7367,
+     "centroid": 0.7826,
+     "umap2d_knn": 0.5799,
+     "umap2d_logistic": 0.476
+    },
+    "eurosat_f1_budget_10": {
+     "lsvm": 0.8679,
+     "logistic": 0.856,
+     "mlp_2layer": 0.8458,
+     "random_forest": 0.8268,
+     "hist_gbdt": 0.7823,
+     "knn_cosine": 0.7936,
+     "centroid": 0.82,
+     "umap2d_knn": 0.6056,
+     "umap2d_logistic": 0.4951
+    },
+    "eurosat_f1_budget_50": {
+     "lsvm": 0.9186,
+     "logistic": 0.91,
+     "mlp_2layer": 0.9145,
+     "random_forest": 0.874,
+     "hist_gbdt": 0.8679,
+     "knn_cosine": 0.8644,
+     "centroid": 0.8379,
+     "umap2d_knn": 0.8001,
+     "umap2d_logistic": 0.7312
+    },
+    "eurosat_f1_budget_200": {
+     "lsvm": 0.9413,
+     "logistic": 0.9314,
+     "mlp_2layer": 0.9388,
+     "random_forest": 0.9041,
+     "hist_gbdt": 0.9137,
+     "knn_cosine": 0.8947,
+     "centroid": 0.8531,
+     "umap2d_knn": 0.8566,
+     "umap2d_logistic": 0.8368
+    },
+    "parametric_probe_f1_range_50_to_200_labels": {
+     "min": {
+      "method": "logistic",
+      "labels_per_class": "50",
+      "f1": 0.91
+     },
+     "max": {
+      "method": "lsvm",
+      "labels_per_class": "200",
+      "f1": 0.9413
+     }
+    },
+    "lsvm_minus_other_f1_points": {
+     "random_forest": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.0446,
+       "200": 0.0372
+      },
+      "min": 0.0372,
+      "max": 0.0446
+     },
+     "hist_gbdt": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.0507,
+       "200": 0.0276
+      },
+      "min": 0.0276,
+      "max": 0.0507
+     },
+     "knn_cosine": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.0542,
+       "200": 0.0466
+      },
+      "min": 0.0466,
+      "max": 0.0542
+     },
+     "centroid": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.0807,
+       "200": 0.0882
+      },
+      "min": 0.0807,
+      "max": 0.0882
+     },
+     "umap2d_knn": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.1185,
+       "200": 0.0847
+      },
+      "min": 0.0847,
+      "max": 0.1185
+     }
+    },
+    "paired_block_bootstrap_contrasts_seed0": null,
+    "concept_search_k25_30pct_noise_ap": {
+     "lsvm_reg_c01": 0.8866,
+     "lsvm_cv": 0.8888,
+     "logistic_cv": 0.8877,
+     "centroid_diff": 0.8601,
+     "max_sim_1nn": 0.3703,
+     "mlp_2layer": 0.911,
+     "random_forest": 0.8959,
+     "hist_gbdt": 0.8208
+    },
+    "concept_search_k25_noise_by_level_maxsim_ap": {
+     "noise_0pct": 0.6844,
+     "noise_15pct": 0.4952,
+     "noise_30pct": 0.3703
+    },
+    "nlcd_canopy_r2": {
+     "ridge_linear": 0.853,
+     "linear_svr": 0.8515,
+     "knn_cosine": 0.771,
+     "mlp_2layer": 0.8744,
+     "random_forest": 0.7388,
+     "hist_gbdt": 0.7316,
+     "umap2d_knn": 0.6713
+    },
+    "nlcd_impervious_r2": {
+     "ridge_linear": 0.8226,
+     "linear_svr": 0.8131,
+     "knn_cosine": 0.7854,
+     "mlp_2layer": 0.8235,
+     "random_forest": 0.6866,
+     "hist_gbdt": 0.6901,
+     "umap2d_knn": 0.725
+    },
+    "nlcd_n_scenes": 223,
+    "p4_latlon_order": "training (pre-audit file has no field)"
+   }
+  },
+  "regenerated": {
+   "lesson4": {
+    "eurosat_f1_budget_5": {
+     "lsvm": 0.7827,
+     "logistic": 0.7848,
+     "mlp_2layer": 0.7865,
+     "random_forest": 0.7636,
+     "hist_gbdt": 0.737,
+     "knn_cosine": 0.7366,
+     "centroid": 0.7827,
+     "umap2d_knn": 0.5401,
+     "umap2d_logistic": 0.4411
+    },
+    "eurosat_f1_budget_10": {
+     "lsvm": 0.8678,
+     "logistic": 0.8566,
+     "mlp_2layer": 0.8459,
+     "random_forest": 0.823,
+     "hist_gbdt": 0.7803,
+     "knn_cosine": 0.7936,
+     "centroid": 0.8201,
+     "umap2d_knn": 0.5902,
+     "umap2d_logistic": 0.4608
+    },
+    "eurosat_f1_budget_50": {
+     "lsvm": 0.9187,
+     "logistic": 0.9104,
+     "mlp_2layer": 0.9144,
+     "random_forest": 0.8697,
+     "hist_gbdt": 0.8725,
+     "knn_cosine": 0.8645,
+     "centroid": 0.8378,
+     "umap2d_knn": 0.7926,
+     "umap2d_logistic": 0.7208
+    },
+    "eurosat_f1_budget_200": {
+     "lsvm": 0.9414,
+     "logistic": 0.9328,
+     "mlp_2layer": 0.9385,
+     "random_forest": 0.9011,
+     "hist_gbdt": 0.912,
+     "knn_cosine": 0.8946,
+     "centroid": 0.8531,
+     "umap2d_knn": 0.8619,
+     "umap2d_logistic": 0.8376
+    },
+    "parametric_probe_f1_range_50_to_200_labels": {
+     "min": {
+      "method": "logistic",
+      "labels_per_class": "50",
+      "f1": 0.9104
+     },
+     "max": {
+      "method": "lsvm",
+      "labels_per_class": "200",
+      "f1": 0.9414
+     }
+    },
+    "lsvm_minus_other_f1_points": {
+     "random_forest": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.049,
+       "200": 0.0403
+      },
+      "min": 0.0403,
+      "max": 0.049
+     },
+     "hist_gbdt": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.0462,
+       "200": 0.0294
+      },
+      "min": 0.0294,
+      "max": 0.0462
+     },
+     "knn_cosine": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.0542,
+       "200": 0.0468
+      },
+      "min": 0.0468,
+      "max": 0.0542
+     },
+     "centroid": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.0809,
+       "200": 0.0883
+      },
+      "min": 0.0809,
+      "max": 0.0883
+     },
+     "umap2d_knn": {
+      "lsvm_minus_other_by_budget": {
+       "50": 0.1261,
+       "200": 0.0795
+      },
+      "min": 0.0795,
+      "max": 0.1261
+     }
+    },
+    "paired_block_bootstrap_contrasts_seed0": {
+     "5": {
+      "lsvm_minus_logistic": {
+       "point": -0.0517,
+       "ci95": [
+        -0.0817,
+        -0.0235
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_mlp_2layer": {
+       "point": -0.0623,
+       "ci95": [
+        -0.1147,
+        -0.0024
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_random_forest": {
+       "point": -0.0225,
+       "ci95": [
+        -0.047,
+        0.0034
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_hist_gbdt": {
+       "point": -0.0066,
+       "ci95": [
+        -0.0353,
+        0.0249
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_knn_cosine": {
+       "point": 0.0114,
+       "ci95": [
+        -0.0415,
+        0.0538
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_centroid": {
+       "point": -0.0486,
+       "ci95": [
+        -0.0859,
+        -0.0128
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_umap2d_knn": {
+       "point": 0.2224,
+       "ci95": [
+        0.1547,
+        0.2704
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      }
+     },
+     "10": {
+      "lsvm_minus_logistic": {
+       "point": 0.008,
+       "ci95": [
+        -0.0149,
+        0.0243
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_mlp_2layer": {
+       "point": 0.0044,
+       "ci95": [
+        -0.0072,
+        0.0176
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_random_forest": {
+       "point": 0.0311,
+       "ci95": [
+        0.0011,
+        0.0565
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_hist_gbdt": {
+       "point": 0.0906,
+       "ci95": [
+        0.0593,
+        0.1195
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_knn_cosine": {
+       "point": 0.0767,
+       "ci95": [
+        0.0389,
+        0.1164
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_centroid": {
+       "point": 0.0407,
+       "ci95": [
+        -0.0042,
+        0.0758
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_umap2d_knn": {
+       "point": 0.2631,
+       "ci95": [
+        0.217,
+        0.2968
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      }
+     },
+     "50": {
+      "lsvm_minus_logistic": {
+       "point": 0.0036,
+       "ci95": [
+        -0.0043,
+        0.0116
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_mlp_2layer": {
+       "point": 0.0002,
+       "ci95": [
+        -0.0072,
+        0.0088
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_random_forest": {
+       "point": 0.0532,
+       "ci95": [
+        0.0352,
+        0.0768
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_hist_gbdt": {
+       "point": 0.0498,
+       "ci95": [
+        0.0413,
+        0.0658
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_knn_cosine": {
+       "point": 0.0623,
+       "ci95": [
+        0.0466,
+        0.0843
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_centroid": {
+       "point": 0.0786,
+       "ci95": [
+        0.0398,
+        0.1185
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_umap2d_knn": {
+       "point": 0.1508,
+       "ci95": [
+        0.1246,
+        0.1804
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      }
+     },
+     "200": {
+      "lsvm_minus_logistic": {
+       "point": 0.0123,
+       "ci95": [
+        0.0054,
+        0.024
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_mlp_2layer": {
+       "point": 0.0042,
+       "ci95": [
+        -0.0029,
+        0.0124
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_random_forest": {
+       "point": 0.0503,
+       "ci95": [
+        0.0358,
+        0.0725
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_hist_gbdt": {
+       "point": 0.0363,
+       "ci95": [
+        0.026,
+        0.0508
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_knn_cosine": {
+       "point": 0.048,
+       "ci95": [
+        0.0266,
+        0.0706
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_centroid": {
+       "point": 0.0962,
+       "ci95": [
+        0.0678,
+        0.135
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      },
+      "lsvm_minus_umap2d_knn": {
+       "point": 0.0765,
+       "ci95": [
+        0.0563,
+        0.1109
+       ],
+       "n_boot": 500,
+       "unit": "spatial block, seed-0 predictions"
+      }
+     }
+    },
+    "concept_search_k25_30pct_noise_ap": {
+     "lsvm_reg_c01": 0.8866,
+     "lsvm_cv": 0.8894,
+     "logistic_cv": 0.8881,
+     "centroid_diff": 0.8601,
+     "max_sim_1nn": 0.3703,
+     "mlp_2layer": 0.911,
+     "random_forest": 0.892,
+     "hist_gbdt": 0.8083
+    },
+    "concept_search_k25_noise_by_level_maxsim_ap": {
+     "noise_0pct": 0.6844,
+     "noise_15pct": 0.4952,
+     "noise_30pct": 0.3703
+    },
+    "nlcd_canopy_r2": {
+     "ridge_linear": 0.8531,
+     "linear_svr": 0.8515,
+     "knn_cosine": 0.7705,
+     "mlp_2layer": 0.8745,
+     "random_forest": 0.7659,
+     "hist_gbdt": 0.7546,
+     "umap2d_knn": 0.6212
+    },
+    "nlcd_impervious_r2": {
+     "ridge_linear": 0.8226,
+     "linear_svr": 0.8131,
+     "knn_cosine": 0.7854,
+     "mlp_2layer": 0.8235,
+     "random_forest": 0.6958,
+     "hist_gbdt": 0.7049,
+     "umap2d_knn": 0.712
+    },
+    "nlcd_n_scenes": 223,
+    "p4_latlon_order": "training"
+   }
+  }
+ }
+}

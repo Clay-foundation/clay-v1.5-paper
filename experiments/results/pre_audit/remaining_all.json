@@ -1,0 +1,39 @@
+{
+  "eurosat_s1_olmo_v13": {
+    "oa": 86.93,
+    "macro_f1": 86.48,
+    "val_oa": 87.72,
+    "lsvm_oa": 87.44
+  },
+  "eurosat_s1_panopticon": {
+    "oa": 88.67,
+    "macro_f1": 88.21,
+    "val_oa": 89.5,
+    "best_C": 0.01,
+    "lsvm_oa": 88.63,
+    "lsvm_macro_f1": 88.12
+  },
+  "m_cashew_dofa": {
+    "lp_miou": 13.47,
+    "ft_miou": 78.24
+  },
+  "m_bigearthnet_dofa": {
+    "lp_cls": 57.38,
+    "lp_mean": 59.0,
+    "ft_f1": 69.02
+  },
+  "m-brick-kiln_dofa_ft": 98.2,
+  "m-eurosat_dofa_ft": 98.2,
+  "m-so2sat_dofa_ft": 63.59,
+  "m-forestnet_dofa_ft": 54.18,
+  "sen1floods11_s2_dofa_frozen_upernet": 77.3,
+  "sen1floods11_s2_olmo_frozen_upernet": 80.5,
+  "sen1floods11_s2_olmo_finetune_upernet": 81.8,
+  "sen1floods11_s2_prithvi_frozen_upernet": 80.8,
+  "sen1floods11_s2_dinov2_frozen_upernet": 53.4,
+  "sen1floods11_s2_dinov2_finetune_upernet": 60.6,
+  "sen1floods11_s1_dofa": {
+    "lp_miou": 64.6,
+    "ft_miou": 78.4
+  }
+}

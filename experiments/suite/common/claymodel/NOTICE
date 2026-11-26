@@ -1,0 +1,13 @@
+This directory vendors the encoder code path of Clay-foundation/model
+(https://github.com/Clay-foundation/model), commit f14e698f3c237cabf8d28dec669a362d66625381,
+which is licensed under the Apache License, Version 2.0 (LICENSE here is the upstream copy).
+backbone.py also derives from lucidrains/vit-pytorch (MIT), as stated in its docstring.
+
+Files: backbone.py, factory.py, model.py, utils.py, __init__.py.
+Local changes versus upstream:
+  * Every file carries a short header (copyright, licence, upstream commit, modification note).
+    The header ends at the marker line recorded in MANIFEST.json. Stripping it reproduces
+    the upstream bytes exactly for backbone.py, factory.py, model.py, utils.py.
+  * __init__.py is empty (upstream imports training modules that are not vendored).
+No other file was changed. MANIFEST.json holds the upstream and vendored SHA-256 of each file;
+verify_vendored.py checks them (and optionally an upstream checkout).

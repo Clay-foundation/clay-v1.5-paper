@@ -1,0 +1,75 @@
+{
+ "device": "cpu",
+ "checkpoint": {
+  "ckpt": "checkpoints/v1.5/clay-v1.5.ckpt",
+  "sha256": "21432069250b9b3f9a65ffd0071c5ad56b793247285ab0604edf7f531d4798d0",
+  "tensors": 265,
+  "params": 311442944,
+  "load_s": 6.7,
+  "source": "Clay-foundation/model@f14e698f3c237cabf8d28dec669a362d66625381",
+  "torch": "2.5.1+cu124"
+ },
+ "clay_load_s": 7.4,
+ "n_chips": 16,
+ "stac_item": "S2A_MSIL2A_20230827T184921_R113_T10SEH_20241024T140931",
+ "clay_shapes": {
+  "cls": [
+   16,
+   1024
+  ],
+  "mean": [
+   16,
+   1024
+  ],
+  "patches": [
+   16,
+   32,
+   32,
+   1024
+  ]
+ },
+ "dino_shape": [
+  16,
+  1024
+ ],
+ "diag_mean_cos": 0.871665358543396,
+ "offdiag_mean_cos": 0.7181488275527954,
+ "top1_match": 0.5,
+ "clay_embed_s": 29.5,
+ "provenance": {
+  "script": "smoke_test.py",
+  "git_commit": "3deb4bf40541d3c55f9e971f3cb3fa574073316e+uncommitted (run from a copy without .git)",
+  "git_dirty": true,
+  "args": {
+   "ckpt": "checkpoints/v1.5/clay-v1.5.ckpt",
+   "device": "cpu",
+   "out": "experiments/results/smoke_test.json",
+   "n_chips": 16,
+   "dino_size": 518,
+   "skip_stac": false,
+   "stac_item": "S2A_MSIL2A_20230827T184921_R113_T10SEH_20241024T140931"
+  },
+  "python": "3.12.14",
+  "platform": "Linux-7.0.0-42-generic-x86_64",
+  "packages": {
+   "torch": "2.5.1",
+   "torchvision": "0.20.1",
+   "numpy": "1.26.4",
+   "scipy": "1.17.1",
+   "scikit-learn": "1.9.1",
+   "pandas": "2.3.3",
+   "timm": "1.0.25",
+   "rasterio": "1.4.4",
+   "pystac-client": "0.9.1",
+   "planetary-computer": "1.0.0",
+   "odc-stac": "0.5.3",
+   "torchgeo": "0.7.0"
+  },
+  "cuda_available": false,
+  "torch_cuda": "12.4",
+  "device": null,
+  "utc": "2026-11-17T21:31:04Z",
+  "path_scrub_note": "absolute paths were replaced by their repo-relative defaults after the run"
+ },
+ "matches_published_0.87_0.72": true
+}

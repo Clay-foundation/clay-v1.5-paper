@@ -1,0 +1,74 @@
+{
+  "cells": {
+    "mados/LP": {
+      "table2_row": "MADOS",
+      "model": "dofa_l",
+      "cell": "LP",
+      "status": "rerun_here",
+      "metric": "test mIoU (%) over the 15 labelled classes with union>0 (unlabelled=ignored)",
+      "value": 56.52,
+      "readout": "final-normed patch tokens (14x14 on the 224 px resized tile), 1x1 linear head, bilinear upsampling to 80 px",
+      "head": "multinomial linear, val-selected C (same code as the Clay cell)",
+      "seeds": "deterministic (fixed subsample seed 42)",
+      "split_sizes_tiles": [
+        2657,
+        1186,
+        1311
+      ],
+      "details": {
+        "miou": 56.52,
+        "val_miou": 57.2,
+        "best_C": 10.0
+      },
+      "input": {
+        "bands": "10 S2 bands as Clay",
+        "wavelengths_um": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "resize_px": 224,
+        "normalisation": "train-split per-band z-score"
+      },
+      "caveat": "same tiles/probe as the repo's Clay MADOS LP (own tile preparation of the Zenodo release); not a replication of third-party numbers",
+      "data": "https://zenodo.org/records/10664073/files/MADOS.zip?download=1",
+      "provenance": {
+        "script": "run_dofa_missing_cells.py",
+        "script_sha256": "67c14c3110af531ec18ca0f36b08f1cf31c80c3a13c30b3fd54103dc99fad4af",
+        "git_commit": "unknown",
+        "argv": [
+          "--cells",
+          "lp_mados,ft_mados",
+          "--seeds",
+          "0,1,2",
+          "--epochs",
+          "20",
+          "--out",
+          "~/clay-paper-audit/dofa-cells/out/dofa_missing_cells.json"
+        ],
+        "utc_timestamp": "2026-11-18T09:01:13Z",
+        "packages": {
+          "torch": "2.5.1+cu124",
+          "torchgeo": "0.7.0",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.9.1",
+          "timm": "1.0.25",
+          "h5py": "3.16.0",
+          "rasterio": "1.4.4",
+          "olmoearth_pretrain": "n/a"
+        },
+        "python": "3.11.18",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "rsb_script_sha256": "5a9fed86bf2acccff540389f18b4004e1e06e8c0fbb7c66631b892173112d328",
+        "rcm_script_sha256": "5fb2c9dfa35aad29c8d331ea35118da1f435b30880ea3d57eda50872835378cc"
+      }
+    }
+  }
+}

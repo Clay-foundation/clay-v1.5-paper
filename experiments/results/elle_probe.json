@@ -1,0 +1,119 @@
+{
+ "n_chips": 3000,
+ "n_blocks": 1908,
+ "latlon_order": "training",
+ "loss_unmasked": {
+  "mean": 0.7457846486816804,
+  "sd": 0.7135654364493201
+ },
+ "loss_masked75": {
+  "mean": 0.34560460708662866,
+  "sd": 0.3083053147362209
+ },
+ "cv": "5-fold GroupKFold over 100 km blocks; Ridge alpha chosen by inner RidgeCV on the training folds only",
+ "unmasked_l1": {
+  "cls_ridge": {
+   "pearson_r": 0.9955072344645268,
+   "pearson_r_ci95": [
+    0.9946601814091129,
+    0.9961613452661569
+   ],
+   "r2": 0.9910256896460832,
+   "spearman": 0.9503339956982587
+  },
+  "mean_patch_ridge": {
+   "pearson_r": 0.9967167989186527,
+   "pearson_r_ci95": [
+    0.9960874296345955,
+    0.9971880923313657
+   ],
+   "r2": 0.9934436849135777,
+   "spearman": 0.9632761491377138
+  },
+  "band_stats_ridge": {
+   "pearson_r": 0.9777668117499246,
+   "pearson_r_ci95": [
+    0.9747054768062008,
+    0.980863657256762
+   ],
+   "r2": 0.9560267561827768,
+   "spearman": 0.7476883676040061
+  }
+ },
+ "masked75_l1_fixed_seed": {
+  "cls_ridge": {
+   "pearson_r": 0.8481559257723095,
+   "pearson_r_ci95": [
+    0.8212459003002706,
+    0.8726782257595435
+   ],
+   "r2": 0.719298067586703,
+   "spearman": 0.7871119519887847
+  },
+  "mean_patch_ridge": {
+   "pearson_r": 0.8400347800997768,
+   "pearson_r_ci95": [
+    0.8136064973834318,
+    0.8624812285968714
+   ],
+   "r2": 0.7051734920414109,
+   "spearman": 0.7552124411075171
+  },
+  "band_stats_ridge": {
+   "pearson_r": 0.7633217909622236,
+   "pearson_r_ci95": [
+    0.737518493238071,
+    0.7859997096007744
+   ],
+   "r2": 0.5826096745131837,
+   "spearman": 0.5681246402991961
+  }
+ },
+ "correlation_between_targets": 0.685015656990176,
+ "latency_per_chip_seconds": {
+  "folded_dot_product_batched_float32": 1.2446547491514746e-05,
+  "sklearn_predict_batched": 2.7233575034188108e-05,
+  "sklearn_predict_single_vector": 0.00018212070979643614,
+  "clay_encoder_forward_gpu_per_chip": 0.06674002477678005,
+  "clay_decoder_forward_gpu_per_chip": 0.027018074263314096,
+  "note": "the probe cost excludes obtaining the CLS token (already in the catalogue); the encoder+decoder figures are what the probe avoids when the decoder pass is skipped",
+  "device": "NVIDIA GeForce RTX 4090"
+ },
+ "probe_check_dot_equals_predict_max_abs_diff": 3.552713678800501e-15,
+ "provenance": {
+  "script": "elle_probe.py",
+  "git_commit": "3deb4bf",
+  "git_dirty": true,
+  "args": {
+   "chips": "<abs>/s2",
+   "manifest": "repo/experiments/suite/E2_tokens/manifest.csv",
+   "ckpt": "<abs>/clay-v1.5.ckpt",
+   "out": "runs/elle/elle_probe.json",
+   "n": 3000,
+   "batch": 16,
+   "latlon_order": "training",
+   "seed": 42
+  },
+  "python": "3.12.14",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "packages": {
+   "torch": "2.7.1",
+   "torchvision": "0.22.1",
+   "numpy": "2.5.5",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "pandas": "3.1.1",
+   "timm": "1.0.31",
+   "rasterio": "1.5.2",
+   "pystac-client": "0.9.1",
+   "planetary-computer": "1.0.0",
+   "odc-stac": null,
+   "torchgeo": null
+  },
+  "cuda_available": true,
+  "torch_cuda": "12.6",
+  "device": "NVIDIA GeForce RTX 4090",
+  "utc": "2026-11-17T22:14:58Z",
+  "git_commit_note": "run on a plain copy of the working tree at base commit 3deb4bf plus the uncommitted audit edits; not a git checkout"
+ }
+}

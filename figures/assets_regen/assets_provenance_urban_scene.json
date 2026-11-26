@@ -1,0 +1,64 @@
+{
+  "stac_item_id": "ca_m_3211723_nw_11_060_20220425",
+  "collection": "naip",
+  "datetime": "2022-04-25T16:00:00+00:00",
+  "bbox": [
+    -117.252315,
+    32.685569,
+    -117.185246,
+    32.751933
+  ],
+  "gsd_m": 1.0,
+  "licence": "Public domain (USDA NAIP, US Government work)",
+  "centre_lonlat": [
+    -117.24,
+    32.7
+  ],
+  "model": "Clay v1.5",
+  "ckpt_sha256": "21432069250b9b3f9a65ffd0071c5ad56b793247285ab0604edf7f531d4798d0",
+  "mask_ratio": 0.75,
+  "seed": 0,
+  "encoder_load": "<All keys matched successfully>",
+  "decoder_load": "<All keys matched successfully>",
+  "masked_patch_l1_normalised": 0.657019853591919,
+  "baseline_masked_l1_predict_dataset_mean": 0.7813822627067566,
+  "unmasked_patch_l1_normalised": 1.176069736480713,
+  "masked_patches": 768,
+  "total_patches": 1024,
+  "display": "false colour NIR,R,G; 2-98 percentile stretch computed on the input, applied to both; 128x128 bilinear",
+  "note": "Prediction image = decoder output on the 768 masked patches, input pixels on the 256 visible ones. Default scene was picked by eye as a clear example; a second scene (urban, --lon -117.24 --lat 32.70) reconstructs much worse (masked L1 0.657 vs 0.781 for predicting the dataset mean) and is reported in the audit log. The committed strip assets (asset_strip_*.png) are NOT regenerated here.",
+  "provenance": {
+    "script": "make_assets.py",
+    "git_commit": "unavailable",
+    "git_dirty": true,
+    "args": {
+      "ckpt": "clay-v1.5.ckpt",
+      "out_dir": "assets_regen_urban",
+      "lon": -117.24,
+      "lat": 32.7,
+      "year": 2022,
+      "seed": 0,
+      "device": "cuda"
+    },
+    "python": "3.12.16",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "packages": {
+      "torch": "2.7.1",
+      "torchvision": "0.22.1",
+      "numpy": "2.3.1",
+      "scipy": "1.16.0",
+      "scikit-learn": "1.9.1",
+      "pandas": "2.3.0",
+      "timm": "1.0.16",
+      "rasterio": "1.4.3",
+      "pystac-client": "0.9.1",
+      "planetary-computer": "1.0.0",
+      "odc-stac": null,
+      "torchgeo": null
+    },
+    "cuda_available": true,
+    "torch_cuda": "12.6",
+    "device": "NVIDIA GeForce RTX 4090",
+    "utc": "2026-11-17T21:35:44Z"
+  }
+}

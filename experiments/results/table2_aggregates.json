@@ -1,0 +1,422 @@
+{
+  "rule": "row % Best = max over slots with a Clay value of Clay / max(Clay, other EO, general); pending and n/a cells excluded",
+  "per_panel": {
+    "A": {
+      "rows": 15,
+      "rows_with_clay_value": 15,
+      "median_pct_best": 97.60651841792566,
+      "pending_cells": 0
+    },
+    "B": {
+      "rows": 19,
+      "rows_with_clay_value": 0,
+      "median_pct_best": null,
+      "pending_cells": 19
+    },
+    "C": {
+      "rows": 11,
+      "rows_with_clay_value": 7,
+      "median_pct_best": 93.71727748691097,
+      "pending_cells": 5
+    },
+    "D": {
+      "rows": 15,
+      "rows_with_clay_value": 15,
+      "median_pct_best": 85.52631578947368,
+      "pending_cells": 0
+    }
+  },
+  "all_panels": {
+    "rows": 60,
+    "rows_with_clay_value": 37,
+    "median_pct_best": 93.71727748691097
+  },
+  "pending": [
+    "B sen1floods11-s2",
+    "B sen1floods11-s1",
+    "B pastis",
+    "B burn_scars",
+    "B cloudsen12",
+    "B fotw",
+    "B flair2",
+    "B loveda",
+    "B spacenet2",
+    "B spacenet7",
+    "B hotosm_buildings",
+    "B open_cities",
+    "B levir-cd-post",
+    "B kuro_siwo",
+    "B caffe",
+    "B openearthmap-sar",
+    "B bright-post-sar",
+    "B bright-post-sar-rgb",
+    "B dynamic_earthnet",
+    "C Vessel Detect. (S1)",
+    "C Vessel Detect. (L8)",
+    "C Solar Farm Detect.",
+    "C MADOS",
+    "C m-cashewplant"
+  ],
+  "rows": [
+    {
+      "panel": "A",
+      "task": "aid",
+      "pct_best": 94.4982170147733,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "benv2",
+      "pct_best": 96.92129629629629,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "eurosat",
+      "pct_best": 99.5358692362022,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "eurosat-spatial",
+      "pct_best": 98.51414614288622,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "forestnet",
+      "pct_best": 98.29737019554956,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "m-bigearthnet",
+      "pct_best": 93.1667516573177,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "m-brick-kiln",
+      "pct_best": 100.0,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "m-eurosat",
+      "pct_best": 98.17444219066938,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "m-forestnet",
+      "pct_best": 97.60651841792566,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "m-pv4ger",
+      "pct_best": 98.16138917262512,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "m-so2sat",
+      "pct_best": 98.09242342826438,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "resisc45",
+      "pct_best": 92.02088772845953,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "so2sat",
+      "pct_best": 97.5551102204409,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "treesatai",
+      "pct_best": 92.52789195537287,
+      "n_pending": 0
+    },
+    {
+      "panel": "A",
+      "task": "ucmerced",
+      "pct_best": 97.36126498136771,
+      "n_pending": 0
+    },
+    {
+      "panel": "B",
+      "task": "sen1floods11-s2",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "sen1floods11-s1",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "pastis",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "burn_scars",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "cloudsen12",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "fotw",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "flair2",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "loveda",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "spacenet2",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "spacenet7",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "hotosm_buildings",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "open_cities",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "levir-cd-post",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "kuro_siwo",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "caffe",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "openearthmap-sar",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "bright-post-sar",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "bright-post-sar-rgb",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "B",
+      "task": "dynamic_earthnet",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "C",
+      "task": "m-pv4ger-seg",
+      "pct_best": 100.0,
+      "n_pending": 0
+    },
+    {
+      "panel": "C",
+      "task": "m-chesapeake",
+      "pct_best": 100.0,
+      "n_pending": 0
+    },
+    {
+      "panel": "C",
+      "task": "Biomass-S3",
+      "pct_best": 90.57239057239059,
+      "n_pending": 0
+    },
+    {
+      "panel": "C",
+      "task": "LC100Cls-S3",
+      "pct_best": 93.71727748691097,
+      "n_pending": 0
+    },
+    {
+      "panel": "C",
+      "task": "EuroSAT-S1",
+      "pct_best": 96.84329199549042,
+      "n_pending": 0
+    },
+    {
+      "panel": "C",
+      "task": "Vessel Detect. (S1)",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "C",
+      "task": "Vessel Detect. (L8)",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "C",
+      "task": "Solar Farm Detect.",
+      "pct_best": null,
+      "n_pending": 1
+    },
+    {
+      "panel": "C",
+      "task": "MADOS",
+      "pct_best": 76.60818713450291,
+      "n_pending": 1
+    },
+    {
+      "panel": "C",
+      "task": "m-cashewplant",
+      "pct_best": 38.07763401109057,
+      "n_pending": 1
+    },
+    {
+      "panel": "C",
+      "task": "Nandi (S2)",
+      "pct_best": null,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "Africa crop mask",
+      "pct_best": 94.56521739130434,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "ASTER emissivity",
+      "pct_best": 97.67441860465117,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "LCMAP land cover",
+      "pct_best": 90.54054054054055,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "LCMAP land use",
+      "pct_best": 88.0,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "LCMAP cover change",
+      "pct_best": 90.3225806451613,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "LCMAP use change",
+      "pct_best": 94.64285714285714,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "Oil palm (Descals)",
+      "pct_best": 85.52631578947368,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "GLanCE land cover",
+      "pct_best": 85.96491228070177,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "LUCAS land use",
+      "pct_best": 76.66666666666667,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "LUCAS land cover",
+      "pct_best": 54.54545454545454,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "Canada crops (crs.)",
+      "pct_best": 64.86486486486487,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "Canada crops (fine)",
+      "pct_best": 68.18181818181817,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "Ethiopia crops",
+      "pct_best": 83.78378378378379,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "US tree genera",
+      "pct_best": 53.846153846153854,
+      "n_pending": 0
+    },
+    {
+      "panel": "D",
+      "task": "OpenET monthly ET",
+      "pct_best": 80.0,
+      "n_pending": 0
+    }
+  ]
+}

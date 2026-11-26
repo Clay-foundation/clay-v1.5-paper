@@ -1,0 +1,37 @@
+{
+  "upstream_repo": "https://github.com/Clay-foundation/model",
+  "upstream_commit": "f14e698f3c237cabf8d28dec669a362d66625381",
+  "header_end_marker": "# --- end of vendored-file header (everything below is byte-identical to upstream unless NOTICE says otherwise) ---",
+  "files": {
+    "backbone.py": {
+      "upstream_sha256": "f9ef3e410be8736f60d55cb3a8ed6c2cdf3b4e7972fa4716d410618514d3a4bf",
+      "body_sha256": "f9ef3e410be8736f60d55cb3a8ed6c2cdf3b4e7972fa4716d410618514d3a4bf",
+      "vendored_sha256": "f146822840f676c3dcb663eeaa6190840d97b4953c7ad996dd12110eaeaad268",
+      "modified": false
+    },
+    "factory.py": {
+      "upstream_sha256": "11dd00918a88fa076bea4739ce889233c0444ea459ebb2d38bb8bec90e1294c7",
+      "body_sha256": "11dd00918a88fa076bea4739ce889233c0444ea459ebb2d38bb8bec90e1294c7",
+      "vendored_sha256": "a4ea095116419224722a2e5bab54d8ad69e45ffdea3ec3827a9079c34af2eca7",
+      "modified": false
+    },
+    "model.py": {
+      "upstream_sha256": "ebf06103d64a8746509f8a4f900bbebf35eb4b54482bcaeecb953de0df81dcf1",
+      "body_sha256": "ebf06103d64a8746509f8a4f900bbebf35eb4b54482bcaeecb953de0df81dcf1",
+      "vendored_sha256": "cd4b423ca6834f81ec5529309d05746839dd9e21ede56ded8cc6766b10093953",
+      "modified": false
+    },
+    "utils.py": {
+      "upstream_sha256": "007e4b8eede28f96132e3d5a34735fcf1fdb03a1940f3fa550689404549e63ca",
+      "body_sha256": "007e4b8eede28f96132e3d5a34735fcf1fdb03a1940f3fa550689404549e63ca",
+      "vendored_sha256": "2cfe2fe2292c24a89b2eb69625baced75efaafb0b0fcac9e5effaa8ca9fed70c",
+      "modified": false
+    },
+    "__init__.py": {
+      "upstream_sha256": "8c62cb5f43ec2dfd2d5e393c2ce394a23403520c935b62c7cec1dfd5fefcac53",
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "vendored_sha256": "55dc4991cb0f84b661a982efe264667ad17bde78731158916f603056a6242974",
+      "modified": true
+    }
+  }
+}

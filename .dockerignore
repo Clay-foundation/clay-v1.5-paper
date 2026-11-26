@@ -1,0 +1,12 @@
+.git
+.venv
+.venv-olmo
+.uv-cache
+experiments/runs
+checkpoints
+data
+archive
+*.pdf
+*.tar.gz
+**/__pycache__
+.DS_Store

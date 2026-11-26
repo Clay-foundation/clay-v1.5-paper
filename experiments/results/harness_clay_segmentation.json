@@ -1,0 +1,185 @@
+{
+ "source": {
+  "harness": "torchgeo/geo-eval-harness",
+  "harness_base_commit": "55ef3c3042e63dfdd3c8102e379148e3aad46a4c",
+  "local_branch": "clay-v1-5-segmentation",
+  "local_head": "e2e6429036e48ba994a5390e2636437f7e9a0e32",
+  "note": "Clay v1.5 run through the harness's own segmentation protocol with three local changes to its Clay wrapper (ten Sentinel-2 bands, ground sample distance per sensor, Sentinel-1 input). Encoder frozen; value = mean test mIoU over seeds. Not yet merged upstream.",
+  "model": "tt_clay_v1_5_large",
+  "date": "2026-11-18"
+ },
+ "cells": {
+  "burn_scars": {
+   "seg-conv_block": {
+    "value": 76.75,
+    "per_seed": {
+     "0": 76.75
+    },
+    "n_seeds": 1,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "10.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-dpt": {
+    "value": 85.26,
+    "per_seed": {
+     "0": 85.26
+    },
+    "n_seeds": 1,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "10.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-fpn": {
+    "value": 72.87,
+    "per_seed": {
+     "0": 72.87
+    },
+    "n_seeds": 1,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "10.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-linear": {
+    "value": 51.79,
+    "per_seed": {
+     "0": 51.79
+    },
+    "n_seeds": 1,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "10.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-unet": {
+    "value": 86.06,
+    "per_seed": {
+     "0": 86.06
+    },
+    "n_seeds": 1,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "20.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-upernet": {
+    "value": 86.09,
+    "per_seed": {
+     "0": 85.48,
+     "1": 86.94,
+     "2": 85.84
+    },
+    "n_seeds": 3,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "20.0",
+    "metric": "mIoU (%)"
+   }
+  },
+  "pastis": {
+   "seg-conv_block": {
+    "value": 5.42,
+    "per_seed": {
+     "0": 5.42
+    },
+    "n_seeds": 1,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "10.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-fpn": {
+    "value": 6.08,
+    "per_seed": {
+     "0": 6.08
+    },
+    "n_seeds": 1,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "10.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-linear": {
+    "value": 3.98,
+    "per_seed": {
+     "0": 3.98
+    },
+    "n_seeds": 1,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "10.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-upernet": {
+    "value": 14.72,
+    "per_seed": {
+     "0": 14.72
+    },
+    "n_seeds": 1,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "30.0",
+    "metric": "mIoU (%)"
+   }
+  },
+  "sen1floods11-s1": {
+   "seg-unet": {
+    "value": 78.63,
+    "per_seed": {
+     "0": 78.15,
+     "1": 78.56,
+     "2": 79.18
+    },
+    "n_seeds": 3,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "30.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-upernet": {
+    "value": 78.98,
+    "per_seed": {
+     "0": 78.89,
+     "1": 78.91,
+     "2": 79.13
+    },
+    "n_seeds": 3,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "30.0",
+    "metric": "mIoU (%)"
+   }
+  },
+  "sen1floods11-s2": {
+   "seg-unet": {
+    "value": 87.03,
+    "per_seed": {
+     "0": 87.05,
+     "1": 86.86,
+     "2": 87.19
+    },
+    "n_seeds": 3,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "30.0",
+    "metric": "mIoU (%)"
+   },
+   "seg-upernet": {
+    "value": 87.0,
+    "per_seed": {
+     "0": 87.05,
+     "1": 87.0,
+     "2": 86.94
+    },
+    "n_seeds": 3,
+    "adaptation": "frozen",
+    "image_size": "224",
+    "epochs": "30.0",
+    "metric": "mIoU (%)"
+   }
+  }
+ }
+}

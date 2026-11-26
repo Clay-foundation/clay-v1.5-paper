@@ -1,0 +1,305 @@
+{
+  "m-brick-kiln_dofa_ft": 98.3,
+  "_settings": {
+    "m-brick-kiln_dofa_ft": {
+      "model": "dofa_l",
+      "bands": [
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B07",
+        "B08",
+        "B8A",
+        "B11",
+        "B12"
+      ],
+      "waves_um": [
+        0.493,
+        0.56,
+        0.665,
+        0.704,
+        0.783,
+        0.842,
+        0.865,
+        1.61,
+        2.19
+      ],
+      "ft_epochs": 20,
+      "ft_lr_head": 0.0005,
+      "ft_lr_enc": 5e-05,
+      "ft_seed": 42,
+      "normaliser": "train zscore",
+      "input_check": {
+        "archive": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+        "archive_sha256": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+        "band_check": {
+          "stored_names_ok": true,
+          "n_chips": 300,
+          "true_order": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B07",
+            "B8A",
+            "B08",
+            "B11",
+            "B12",
+            "TCI_R",
+            "TCI_G",
+            "TCI_B"
+          ],
+          "channel_min_mean_max": [
+            [
+              76.77,
+              573.43,
+              1915.58
+            ],
+            [
+              98.09,
+              672.06,
+              3012.8
+            ],
+            [
+              155.0,
+              887.37,
+              3183.6
+            ],
+            [
+              104.25,
+              810.19,
+              3515.2
+            ],
+            [
+              154.75,
+              1124.16,
+              3438.7
+            ],
+            [
+              106.33,
+              1936.51,
+              5831.67
+            ],
+            [
+              95.58,
+              2044.43,
+              6264.17
+            ],
+            [
+              104.25,
+              2010.61,
+              7107.0
+            ],
+            [
+              78.42,
+              1584.01,
+              5034.0
+            ],
+            [
+              59.08,
+              1105.29,
+              5207.0
+            ],
+            [
+              11.08,
+              82.78,
+              255.0
+            ],
+            [
+              16.14,
+              90.65,
+              255.0
+            ],
+            [
+              9.82,
+              68.77,
+              248.8
+            ]
+          ],
+          "corr": {
+            "TCI_R~B04": 0.9997,
+            "TCI_G~B03": 0.9999,
+            "TCI_B~B02": 0.9997,
+            "B8A~B08": 0.9848,
+            "B07~B08": 0.9844,
+            "B11~B12": 0.9441
+          },
+          "physical_check_passed": true
+        }
+      }
+    },
+    "m-eurosat_dofa_ft": {
+      "model": "dofa_l",
+      "bands": [
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B8A",
+        "B11",
+        "B12"
+      ],
+      "waves_um": [
+        0.493,
+        0.56,
+        0.665,
+        0.704,
+        0.74,
+        0.783,
+        0.842,
+        0.865,
+        1.61,
+        2.19
+      ],
+      "ft_epochs": 20,
+      "ft_lr_head": 0.0005,
+      "ft_lr_enc": 5e-05,
+      "ft_seed": 42,
+      "normaliser": "train zscore",
+      "input_check": {
+        "archive": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+        "archive_sha256": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+        "band_check": {
+          "stored_names_ok": true,
+          "n_chips": 300,
+          "true_order": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B06",
+            "B07",
+            "B08",
+            "B09",
+            "B10",
+            "B11",
+            "B12",
+            "B8A"
+          ],
+          "channel_min_mean_max": [
+            [
+              876.0,
+              1338.22,
+              3167.0
+            ],
+            [
+              562.0,
+              1103.44,
+              8027.0
+            ],
+            [
+              361.0,
+              1036.71,
+              8102.0
+            ],
+            [
+              210.0,
+              937.69,
+              11457.0
+            ],
+            [
+              182.0,
+              1206.51,
+              5858.0
+            ],
+            [
+              163.0,
+              2063.59,
+              10568.0
+            ],
+            [
+              133.0,
+              2455.35,
+              13501.0
+            ],
+            [
+              105.0,
+              2384.8,
+              10645.0
+            ],
+            [
+              41.0,
+              770.24,
+              2362.0
+            ],
+            [
+              2.0,
+              12.46,
+              46.0
+            ],
+            [
+              10.0,
+              1829.56,
+              11613.0
+            ],
+            [
+              1.0,
+              1112.5,
+              8931.0
+            ],
+            [
+              100.0,
+              2691.15,
+              13065.0
+            ]
+          ],
+          "corr": {
+            "B8A~B08": 0.9788,
+            "B06~B07": 0.9852,
+            "B11~B12": 0.9431
+          },
+          "physical_check_passed": true
+        }
+      }
+    }
+  },
+  "_producers": {
+    "m-brick-kiln_dofa_ft": {
+      "script_sha256": "90830ab0c4b33a0aa85a34eb0d9882e71e709fc9b5eea2f78d76fdab0b26eab2",
+      "cfg": "abe070127e1762aa",
+      "utc_timestamp": "2026-11-17T23:53:27Z"
+    },
+    "m-eurosat_dofa_ft": {
+      "script_sha256": "90830ab0c4b33a0aa85a34eb0d9882e71e709fc9b5eea2f78d76fdab0b26eab2",
+      "cfg": "3113be6f65a200dd",
+      "utc_timestamp": "2026-11-17T23:57:22Z"
+    }
+  },
+  "_meta": {
+    "script": "run_geobench_and_e7_complete.py",
+    "script_sha256": "90830ab0c4b33a0aa85a34eb0d9882e71e709fc9b5eea2f78d76fdab0b26eab2",
+    "git_commit": "unknown",
+    "argv": [
+      "--output-dir",
+      "gb_kiln",
+      "--parts",
+      "gb",
+      "--gb-cells",
+      "m-brick-kiln,m-eurosat"
+    ],
+    "utc_timestamp": "2026-11-17T23:57:22Z",
+    "packages": {
+      "torch": "2.5.1+cu124",
+      "torchgeo": "0.7.0",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.9.1",
+      "timm": "1.0.25",
+      "h5py": "n/a",
+      "rasterio": "1.4.4",
+      "olmoearth_pretrain": "0.1.2"
+    },
+    "python": "3.11.18",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  "m-eurosat_dofa_ft": 98.1
+}

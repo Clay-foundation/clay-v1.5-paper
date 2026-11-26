@@ -1,0 +1,349 @@
+{
+ "same_keys": true,
+ "n_entries": 2688,
+ "pooled_ap_k5_pos": {
+  "64px|clay_cls": {
+   "committed": {
+    "point": 0.03812361881136894,
+    "ci95": [
+     0.01778436452150345,
+     0.09157087653875351
+    ]
+   },
+   "regenerated": {
+    "point": 0.03811902925372124,
+    "ci95": [
+     0.01776818558573723,
+     0.09155002236366272
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "64px|clay_mean": {
+   "committed": {
+    "point": 0.013019506819546223,
+    "ci95": [
+     0.007698038127273321,
+     0.0195818729698658
+    ]
+   },
+   "regenerated": {
+    "point": 0.013019026257097721,
+    "ci95": [
+     0.007697803433984518,
+     0.019581709057092667
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "64px|dinov2_rgb": {
+   "committed": {
+    "point": 0.21565298736095428,
+    "ci95": [
+     0.10154476016759872,
+     0.3065462112426758
+    ]
+   },
+   "regenerated": {
+    "point": 0.21564756333827972,
+    "ci95": [
+     0.10151318460702896,
+     0.30650418996810913
+    ]
+   },
+   "abs_diff": 1e-05
+  },
+  "64px|spectral_stats": {
+   "committed": {
+    "point": 0.016090653836727142,
+    "ci95": [
+     0.009852396324276924,
+     0.026532554998993874
+    ]
+   },
+   "regenerated": {
+    "point": 0.016090653836727142,
+    "ci95": [
+     0.009852396324276924,
+     0.026532554998993874
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "64px|random": {
+   "committed": {
+    "point": 0.0092717120423913,
+    "ci95": [
+     0.005787563044577837,
+     0.013547796756029129
+    ]
+   },
+   "regenerated": {
+    "point": 0.0092717120423913,
+    "ci95": [
+     0.005787563044577837,
+     0.013547796756029129
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "64px|clay_cls_nometa": {
+   "committed": {
+    "point": 0.04656000807881355,
+    "ci95": [
+     0.021620089188218117,
+     0.11458813399076462
+    ]
+   },
+   "regenerated": {
+    "point": 0.04655786231160164,
+    "ci95": [
+     0.02159878797829151,
+     0.11458543688058853
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "64px|clay_cls_train": {
+   "committed": {
+    "point": 0.04577503725886345,
+    "ci95": [
+     0.02208719030022621,
+     0.10662070661783218
+    ]
+   },
+   "regenerated": {
+    "point": 0.045775700360536575,
+    "ci95": [
+     0.02208530716598034,
+     0.10657357424497604
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "64px|clay_mean_train": {
+   "committed": {
+    "point": 0.013204350136220455,
+    "ci95": [
+     0.007926363497972488,
+     0.020401185378432274
+    ]
+   },
+   "regenerated": {
+    "point": 0.01320431474596262,
+    "ci95": [
+     0.007926002144813538,
+     0.020401138812303543
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "256px|clay_cls": {
+   "committed": {
+    "point": 0.2680876851081848,
+    "ci95": [
+     0.10653313249349594,
+     0.6378046274185181
+    ]
+   },
+   "regenerated": {
+    "point": 0.2680852711200714,
+    "ci95": [
+     0.10653530061244965,
+     0.6378340125083923
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "256px|clay_mean": {
+   "committed": {
+    "point": 0.021209022030234337,
+    "ci95": [
+     0.009910260327160358,
+     0.04729441925883293
+    ]
+   },
+   "regenerated": {
+    "point": 0.021210240200161934,
+    "ci95": [
+     0.009911177679896355,
+     0.04729331284761429
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "256px|dinov2_rgb": {
+   "committed": {
+    "point": 0.3228532373905182,
+    "ci95": [
+     0.15534251928329468,
+     0.5129551291465759
+    ]
+   },
+   "regenerated": {
+    "point": 0.32265111804008484,
+    "ci95": [
+     0.15532617270946503,
+     0.5129576921463013
+    ]
+   },
+   "abs_diff": 0.0002
+  },
+  "256px|spectral_stats": {
+   "committed": {
+    "point": 0.022066758945584297,
+    "ci95": [
+     0.009877526201307774,
+     0.053263984620571136
+    ]
+   },
+   "regenerated": {
+    "point": 0.022066758945584297,
+    "ci95": [
+     0.009877526201307774,
+     0.053263984620571136
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "256px|random": {
+   "committed": {
+    "point": 0.018517909571528435,
+    "ci95": [
+     0.010229493491351604,
+     0.040993839502334595
+    ]
+   },
+   "regenerated": {
+    "point": 0.018517909571528435,
+    "ci95": [
+     0.010229493491351604,
+     0.040993839502334595
+    ]
+   },
+   "abs_diff": 0.0
+  },
+  "256px|clay_cls_nometa": {
+   "committed": {
+    "point": 0.26112255454063416,
+    "ci95": [
+     0.10673962533473969,
+     0.6191655397415161
+    ]
+   },
+   "regenerated": {
+    "point": 0.2611854076385498,
+    "ci95": [
+     0.10674117505550385,
+     0.6194630265235901
+    ]
+   },
+   "abs_diff": 6e-05
+  },
+  "256px|clay_cls_train": {
+   "committed": {
+    "point": 0.2720656394958496,
+    "ci95": [
+     0.11121423542499542,
+     0.6319423317909241
+    ]
+   },
+   "regenerated": {
+    "point": 0.27205875515937805,
+    "ci95": [
+     0.1112193614244461,
+     0.6319414973258972
+    ]
+   },
+   "abs_diff": 1e-05
+  },
+  "256px|clay_mean_train": {
+   "committed": {
+    "point": 0.021230129525065422,
+    "ci95": [
+     0.010040841065347195,
+     0.047252897173166275
+    ]
+   },
+   "regenerated": {
+    "point": 0.02123371697962284,
+    "ci95": [
+     0.01004078146070242,
+     0.04727676883339882
+    ]
+   },
+   "abs_diff": 0.0
+  }
+ },
+ "max_abs_diff_over_all_summary_entries_by_arm": {
+  "clay_cls": 0.01333,
+  "clay_cls_nometa": 0.00513,
+  "clay_cls_train": 0.04,
+  "clay_mean": 0.00044,
+  "clay_mean_train": 0.00112,
+  "dinov2_rgb": 0.03333,
+  "random": 0.0,
+  "spectral_stats": 0.0
+ },
+ "provenance_a": {
+  "script": "partA.py",
+  "git_commit": "3deb4bf",
+  "git_dirty": true,
+  "args": {
+   "stage": "score",
+   "train_arms": true,
+   "cache": "cache"
+  },
+  "python": "3.12.14",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "packages": {
+   "torch": "2.7.1",
+   "torchvision": "0.22.1",
+   "numpy": "2.5.5",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "pandas": "3.1.1",
+   "timm": "1.0.31",
+   "rasterio": "1.5.2",
+   "pystac-client": "0.9.1",
+   "planetary-computer": "1.0.0",
+   "odc-stac": null,
+   "torchgeo": null
+  },
+  "cuda_available": true,
+  "torch_cuda": "12.6",
+  "device": "NVIDIA GeForce RTX 4090",
+  "utc": "2026-11-17T21:40:58Z",
+  "git_commit_note": "run on a plain copy of the working tree at base commit 3deb4bf plus the uncommitted audit edits; not a git checkout"
+ },
+ "provenance_b": {
+  "script": "partA.py",
+  "git_commit": "unavailable",
+  "git_dirty": true,
+  "args": {
+   "stage": "score",
+   "train_arms": true,
+   "cache": "cache"
+  },
+  "python": "3.12.14",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "packages": {
+   "torch": "2.7.1",
+   "torchvision": "0.22.1",
+   "numpy": "2.5.5",
+   "scipy": "1.18.1",
+   "scikit-learn": "1.9.1",
+   "pandas": "3.1.1",
+   "timm": "1.0.31",
+   "rasterio": "1.5.2",
+   "pystac-client": "0.9.1",
+   "planetary-computer": "1.0.0",
+   "odc-stac": null,
+   "torchgeo": null
+  },
+  "cuda_available": true,
+  "torch_cuda": "12.6",
+  "device": "NVIDIA GeForce RTX 4090",
+  "utc": "2026-11-18T02:29:56Z"
+ }
+}

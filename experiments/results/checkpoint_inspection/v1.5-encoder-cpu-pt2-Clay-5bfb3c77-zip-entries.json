@@ -1,0 +1,26 @@
+[
+ {
+  "name": "serialized_exported_program.json",
+  "size": 2103187,
+  "compressed_size": 2103187,
+  "crc32": "fd3e3c25"
+ },
+ {
+  "name": "serialized_state_dict.pt",
+  "size": 1245882656,
+  "compressed_size": 1245882656,
+  "crc32": "e018f220"
+ },
+ {
+  "name": "serialized_constants.pt",
+  "size": 864,
+  "compressed_size": 864,
+  "crc32": "5e8b70ee"
+ },
+ {
+  "name": "version",
+  "size": 3,
+  "compressed_size": 3,
+  "crc32": "8738f77f"
+ }
+]

@@ -1,0 +1,350 @@
+{
+  "m-pv4ger-seg": {
+    "olmo_v13": {
+      "miou": 80.0,
+      "val_miou": 81.37,
+      "best_C": 0.01,
+      "fg_iou": 67.51
+    },
+    "panopticon": {
+      "miou": 78.93,
+      "val_miou": 81.22,
+      "best_C": 0.01,
+      "fg_iou": 65.75
+    },
+    "copernicus_fm": {
+      "miou": 73.5,
+      "val_miou": 75.18,
+      "best_C": 0.01,
+      "fg_iou": 56.97
+    }
+  },
+  "m-chesapeake": {
+    "olmo_v13": {
+      "miou": 50.77,
+      "val_miou": 60.81,
+      "best_C": 0.01
+    },
+    "panopticon": {
+      "miou": 59.94,
+      "val_miou": 63.89,
+      "best_C": 0.01
+    },
+    "copernicus_fm": {
+      "miou": 44.71,
+      "val_miou": 56.47,
+      "best_C": 0.01
+    }
+  },
+  "biomass-s3": {
+    "olmo_v13": {
+      "dense": {
+        "pixel_rmse": 76.31,
+        "pixel_r2": 0.594,
+        "val_pixel_rmse": 76.04,
+        "best_alpha": 1.0
+      },
+      "chip": {
+        "chip_r2": 0.8474,
+        "chip_rmse": 39.1
+      }
+    },
+    "panopticon": {
+      "dense": {
+        "pixel_rmse": 77.2,
+        "pixel_r2": 0.5845,
+        "val_pixel_rmse": 78.7,
+        "best_alpha": 1.0
+      },
+      "chip": {
+        "chip_r2": 0.8052,
+        "chip_rmse": 44.17
+      }
+    },
+    "copernicus_fm": {
+      "dense": {
+        "pixel_rmse": 85.65,
+        "pixel_r2": 0.4885,
+        "val_pixel_rmse": 86.65,
+        "best_alpha": 1.0
+      },
+      "chip": {
+        "chip_r2": 0.7291,
+        "chip_rmse": 52.1
+      }
+    }
+  },
+  "lc100cls-s3": {
+    "olmo_v13": {
+      "macro_map": 72.74,
+      "micro_map": 90.64,
+      "val_macro_map": 73.77,
+      "n_eval_classes": 23,
+      "best_C": 0.1
+    },
+    "panopticon": {
+      "macro_map": 76.44,
+      "micro_map": 92.22,
+      "val_macro_map": 76.63,
+      "n_eval_classes": 23,
+      "best_C": 0.01
+    },
+    "copernicus_fm": {
+      "macro_map": 68.52,
+      "micro_map": 88.58,
+      "val_macro_map": 68.12,
+      "n_eval_classes": 23,
+      "best_C": 0.1
+    }
+  },
+  "m-pv4ger": {
+    "olmo_v13": {
+      "oa": 93.99,
+      "macro_f1": 87.07,
+      "val_oa": 92.69,
+      "best_C": 1.0,
+      "lsvm_oa": 94.09,
+      "lsvm_macro_f1": 87.25
+    },
+    "panopticon": {
+      "oa": 96.4,
+      "macro_f1": 92.61,
+      "val_oa": 95.6,
+      "best_C": 0.01,
+      "lsvm_oa": 96.6,
+      "lsvm_macro_f1": 92.98
+    },
+    "copernicus_fm": {
+      "oa": 94.69,
+      "macro_f1": 88.89,
+      "val_oa": 91.99,
+      "best_C": 0.1,
+      "lsvm_oa": 94.29,
+      "lsvm_macro_f1": 88.27
+    }
+  },
+  "ucmerced": {
+    "olmo_v13": {
+      "oa": 81.19,
+      "macro_f1": 81.03,
+      "val_oa": 82.62,
+      "best_C": 1.0,
+      "lsvm_oa": 84.05,
+      "lsvm_macro_f1": 84.22
+    },
+    "panopticon": {
+      "oa": 97.38,
+      "macro_f1": 97.25,
+      "val_oa": 97.14,
+      "best_C": 1.0,
+      "lsvm_oa": 95.95,
+      "lsvm_macro_f1": 95.59
+    },
+    "copernicus_fm": {
+      "oa": 87.62,
+      "macro_f1": 87.53,
+      "val_oa": 90.0,
+      "best_C": 10.0,
+      "lsvm_oa": 87.38,
+      "lsvm_macro_f1": 87.18
+    }
+  },
+  "resisc45": {
+    "olmo_v13": {
+      "oa": 70.4,
+      "macro_f1": 70.15,
+      "val_oa": 71.81,
+      "best_C": 1.0,
+      "lsvm_oa": 70.78,
+      "lsvm_macro_f1": 70.33
+    },
+    "panopticon": {
+      "oa": 89.59,
+      "macro_f1": 89.57,
+      "val_oa": 91.25,
+      "best_C": 0.1,
+      "lsvm_oa": 90.21,
+      "lsvm_macro_f1": 90.16
+    },
+    "copernicus_fm": {
+      "oa": 80.3,
+      "macro_f1": 80.25,
+      "val_oa": 81.24,
+      "best_C": 0.1,
+      "lsvm_oa": 81.14,
+      "lsvm_macro_f1": 81.05
+    }
+  },
+  "m-brick-kiln": {
+    "olmo_v13": {
+      "oa": 94.99,
+      "macro_f1": 94.33,
+      "val_oa": 96.0,
+      "best_C": 1.0,
+      "lsvm_oa": 95.3,
+      "lsvm_macro_f1": 94.68
+    },
+    "panopticon": {
+      "oa": 96.3,
+      "macro_f1": 95.86,
+      "val_oa": 97.1,
+      "best_C": 0.1,
+      "lsvm_oa": 95.7,
+      "lsvm_macro_f1": 95.18
+    },
+    "copernicus_fm": {
+      "oa": 92.79,
+      "macro_f1": 91.92,
+      "val_oa": 94.99,
+      "best_C": 0.1,
+      "lsvm_oa": 93.39,
+      "lsvm_macro_f1": 92.58
+    }
+  },
+  "m-eurosat": {
+    "olmo_v13": {
+      "oa": 92.1,
+      "macro_f1": 92.13,
+      "val_oa": 93.0,
+      "best_C": 1.0,
+      "lsvm_oa": 93.4,
+      "lsvm_macro_f1": 93.38
+    },
+    "panopticon": {
+      "oa": 97.5,
+      "macro_f1": 97.49,
+      "val_oa": 97.8,
+      "best_C": 0.1,
+      "lsvm_oa": 97.7,
+      "lsvm_macro_f1": 97.69
+    },
+    "copernicus_fm": {
+      "oa": 90.9,
+      "macro_f1": 90.8,
+      "val_oa": 91.2,
+      "best_C": 1.0,
+      "lsvm_oa": 91.3,
+      "lsvm_macro_f1": 91.22
+    }
+  },
+  "m-so2sat": {
+    "olmo_v13": {
+      "oa": 54.67,
+      "macro_f1": 54.5,
+      "val_oa": 50.3,
+      "best_C": 0.1,
+      "lsvm_oa": 52.84,
+      "lsvm_macro_f1": 52.63
+    },
+    "panopticon": {
+      "oa": 61.87,
+      "macro_f1": 60.88,
+      "val_oa": 62.47,
+      "best_C": 0.01,
+      "lsvm_oa": 60.95,
+      "lsvm_macro_f1": 59.9
+    },
+    "copernicus_fm": {
+      "oa": 51.12,
+      "macro_f1": 50.46,
+      "val_oa": 49.09,
+      "best_C": 0.1,
+      "lsvm_oa": 50.2,
+      "lsvm_macro_f1": 50.01
+    }
+  },
+  "m-forestnet": {
+    "olmo_v13": {
+      "oa": 48.54,
+      "macro_f1": 38.12,
+      "val_oa": 49.54,
+      "best_C": 0.01,
+      "lsvm_oa": 50.25,
+      "lsvm_macro_f1": 37.75
+    },
+    "panopticon": {
+      "oa": 51.86,
+      "macro_f1": 45.67,
+      "val_oa": 54.9,
+      "best_C": 0.01,
+      "lsvm_oa": 53.88,
+      "lsvm_macro_f1": 46.19
+    },
+    "copernicus_fm": {
+      "oa": 48.74,
+      "macro_f1": 39.52,
+      "val_oa": 50.66,
+      "best_C": 0.01,
+      "lsvm_oa": 48.84,
+      "lsvm_macro_f1": 35.9
+    }
+  },
+  "m-bigearthnet": {
+    "olmo_v13": {
+      "mean": 59.93
+    },
+    "panopticon": {
+      "cls": 64.31,
+      "mean": 65.22
+    },
+    "copernicus_fm": {
+      "cls": 53.55,
+      "mean": 54.57
+    }
+  },
+  "m-cashew-plant": {
+    "olmo_v13": {
+      "miou": 16.32,
+      "val_miou": 23.77,
+      "best_C": 10.0
+    },
+    "panopticon": {
+      "miou": 14.92,
+      "val_miou": 22.78,
+      "best_C": 0.01
+    },
+    "copernicus_fm": {
+      "miou": 12.08,
+      "val_miou": 18.67,
+      "best_C": 10.0
+    }
+  },
+  "eurosat-s1": {
+    "copernicus_fm": {
+      "oa": 83.41,
+      "macro_f1": 82.94,
+      "val_oa": 83.91,
+      "best_C": 0.01,
+      "lsvm_oa": 83.24,
+      "lsvm_macro_f1": 82.76
+    },
+    "dinov2": {
+      "oa": 83.96,
+      "macro_f1": 83.4,
+      "val_oa": 84.06,
+      "best_C": 0.01,
+      "lsvm_oa": 84.0,
+      "lsvm_macro_f1": 83.37
+    }
+  },
+  "cropharvest_togo": {
+    "dofa_s1": {
+      "oa": 74.51,
+      "oa_split": 74.51,
+      "oa_full": 73.53,
+      "lsvm_oa": 76.14
+    },
+    "panopticon_s1": {
+      "oa": 75.82,
+      "oa_split": 74.18,
+      "oa_full": 75.82,
+      "lsvm_oa": 75.49
+    },
+    "dinov2_s1": {
+      "oa": 73.2,
+      "oa_split": 73.2,
+      "oa_full": 73.2,
+      "lsvm_oa": 76.8
+    }
+  }
+}

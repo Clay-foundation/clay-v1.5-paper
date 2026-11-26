@@ -1,0 +1,1117 @@
+{
+  "experiment": "E4_uspvdb_solar_retrieval",
+  "protocol": "PROTOCOL.md (frozen 2026-11-05; amendment 1 pre-score, amendment 2 post-hoc)",
+  "partB": {
+    "table": [
+      {
+        "set": "naip_rev2",
+        "arm": "as_shipped",
+        "n": 1000,
+        "median_cos": 0.9999999805245738,
+        "p05_cos": 0.9999999504626464,
+        "min_cos": 0.9999999095176544,
+        "frac_gt_0.99": 1.0,
+        "norm_ratio_median": 0.9999992847442627
+      },
+      {
+        "set": "naip_rev2",
+        "arm": "latlon_fixed",
+        "n": 1000,
+        "median_cos": 0.988016340976563,
+        "p05_cos": 0.5681701487792362,
+        "min_cos": 0.3483956379987939,
+        "frac_gt_0.99": 0.426,
+        "norm_ratio_median": 1.0041744709014893
+      },
+      {
+        "set": "naip_rev2",
+        "arm": "no_meta",
+        "n": 1000,
+        "median_cos": 0.9981079133508718,
+        "p05_cos": 0.9946657251164925,
+        "min_cos": 0.9883888761508114,
+        "frac_gt_0.99": 0.998,
+        "norm_ratio_median": 1.0000642538070679
+      },
+      {
+        "set": "naip_rev2",
+        "arm": "no_norm",
+        "n": 1000,
+        "median_cos": 0.042780034429268594,
+        "p05_cos": -0.03650472860231549,
+        "min_cos": -0.105193094041025,
+        "frac_gt_0.99": 0.0,
+        "norm_ratio_median": 0.864917516708374
+      },
+      {
+        "set": "naip_rev2",
+        "arm": "superseded_v1_vs_no_norm",
+        "n": 1000,
+        "median_cos": 0.9999999498279304,
+        "p05_cos": 0.9999999106741986,
+        "min_cos": 0.9999998067120444,
+        "frac_gt_0.99": 1.0,
+        "norm_ratio_median": 0.9999621510505676
+      },
+      {
+        "set": "naip_rev2",
+        "arm": "superseded_v1_vs_as_shipped",
+        "n": 1000,
+        "median_cos": 0.04276590502321272,
+        "p05_cos": -0.03655490614103768,
+        "min_cos": -0.1052052246974693,
+        "frac_gt_0.99": 0.0,
+        "norm_ratio_median": 1.1561675071716309
+      },
+      {
+        "set": "naip_rev2",
+        "arm": "superseded_v1_vs_rev2_released",
+        "n": 1000,
+        "median_cos": 0.04276664468447104,
+        "p05_cos": -0.0365384852435274,
+        "min_cos": -0.10519158921043889,
+        "frac_gt_0.99": 0.0,
+        "norm_ratio_median": 1.156166911125183
+      },
+      {
+        "set": "s2_deprecated",
+        "arm": "10m/as_shipped",
+        "n": 300,
+        "median_cos": 0.16836051588810994,
+        "p05_cos": 0.12794074130434616,
+        "min_cos": 0.08998898180300317,
+        "frac_gt_0.99": 0.0033333333333333335,
+        "norm_ratio_median": 1.1594856977462769
+      },
+      {
+        "set": "s2_deprecated",
+        "arm": "10m/latlon_fixed",
+        "n": 300,
+        "median_cos": 0.16768601354389584,
+        "p05_cos": 0.12740303471503991,
+        "min_cos": 0.08915269322780837,
+        "frac_gt_0.99": 0.0033333333333333335,
+        "norm_ratio_median": 1.157073736190796
+      },
+      {
+        "set": "s2_deprecated",
+        "arm": "10m/no_meta",
+        "n": 300,
+        "median_cos": 0.16753073534199592,
+        "p05_cos": 0.1265343874659337,
+        "min_cos": 0.0882163063303915,
+        "frac_gt_0.99": 0.0033333333333333335,
+        "norm_ratio_median": 1.1579525470733643
+      },
+      {
+        "set": "s2_deprecated",
+        "arm": "stacchip_transform/as_shipped",
+        "n": 300,
+        "median_cos": 0.9999999261271624,
+        "p05_cos": 0.9999992935294287,
+        "min_cos": 0.9999984617975382,
+        "frac_gt_0.99": 1.0,
+        "norm_ratio_median": 0.9999924302101135
+      },
+      {
+        "set": "s2_deprecated",
+        "arm": "stacchip_transform/latlon_fixed",
+        "n": 300,
+        "median_cos": 0.9810830520748463,
+        "p05_cos": 0.9365363842560047,
+        "min_cos": 0.9073534009628014,
+        "frac_gt_0.99": 0.25,
+        "norm_ratio_median": 1.0009088516235352
+      },
+      {
+        "set": "s2_deprecated",
+        "arm": "stacchip_transform/no_meta",
+        "n": 300,
+        "median_cos": 0.9940958954754816,
+        "p05_cos": 0.9907596188929817,
+        "min_cos": 0.9813192525886043,
+        "frac_gt_0.99": 0.9766666666666667,
+        "norm_ratio_median": 0.9966700077056885
+      }
+    ],
+    "raw": {
+      "naip_rev2": {
+        "attempts": [
+          {
+            "key": "clay/clay-v1-5-naip-2/mo/2014/100cm/rgbir_cog/37089/m_3708950_se_16_1_20140721.parquet",
+            "pc_item_prefix": "mo_m_3708950_se_16_1_20140721",
+            "pc_matches": [
+              "mo_m_3708950_se_16_1_20140721_20141020"
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/fl/2021/60cm/rgbir_cog/30085/m_3008534_se_16_060_20220113.parquet",
+            "pc_item_prefix": "fl_m_3008534_se_16_060_20220113",
+            "pc_matches": [
+              "fl_m_3008534_se_16_060_20220113"
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/mt/2019/60cm/rgbir_cog/45107/m_4510705_se_13_060_20190816.parquet",
+            "pc_item_prefix": "mt_m_4510705_se_13_060_20190816",
+            "pc_matches": [
+              "mt_m_4510705_se_13_060_20190816_20200106"
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/sd/2020/60cm/rgbir_cog/42101/m_4210107_nw_14_060_20200809.parquet",
+            "pc_item_prefix": "sd_m_4210107_nw_14_060_20200809",
+            "pc_matches": [
+              "sd_m_4210107_nw_14_060_20200809"
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/nc/2020/60cm/rgbir_cog/35078/m_3507802_se_17_060_20200711.parquet",
+            "pc_item_prefix": "nc_m_3507802_se_17_060_20200711",
+            "pc_matches": [
+              "nc_m_3507802_se_17_060_20200711"
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/wa/2011/100cm/rgbir_cog/48117/m_4811740_nw_11_1_20110702.parquet",
+            "pc_item_prefix": "wa_m_4811740_nw_11_1_20110702",
+            "pc_matches": [
+              "wa_m_4811740_nw_11_1_20110702_20111004"
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/ky/2012/100cm/rgbir_cog/37087/m_3708742_nw_16_1_20120619.parquet",
+            "pc_item_prefix": "ky_m_3708742_nw_16_1_20120619",
+            "pc_matches": [
+              "ky_m_3708742_nw_16_1_20120619_20120813"
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/md/2013/100cm/rgbir_cog/38075/m_3807560_se_18_1_20130912.parquet",
+            "pc_item_prefix": "md_m_3807560_se_18_1_20130912",
+            "pc_matches": [
+              "md_m_3807560_se_18_1_20130912_20131112"
+            ]
+          }
+        ],
+        "as_shipped": {
+          "n": 1000,
+          "median_cos": 0.9999999805245738,
+          "p05_cos": 0.9999999504626464,
+          "min_cos": 0.9999999095176544,
+          "frac_gt_0.99": 1.0,
+          "norm_ratio_median": 0.9999992847442627,
+          "released_norm_median": 3.3055357933044434,
+          "recomputed_norm_median": 3.3056037425994873
+        },
+        "latlon_fixed": {
+          "n": 1000,
+          "median_cos": 0.988016340976563,
+          "p05_cos": 0.5681701487792362,
+          "min_cos": 0.3483956379987939,
+          "frac_gt_0.99": 0.426,
+          "norm_ratio_median": 1.0041744709014893,
+          "released_norm_median": 3.3055357933044434,
+          "recomputed_norm_median": 3.2926578521728516
+        },
+        "no_meta": {
+          "n": 1000,
+          "median_cos": 0.9981079133508718,
+          "p05_cos": 0.9946657251164925,
+          "min_cos": 0.9883888761508114,
+          "frac_gt_0.99": 0.998,
+          "norm_ratio_median": 1.0000642538070679,
+          "released_norm_median": 3.3055357933044434,
+          "recomputed_norm_median": 3.300065517425537
+        },
+        "no_norm": {
+          "n": 1000,
+          "median_cos": 0.042780034429268594,
+          "p05_cos": -0.03650472860231549,
+          "min_cos": -0.105193094041025,
+          "frac_gt_0.99": 0.0,
+          "norm_ratio_median": 0.864917516708374,
+          "released_norm_median": 3.3055357933044434,
+          "recomputed_norm_median": 3.8055949211120605
+        },
+        "superseded_v1_vs_no_norm": {
+          "n": 1000,
+          "median_cos": 0.9999999498279304,
+          "p05_cos": 0.9999999106741986,
+          "min_cos": 0.9999998067120444,
+          "frac_gt_0.99": 1.0,
+          "norm_ratio_median": 0.9999621510505676,
+          "released_norm_median": 3.8054232597351074,
+          "recomputed_norm_median": 3.8055949211120605
+        },
+        "superseded_v1_vs_as_shipped": {
+          "n": 1000,
+          "median_cos": 0.04276590502321272,
+          "p05_cos": -0.03655490614103768,
+          "min_cos": -0.1052052246974693,
+          "frac_gt_0.99": 0.0,
+          "norm_ratio_median": 1.1561675071716309,
+          "released_norm_median": 3.8054232597351074,
+          "recomputed_norm_median": 3.3056037425994873
+        },
+        "superseded_v1_vs_rev2_released": {
+          "n": 1000,
+          "median_cos": 0.04276664468447104,
+          "p05_cos": -0.0365384852435274,
+          "min_cos": -0.10519158921043889,
+          "frac_gt_0.99": 0.0,
+          "norm_ratio_median": 1.156166911125183,
+          "released_norm_median": 3.8054232597351074,
+          "recomputed_norm_median": 3.3055357933044434
+        },
+        "footprint_resid_px_max": 3.725290298461914e-09,
+        "dims": [
+          1024
+        ]
+      },
+      "s2_deprecated": {
+        "files": [
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/15/T/XH/2024/4/S2A_15TXH_20240410_0_L2A/S2A_15TXH_20240410_0_L2A.parquet",
+            "hyp": "10m",
+            "transform_used": [
+              10.0,
+              0.0,
+              600000.0,
+              0.0,
+              -10.0,
+              4800000.0
+            ],
+            "resid_chip_units_max": 6.394884621840902e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 0.06,
+            "median_cos_as_shipped": 0.1712667690765926
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/15/T/XH/2024/4/S2A_15TXH_20240410_0_L2A/S2A_15TXH_20240410_0_L2A.parquet",
+            "hyp": "stacchip_transform",
+            "transform_used": [
+              60.0,
+              0.0,
+              600000.0,
+              0.0,
+              -60.0,
+              4800000.0
+            ],
+            "resid_chip_units_max": 1.0658141036401503e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 0.92,
+            "median_cos_as_shipped": 0.9999999222175524
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/15/T/XH/2024/4/S2A_15TXH_20240410_0_L2A/S2A_15TXH_20240410_0_L2A.parquet",
+            "n_unique_geoms": 376,
+            "n_duplicate_rows": 344,
+            "dup_pair_cos_min": 0.9999999739053902,
+            "dup_pair_cos_median": 1.0
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/15/T/XH/2024/4/S2A_15TXH_20240410_0_L2A/S2A_15TXH_20240410_0_L2A.parquet",
+            "meta": {
+              "date": "2024-04-10",
+              "gsd": "10",
+              "uri": "s3://sentinel-cogs/sentinel-s2-l2a-cogs/15/T/XH/2024/4/S2A_15TXH_20240410_0_L2A/S2A_15TXH_20240410_0_L2A.json"
+            },
+            "rows": 720,
+            "dim": 1024,
+            "footprint_width_m_median": 15360.000000000582,
+            "item_json": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/15/T/XH/2024/4/S2A_15TXH_20240410_0_L2A/S2A_15TXH_20240410_0_L2A.json",
+            "asset_keys": [
+              "aot",
+              "aot-jp2",
+              "blue",
+              "blue-jp2",
+              "coastal",
+              "coastal-jp2",
+              "granule_metadata",
+              "green",
+              "green-jp2",
+              "nir",
+              "nir-jp2",
+              "nir08",
+              "nir08-jp2",
+              "nir09",
+              "nir09-jp2",
+              "red",
+              "red-jp2",
+              "rededge1",
+              "rededge1-jp2",
+              "rededge2",
+              "rededge2-jp2",
+              "rededge3",
+              "rededge3-jp2",
+              "scl",
+              "scl-jp2",
+              "swir16",
+              "swir16-jp2",
+              "swir22",
+              "swir22-jp2",
+              "thumbnail"
+            ],
+            "transform_10m": [
+              10.0,
+              0.0,
+              600000.0,
+              0.0,
+              -10.0,
+              4800000.0
+            ],
+            "transform_stacchip": [
+              60.0,
+              0.0,
+              600000.0,
+              0.0,
+              -60.0,
+              4800000.0
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/12/R/XV/2024/11/S2A_12RXV_20241121_0_L2A/S2A_12RXV_20241121_0_L2A.parquet",
+            "hyp": "10m",
+            "transform_used": [
+              10.0,
+              0.0,
+              600000.0,
+              0.0,
+              -10.0,
+              3500040.0
+            ],
+            "resid_chip_units_max": 7.673861546209082e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 0.06,
+            "median_cos_as_shipped": 0.1558718515749328
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/12/R/XV/2024/11/S2A_12RXV_20241121_0_L2A/S2A_12RXV_20241121_0_L2A.parquet",
+            "hyp": "stacchip_transform",
+            "transform_used": [
+              60.0,
+              0.0,
+              600000.0,
+              0.0,
+              -60.0,
+              3500040.0
+            ],
+            "resid_chip_units_max": 1.2789769243681803e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 1.0,
+            "median_cos_as_shipped": 0.99999992515678
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/12/R/XV/2024/11/S2A_12RXV_20241121_0_L2A/S2A_12RXV_20241121_0_L2A.parquet",
+            "n_unique_geoms": 1550,
+            "n_duplicate_rows": 1512,
+            "dup_pair_cos_min": 0.9999999999999998,
+            "dup_pair_cos_median": 1.0
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/12/R/XV/2024/11/S2A_12RXV_20241121_0_L2A/S2A_12RXV_20241121_0_L2A.parquet",
+            "meta": {
+              "date": "2024-11-21",
+              "gsd": "10",
+              "uri": "s3://sentinel-cogs/sentinel-s2-l2a-cogs/12/R/XV/2024/11/S2A_12RXV_20241121_0_L2A/S2A_12RXV_20241121_0_L2A.json"
+            },
+            "rows": 3062,
+            "dim": 1024,
+            "footprint_width_m_median": 15360.000000000698,
+            "item_json": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/12/R/XV/2024/11/S2A_12RXV_20241121_0_L2A/S2A_12RXV_20241121_0_L2A.json",
+            "asset_keys": [
+              "aot",
+              "aot-jp2",
+              "blue",
+              "blue-jp2",
+              "coastal",
+              "coastal-jp2",
+              "granule_metadata",
+              "green",
+              "green-jp2",
+              "nir",
+              "nir-jp2",
+              "nir08",
+              "nir08-jp2",
+              "nir09",
+              "nir09-jp2",
+              "red",
+              "red-jp2",
+              "rededge1",
+              "rededge1-jp2",
+              "rededge2",
+              "rededge2-jp2",
+              "rededge3",
+              "rededge3-jp2",
+              "scl",
+              "scl-jp2",
+              "swir16",
+              "swir16-jp2",
+              "swir22",
+              "swir22-jp2",
+              "thumbnail"
+            ],
+            "transform_10m": [
+              10.0,
+              0.0,
+              600000.0,
+              0.0,
+              -10.0,
+              3500040.0
+            ],
+            "transform_stacchip": [
+              60.0,
+              0.0,
+              600000.0,
+              0.0,
+              -60.0,
+              3500040.0
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/17/T/LG/2024/11/S2A_17TLG_20241104_0_L2A/S2A_17TLG_20241104_0_L2A.parquet",
+            "hyp": "10m",
+            "transform_used": [
+              10.0,
+              0.0,
+              300000.0,
+              0.0,
+              -10.0,
+              4700040.0
+            ],
+            "resid_chip_units_max": 5.968558980384842e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 0.0,
+            "median_cos_as_shipped": 0.2517649144921556
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/17/T/LG/2024/11/S2A_17TLG_20241104_0_L2A/S2A_17TLG_20241104_0_L2A.parquet",
+            "hyp": "stacchip_transform",
+            "transform_used": [
+              60.0,
+              0.0,
+              300000.0,
+              0.0,
+              -60.0,
+              4700040.0
+            ],
+            "resid_chip_units_max": 9.947598300641403e-14,
+            "n": 50,
+            "frac_chips_no_nodata": 1.0,
+            "median_cos_as_shipped": 0.9999996160393898
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/17/T/LG/2024/11/S2A_17TLG_20241104_0_L2A/S2A_17TLG_20241104_0_L2A.parquet",
+            "n_unique_geoms": 80,
+            "n_duplicate_rows": 79,
+            "dup_pair_cos_min": 0.9999999999911627,
+            "dup_pair_cos_median": 0.9999999999999999
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/17/T/LG/2024/11/S2A_17TLG_20241104_0_L2A/S2A_17TLG_20241104_0_L2A.parquet",
+            "meta": {
+              "date": "2024-11-04",
+              "gsd": "10",
+              "uri": "s3://sentinel-cogs/sentinel-s2-l2a-cogs/17/T/LG/2024/11/S2A_17TLG_20241104_0_L2A/S2A_17TLG_20241104_0_L2A.json"
+            },
+            "rows": 159,
+            "dim": 1024,
+            "footprint_width_m_median": 15360.000000000698,
+            "item_json": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/17/T/LG/2024/11/S2A_17TLG_20241104_0_L2A/S2A_17TLG_20241104_0_L2A.json",
+            "asset_keys": [
+              "aot",
+              "aot-jp2",
+              "blue",
+              "blue-jp2",
+              "coastal",
+              "coastal-jp2",
+              "granule_metadata",
+              "green",
+              "green-jp2",
+              "nir",
+              "nir-jp2",
+              "nir08",
+              "nir08-jp2",
+              "nir09",
+              "nir09-jp2",
+              "red",
+              "red-jp2",
+              "rededge1",
+              "rededge1-jp2",
+              "rededge2",
+              "rededge2-jp2",
+              "rededge3",
+              "rededge3-jp2",
+              "scl",
+              "scl-jp2",
+              "swir16",
+              "swir16-jp2",
+              "swir22",
+              "swir22-jp2",
+              "thumbnail"
+            ],
+            "transform_10m": [
+              10.0,
+              0.0,
+              300000.0,
+              0.0,
+              -10.0,
+              4700040.0
+            ],
+            "transform_stacchip": [
+              60.0,
+              0.0,
+              300000.0,
+              0.0,
+              -60.0,
+              4700040.0
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/13/R/EP/2024/10/S2A_13REP_20241006_0_L2A/S2A_13REP_20241006_0_L2A.parquet",
+            "hyp": "10m",
+            "transform_used": [
+              10.0,
+              0.0,
+              499980.0,
+              0.0,
+              -10.0,
+              3400020.0
+            ],
+            "resid_chip_units_max": 7.389644451905042e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 0.06,
+            "median_cos_as_shipped": 0.16390054690008987
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/13/R/EP/2024/10/S2A_13REP_20241006_0_L2A/S2A_13REP_20241006_0_L2A.parquet",
+            "hyp": "stacchip_transform",
+            "transform_used": [
+              60.0,
+              0.0,
+              499980.0,
+              0.0,
+              -60.0,
+              3400020.0
+            ],
+            "resid_chip_units_max": 1.2079226507921703e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 1.0,
+            "median_cos_as_shipped": 0.9999999341462764
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/13/R/EP/2024/10/S2A_13REP_20241006_0_L2A/S2A_13REP_20241006_0_L2A.parquet",
+            "n_unique_geoms": 1764,
+            "n_duplicate_rows": 1714,
+            "dup_pair_cos_min": 0.9999999999999998,
+            "dup_pair_cos_median": 1.0
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/13/R/EP/2024/10/S2A_13REP_20241006_0_L2A/S2A_13REP_20241006_0_L2A.parquet",
+            "meta": {
+              "date": "2024-10-06",
+              "gsd": "10",
+              "uri": "s3://sentinel-cogs/sentinel-s2-l2a-cogs/13/R/EP/2024/10/S2A_13REP_20241006_0_L2A/S2A_13REP_20241006_0_L2A.json"
+            },
+            "rows": 3478,
+            "dim": 1024,
+            "footprint_width_m_median": 15360.000000000698,
+            "item_json": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/13/R/EP/2024/10/S2A_13REP_20241006_0_L2A/S2A_13REP_20241006_0_L2A.json",
+            "asset_keys": [
+              "aot",
+              "aot-jp2",
+              "blue",
+              "blue-jp2",
+              "coastal",
+              "coastal-jp2",
+              "granule_metadata",
+              "green",
+              "green-jp2",
+              "nir",
+              "nir-jp2",
+              "nir08",
+              "nir08-jp2",
+              "nir09",
+              "nir09-jp2",
+              "red",
+              "red-jp2",
+              "rededge1",
+              "rededge1-jp2",
+              "rededge2",
+              "rededge2-jp2",
+              "rededge3",
+              "rededge3-jp2",
+              "scl",
+              "scl-jp2",
+              "swir16",
+              "swir16-jp2",
+              "swir22",
+              "swir22-jp2",
+              "thumbnail"
+            ],
+            "transform_10m": [
+              10.0,
+              0.0,
+              499980.0,
+              0.0,
+              -10.0,
+              3400020.0
+            ],
+            "transform_stacchip": [
+              60.0,
+              0.0,
+              499980.0,
+              0.0,
+              -60.0,
+              3400020.0
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/11/U/QQ/2024/9/S2B_11UQQ_20240919_0_L2A/S2B_11UQQ_20240919_0_L2A.parquet",
+            "hyp": "10m",
+            "transform_used": [
+              10.0,
+              0.0,
+              699960.0,
+              0.0,
+              -10.0,
+              5500020.0
+            ],
+            "resid_chip_units_max": 6.252776074688882e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 0.0,
+            "median_cos_as_shipped": 0.1642763719969687
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/11/U/QQ/2024/9/S2B_11UQQ_20240919_0_L2A/S2B_11UQQ_20240919_0_L2A.parquet",
+            "hyp": "stacchip_transform",
+            "transform_used": [
+              60.0,
+              0.0,
+              699960.0,
+              0.0,
+              -60.0,
+              5500020.0
+            ],
+            "resid_chip_units_max": 1.0658141036401503e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 0.9,
+            "median_cos_as_shipped": 0.9999999187196764
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/11/U/QQ/2024/9/S2B_11UQQ_20240919_0_L2A/S2B_11UQQ_20240919_0_L2A.parquet",
+            "n_unique_geoms": 1480,
+            "n_duplicate_rows": 1447,
+            "dup_pair_cos_min": 0.9999999999999998,
+            "dup_pair_cos_median": 1.0
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/11/U/QQ/2024/9/S2B_11UQQ_20240919_0_L2A/S2B_11UQQ_20240919_0_L2A.parquet",
+            "meta": {
+              "date": "2024-09-19",
+              "gsd": "10",
+              "uri": "s3://sentinel-cogs/sentinel-s2-l2a-cogs/11/U/QQ/2024/9/S2B_11UQQ_20240919_0_L2A/S2B_11UQQ_20240919_0_L2A.json"
+            },
+            "rows": 2927,
+            "dim": 1024,
+            "footprint_width_m_median": 15360.00000000064,
+            "item_json": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/11/U/QQ/2024/9/S2B_11UQQ_20240919_0_L2A/S2B_11UQQ_20240919_0_L2A.json",
+            "asset_keys": [
+              "aot",
+              "aot-jp2",
+              "blue",
+              "blue-jp2",
+              "coastal",
+              "coastal-jp2",
+              "granule_metadata",
+              "green",
+              "green-jp2",
+              "nir",
+              "nir-jp2",
+              "nir08",
+              "nir08-jp2",
+              "nir09",
+              "nir09-jp2",
+              "red",
+              "red-jp2",
+              "rededge1",
+              "rededge1-jp2",
+              "rededge2",
+              "rededge2-jp2",
+              "rededge3",
+              "rededge3-jp2",
+              "scl",
+              "scl-jp2",
+              "swir16",
+              "swir16-jp2",
+              "swir22",
+              "swir22-jp2",
+              "thumbnail"
+            ],
+            "transform_10m": [
+              10.0,
+              0.0,
+              699960.0,
+              0.0,
+              -10.0,
+              5500020.0
+            ],
+            "transform_stacchip": [
+              60.0,
+              0.0,
+              699960.0,
+              0.0,
+              -60.0,
+              5500020.0
+            ]
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/14/T/MP/2024/7/S2A_14TMP_20240718_0_L2A/S2A_14TMP_20240718_0_L2A.parquet",
+            "hyp": "10m",
+            "transform_used": [
+              10.0,
+              0.0,
+              399960.0,
+              0.0,
+              -10.0,
+              4900020.0
+            ],
+            "resid_chip_units_max": 5.968558980384842e-13,
+            "n": 50,
+            "frac_chips_no_nodata": 0.04,
+            "median_cos_as_shipped": 0.1621772250174291
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/14/T/MP/2024/7/S2A_14TMP_20240718_0_L2A/S2A_14TMP_20240718_0_L2A.parquet",
+            "hyp": "stacchip_transform",
+            "transform_used": [
+              60.0,
+              0.0,
+              399960.0,
+              0.0,
+              -60.0,
+              4900020.0
+            ],
+            "resid_chip_units_max": 9.769962616701378e-14,
+            "n": 50,
+            "frac_chips_no_nodata": 1.0,
+            "median_cos_as_shipped": 0.9999999685519265
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/14/T/MP/2024/7/S2A_14TMP_20240718_0_L2A/S2A_14TMP_20240718_0_L2A.parquet",
+            "n_unique_geoms": 1764,
+            "n_duplicate_rows": 1714,
+            "dup_pair_cos_min": 0.9999999999999998,
+            "dup_pair_cos_median": 1.0
+          },
+          {
+            "key": "clay/clay-v1-5-sentinel2/sentinel-s2-l2a-cogs/14/T/MP/2024/7/S2A_14TMP_20240718_0_L2A/S2A_14TMP_20240718_0_L2A.parquet",
+            "meta": {
+              "date": "2024-07-18",
+              "gsd": "10",
+              "uri": "s3://sentinel-cogs/sentinel-s2-l2a-cogs/14/T/MP/2024/7/S2A_14TMP_20240718_0_L2A/S2A_14TMP_20240718_0_L2A.json"
+            },
+            "rows": 3478,
+            "dim": 1024,
+            "footprint_width_m_median": 15360.000000000582,
+            "item_json": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/14/T/MP/2024/7/S2A_14TMP_20240718_0_L2A/S2A_14TMP_20240718_0_L2A.json",
+            "asset_keys": [
+              "aot",
+              "aot-jp2",
+              "blue",
+              "blue-jp2",
+              "coastal",
+              "coastal-jp2",
+              "granule_metadata",
+              "green",
+              "green-jp2",
+              "nir",
+              "nir-jp2",
+              "nir08",
+              "nir08-jp2",
+              "nir09",
+              "nir09-jp2",
+              "red",
+              "red-jp2",
+              "rededge1",
+              "rededge1-jp2",
+              "rededge2",
+              "rededge2-jp2",
+              "rededge3",
+              "rededge3-jp2",
+              "scl",
+              "scl-jp2",
+              "swir16",
+              "swir16-jp2",
+              "swir22",
+              "swir22-jp2",
+              "thumbnail"
+            ],
+            "transform_10m": [
+              10.0,
+              0.0,
+              399960.0,
+              0.0,
+              -10.0,
+              4900020.0
+            ],
+            "transform_stacchip": [
+              60.0,
+              0.0,
+              399960.0,
+              0.0,
+              -60.0,
+              4900020.0
+            ]
+          }
+        ],
+        "10m/as_shipped": {
+          "n": 300,
+          "median_cos": 0.16836051588810994,
+          "p05_cos": 0.12794074130434616,
+          "min_cos": 0.08998898180300317,
+          "frac_gt_0.99": 0.0033333333333333335,
+          "norm_ratio_median": 1.1594856977462769,
+          "released_norm_median": 3.4128472805023193,
+          "recomputed_norm_median": 2.9359652996063232
+        },
+        "10m/latlon_fixed": {
+          "n": 300,
+          "median_cos": 0.16768601354389584,
+          "p05_cos": 0.12740303471503991,
+          "min_cos": 0.08915269322780837,
+          "frac_gt_0.99": 0.0033333333333333335,
+          "norm_ratio_median": 1.157073736190796,
+          "released_norm_median": 3.4128472805023193,
+          "recomputed_norm_median": 2.942143440246582
+        },
+        "10m/no_meta": {
+          "n": 300,
+          "median_cos": 0.16753073534199592,
+          "p05_cos": 0.1265343874659337,
+          "min_cos": 0.0882163063303915,
+          "frac_gt_0.99": 0.0033333333333333335,
+          "norm_ratio_median": 1.1579525470733643,
+          "released_norm_median": 3.4128472805023193,
+          "recomputed_norm_median": 2.939065456390381
+        },
+        "stacchip_transform/as_shipped": {
+          "n": 300,
+          "median_cos": 0.9999999261271624,
+          "p05_cos": 0.9999992935294287,
+          "min_cos": 0.9999984617975382,
+          "frac_gt_0.99": 1.0,
+          "norm_ratio_median": 0.9999924302101135,
+          "released_norm_median": 3.4128472805023193,
+          "recomputed_norm_median": 3.4128475189208984
+        },
+        "stacchip_transform/latlon_fixed": {
+          "n": 300,
+          "median_cos": 0.9810830520748463,
+          "p05_cos": 0.9365363842560047,
+          "min_cos": 0.9073534009628014,
+          "frac_gt_0.99": 0.25,
+          "norm_ratio_median": 1.0009088516235352,
+          "released_norm_median": 3.4128472805023193,
+          "recomputed_norm_median": 3.4111499786376953
+        },
+        "stacchip_transform/no_meta": {
+          "n": 300,
+          "median_cos": 0.9940958954754816,
+          "p05_cos": 0.9907596188929817,
+          "min_cos": 0.9813192525886043,
+          "frac_gt_0.99": 0.9766666666666667,
+          "norm_ratio_median": 0.9966700077056885,
+          "released_norm_median": 3.4128472805023193,
+          "recomputed_norm_median": 3.432037353515625
+        }
+      }
+    },
+    "log": {
+      "sets": {
+        "naip_files": [
+          {
+            "key": "clay/clay-v1-5-naip-2/mo/2014/100cm/rgbir_cog/37089/m_3708950_se_16_1_20140721.parquet",
+            "meta": {
+              "date": "20140721",
+              "gsd": "1.0",
+              "uri": "s3://naip-analytic/mo/2014/100cm/rgbir_cog/37089/m_3708950_se_16_1_20140721.tif"
+            },
+            "rows_in_file": 720,
+            "dim": 1024,
+            "pc_item": "mo_m_3708950_se_16_1_20140721_20141020",
+            "pc_href": "https://naipeuwest.blob.core.windows.net/naip/v002/mo/2014/mo_100cm_2014/37089/m_3708950_se_16_1_20140721.tif",
+            "raster_shape": [
+              7701,
+              6357
+            ],
+            "expected_chips_full_grid": 720,
+            "max_resid_px": 1.862645149230957e-09,
+            "gsd": 1.0,
+            "date": "2014-07-21 12:00:00",
+            "bytes": 3600504
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/fl/2021/60cm/rgbir_cog/30085/m_3008534_se_16_060_20220113.parquet",
+            "meta": {
+              "date": "20220113",
+              "gsd": "0.6",
+              "uri": "s3://naip-analytic/fl/2021/60cm/rgbir_cog/30085/m_3008534_se_16_060_20220113.tif"
+            },
+            "rows_in_file": 2107,
+            "dim": 1024,
+            "pc_item": "fl_m_3008534_se_16_060_20220113",
+            "pc_href": "https://naipeuwest.blob.core.windows.net/naip/v002/fl/2021/fl_060cm_2021/30085/m_3008534_se_16_060_20220113.tif",
+            "raster_shape": [
+              12744,
+              11052
+            ],
+            "expected_chips_full_grid": 2107,
+            "max_resid_px": 2.9485818231478333e-09,
+            "gsd": 0.6,
+            "date": "2022-01-13 12:00:00",
+            "bytes": 9329789
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/mt/2019/60cm/rgbir_cog/45107/m_4510705_se_13_060_20190816.parquet",
+            "meta": {
+              "date": "20190816",
+              "gsd": "0.6",
+              "uri": "s3://naip-analytic/mt/2019/60cm/rgbir_cog/45107/m_4510705_se_13_060_20190816.tif"
+            },
+            "rows_in_file": 1680,
+            "dim": 1024,
+            "pc_item": "mt_m_4510705_se_13_060_20190816_20200106",
+            "pc_href": "https://naipeuwest.blob.core.windows.net/naip/v002/mt/2019/mt_60cm_2019/45107/m_4510705_se_13_060_20190816.tif",
+            "raster_shape": [
+              12490,
+              9100
+            ],
+            "expected_chips_full_grid": 1680,
+            "max_resid_px": 2.7939677238464355e-09,
+            "gsd": 0.6,
+            "date": "2019-08-16 12:00:00",
+            "bytes": 7565725
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/sd/2020/60cm/rgbir_cog/42101/m_4210107_nw_14_060_20200809.parquet",
+            "meta": {
+              "date": "20200809",
+              "gsd": "0.6",
+              "uri": "s3://naip-analytic/sd/2020/60cm/rgbir_cog/42101/m_4210107_nw_14_060_20200809.tif"
+            },
+            "rows_in_file": 1728,
+            "dim": 1024,
+            "pc_item": "sd_m_4210107_nw_14_060_20200809",
+            "pc_href": "https://naipeuwest.blob.core.windows.net/naip/v002/sd/2020/sd_060cm_2020/42101/m_4210107_nw_14_060_20200809.tif",
+            "raster_shape": [
+              12460,
+              9470
+            ],
+            "expected_chips_full_grid": 1728,
+            "max_resid_px": 3.725290298461914e-09,
+            "gsd": 0.6,
+            "date": "2020-08-09 12:00:00",
+            "bytes": 7763927
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/nc/2020/60cm/rgbir_cog/35078/m_3507802_se_17_060_20200711.parquet",
+            "meta": {
+              "date": "20200711",
+              "gsd": "0.6",
+              "uri": "s3://naip-analytic/nc/2020/60cm/rgbir_cog/35078/m_3507802_se_17_060_20200711.tif"
+            },
+            "rows_in_file": 2050,
+            "dim": 1024,
+            "pc_item": "nc_m_3507802_se_17_060_20200711",
+            "pc_href": "https://naipeuwest.blob.core.windows.net/naip/v002/nc/2020/nc_060cm_2020/35078/m_3507802_se_17_060_20200711.tif",
+            "raster_shape": [
+              12861,
+              10591
+            ],
+            "expected_chips_full_grid": 2050,
+            "max_resid_px": 2.9879174689995125e-09,
+            "gsd": 0.6,
+            "date": "2020-07-11 12:00:00",
+            "bytes": 9094331
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/wa/2011/100cm/rgbir_cog/48117/m_4811740_nw_11_1_20110702.parquet",
+            "meta": {
+              "date": "20110702",
+              "gsd": "1.0",
+              "uri": "s3://naip-analytic/wa/2011/100cm/rgbir_cog/48117/m_4811740_nw_11_1_20110702.tif"
+            },
+            "rows_in_file": 580,
+            "dim": 1024,
+            "pc_item": "wa_m_4811740_nw_11_1_20110702_20111004",
+            "pc_href": "https://naipeuwest.blob.core.windows.net/naip/v002/wa/2011/wa_100cm_2011/48117/m_4811740_nw_11_1_20110702.tif",
+            "raster_shape": [
+              7580,
+              5260
+            ],
+            "expected_chips_full_grid": 580,
+            "max_resid_px": 9.313225746154785e-10,
+            "gsd": 1.0,
+            "date": "2011-07-02 12:00:00",
+            "bytes": 3020945
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/ky/2012/100cm/rgbir_cog/37087/m_3708742_nw_16_1_20120619.parquet",
+            "meta": {
+              "date": "20120619",
+              "gsd": "1.0",
+              "uri": "s3://naip-analytic/ky/2012/100cm/rgbir_cog/37087/m_3708742_nw_16_1_20120619.tif"
+            },
+            "rows_in_file": 696,
+            "dim": 1024,
+            "pc_item": "ky_m_3708742_nw_16_1_20120619_20120813",
+            "pc_href": "https://naipeuwest.blob.core.windows.net/naip/v002/ky/2012/ky_100cm_2012/37087/m_3708742_nw_16_1_20120619.tif",
+            "raster_shape": [
+              7584,
+              6199
+            ],
+            "expected_chips_full_grid": 696,
+            "max_resid_px": 1.6298145055770874e-09,
+            "gsd": 1.0,
+            "date": "2012-06-19 12:00:00",
+            "bytes": 3501141
+          },
+          {
+            "key": "clay/clay-v1-5-naip-2/md/2013/100cm/rgbir_cog/38075/m_3807560_se_18_1_20130912.parquet",
+            "meta": {
+              "date": "20130912",
+              "gsd": "1.0",
+              "uri": "s3://naip-analytic/md/2013/100cm/rgbir_cog/38075/m_3807560_se_18_1_20130912.tif"
+            },
+            "rows_in_file": 667,
+            "dim": 1024,
+            "pc_item": "md_m_3807560_se_18_1_20130912_20131112",
+            "pc_href": "https://naipeuwest.blob.core.windows.net/naip/v002/md/2013/md_100cm_2013/38075/m_3807560_se_18_1_20130912.tif",
+            "raster_shape": [
+              7567,
+              6126
+            ],
+            "expected_chips_full_grid": 667,
+            "max_resid_px": 1.862645149230957e-09,
+            "gsd": 1.0,
+            "date": "2013-09-12 12:00:00",
+            "bytes": 3380918
+          }
+        ]
+      },
+      "errors": [],
+      "clay_evidence": {
+        "ckpt": "checkpoints/v1.5/clay-v1.5.ckpt",
+        "sha256": "21432069250b9b3f9a65ffd0071c5ad56b793247285ab0604edf7f531d4798d0",
+        "tensors": 265,
+        "params": 311442944,
+        "load_s": 3.7,
+        "source": "Clay-foundation/model@f14e698f3c237cabf8d28dec669a362d66625381",
+        "torch": "2.5.1+cu124"
+      }
+    },
+    "public_inference_ckpt_sha256": "21432069250b9b3f9a65ffd0071c5ad56b793247285ab0604edf7f531d4798d0"
+  }
+}

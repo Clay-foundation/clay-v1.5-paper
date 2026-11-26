@@ -1,0 +1,45 @@
+name: Error in the paper
+description: A wrong number, claim, citation, table cell, figure or licence statement
+labels: ["paper-error"]
+body:
+  - type: markdown
+    attributes:
+      value: One issue per claim, please. Evidence we can check beats opinion.
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: Section, table or figure, and the line in DRAFT.md if you can find it.
+      placeholder: "Table 2, Panel B, m-eurosat, Clay LP"
+    validations:
+      required: true
+  - type: textarea
+    id: text
+    attributes:
+      label: Exact text or value as printed
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you believe is correct, and why
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: URL, DOI, file path in this repo, or command output.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Does it change a conclusion?
+      options:
+        - Unsure
+        - No (cosmetic or citation)
+        - Yes, weakens a claim
+        - Yes, reverses a claim
+    validations:
+      required: true

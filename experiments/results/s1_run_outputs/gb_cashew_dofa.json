@@ -1,0 +1,68 @@
+{
+  "m_cashew_dofa": {
+    "lp_miou": 13.47,
+    "ft_miou": 78.18
+  },
+  "_settings": {
+    "m_cashew_dofa": {
+      "model": "dofa_l",
+      "waves_um": [
+        0.493,
+        0.56,
+        0.665,
+        0.704,
+        0.74,
+        0.783,
+        0.842,
+        0.865,
+        1.61,
+        2.19
+      ],
+      "lp": "dense 1x1 ridge/logreg (run_standard_benchmarks.eval_dense_segmentation)",
+      "ft_epochs": 25,
+      "ft_lr_head": 0.0005,
+      "ft_lr_enc": 5e-05,
+      "ft_seed": 42,
+      "normaliser": "train zscore",
+      "input_check": {
+        "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+        "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+      }
+    }
+  },
+  "_producers": {
+    "m_cashew_dofa": {
+      "script_sha256": "850ef7ca06ee908a6fc4103ff01bf6ef46400c5859c5e43301f8fb68dbaa60a2",
+      "cfg": "6aef2635bc1ea18a",
+      "utc_timestamp": "2026-11-18T07:44:16Z"
+    }
+  },
+  "_meta": {
+    "script": "run_geobench_and_e7_complete.py",
+    "script_sha256": "850ef7ca06ee908a6fc4103ff01bf6ef46400c5859c5e43301f8fb68dbaa60a2",
+    "git_commit": "unknown",
+    "argv": [
+      "--output-dir",
+      "~/clay-paper-audit/dofa-cells/runs/gb_cashew",
+      "--parts",
+      "gb",
+      "--gb-cells",
+      "m_cashew"
+    ],
+    "utc_timestamp": "2026-11-18T07:44:17Z",
+    "packages": {
+      "torch": "2.5.1+cu124",
+      "torchgeo": "0.7.0",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.9.1",
+      "timm": "1.0.25",
+      "h5py": "n/a",
+      "rasterio": "1.4.4",
+      "olmoearth_pretrain": "0.1.2"
+    },
+    "python": "3.11.18",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  }
+}

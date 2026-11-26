@@ -1,0 +1,111 @@
+{
+  "v1.5/compiled/clay-v1.5-encoder-cpu.pt2": {
+    "repo": "made-with-clay/Clay-legacy",
+    "revision": "f521faece53b6b15df4deb2fc7215a03e561fb46",
+    "bytes": 1247987208,
+    "sha256": "ba4e3f0378128e320bc7e1560da5dde391fd9718e93bd6ac26c1c722d3e8b544",
+    "range_constraints": {
+      "s0": {
+        "min_val": 2,
+        "max_val": 1000
+      },
+      "s1": {
+        "min_val": 2,
+        "max_val": 10
+      }
+    },
+    "schema_version": {
+      "major": 5,
+      "minor": 1
+    },
+    "last_five_graph_inputs_shapes(pixels,time,latlon,waves,gsd)": {
+      "arg265_1": [
+        "s0",
+        "s1",
+        256,
+        256
+      ],
+      "arg266_1": [
+        "s0",
+        4
+      ],
+      "arg267_1": [
+        "s0",
+        4
+      ],
+      "arg268_1": [
+        "s1"
+      ],
+      "arg269_1": [
+        1
+      ]
+    }
+  },
+  "v1.5/compiled/clay-v1.5-encoder.pt2": {
+    "repo": "made-with-clay/Clay-legacy",
+    "revision": "f521faece53b6b15df4deb2fc7215a03e561fb46",
+    "bytes": 1248026787,
+    "sha256": "096cfc51bb8ca9dafe7e0e833dd4e63209370a1b04760e0594add69a9add04b9",
+    "range_constraints": {
+      "s0": {
+        "min_val": 2,
+        "max_val": 1000
+      },
+      "s1": {
+        "min_val": 2,
+        "max_val": 10
+      }
+    },
+    "schema_version": {
+      "major": 5,
+      "minor": 1
+    },
+    "last_five_graph_inputs_shapes(pixels,time,latlon,waves,gsd)": {
+      "arg265_1": [
+        "s0",
+        "s1",
+        256,
+        256
+      ],
+      "arg266_1": [
+        "s0",
+        4
+      ],
+      "arg267_1": [
+        "s0",
+        4
+      ],
+      "arg268_1": [
+        "s1"
+      ],
+      "arg269_1": [
+        1
+      ]
+    }
+  },
+  "provenance": {
+    "script": "inspect_pt2.py",
+    "git_commit": "unavailable",
+    "git_dirty": true,
+    "args": {
+      "workdir": "pt2dl"
+    },
+    "python": "3.14.4",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "packages": {
+      "torch": null,
+      "torchvision": null,
+      "numpy": "2.3.5",
+      "scipy": null,
+      "scikit-learn": null,
+      "pandas": null,
+      "timm": null,
+      "rasterio": null,
+      "pystac-client": null,
+      "planetary-computer": null,
+      "odc-stac": null,
+      "torchgeo": null
+    },
+    "utc": "2026-11-17T21:30:07Z"
+  }
+}

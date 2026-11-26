@@ -1,0 +1,153 @@
+{
+  "cells": {
+    "solar-farm/FT_8000": {
+      "table2_row": "Solar Farm Detect.",
+      "cell": "FT",
+      "status": "rerun_here",
+      "partial_seeds_done": true,
+      "metric": "test mIoU (%) over {background, solar farm}, 128 px non-overlapping patches",
+      "value": 81.83,
+      "value_std_over_seeds": null,
+      "head": "E7 UPerNet neck+head on taps (6,12,18,24); each of the 4 S2 dates encoded separately by Clay, tapped token maps averaged over dates",
+      "recipe": {
+        "optimizer": "AdamW wd 0.05",
+        "lr_head": 0.0001,
+        "lr_encoder": 1e-05,
+        "schedule": "warm-up + cosine",
+        "steps": 8000,
+        "batch_size": 8,
+        "patch": 128,
+        "precision": "bf16, gradient checkpointing",
+        "selection": "best-validation mIoU checkpoint (every 1000 steps); test scored once",
+        "relation_to_olmoearth": "same data, split tag, 4 S2 timesteps, 128 px patches as data/olmoearth_evals/tasks/solar_farm_{base,ts}.yaml; budget reduced from 100 epochs x 16384 samples"
+      },
+      "seeds": [
+        0
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "steps": 8000,
+          "batch_size": 8,
+          "best_val_miou": 82.99,
+          "best_step": 7000,
+          "last_step": 8000,
+          "test_miou": 81.83,
+          "test_iou_bg_solar": [
+            99.42,
+            64.23
+          ],
+          "test_pixel_accuracy": 99.42,
+          "train_s": 8935,
+          "curve": [
+            [
+              1000,
+              0.14456872934754939,
+              77.26
+            ],
+            [
+              2000,
+              0.022952369580278173,
+              76.67
+            ],
+            [
+              3000,
+              0.016220477793365717,
+              81.4
+            ],
+            [
+              4000,
+              0.015960235532256773,
+              80.24
+            ],
+            [
+              5000,
+              0.010754075966833625,
+              82.28
+            ],
+            [
+              6000,
+              0.010367886858410202,
+              81.89
+            ],
+            [
+              7000,
+              0.00984399122488685,
+              82.99
+            ],
+            [
+              8000,
+              0.009916512901661918,
+              82.9
+            ]
+          ]
+        }
+      ],
+      "n_windows": {
+        "train": 1712,
+        "val": 886,
+        "test": 836
+      },
+      "bands": [
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B8A",
+        "B11",
+        "B12"
+      ],
+      "waves_um": [
+        0.493,
+        0.56,
+        0.665,
+        0.704,
+        0.74,
+        0.783,
+        0.842,
+        0.865,
+        1.61,
+        2.19
+      ],
+      "old_transcribed": {
+        "value": 82.2,
+        "source": "OlmoEarth v1.3 report Table 6 (LP/kNN) / Table 4 (FT), Clay ViT Large row; attribution per audit issue 21"
+      },
+      "data": "https://storage.googleapis.com/ai2-olmoearth-projects-public-data/evals/partner_tasks/solar_farm.tar (CC BY 4.0, Allen Institute for AI)",
+      "provenance": {
+        "script": "run_clay_missing_cells.py",
+        "script_sha256": "e6d3cde7e92e868bd6308eddd18f5a8cccdd61e809654b2b7576371f9bd9a145",
+        "git_commit": "unknown",
+        "argv": [
+          "--cells",
+          "ft_solar",
+          "--seeds",
+          "0",
+          "--epochs",
+          "8000",
+          "--tag",
+          "_8000",
+          "--out",
+          "<abs>/ft_solar_8000.json"
+        ],
+        "utc_timestamp": "2026-11-18T15:18:30Z",
+        "packages": {
+          "torch": "2.5.1",
+          "torchgeo": "0.7.0",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.9.1",
+          "timm": "1.0.25",
+          "h5py": "3.16.0",
+          "rasterio": "1.4.4",
+          "olmoearth_pretrain": "n/a"
+        },
+        "python": "3.12.10",
+        "gpu": "NVIDIA A10G",
+        "rsb_script_sha256": "5a9fed86bf2acccff540389f18b4004e1e06e8c0fbb7c66631b892173112d328"
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "tasks": {
+    "m-eurosat": {
+      "sensor": "Sentinel-2 (10 m, 10b)",
+      "kind": "cls",
+      "orig_hw": 64,
+      "splits": [
+        2000,
+        1000,
+        1000
+      ],
+      "n_train": 2000,
+      "n_val": 1000,
+      "n_test": 1000,
+      "rgb_source_channels": [
+        2,
+        1,
+        0
+      ],
+      "input_size": 224,
+      "models": {
+        "dinov2_l_cls": {
+          "oa": 93.9,
+          "macro_f1": 93.89,
+          "val_oa": 95.4,
+          "best_C": 10.0,
+          "lsvm_oa": 93.9,
+          "lsvm_macro_f1": 93.9
+        },
+        "dinov2_l_mean": {
+          "oa": 95.0,
+          "macro_f1": 95.0,
+          "val_oa": 96.1,
+          "best_C": 0.1,
+          "lsvm_oa": 94.5,
+          "lsvm_macro_f1": 94.51
+        }
+      },
+      "archive": {
+        "archive": "69752442df640ba9f3683df2542c403ef5dd7fba78c9c37ec1c02156fdb7c5c4",
+        "archive_sha256": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+      },
+      "embedding_dim": 1024,
+      "elapsed_s": 693.0,
+      "producer": {
+        "script_sha256": "49daede2c7ee9041e0a5eda81eb5d59fd3da3e0b160d039fb8161e97eea3a17e",
+        "cfg": "9405b5a61fcd143a",
+        "utc_timestamp": "2026-11-18T09:56:10Z"
+      }
+    }
+  },
+  "meta": {
+    "script": "run_embeddinggemma2.py",
+    "script_sha256": "49daede2c7ee9041e0a5eda81eb5d59fd3da3e0b160d039fb8161e97eea3a17e",
+    "git_commit": "unknown",
+    "argv": [
+      "--model",
+      "dinov2",
+      "--tasks",
+      "m-eurosat,ucmerced",
+      "--output-dir",
+      "<abs>/dino"
+    ],
+    "utc_timestamp": "2026-11-18T09:56:10Z",
+    "packages": {
+      "torch": "2.15.0",
+      "torchgeo": "0.7.0",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.9.1",
+      "timm": "1.0.25",
+      "h5py": "3.16.0",
+      "rasterio": "1.4.4",
+      "olmoearth_pretrain": "n/a"
+    },
+    "python": "3.11.18",
+    "gpu": "NVIDIA A10G",
+    "peak_vram_gb": 1.869,
+    "library_versions": {
+      "torch": "2.15.0",
+      "transformers": "5.23.0",
+      "sentence-transformers": "6.3.0",
+      "timm": "1.0.25",
+      "huggingface-hub": "2.4.0",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.9.1",
+      "pillow": "13.0.0",
+      "torchgeo": "0.7.0"
+    },
+    "model": "vit_large_patch14_reg4_dinov2.lvd142m (timm)",
+    "input_size_arg": "224 (rsb extract_dinov2)",
+    "rsb_script_sha256": "c6ff9c8be2770e9f055e31994076ca02b13db58b24bae50485be07f92f669043",
+    "geobench_hf_repo": "recursix/geo-bench-1.0",
+    "geobench_hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+  }
+}

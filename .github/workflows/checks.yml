@@ -1,0 +1,19 @@
+name: checks
+on: [push, pull_request]
+jobs:
+  cpu-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Vendored Clay code matches its manifest
+        run: python experiments/suite/common/claymodel/verify_vendored.py
+      - name: Table 2 aggregates recompute from the CSV
+        run: python experiments/table2/summarize.py > /dev/null
+      - name: CITATION.cff is valid
+        run: pipx run cffconvert --validate
+      - name: Markdown and LaTeX agree (citations, tables, every Table 2 cell)
+        run: python -c "import build; print(build.verify_draft_latex_consistency(False))"
+      - name: build.py and the Makefile parse
+        run: python -m py_compile build.py experiments/suite/common/smoke_test.py experiments/inspect_remote_checkpoint.py && make -n smoke > /dev/null

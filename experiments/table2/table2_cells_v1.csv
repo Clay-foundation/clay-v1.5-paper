@@ -1,0 +1,426 @@
+panel,task,model,slot,value,metric,source,result_file,result_key,readout,head,seeds,notes
+A,m-pv4ger-seg,clay,single,84.3,mIoU,rerun_here,standard_benchmarks.json,tasks/m-pv4ger-seg/models/clay_v15_patch/miou,patch,LP,unknown,bold;printed_pct_best=100%
+A,m-pv4ger-seg,dofa_l,single,75.7,mIoU,rerun_here,standard_benchmarks.json,tasks/m-pv4ger-seg/models/dofa_l_patch/miou,patch,LP,unknown,
+A,m-pv4ger-seg,olmoearth,single,80.0,mIoU,rerun_here,all_doable_table2.json,m-pv4ger-seg/olmo_v13/miou,unknown,LP,unknown,marks=♮
+A,m-pv4ger-seg,best_peer,single,78.9,mIoU,rerun_here,all_doable_table2.json,m-pv4ger-seg/panopticon/miou,unknown,LP,unknown,peer=Pan.
+A,m-pv4ger-seg,tessera,single,,mIoU,,,,unknown,LP,unknown,n/a
+A,m-pv4ger-seg,alphaearth,single,,mIoU,,,,unknown,LP,unknown,n/a
+A,m-pv4ger-seg,dinov2,single,77.9,mIoU,rerun_here,standard_benchmarks.json,tasks/m-pv4ger-seg/models/dinov2_l_patch/miou,patch,LP,unknown,
+A,m-chesapeake,clay,single,66.9,mIoU,rerun_here,standard_benchmarks.json,tasks/m-chesapeake/models/clay_v15_patch/miou,patch,LP,unknown,bold;printed_pct_best=100%
+A,m-chesapeake,dofa_l,single,46.9,mIoU,rerun_here,standard_benchmarks.json,tasks/m-chesapeake/models/dofa_l_patch/miou,patch,LP,unknown,
+A,m-chesapeake,olmoearth,single,50.7,mIoU,rerun_here,all_doable_table2.json,m-chesapeake/olmo_v13/miou,unknown,LP,unknown,marks=♮
+A,m-chesapeake,best_peer,single,59.9,mIoU,rerun_here,all_doable_table2.json,m-chesapeake/panopticon/miou,unknown,LP,unknown,peer=Pan.
+A,m-chesapeake,tessera,single,,mIoU,,,,unknown,LP,unknown,n/a
+A,m-chesapeake,alphaearth,single,,mIoU,,,,unknown,LP,unknown,n/a
+A,m-chesapeake,dinov2,single,60.2,mIoU,rerun_here,standard_benchmarks.json,tasks/m-chesapeake/models/dinov2_l_patch/miou,patch,LP,unknown,
+A,Biomass-S3,clay,single,0.538,R^2,rerun_here,standard_benchmarks.json,tasks/biomass-s3/models/clay_v15_patch/pixel_r2,unknown,LP,unknown,printed_pct_best=91%
+A,Biomass-S3,dofa_l,single,0.528,R^2,rerun_here,standard_benchmarks.json,tasks/biomass-s3/models/dofa_l_patch/pixel_r2,patch,LP,unknown,
+A,Biomass-S3,olmoearth,single,0.594,R^2,rerun_here,all_doable_table2.json,biomass-s3/olmo_v13/dense/pixel_r2,unknown,LP,unknown,bold;marks=♮
+A,Biomass-S3,best_peer,single,0.585,R^2,rerun_here,all_doable_table2.json,biomass-s3/panopticon/dense/pixel_r2,unknown,LP,unknown,peer=Pan.
+A,Biomass-S3,tessera,single,,R^2,,,,unknown,LP,unknown,n/a
+A,Biomass-S3,alphaearth,single,,R^2,,,,unknown,LP,unknown,n/a
+A,Biomass-S3,dinov2,single,0.451,R^2,rerun_here,standard_benchmarks.json,tasks/biomass-s3/models/dinov2_l_patch/pixel_r2,patch,LP,unknown,
+A,LC100Cls-S3,clay,single,71.6,mAP,rerun_here,standard_benchmarks.json,tasks/lc100cls-s3/models/clay_v15_224_mean/macro_map,mean,LP,unknown,printed_pct_best=94%
+A,LC100Cls-S3,dofa_l,single,71.7,mAP,rerun_here,standard_benchmarks.json,tasks/lc100cls-s3/models/dofa_l_mean/macro_map,mean,LP,unknown,
+A,LC100Cls-S3,olmoearth,single,72.7,mAP,rerun_here,all_doable_table2.json,lc100cls-s3/olmo_v13/macro_map,unknown,LP,unknown,marks=♮
+A,LC100Cls-S3,best_peer,single,76.4,mAP,rerun_here,all_doable_table2.json,lc100cls-s3/panopticon/macro_map,unknown,LP,unknown,bold;peer=Pan.
+A,LC100Cls-S3,tessera,single,,mAP,,,,unknown,LP,unknown,n/a
+A,LC100Cls-S3,alphaearth,single,,mAP,,,,unknown,LP,unknown,n/a
+A,LC100Cls-S3,dinov2,single,69.1,mAP,rerun_here,standard_benchmarks.json,tasks/lc100cls-s3/models/dinov2_l_cls/macro_map,cls,LP,unknown,
+B,OpenET monthly ET,clay,first,0.12,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=80%
+B,OpenET monthly ET,clay,second,0.45,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/clay_center/max/point,center,Max,5,
+B,OpenET monthly ET,dofa_l,first,0.05,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+B,OpenET monthly ET,dofa_l,second,0.25,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+B,OpenET monthly ET,olmoearth,first,0.15,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+B,OpenET monthly ET,olmoearth,second,0.56,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/olmo_center/max/point,center,Max,5,
+B,OpenET monthly ET,best_peer,first,0.07,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+B,OpenET monthly ET,best_peer,second,0.39,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+B,OpenET monthly ET,tessera,first,-0.44,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+B,OpenET monthly ET,tessera,second,-0.15,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/tessera_pixel/max/point,unknown,Max,5,
+B,OpenET monthly ET,alphaearth,first,-0.27,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+B,OpenET monthly ET,alphaearth,second,0.58,R^2,third_party:brown2025alphaearth,,,unknown,Max,,bold;marks=◊
+B,OpenET monthly ET,dinov2,first,-0.27,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+B,OpenET monthly ET,dinov2,second,0.09,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+B,Sen1Floods11 (S2),clay,first,83.3,IoU,rerun_here,e7_finetune_results.json,arms/clay_frozen_upernet/test/water_iou/point*100,unknown,UPerNet-frozen,3,bold;printed_pct_best=100%
+B,Sen1Floods11 (S2),clay,second,83.8,IoU,rerun_here,e7_finetune_results.json,arms/clay_finetune_upernet/test/water_iou/point*100,unknown,UPerNet-FT,3,bold
+B,Sen1Floods11 (S2),dofa_l,first,79.8,IoU,rerun_here,remaining_all.json,sen1floods11_s2_dofa_frozen_upernet,unknown,UPerNet-frozen,3,
+B,Sen1Floods11 (S2),dofa_l,second,81.2,IoU,rerun_here,e7_finetune_results.json,arms/dofa_finetune_upernet/test/water_iou/point*100,unknown,UPerNet-FT,3,
+B,Sen1Floods11 (S2),olmoearth,first,82.2,IoU,rerun_here,remaining_all.json,sen1floods11_s2_olmo_frozen_upernet,unknown,UPerNet-frozen,3,
+B,Sen1Floods11 (S2),olmoearth,second,82.1,IoU,rerun_here,remaining_all.json,sen1floods11_s2_olmo_finetune_upernet,unknown,UPerNet-FT,3,
+B,Sen1Floods11 (S2),best_peer,first,82.4,IoU,rerun_here,remaining_all.json,sen1floods11_s2_prithvi_frozen_upernet,unknown,UPerNet-frozen,3,peer=Pr.-2
+B,Sen1Floods11 (S2),best_peer,second,83.1,IoU,third_party:olmoearth2026v13,,,unknown,UPerNet-FT,unknown,peer=Pr.-2
+B,Sen1Floods11 (S2),tessera,single,,IoU,,,,unknown,UPerNet-frozen,unknown,n/a
+B,Sen1Floods11 (S2),alphaearth,single,,IoU,,,,unknown,UPerNet-frozen,unknown,n/a
+B,Sen1Floods11 (S2),dinov2,first,57.9,IoU,rerun_here,remaining_all.json,sen1floods11_s2_dinov2_frozen_upernet,unknown,UPerNet-frozen,3,
+B,Sen1Floods11 (S2),dinov2,second,65.3,IoU,rerun_here,remaining_all.json,sen1floods11_s2_dinov2_finetune_upernet,unknown,UPerNet-FT,3,
+B,Sen1Floods11 (S1),clay,first,76.7,mIoU,rerun_here,clay_missing_cells.json,cells/sen1floods11-s1/LP/value,unknown,LP,deterministic,printed_pct_best=99%
+B,Sen1Floods11 (S1),clay,second,79.9,mIoU,rerun_here,clay_missing_cells.json,cells/sen1floods11-s1/FT/value,unknown,FT,1,
+B,Sen1Floods11 (S1),dofa_l,first,,mIoU,,,,unknown,LP,unknown,n/a
+B,Sen1Floods11 (S1),dofa_l,second,,mIoU,,,,unknown,FT,unknown,n/a
+B,Sen1Floods11 (S1),olmoearth,first,79.3,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,
+B,Sen1Floods11 (S1),olmoearth,second,80.5,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold
+B,Sen1Floods11 (S1),best_peer,first,79.4,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,bold;peer=Gal.
+B,Sen1Floods11 (S1),best_peer,second,79.7,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,peer=Gal.
+B,Sen1Floods11 (S1),tessera,single,,mIoU,,,,unknown,LP,unknown,n/a
+B,Sen1Floods11 (S1),alphaearth,single,,mIoU,,,,unknown,LP,unknown,n/a
+B,Sen1Floods11 (S1),dinov2,single,,mIoU,,,,unknown,LP,unknown,n/a
+B,Vessel Detect. (S1),clay,single,79.9,F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold;marks=§✠;printed_pct_best=100%
+B,Vessel Detect. (S1),dofa_l,single,,F_1,,,,unknown,FT,unknown,marks=¶;n/a
+B,Vessel Detect. (S1),olmoearth,single,79.5,F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+B,Vessel Detect. (S1),best_peer,single,79.6,F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,peer=TM-B
+B,Vessel Detect. (S1),tessera,single,,F_1,,,,unknown,FT,unknown,n/a
+B,Vessel Detect. (S1),alphaearth,single,,F_1,,,,unknown,FT,unknown,n/a
+B,Vessel Detect. (S1),dinov2,single,,F_1,,,,unknown,FT,unknown,n/a
+B,Vessel Detect. (L8),clay,single,70.7,F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,marks=✠;printed_pct_best=94%
+B,Vessel Detect. (L8),dofa_l,single,,F_1,,,,unknown,FT,unknown,marks=¶;n/a
+B,Vessel Detect. (L8),olmoearth,single,74.7,F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+B,Vessel Detect. (L8),best_peer,single,74.9,F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold;peer=Pan.
+B,Vessel Detect. (L8),tessera,single,,F_1,,,,unknown,FT,unknown,n/a
+B,Vessel Detect. (L8),alphaearth,single,,F_1,,,,unknown,FT,unknown,n/a
+B,Vessel Detect. (L8),dinov2,single,,F_1,,,,unknown,FT,unknown,marks=¶;n/a
+B,CropHarvest-Togo,clay,single,77.1,Acc,rerun_here,all_doable_table2.json,cropharvest_togo/clay/oa,unknown,LP,unknown,printed_pct_best=97%
+B,CropHarvest-Togo,dofa_l,single,74.2,Acc,rerun_here,all_doable_table2.json,cropharvest_togo/dofa_s1/oa,unknown,LP,unknown,
+B,CropHarvest-Togo,olmoearth,single,72.9,Acc,third_party:olmoearth2026v13,,,unknown,LP,unknown,marks=†
+B,CropHarvest-Togo,best_peer,single,79.4,Acc,third_party:olmoearth2026v13,,,unknown,LP,unknown,bold;peer=CR.
+B,CropHarvest-Togo,tessera,single,,Acc,,,,unknown,LP,unknown,n/a
+B,CropHarvest-Togo,alphaearth,single,,Acc,,,,unknown,LP,unknown,n/a
+B,CropHarvest-Togo,dinov2,single,69.3,Acc,rerun_here,all_doable_table2.json,cropharvest_togo/dinov2_s1/oa,unknown,LP,unknown,
+B,EuroSAT-S1,clay,single,85.9,OA,rerun_here,standard_benchmarks.json,tasks/eurosat-s1/models/clay_v15_224_mean/oa,cls,LP,unknown,printed_pct_best=97%
+B,EuroSAT-S1,dofa_l,single,82.4,OA,rerun_here,standard_benchmarks.json,tasks/eurosat-s1/models/dofa_l_cls/oa,cls,LP,unknown,
+B,EuroSAT-S1,olmoearth,single,86.9,OA,rerun_here,all_doable_table2.json,eurosat-s1/olmo_v13/oa,unknown,LP,unknown,
+B,EuroSAT-S1,best_peer,single,88.7,OA,rerun_here,all_doable_table2.json,eurosat-s1/panopticon/oa,unknown,LP,unknown,bold;peer=Pan.
+B,EuroSAT-S1,tessera,single,,OA,,,,unknown,LP,unknown,n/a
+B,EuroSAT-S1,alphaearth,single,,OA,,,,unknown,LP,unknown,n/a
+B,EuroSAT-S1,dinov2,single,84.0,OA,rerun_here,all_doable_table2.json,eurosat-s1/dinov2/oa,unknown,LP,unknown,
+B,m-brick-kiln,clay,first,96.8,OA,rerun_here,standard_benchmarks.json,tasks/m-brick-kiln/models/clay_v15_224_cls/oa,cls,LP,unknown,printed_pct_best=99%
+B,m-brick-kiln,clay,second,97.9,OA,rerun_here,clay_missing_cells.json,cells/m-brick-kiln/FT/value,unknown,FT,3,
+B,m-brick-kiln,dofa_l,first,97.3,OA,rerun_here,standard_benchmarks.json,tasks/m-brick-kiln/models/dofa_l_mean/oa,mean,LP,unknown,
+B,m-brick-kiln,dofa_l,second,98.3,OA,rerun_here,remaining_all.json,m-brick-kiln_dofa_ft,unknown,FT,unknown,
+B,m-brick-kiln,olmoearth,first,97.9,OA,rerun_here,all_doable_table2.json,m-brick-kiln/olmo_v13/oa,unknown,LP,unknown,bold
+B,m-brick-kiln,olmoearth,second,99.0,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold
+B,m-brick-kiln,best_peer,first,96.9,OA,rerun_here,all_doable_table2.json,m-brick-kiln/copernicus_fm/oa,unknown,LP,unknown,peer=Cop.
+B,m-brick-kiln,best_peer,second,99.0,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold;peer=Pan.
+B,m-brick-kiln,tessera,single,,OA,,,,unknown,LP,unknown,n/a
+B,m-brick-kiln,alphaearth,single,,OA,,,,unknown,LP,unknown,n/a
+B,m-brick-kiln,dinov2,first,94.8,OA,rerun_here,standard_benchmarks.json,tasks/m-brick-kiln/models/dinov2_l_cls/oa,cls,LP,unknown,
+B,m-brick-kiln,dinov2,second,98.9,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+B,m-eurosat,clay,first,96.2,OA,rerun_here,standard_benchmarks.json,tasks/m-eurosat/models/clay_v15_224_mean/oa,mean,LP,unknown,printed_pct_best=99%
+B,m-eurosat,clay,second,96.3,OA,rerun_here,clay_missing_cells.json,cells/m-eurosat/FT/value,unknown,FT,3,
+B,m-eurosat,dofa_l,first,97.0,OA,rerun_here,standard_benchmarks.json,tasks/m-eurosat/models/dofa_l_mean/oa,mean,LP,unknown,
+B,m-eurosat,dofa_l,second,98.1,OA,rerun_here,remaining_all.json,m-eurosat_dofa_ft,unknown,FT,unknown,
+B,m-eurosat,olmoearth,first,97.1,OA,rerun_here,all_doable_table2.json,m-eurosat/olmo_v13/oa,unknown,LP,unknown,
+B,m-eurosat,olmoearth,second,98.5,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold
+B,m-eurosat,best_peer,first,97.5,OA,rerun_here,all_doable_table2.json,m-eurosat/panopticon/oa,unknown,LP,unknown,bold;peer=Pan.
+B,m-eurosat,best_peer,second,98.4,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,peer=Cop.
+B,m-eurosat,tessera,single,,OA,,,,unknown,LP,unknown,n/a
+B,m-eurosat,alphaearth,single,,OA,,,,unknown,LP,unknown,n/a
+B,m-eurosat,dinov2,first,95.0,OA,rerun_here,standard_benchmarks.json,tasks/m-eurosat/models/dinov2_l_mean/oa,mean,LP,unknown,
+B,m-eurosat,dinov2,second,96.7,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+B,m-so2sat,clay,first,57.9,OA,rerun_here,standard_benchmarks.json,tasks/m-so2sat/models/clay_v15_224_cls/oa,mean,LP,unknown,printed_pct_best=93%
+B,m-so2sat,clay,second,61.3,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,marks=✠
+B,m-so2sat,dofa_l,first,60.3,OA,rerun_here,standard_benchmarks.json,tasks/m-so2sat/models/dofa_l_mean/oa,mean,LP,unknown,
+B,m-so2sat,dofa_l,second,63.6,OA,not_regenerated,remaining_all.json,_not_regenerated/m-so2sat_dofa_ft/pre_audit_value,unknown,FT,unknown,marks=‖
+B,m-so2sat,olmoearth,first,62.1,OA,rerun_here,all_doable_table2.json,m-so2sat/olmo_v13/oa,unknown,LP,unknown,bold
+B,m-so2sat,olmoearth,second,68.4,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold
+B,m-so2sat,best_peer,first,61.9,OA,rerun_here,all_doable_table2.json,m-so2sat/panopticon/oa,unknown,LP,unknown,peer=Pan.
+B,m-so2sat,best_peer,second,66.8,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,peer=Cop.
+B,m-so2sat,tessera,single,,OA,,,,unknown,LP,unknown,n/a
+B,m-so2sat,alphaearth,single,,OA,,,,unknown,LP,unknown,n/a
+B,m-so2sat,dinov2,first,58.7,OA,rerun_here,standard_benchmarks.json,tasks/m-so2sat/models/dinov2_l_mean/oa,mean,LP,unknown,
+B,m-so2sat,dinov2,second,63.3,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+B,m-forestnet,clay,first,53.0,OA,rerun_here,standard_benchmarks.json,tasks/m-forestnet/models/clay_v15_cls/oa,cls,LP,unknown,bold;printed_pct_best=100%
+B,m-forestnet,clay,second,54.5,OA,rerun_here,clay_missing_cells.json,cells/m-forestnet/FT/value,unknown,FT,1,
+B,m-forestnet,dofa_l,first,52.9,OA,rerun_here,standard_benchmarks.json,tasks/m-forestnet/models/dofa_l_mean/oa,mean,LP,unknown,
+B,m-forestnet,dofa_l,second,54.2,OA,not_regenerated,remaining_all.json,_not_regenerated/m-forestnet_dofa_ft/pre_audit_value,unknown,FT,unknown,marks=‖
+B,m-forestnet,olmoearth,first,51.0,OA,rerun_here,all_doable_table2.json,m-forestnet/olmo_v13/oa,unknown,LP,unknown,
+B,m-forestnet,olmoearth,second,52.7,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+B,m-forestnet,best_peer,first,52.8,OA,rerun_here,all_doable_table2.json,m-forestnet/copernicus_fm/oa,unknown,LP,unknown,peer=Cop.
+B,m-forestnet,best_peer,second,56.0,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,peer=Pan.
+B,m-forestnet,tessera,single,,OA,,,,unknown,LP,unknown,n/a
+B,m-forestnet,alphaearth,single,,OA,,,,unknown,LP,unknown,n/a
+B,m-forestnet,dinov2,first,48.7,OA,rerun_here,standard_benchmarks.json,tasks/m-forestnet/models/dinov2_l_cls/oa,cls,LP,unknown,
+B,m-forestnet,dinov2,second,59.2,OA,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold
+B,Solar Farm Detect.,clay,single,82.2,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,marks=✠;printed_pct_best=94%
+B,Solar Farm Detect.,dofa_l,single,,mIoU,,,,unknown,FT,unknown,n/a
+B,Solar Farm Detect.,olmoearth,single,87.5,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold
+B,Solar Farm Detect.,best_peer,single,84.1,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,peer=Pr.-2
+B,Solar Farm Detect.,tessera,single,,mIoU,,,,unknown,FT,unknown,marks=¶;n/a
+B,Solar Farm Detect.,alphaearth,single,77.5,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,marks=◊
+B,Solar Farm Detect.,dinov2,single,70.7,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+C,Africa crop mask,clay,first,0.77,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/clay_center/10/point,center,10-shot,5,marks=*;printed_pct_best=95%
+C,Africa crop mask,clay,second,0.87,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,Africa crop mask,dofa_l,first,0.70,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,Africa crop mask,dofa_l,second,0.80,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,Africa crop mask,olmoearth,first,0.82,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,Africa crop mask,olmoearth,second,0.92,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,Africa crop mask,best_peer,first,0.65,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,Africa crop mask,best_peer,second,0.76,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,Africa crop mask,tessera,first,0.69,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,Africa crop mask,tessera,second,0.88,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,Africa crop mask,alphaearth,first,0.71,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,Africa crop mask,alphaearth,second,0.89,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,Africa crop mask,dinov2,first,0.77,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,Africa crop mask,dinov2,second,0.88,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,ASTER emissivity,clay,first,0.75,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=98%
+C,ASTER emissivity,clay,second,0.84,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,ASTER emissivity,dofa_l,first,0.72,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,ASTER emissivity,dofa_l,second,0.80,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,ASTER emissivity,olmoearth,first,0.80,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,ASTER emissivity,olmoearth,second,0.86,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/olmo_center/max/point,center,Max,5,bold
+C,ASTER emissivity,best_peer,first,0.73,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,ASTER emissivity,best_peer,second,0.80,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,ASTER emissivity,tessera,first,0.73,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,ASTER emissivity,tessera,second,0.82,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/tessera_pixel/max/point,unknown,Max,5,
+C,ASTER emissivity,alphaearth,first,0.76,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,ASTER emissivity,alphaearth,second,0.81,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/aef_ov32_px/max/point,unknown,Max,5,
+C,ASTER emissivity,dinov2,first,0.49,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,ASTER emissivity,dinov2,second,0.64,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,LCMAP land cover,clay,first,0.67,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=91%
+C,LCMAP land cover,clay,second,0.74,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,LCMAP land cover,dofa_l,first,0.56,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,LCMAP land cover,dofa_l,second,0.63,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,LCMAP land cover,olmoearth,first,0.74,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,LCMAP land cover,olmoearth,second,0.77,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/olmo_center/max/point,center,Max,5,
+C,LCMAP land cover,best_peer,first,0.61,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,LCMAP land cover,best_peer,second,0.69,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,LCMAP land cover,tessera,first,0.66,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,LCMAP land cover,tessera,second,0.80,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/tessera_pixel/max/point,unknown,Max,5,
+C,LCMAP land cover,alphaearth,first,0.65,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,LCMAP land cover,alphaearth,second,0.84,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,LCMAP land cover,dinov2,first,0.55,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,LCMAP land cover,dinov2,second,0.66,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,LCMAP land use,clay,first,0.66,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=88%
+C,LCMAP land use,clay,second,0.74,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,LCMAP land use,dofa_l,first,0.55,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,LCMAP land use,dofa_l,second,0.61,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,LCMAP land use,olmoearth,first,0.75,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,LCMAP land use,olmoearth,second,0.89,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,LCMAP land use,best_peer,first,0.59,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,LCMAP land use,best_peer,second,0.70,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,LCMAP land use,tessera,first,0.65,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,LCMAP land use,tessera,second,0.86,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/tessera_pixel/max/point,unknown,Max,5,
+C,LCMAP land use,alphaearth,first,0.67,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,LCMAP land use,alphaearth,second,0.87,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,LCMAP land use,dinov2,first,0.54,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,LCMAP land use,dinov2,second,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,LCMAP cover change,clay,first,0.56,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=90%
+C,LCMAP cover change,clay,second,0.58,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,LCMAP cover change,dofa_l,first,0.51,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,LCMAP cover change,dofa_l,second,0.56,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,LCMAP cover change,olmoearth,first,0.54,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,
+C,LCMAP cover change,olmoearth,second,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/olmo_center/max/point,center,Max,5,
+C,LCMAP cover change,best_peer,first,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,LCMAP cover change,best_peer,second,0.49,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,LCMAP cover change,tessera,first,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,LCMAP cover change,tessera,second,0.75,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,LCMAP cover change,alphaearth,first,0.62,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,bold
+C,LCMAP cover change,alphaearth,second,0.78,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,LCMAP cover change,dinov2,first,0.50,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,LCMAP cover change,dinov2,second,0.51,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,LCMAP use change,clay,first,0.53,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=95%
+C,LCMAP use change,clay,second,0.56,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,LCMAP use change,dofa_l,first,0.47,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,LCMAP use change,dofa_l,second,0.39,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,LCMAP use change,olmoearth,first,0.52,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,
+C,LCMAP use change,olmoearth,second,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/olmo_center/max/point,center,Max,5,
+C,LCMAP use change,best_peer,first,0.55,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,LCMAP use change,best_peer,second,0.61,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,LCMAP use change,tessera,first,0.56,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,bold
+C,LCMAP use change,tessera,second,0.73,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,LCMAP use change,alphaearth,first,0.55,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,LCMAP use change,alphaearth,second,0.79,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,LCMAP use change,dinov2,first,0.49,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,LCMAP use change,dinov2,second,0.45,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,Oil palm (Descals),clay,first,0.65,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/clay_center/10/point,center,10-shot,5,marks=*;printed_pct_best=86%
+C,Oil palm (Descals),clay,second,0.71,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,Oil palm (Descals),dofa_l,first,0.60,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,Oil palm (Descals),dofa_l,second,0.72,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,Oil palm (Descals),olmoearth,first,0.76,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,Oil palm (Descals),olmoearth,second,0.84,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/olmo_center/max/point,center,Max,5,bold
+C,Oil palm (Descals),best_peer,first,0.54,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,Oil palm (Descals),best_peer,second,0.66,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,Oil palm (Descals),tessera,first,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,Oil palm (Descals),tessera,second,0.71,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/tessera_pixel/max/point,unknown,Max,5,
+C,Oil palm (Descals),alphaearth,first,0.67,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,Oil palm (Descals),alphaearth,second,0.80,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/aef_ov32_px/max/point,unknown,Max,5,
+C,Oil palm (Descals),dinov2,first,0.65,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,Oil palm (Descals),dinov2,second,0.79,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,GLanCE land cover,clay,first,0.49,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=86%
+C,GLanCE land cover,clay,second,0.59,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,GLanCE land cover,dofa_l,first,0.42,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,GLanCE land cover,dofa_l,second,0.49,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,GLanCE land cover,olmoearth,first,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,GLanCE land cover,olmoearth,second,0.71,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,GLanCE land cover,best_peer,first,0.41,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,GLanCE land cover,best_peer,second,0.52,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,GLanCE land cover,tessera,first,0.47,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,GLanCE land cover,tessera,second,0.69,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,GLanCE land cover,alphaearth,first,0.52,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,GLanCE land cover,alphaearth,second,0.68,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,GLanCE land cover,dinov2,first,0.38,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,GLanCE land cover,dinov2,second,0.44,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,LUCAS land use,clay,first,0.23,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=77%
+C,LUCAS land use,clay,second,0.26,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,LUCAS land use,dofa_l,first,0.16,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,LUCAS land use,dofa_l,second,0.21,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,LUCAS land use,olmoearth,first,0.30,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,LUCAS land use,olmoearth,second,0.36,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/olmo_center/max/point,center,Max,5,
+C,LUCAS land use,best_peer,first,0.19,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,LUCAS land use,best_peer,second,0.24,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,LUCAS land use,tessera,first,0.23,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,LUCAS land use,tessera,second,0.37,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,LUCAS land use,alphaearth,first,0.21,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,LUCAS land use,alphaearth,second,0.39,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,LUCAS land use,dinov2,first,0.18,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,LUCAS land use,dinov2,second,0.20,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,LUCAS land cover,clay,first,0.18,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=55%
+C,LUCAS land cover,clay,second,0.22,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,LUCAS land cover,dofa_l,first,0.10,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,LUCAS land cover,dofa_l,second,0.12,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,LUCAS land cover,olmoearth,first,0.31,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,
+C,LUCAS land cover,olmoearth,second,0.36,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/olmo_center/max/point,center,Max,5,
+C,LUCAS land cover,best_peer,first,0.14,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,LUCAS land cover,best_peer,second,0.17,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,LUCAS land cover,tessera,first,0.33,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,bold
+C,LUCAS land cover,tessera,second,0.41,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,LUCAS land cover,alphaearth,first,0.20,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,LUCAS land cover,alphaearth,second,0.35,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,LUCAS land cover,dinov2,first,0.10,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,LUCAS land cover,dinov2,second,0.12,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,Canada crops (crs.),clay,first,0.35,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=65%
+C,Canada crops (crs.),clay,second,0.48,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,Canada crops (crs.),dofa_l,first,0.23,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,Canada crops (crs.),dofa_l,second,0.26,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,Canada crops (crs.),olmoearth,first,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,Canada crops (crs.),olmoearth,second,0.74,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,Canada crops (crs.),best_peer,first,0.30,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,Canada crops (crs.),best_peer,second,0.41,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,Canada crops (crs.),tessera,first,0.53,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,Canada crops (crs.),tessera,second,0.71,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,Canada crops (crs.),alphaearth,first,0.52,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,Canada crops (crs.),alphaearth,second,0.7,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,Canada crops (crs.),dinov2,first,0.24,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,Canada crops (crs.),dinov2,second,0.29,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,Canada crops (fine),clay,first,0.35,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=68%
+C,Canada crops (fine),clay,second,0.45,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,Canada crops (fine),dofa_l,first,0.19,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,Canada crops (fine),dofa_l,second,0.24,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,Canada crops (fine),olmoearth,first,0.54,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,Canada crops (fine),olmoearth,second,0.66,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,Canada crops (fine),best_peer,first,0.30,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,Canada crops (fine),best_peer,second,0.38,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,Canada crops (fine),tessera,first,0.51,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,Canada crops (fine),tessera,second,0.65,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,Canada crops (fine),alphaearth,first,0.42,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,Canada crops (fine),alphaearth,second,0.61,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,Canada crops (fine),dinov2,first,0.17,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,Canada crops (fine),dinov2,second,0.22,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,Ethiopia crops,clay,first,0.31,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=84%
+C,Ethiopia crops,clay,second,0.32,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,Ethiopia crops,dofa_l,first,0.32,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,Ethiopia crops,dofa_l,second,0.33,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,Ethiopia crops,olmoearth,first,0.32,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,
+C,Ethiopia crops,olmoearth,second,0.64,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,Ethiopia crops,best_peer,first,0.27,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,Ethiopia crops,best_peer,second,0.32,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,Ethiopia crops,tessera,first,0.37,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,bold
+C,Ethiopia crops,tessera,second,0.68,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,Ethiopia crops,alphaearth,first,0.35,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,Ethiopia crops,alphaearth,second,0.69,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,Ethiopia crops,dinov2,first,0.27,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,Ethiopia crops,dinov2,second,0.33,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+C,US tree genera,clay,first,0.07,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/clay_center/10/point,center,10-shot,5,printed_pct_best=54%
+C,US tree genera,clay,second,0.09,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/clay_center/max/point,center,Max,5,
+C,US tree genera,dofa_l,first,0.07,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/dofa/10/point,unknown,10-shot,5,
+C,US tree genera,dofa_l,second,0.07,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/dofa/max/point,unknown,Max,5,
+C,US tree genera,olmoearth,first,0.13,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,bold
+C,US tree genera,olmoearth,second,0.23,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,bold;marks=◊
+C,US tree genera,best_peer,first,0.06,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/prithvi_center/10/point,center,10-shot,5,peer=Pr.-2
+C,US tree genera,best_peer,second,0.07,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/prithvi_center/max/point,center,Max,5,peer=Pr.-2
+C,US tree genera,tessera,first,0.10,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,
+C,US tree genera,tessera,second,0.21,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,US tree genera,alphaearth,first,0.12,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,
+C,US tree genera,alphaearth,second,0.21,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,marks=◊
+C,US tree genera,dinov2,first,0.07,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,
+C,US tree genera,dinov2,second,0.07,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/dinov2/max/point,unknown,Max,5,
+D,PASTIS-S2 (crops),clay,first,22.6,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,marks=✠;printed_pct_best=76%
+D,PASTIS-S2 (crops),clay,second,48.9,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,marks=✠
+D,PASTIS-S2 (crops),dofa_l,single,,mIoU,,,,unknown,LP,unknown,marks=¶;n/a
+D,PASTIS-S2 (crops),olmoearth,first,58.6,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,bold;marks=◊
+D,PASTIS-S2 (crops),olmoearth,second,64.1,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold
+D,PASTIS-S2 (crops),best_peer,first,44.7,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,peer=CR
+D,PASTIS-S2 (crops),best_peer,second,61.2,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,peer=Gal
+D,PASTIS-S2 (crops),tessera,first,58.3,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,marks=◊
+D,PASTIS-S2 (crops),tessera,second,,mIoU,,,,unknown,FT,unknown,n/a
+D,PASTIS-S2 (crops),alphaearth,first,39.1,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,marks=◊
+D,PASTIS-S2 (crops),alphaearth,second,,mIoU,,,,unknown,FT,unknown,n/a
+D,PASTIS-S2 (crops),dinov2,first,26.3,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,
+D,PASTIS-S2 (crops),dinov2,second,42.8,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+D,Nandi (S2) (crops),clay,first,57.0,Acc,third_party:olmoearth2026v13,,,unknown,kNN,unknown,marks=✠;printed_pct_best=73%
+D,Nandi (S2) (crops),clay,second,30.9,Acc,third_party:olmoearth2026v13,,,unknown,FT,unknown,marks=✠
+D,Nandi (S2) (crops),dofa_l,single,,Acc,,,,unknown,kNN,unknown,marks=¶;n/a
+D,Nandi (S2) (crops),olmoearth,first,77.6,Acc,third_party:olmoearth2026v13,,,unknown,kNN,unknown,bold
+D,Nandi (S2) (crops),olmoearth,second,77.3,Acc,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+D,Nandi (S2) (crops),best_peer,first,68.2,Acc,third_party:olmoearth2026v13,,,unknown,kNN,unknown,peer=CR
+D,Nandi (S2) (crops),best_peer,second,81.9,Acc,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold;peer=Gal
+D,Nandi (S2) (crops),tessera,single,,Acc,,,,unknown,kNN,unknown,marks=¶;n/a
+D,Nandi (S2) (crops),alphaearth,first,55.6,Acc,third_party:olmoearth2026v13,,,unknown,kNN,unknown,marks=◊
+D,Nandi (S2) (crops),alphaearth,second,,Acc,,,,unknown,FT,unknown,n/a
+D,Nandi (S2) (crops),dinov2,first,56.7,Acc,third_party:olmoearth2026v13,,,unknown,kNN,unknown,
+D,Nandi (S2) (crops),dinov2,second,35.8,Acc,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+D,MADOS (debris),clay,first,52.4,mIoU,rerun_here,clay_missing_cells.json,cells/mados/LP/value,unknown,LP,deterministic,printed_pct_best=92%
+D,MADOS (debris),clay,second,68.9,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,marks=✠
+D,MADOS (debris),dofa_l,single,,mIoU,,,,unknown,LP,unknown,marks=¶;n/a
+D,MADOS (debris),olmoearth,first,67.1,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,
+D,MADOS (debris),olmoearth,second,74.6,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold
+D,MADOS (debris),best_peer,first,68.4,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,bold;peer=Gal
+D,MADOS (debris),best_peer,second,73.2,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,peer=TM
+D,MADOS (debris),tessera,single,,mIoU,,,,unknown,LP,unknown,n/a
+D,MADOS (debris),alphaearth,single,,mIoU,,,,unknown,LP,unknown,n/a
+D,MADOS (debris),dinov2,first,59.7,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,
+D,MADOS (debris),dinov2,second,64.7,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+D,m-bigearthnet,clay,first,63.1,mu F_1,rerun_here,clay_missing_cells.json,cells/m-bigearthnet/LP/value,unknown,kNN,deterministic,printed_pct_best=93%
+D,m-bigearthnet,clay,second,65.7,mu F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,marks=✠
+D,m-bigearthnet,dofa_l,first,59.0,mu F_1,not_regenerated,remaining_all.json,_not_regenerated/m_bigearthnet_dofa/pre_audit_value/lp_mean,mean,kNN,unknown,marks=‡‖
+D,m-bigearthnet,dofa_l,second,69.0,mu F_1,not_regenerated,remaining_all.json,_not_regenerated/m_bigearthnet_dofa/pre_audit_value/ft_f1,unknown,FT,unknown,marks=‖
+D,m-bigearthnet,olmoearth,first,67.7,mu F_1,rerun_here,all_doable_table2.json,m-bigearthnet/olmo_v13/mean,unknown,kNN,unknown,bold
+D,m-bigearthnet,olmoearth,second,72.7,mu F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+D,m-bigearthnet,best_peer,first,65.2,mu F_1,rerun_here,all_doable_table2.json,m-bigearthnet/panopticon/mean,unknown,kNN,unknown,peer=Pan.
+D,m-bigearthnet,best_peer,second,74.0,mu F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold;peer=TM
+D,m-bigearthnet,tessera,single,,mu F_1,,,,unknown,kNN,unknown,n/a
+D,m-bigearthnet,alphaearth,single,,mu F_1,,,,unknown,kNN,unknown,n/a
+D,m-bigearthnet,dinov2,first,61.6,mu F_1,third_party:olmoearth2026v13,,,unknown,kNN,unknown,
+D,m-bigearthnet,dinov2,second,69.9,mu F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+D,m-cashewplant,clay,first,20.6,mIoU,rerun_here,clay_missing_cells.json,cells/m-cashew-plant/LP/value,unknown,LP,deterministic,printed_pct_best=91%
+D,m-cashewplant,clay,second,73.9,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,marks=✠
+D,m-cashewplant,dofa_l,first,,mIoU,,,,unknown,LP,unknown,marks=¶;n/a
+D,m-cashewplant,dofa_l,second,78.2,mIoU,not_regenerated,remaining_all.json,_not_regenerated/m_cashew_dofa/pre_audit_value/ft_miou,unknown,FT,unknown,marks=‖
+D,m-cashewplant,olmoearth,first,19.2,mIoU,rerun_here,all_doable_table2.json,m-cashew-plant/olmo_v13/miou,unknown,LP,unknown,
+D,m-cashewplant,olmoearth,second,81.0,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+D,m-cashewplant,best_peer,first,51.1,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,peer=Pr-2
+D,m-cashewplant,best_peer,second,81.3,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,bold;peer=TM
+D,m-cashewplant,tessera,single,,mIoU,,,,unknown,LP,unknown,n/a
+D,m-cashewplant,alphaearth,single,,mIoU,,,,unknown,LP,unknown,n/a
+D,m-cashewplant,dinov2,first,54.1,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,bold
+D,m-cashewplant,dinov2,second,80.6,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,
+D,m-pv4ger,clay,single,96.5,OA,rerun_here,standard_benchmarks.json,tasks/m-pv4ger/models/clay_v15_cls/oa,cls,LP,unknown,printed_pct_best=98%
+D,m-pv4ger,dofa_l,single,97.2,OA,rerun_here,standard_benchmarks.json,tasks/m-pv4ger/models/dofa_l_cls/oa,cls,LP,unknown,
+D,m-pv4ger,olmoearth,single,94.0,OA,rerun_here,all_doable_table2.json,m-pv4ger/olmo_v13/oa,unknown,LP,unknown,marks=♮
+D,m-pv4ger,best_peer,single,96.5,OA,rerun_here,standard_benchmarks.json,tasks/m-pv4ger/models/scalemae_l_cls/oa,cls,LP,unknown,peer=SM-L
+D,m-pv4ger,tessera,single,,OA,,,,unknown,LP,unknown,n/a
+D,m-pv4ger,alphaearth,single,,OA,,,,unknown,LP,unknown,n/a
+D,m-pv4ger,dinov2,single,98.0,OA,rerun_here,standard_benchmarks.json,tasks/m-pv4ger/models/dinov2_l_cls/oa,cls,LP,unknown,bold
+D,UCMerced,clay,single,95.5,OA,rerun_here,standard_benchmarks.json,tasks/ucmerced/models/clay_v15_mean/oa,cls,LP,unknown,printed_pct_best=97%
+D,UCMerced,dofa_l,single,98.3,OA,rerun_here,standard_benchmarks.json,tasks/ucmerced/models/dofa_l_cls/oa,cls,LP,unknown,
+D,UCMerced,olmoearth,single,81.2,OA,rerun_here,all_doable_table2.json,ucmerced/olmo_v13/oa,unknown,LP,unknown,marks=♮
+D,UCMerced,best_peer,single,97.4,OA,rerun_here,all_doable_table2.json,ucmerced/panopticon/oa,unknown,LP,unknown,peer=Pan.
+D,UCMerced,tessera,single,,OA,,,,unknown,LP,unknown,n/a
+D,UCMerced,alphaearth,single,,OA,,,,unknown,LP,unknown,n/a
+D,UCMerced,dinov2,single,98.6,OA,rerun_here,standard_benchmarks.json,tasks/ucmerced/models/dinov2_l_cls/oa,cls,LP,unknown,bold
+D,RESISC-45,clay,single,88.0,OA,rerun_here,standard_benchmarks.json,tasks/resisc45/models/clay_v15_cls/oa,mean,LP,unknown,printed_pct_best=93%
+D,RESISC-45,dofa_l,single,92.2,OA,rerun_here,standard_benchmarks.json,tasks/resisc45/models/dofa_l_cls/oa,cls,LP,unknown,
+D,RESISC-45,olmoearth,single,70.4,OA,rerun_here,all_doable_table2.json,resisc45/olmo_v13/oa,unknown,LP,unknown,marks=♮
+D,RESISC-45,best_peer,single,92.4,OA,rerun_here,standard_benchmarks.json,tasks/resisc45/models/scalemae_l_mean/oa,mean,LP,unknown,peer=SM-L
+D,RESISC-45,tessera,single,,OA,,,,unknown,LP,unknown,n/a
+D,RESISC-45,alphaearth,single,,OA,,,,unknown,LP,unknown,n/a
+D,RESISC-45,dinov2,single,94.9,OA,rerun_here,standard_benchmarks.json,tasks/resisc45/models/dinov2_l_mean/oa,mean,LP,unknown,bold

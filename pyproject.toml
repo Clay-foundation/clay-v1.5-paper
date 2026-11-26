@@ -1,0 +1,60 @@
+[project]
+name = "clay-v15-paper"
+version = "0.1.0"
+description = "Experiments and build tooling for the Clay v1.5 paper (arXiv manuscript)"
+readme = "REPRODUCING.md"
+requires-python = ">=3.12,<3.13"
+license = { text = "Apache-2.0" }
+# Versions below are the ones the published runs used (python 3.11/3.12 envs on the
+# evaluation host), moved to a single Python 3.12 environment. Exceptions, bumped 2026-11-25 for security
+# advisories: torch 2.14.1 (published runs: 2.5.1), geopandas 1.1.2, pyarrow 23.0.1. torch 2.14.1 wheels
+# from PyPI bundle CUDA 13.0 on Linux x86_64; no extra index is needed.
+dependencies = [
+  "torchgeo==0.7.0",
+  "timm==1.0.25",
+  "einops==0.8.2",
+  "numpy==1.26.4",
+  "scipy==1.17.1",
+  "scikit-learn==1.9.1",
+  "pandas==2.3.3",
+  "pyyaml==6.0.3",
+  "huggingface-hub>=0.33,<1",
+  "safetensors>=0.5",
+  "rasterio==1.4.4",
+  "pyproj==3.7.2",
+  "shapely==2.1.2",
+  "geopandas==1.1.2",
+  "affine==3.0.1",
+  "pystac-client==0.9.1",
+  "planetary-computer==1.0.0",
+  "odc-stac==0.5.3",
+  "h5py>=3.11",
+  "pyarrow==23.0.1",   # parquet engine for pandas (build_lesson_inputs.py, E4 part B); 23.0.1 tested with numpy 1.26.4
+  "joblib==1.6.0",
+  "threadpoolctl==3.7.0",
+  "requests>=2.32",
+  "tqdm>=4.66",
+  "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+# TESSERA comparator sampling (E5 sample_tessera.py).
+tessera = ["geotessera"]
+# Optional exploratory embedding plot (run_probe_and_lsvm_benchmark.py).
+viz = ["umap-learn"]
+
+[dependency-groups]
+# Default stack used for every Clay / DINOv2 / DOFA / TerraMind run (published with torch 2.5.1; now 2.14.1).
+main = ["torch==2.14.1", "torchvision==0.29.2"]
+# OlmoEarth comparator only (run_geobench_and_e7_complete.py). olmoearth-pretrain 0.1.2 declares
+# torch>=2.9,<2.10, so it cannot share an environment with the default stack:
+#   uv sync --no-default-groups --group olmo
+# The original OlmoEarth runs used torch 2.5.1 with olmoearth-pretrain installed with --no-deps
+# and two import shims (see run_geobench_and_e7_complete.py); that is NOT reproduced by this group.
+olmo = ["torch>=2.9,<2.10", "torchvision", "olmoearth-pretrain==0.1.2"]
+
+[tool.uv]
+package = false
+default-groups = ["main"]
+conflicts = [[{ group = "main" }, { group = "olmo" }]]
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'", "sys_platform == 'darwin' and platform_machine == 'arm64'"]

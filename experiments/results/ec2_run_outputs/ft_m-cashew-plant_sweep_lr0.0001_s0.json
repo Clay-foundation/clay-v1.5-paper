@@ -1,0 +1,141 @@
+{
+  "cells": {
+    "m-cashew-plant/FT": {
+      "table2_row": "m-cashewplant",
+      "cell": "FT",
+      "status": "rerun_here",
+      "partial_seeds_done": true,
+      "metric": "test mIoU (%) over classes",
+      "value": 62.61,
+      "value_std_over_seeds": null,
+      "head": "E7 UPerNet neck+head on taps (6,12,18,24), full encoder trainable",
+      "recipe": {
+        "optimizer": "AdamW wd 0.05",
+        "lr_head": 0.0001,
+        "lr_encoder": 0.0001,
+        "schedule": "5-epoch warm-up + cosine",
+        "epochs": 50,
+        "batch_size": 8,
+        "crop": 256,
+        "precision": "bf16, gradient checkpointing",
+        "selection": "best-validation mIoU epoch (every 5 epochs); test scored once",
+        "source": "experiments/suite/E7_finetune/code/train_e7.py classes"
+      },
+      "seeds": [
+        0
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "lr": 0.0001,
+          "epochs": 50,
+          "best_val_miou": 70.02,
+          "best_epoch": 50,
+          "train_s": 12468,
+          "curve": [
+            [
+              5,
+              0.7285515017058017,
+              42.45098931753867
+            ],
+            [
+              10,
+              0.49356210461029637,
+              49.97028014226027
+            ],
+            [
+              15,
+              0.38888913216675525,
+              59.394669529326485
+            ],
+            [
+              20,
+              0.32534887469731844,
+              61.76431296593632
+            ],
+            [
+              25,
+              0.286779096140664,
+              63.777946837646105
+            ],
+            [
+              30,
+              0.2562610271590701,
+              67.02128627723404
+            ],
+            [
+              35,
+              0.23738179448440935,
+              69.16583407963508
+            ],
+            [
+              40,
+              0.22447534575617525,
+              69.34682852361307
+            ],
+            [
+              45,
+              0.21854210120333722,
+              69.95774117941225
+            ],
+            [
+              50,
+              0.2160680913889902,
+              70.02189528431201
+            ]
+          ],
+          "test_miou": 62.61
+        }
+      ],
+      "split_sizes": [
+        1350,
+        400,
+        50
+      ],
+      "n_classes": 7,
+      "geobench_check": {
+        "archive": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+        "archive_sha256": "9a5061715eda9959297bdf176dfcf646f26e5282c17c3768daf46b60f72d8d74",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+      },
+      "old_transcribed": {
+        "value": 73.9,
+        "source": "OlmoEarth v1.3 report Table 6 (LP/kNN) / Table 4 (FT), Clay ViT Large row; attribution per audit issue 21"
+      },
+      "provenance": {
+        "script": "run_clay_missing_cells.py",
+        "script_sha256": "e6d3cde7e92e868bd6308eddd18f5a8cccdd61e809654b2b7576371f9bd9a145",
+        "git_commit": "unknown",
+        "argv": [
+          "--cells",
+          "ft_m-cashew-plant",
+          "--seeds",
+          "0",
+          "--epochs",
+          "50",
+          "--tag",
+          "_sweep",
+          "--lr",
+          "0.0001",
+          "--out",
+          "<abs>/ft_m-cashew-plant_sweep_lr0.0001_s0.json"
+        ],
+        "utc_timestamp": "2026-11-18T12:46:59Z",
+        "packages": {
+          "torch": "2.5.1",
+          "torchgeo": "0.7.0",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.9.1",
+          "timm": "1.0.25",
+          "h5py": "3.16.0",
+          "rasterio": "1.4.4",
+          "olmoearth_pretrain": "n/a"
+        },
+        "python": "3.12.10",
+        "gpu": "NVIDIA A10G",
+        "rsb_script_sha256": "5a9fed86bf2acccff540389f18b4004e1e06e8c0fbb7c66631b892173112d328"
+      }
+    }
+  }
+}

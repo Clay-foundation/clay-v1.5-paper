@@ -1,0 +1,4 @@
+
+===== ft_m-cashew-plant =====
+[m-cashew-plant s0] ep 5/50 loss 0.6217 val mIoU 41.39 best_ep 5 t 536s
+[m-cashew-plant s0] ep 10/50 loss 0.3634 val mIoU 59.58 best_ep 10 t 1289s

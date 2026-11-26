@@ -1,0 +1,181 @@
+panel,task,sensor,model,slot,value,metric,source,result_file,result_key,readout,head,seeds,notes
+A,aid,"Aerial RGB, Acc",clay,single,92.75,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large_cls|aid|linear|rgb,cls,linear probe,unknown,model=Clay v1.5 Large;band=rgb;se=1.28;rank=9 of 49
+A,aid,"Aerial RGB, Acc",other_eo,single,97.95,Acc,own_harness,harness_farslip.csv,aid|linear,default,linear probe,1,model=FarSLIP ViT-B/16;band=rgb;tag=FarSLIP;marks=†
+A,aid,"Aerial RGB, Acc",general,single,98.15,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3|aid|linear|rgb,default,linear probe,unknown,model=DINOv3 ViT-L/16;band=rgb;tag=DINOv3-L;tie=EG2;tie_file=harness_embeddinggemma2.csv;tie_key=aid|linear
+A,benv2,"Sentinel-1 + 2, micro-mAP",clay,single,83.74,micro-mAP,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large|benv2|linear|ms,default,linear probe,unknown,model=Clay v1.5 Large;band=ms;se=0.60;rank=12 of 66
+A,benv2,"Sentinel-1 + 2, micro-mAP",other_eo,single,86.4,micro-mAP,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,olmoearth_v1_2_base|benv2|linear|ms,default,linear probe,unknown,model=OlmoEarth v1.2 Base;band=ms;tag=Olmo-v1.2-B
+A,benv2,"Sentinel-1 + 2, micro-mAP",general,single,81.56,micro-mAP,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3|benv2|linear|rgb,default,linear probe,unknown,model=DINOv3 ViT-L/16;band=rgb;tag=DINOv3-L
+A,eurosat,"Sentinel-2, Acc",clay,single,98.65,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large|eurosat|linear|ms,default,linear probe,unknown,model=Clay v1.5 Large;band=ms;se=0.28;rank=11 of 63
+A,eurosat,"Sentinel-2, Acc",other_eo,single,99.11,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,olmoearth_v1_base|eurosat|linear|ms,default,linear probe,unknown,model=OlmoEarth v1 Base;band=ms;tag=Olmo-v1-B
+A,eurosat,"Sentinel-2, Acc",general,single,97.87,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_224|eurosat|linear|rgb,default,linear probe,unknown,model=ViT-L/16;band=rgb;tag=ViT-L/16
+A,eurosat-spatial,"Sentinel-2, Acc",clay,single,96.8,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large|eurosat-spatial|linear|ms,default,linear probe,unknown,model=Clay v1.5 Large;band=ms;se=0.49;rank=12 of 63
+A,eurosat-spatial,"Sentinel-2, Acc",other_eo,single,98.26,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,olmoearth_v1_large|eurosat-spatial|linear|ms,default,linear probe,unknown,model=OlmoEarth v1 Large;band=ms;tag=Olmo-v1-L
+A,eurosat-spatial,"Sentinel-2, Acc",general,single,96.07,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,convnext_large|eurosat-spatial|linear|rgb,default,linear probe,unknown,model=ConvNeXt-L;band=rgb;tag=ConvNeXt-L
+A,forestnet,"Sentinel-2, Acc",clay,single,58.31,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large_cls|forestnet|linear|rgb,cls,linear probe,unknown,model=Clay v1.5 Large;band=rgb;se=2.97;rank=2 of 49
+A,forestnet,"Sentinel-2, Acc",other_eo,single,59.32,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tgeo_deo_swin_rgb|forestnet|linear|rgb,default,linear probe,unknown,model=DEO Swin-B (RGB);band=rgb;tag=DEO-B-RGB
+A,forestnet,"Sentinel-2, Acc",general,single,57,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_224|forestnet|linear|rgb,default,linear probe,unknown,model=ViT-L/16;band=rgb;tag=ViT-L/16
+A,m-bigearthnet,"Sentinel-2, micro-mAP",clay,single,73.08,micro-mAP,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large|m-bigearthnet|linear|ms,default,linear probe,unknown,model=Clay v1.5 Large;band=ms;se=1.42;rank=15 of 63
+A,m-bigearthnet,"Sentinel-2, micro-mAP",other_eo,single,78.44,micro-mAP,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,olmoearth_v1_2_base|m-bigearthnet|linear|ms,default,linear probe,unknown,model=OlmoEarth v1.2 Base;band=ms;tag=Olmo-v1.2-B
+A,m-bigearthnet,"Sentinel-2, micro-mAP",general,single,70.91,micro-mAP,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3|m-bigearthnet|linear|rgb,default,linear probe,unknown,model=DINOv3 ViT-L/16;band=rgb;tag=DINOv3-L
+A,m-brick-kiln,"Sentinel-2, Acc",clay,single,98,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large|m-brick-kiln|linear|rgb,default,linear probe,unknown,model=Clay v1.5 Large;band=rgb;se=0.95;rank=1 of 61
+A,m-brick-kiln,"Sentinel-2, Acc",other_eo,single,97.7,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_terramind_v1_large_rgb|m-brick-kiln|linear|rgb,default,linear probe,unknown,model=TerraMind v1 Large (RGB);band=rgb;tag=TM-L-RGB
+A,m-brick-kiln,"Sentinel-2, Acc",general,single,97.9,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,swinv2_base_window12to16_192to256|m-brick-kiln|linear|rgb,default,linear probe,unknown,model=SwinV2-B;band=rgb;tag=SwinV2-B
+A,m-eurosat,"Sentinel-2, Acc",clay,single,96.8,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large|m-eurosat|linear|ms,default,linear probe,unknown,model=Clay v1.5 Large;band=ms;se=1.10;rank=18 of 63
+A,m-eurosat,"Sentinel-2, Acc",other_eo,single,98.6,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,olmoearth_v1_large|m-eurosat|linear|ms,default,linear probe,unknown,model=OlmoEarth v1 Large;band=ms;tag=Olmo-v1-L
+A,m-eurosat,"Sentinel-2, Acc",general,single,96.4,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3|m-eurosat|linear|rgb,default,linear probe,unknown,model=DINOv3 ViT-L/16;band=rgb;tag=DINOv3-L
+A,m-forestnet,"Landsat, Acc",clay,single,57.5,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large_cls|m-forestnet|linear|rgb,cls,linear probe,unknown,model=Clay v1.5 Large;band=rgb;se=3.07;rank=6 of 49
+A,m-forestnet,"Landsat, Acc",other_eo,single,58.91,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tgeo_deo_swin_rgb|m-forestnet|linear|rgb,default,linear probe,unknown,model=DEO Swin-B (RGB);band=rgb;tag=DEO-B-RGB
+A,m-forestnet,"Landsat, Acc",general,single,56.29,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,swin_large_patch4_window7_224|m-forestnet|linear|rgb,default,linear probe,unknown,model=Swin-L;band=rgb;tag=Swin-L
+A,m-pv4ger,"Aerial RGB, Acc",clay,single,96.1,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large_cls|m-pv4ger|linear|rgb,cls,linear probe,unknown,model=Clay v1.5 Large;band=rgb;se=1.10;rank=13 of 48
+A,m-pv4ger,"Aerial RGB, Acc",other_eo,single,97.1,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tgeo_dofa_large|m-pv4ger|linear|ms,default,linear probe,unknown,model=DOFA Large;band=ms;tag=DOFA-L
+A,m-pv4ger,"Aerial RGB, Acc",general,single,97.9,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,convnext_large|m-pv4ger|linear|rgb,default,linear probe,unknown,model=ConvNeXt-L;band=rgb;tag=ConvNeXt-L
+A,m-so2sat,"Sentinel-1 + 2, Acc",clay,single,73.02,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large_cls|m-so2sat|linear|ms,cls,linear probe,unknown,model=Clay v1.5 Large;band=ms;se=2.69;rank=6 of 58
+A,m-so2sat,"Sentinel-1 + 2, Acc",other_eo,single,74.44,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,olmoearth_v1_1_base|m-so2sat|linear|ms,default,linear probe,unknown,model=OlmoEarth v1.1 Base;band=ms;tag=Olmo-v1.1-B
+A,m-so2sat,"Sentinel-1 + 2, Acc",general,single,67.24,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3|m-so2sat|linear|rgb,default,linear probe,unknown,model=DINOv3 ViT-L/16;band=rgb;tag=DINOv3-L
+A,resisc45,"Aerial RGB, Acc",clay,single,88.11,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large_cls|resisc45|linear|rgb,cls,linear probe,unknown,model=Clay v1.5 Large;band=rgb;se=0.69;rank=10 of 49
+A,resisc45,"Aerial RGB, Acc",other_eo,single,95.22,Acc,own_harness,harness_farslip.csv,resisc45|linear,default,linear probe,1,model=FarSLIP ViT-B/16;band=rgb;tag=FarSLIP;marks=†
+A,resisc45,"Aerial RGB, Acc",general,single,95.75,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3|resisc45|linear|rgb,default,linear probe,unknown,model=DINOv3 ViT-L/16;band=rgb;tag=DINOv3-L
+A,so2sat,"Sentinel-1 + 2, Acc",clay,single,73.02,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large_cls|so2sat|linear|ms,cls,linear probe,unknown,model=Clay v1.5 Large;band=ms;se=2.89;rank=6 of 61
+A,so2sat,"Sentinel-1 + 2, Acc",other_eo,single,74.85,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,olmoearth_v1_large|so2sat|linear|ms,default,linear probe,unknown,model=OlmoEarth v1 Large;band=ms;tag=Olmo-v1-L
+A,so2sat,"Sentinel-1 + 2, Acc",general,single,67.24,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3|so2sat|linear|rgb,default,linear probe,unknown,model=DINOv3 ViT-L/16;band=rgb;tag=DINOv3-L
+A,treesatai,"Aerial + S1/S2, micro-mAP",clay,single,63.03,micro-mAP,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large|treesatai|linear|rgb,default,linear probe,unknown,model=Clay v1.5 Large;band=rgb;se=1.40;rank=12 of 61
+A,treesatai,"Aerial + S1/S2, micro-mAP",other_eo,single,68.12,micro-mAP,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3sat|treesatai|linear|rgb,default,linear probe,unknown,model=DINOv3-SAT ViT-L/16;band=rgb;tag=DINOv3-SAT
+A,treesatai,"Aerial + S1/S2, micro-mAP",general,single,65.79,micro-mAP,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3|treesatai|linear|rgb,default,linear probe,unknown,model=DINOv3 ViT-L/16;band=rgb;tag=DINOv3-L
+A,ucmerced,"Aerial RGB, Acc",clay,single,96.67,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_clay_v1_5_large_cls|ucmerced|linear|rgb,cls,linear probe,unknown,model=Clay v1.5 Large;band=rgb;se=1.55;rank=6 of 49
+A,ucmerced,"Aerial RGB, Acc",other_eo,single,99.29,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tgeo_dofa_large|ucmerced|linear|rgb,default,linear probe,unknown,model=DOFA Large;band=rgb;tag=DOFA-L
+A,ucmerced,"Aerial RGB, Acc",general,single,99.05,Acc,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,efficientnetv2_l|ucmerced|linear|rgb,default,linear probe,unknown,model=EfficientNetV2-L;band=rgb;tag=EfficientNetV2-L
+B,sen1floods11-s2,"Sentinel-2, mIoU",clay,single,87.0,mIoU,rerun_here,harness_clay_segmentation.json,cells/sen1floods11-s2/seg-upernet/value,,UPerNet,3,"harness run, frozen encoder;marks=†"
+B,sen1floods11-s2,"Sentinel-2, mIoU",other_eo,single,89.02,mIoU,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,olmoearth_v1_2_base|sen1floods11-s2|seg-upernet|ms,default,UPerNet,unknown,model=OlmoEarth v1.2 Base;band=ms;tag=Olmo-v1.2-B
+B,sen1floods11-s2,"Sentinel-2, mIoU",general,single,78.65,mIoU,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,swinv2_large_window12to16_192to256|sen1floods11-s2|seg-upernet|rgb,default,UPerNet,unknown,model=SwinV2-L;band=rgb;tag=SwinV2-L
+B,sen1floods11-s1,"Sentinel-1, mIoU",clay,single,79.0,mIoU,rerun_here,harness_clay_segmentation.json,cells/sen1floods11-s1/seg-upernet/value,,UPerNet,3,"harness run, frozen encoder;marks=†"
+B,sen1floods11-s1,"Sentinel-1, mIoU",other_eo,single,82.25,mIoU,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,olmoearth_v1_2_base|sen1floods11-s1|seg-upernet|rgb,default,UPerNet,unknown,model=OlmoEarth v1.2 Base;band=rgb;tag=Olmo-v1.2-B
+B,sen1floods11-s1,"Sentinel-1, mIoU",general,single,81.7,mIoU,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,swinv2_large_window12to16_192to256|sen1floods11-s1|seg-upernet|rgb,default,UPerNet,unknown,model=SwinV2-L;band=rgb;tag=SwinV2-L
+B,burn_scars,"HLS, mIoU",clay,single,86.1,mIoU,rerun_here,harness_clay_segmentation.json,cells/burn_scars/seg-upernet/value,,UPerNet,3,"harness run, frozen encoder;marks=†"
+B,burn_scars,"HLS, mIoU",other_eo,single,94,mIoU,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,tt_prithvi_eo_v2_600|burn_scars|seg-upernet|ms,default,UPerNet,unknown,model=Prithvi-EO v2 600M;band=ms;tag=Pr.-2
+B,burn_scars,"HLS, mIoU",general,single,89.99,mIoU,third_party:satml_leaderboard,satml_leaderboard_83ca5cb.json,vit_large_patch16_dinov3|burn_scars|seg-upernet|rgb,default,UPerNet,unknown,model=DINOv3 ViT-L/16;band=rgb;tag=DINOv3-L
+C,m-pv4ger-seg,"Aerial RGB $0.1\,\text{m}$ (mIoU)",clay,single,84.3,mIoU,rerun_here,standard_benchmarks.json,tasks/m-pv4ger-seg/models/clay_v15_patch/miou,patch,LP,unknown,
+C,m-pv4ger-seg,"Aerial RGB $0.1\,\text{m}$ (mIoU)",other_eo,single,80.0,mIoU,rerun_here,all_doable_table2.json,m-pv4ger-seg/olmo_v13/miou,unknown,LP,unknown,tag=Olmo;marks=♮;from=olmoearth
+C,m-pv4ger-seg,"Aerial RGB $0.1\,\text{m}$ (mIoU)",general,single,77.9,mIoU,rerun_here,standard_benchmarks.json,tasks/m-pv4ger-seg/models/dinov2_l_patch/miou,patch,LP,unknown,tag=DINOv2
+C,m-chesapeake,"NAIP RGBN $1.0\,\text{m}$ (mIoU)",clay,single,66.9,mIoU,rerun_here,standard_benchmarks.json,tasks/m-chesapeake/models/clay_v15_patch/miou,patch,LP,unknown,
+C,m-chesapeake,"NAIP RGBN $1.0\,\text{m}$ (mIoU)",other_eo,single,59.9,mIoU,rerun_here,all_doable_table2.json,m-chesapeake/panopticon/miou,unknown,LP,unknown,tag=Pan.;from=best_peer
+C,m-chesapeake,"NAIP RGBN $1.0\,\text{m}$ (mIoU)",general,single,60.2,mIoU,rerun_here,standard_benchmarks.json,tasks/m-chesapeake/models/dinov2_l_patch/miou,patch,LP,unknown,tag=DINOv2
+C,Biomass-S3,"S3 OLCI $300\,\text{m}$, 21b ($R^2$)",clay,single,0.538,R^2,rerun_here,standard_benchmarks.json,tasks/biomass-s3/models/clay_v15_patch/pixel_r2,unknown,LP,unknown,labelmarks=∗
+C,Biomass-S3,"S3 OLCI $300\,\text{m}$, 21b ($R^2$)",other_eo,single,0.594,R^2,rerun_here,all_doable_table2.json,biomass-s3/olmo_v13/dense/pixel_r2,unknown,LP,unknown,tag=Olmo;marks=♮;from=olmoearth
+C,Biomass-S3,"S3 OLCI $300\,\text{m}$, 21b ($R^2$)",general,single,0.451,R^2,rerun_here,standard_benchmarks.json,tasks/biomass-s3/models/dinov2_l_patch/pixel_r2,patch,LP,unknown,tag=DINOv2
+C,LC100Cls-S3,"S3 OLCI $300\,\text{m}$, 21b (mAP)",clay,single,71.6,mAP,rerun_here,standard_benchmarks.json,tasks/lc100cls-s3/models/clay_v15_224_mean/macro_map,mean,LP,unknown,labelmarks=∗‡
+C,LC100Cls-S3,"S3 OLCI $300\,\text{m}$, 21b (mAP)",other_eo,single,76.4,mAP,rerun_here,all_doable_table2.json,lc100cls-s3/panopticon/macro_map,unknown,LP,unknown,tag=Pan.;from=best_peer
+C,LC100Cls-S3,"S3 OLCI $300\,\text{m}$, 21b (mAP)",general,single,69.1,mAP,rerun_here,standard_benchmarks.json,tasks/lc100cls-s3/models/dinov2_l_cls/macro_map,cls,LP,unknown,tag=DINOv2
+C,EuroSAT-S1,S1 land use (OA),clay,single,85.9,OA,rerun_here,standard_benchmarks.json,tasks/eurosat-s1/models/clay_v15_224_mean/oa,cls,LP,unknown,labelmarks=‡
+C,EuroSAT-S1,S1 land use (OA),other_eo,single,88.7,OA,rerun_here,all_doable_table2.json,eurosat-s1/panopticon/oa,unknown,LP,unknown,tag=Pan.;from=best_peer
+C,EuroSAT-S1,S1 land use (OA),general,single,84.0,OA,rerun_here,all_doable_table2.json,eurosat-s1/dinov2/oa,unknown,LP,unknown,tag=DINOv2
+C,Vessel Detect. (S1),S1 vessels (FT $F_1$),clay,single,77.5,F_1,rerun_here,clay_missing_cells.json,cells/vessel-s1/FT_48k/value,,FT,1,marks=§
+C,Vessel Detect. (S1),S1 vessels (FT $F_1$),other_eo,single,79.6,F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,tag=TM-B;from=best_peer
+C,Vessel Detect. (S1),S1 vessels (FT $F_1$),general,single,,F_1,,,,,FT,,n/a
+C,Vessel Detect. (L8),Landsat-8 vessels (FT $F_1$),clay,single,66.4,F_1,rerun_here,clay_missing_cells.json,cells/vessel-l8/FT_48k/value,,FT,1,marks=§
+C,Vessel Detect. (L8),Landsat-8 vessels (FT $F_1$),other_eo,single,74.9,F_1,third_party:olmoearth2026v13,,,unknown,FT,unknown,tag=Pan.;from=best_peer
+C,Vessel Detect. (L8),Landsat-8 vessels (FT $F_1$),general,single,,F_1,,,,,FT,,n/a
+C,Solar Farm Detect.,S2 10b solar (FT mIoU),clay,single,81.8,mIoU,rerun_here,ec2_run_outputs/ft_solar_8000.json,cells/solar-farm/FT_8000/value,,FT,1,
+C,Solar Farm Detect.,S2 10b solar (FT mIoU),other_eo,single,87.5,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,tag=Olmo;from=olmoearth
+C,Solar Farm Detect.,S2 10b solar (FT mIoU),general,single,70.7,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,tag=DINO
+C,MADOS,S2 debris (LP / FT mIoU),clay,first,52.4,mIoU,rerun_here,clay_missing_cells.json,cells/mados/LP/value,unknown,LP,deterministic,
+C,MADOS,S2 debris (LP / FT mIoU),other_eo,first,68.4,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,tag=Gal.;from=best_peer
+C,MADOS,S2 debris (LP / FT mIoU),general,first,59.7,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,tag=DINO
+C,MADOS,S2 debris (LP / FT mIoU),clay,second,68.8,mIoU,rerun_here,clay_missing_cells.json,cells/mados/FT/value,,FT,3,
+C,MADOS,S2 debris (LP / FT mIoU),other_eo,second,74.6,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,tag=Olmo;from=olmoearth
+C,MADOS,S2 debris (LP / FT mIoU),general,second,64.7,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,tag=DINO
+C,m-cashewplant,S2 plantations (LP / FT mIoU),clay,first,20.6,mIoU,rerun_here,clay_missing_cells.json,cells/m-cashew-plant/LP/value,unknown,LP,deterministic,
+C,m-cashewplant,S2 plantations (LP / FT mIoU),other_eo,first,51.1,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,tag=Pr.-2;from=best_peer
+C,m-cashewplant,S2 plantations (LP / FT mIoU),general,first,54.1,mIoU,third_party:olmoearth2026v13,,,unknown,LP,unknown,tag=DINO
+C,m-cashewplant,S2 plantations (LP / FT mIoU),clay,second,70.7,mIoU,rerun_here,clay_missing_cells.json,cells/m-cashew-plant/FT_e100_lr0.0005/value,,FT,1,marks=§
+C,m-cashewplant,S2 plantations (LP / FT mIoU),other_eo,second,81.3,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,tag=TM;from=best_peer
+C,m-cashewplant,S2 plantations (LP / FT mIoU),general,second,80.6,mIoU,third_party:olmoearth2026v13,,,unknown,FT,unknown,tag=DINO
+D,Africa crop mask,Cropland mask (B.Acc),clay,first,0.77,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,Africa crop mask,Cropland mask (B.Acc),other_eo,first,0.82,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,Africa crop mask,Cropland mask (B.Acc),general,first,0.77,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,Africa crop mask,Cropland mask (B.Acc),clay,second,0.87,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,Africa crop mask,Cropland mask (B.Acc),other_eo,second,0.92,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=Olmo;marks=◊;from=olmoearth
+D,Africa crop mask,Cropland mask (B.Acc),general,second,0.88,B.Acc,rerun_here,e1_e5_complete.json,tasks/africa_crop_mask/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,ASTER emissivity,Thermal emissivity ($R^2$),clay,first,0.75,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,ASTER emissivity,Thermal emissivity ($R^2$),other_eo,first,0.80,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,ASTER emissivity,Thermal emissivity ($R^2$),general,first,0.49,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,ASTER emissivity,Thermal emissivity ($R^2$),clay,second,0.84,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,ASTER emissivity,Thermal emissivity ($R^2$),other_eo,second,0.86,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/olmo_center/max/point,center,Max,5,tag=Olmo;from=olmoearth
+D,ASTER emissivity,Thermal emissivity ($R^2$),general,second,0.64,R^2,rerun_here,e1_e5_complete.json,tasks/aster_ged/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,LCMAP land cover,CONUS land cover (B.Acc),clay,first,0.67,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,LCMAP land cover,CONUS land cover (B.Acc),other_eo,first,0.74,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,LCMAP land cover,CONUS land cover (B.Acc),general,first,0.55,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,LCMAP land cover,CONUS land cover (B.Acc),clay,second,0.74,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,LCMAP land cover,CONUS land cover (B.Acc),other_eo,second,0.84,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=AEF;marks=◊;from=alphaearth
+D,LCMAP land cover,CONUS land cover (B.Acc),general,second,0.66,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lc/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,LCMAP land use,CONUS land use (B.Acc),clay,first,0.66,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,LCMAP land use,CONUS land use (B.Acc),other_eo,first,0.75,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,LCMAP land use,CONUS land use (B.Acc),general,first,0.54,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,LCMAP land use,CONUS land use (B.Acc),clay,second,0.74,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,LCMAP land use,CONUS land use (B.Acc),other_eo,second,0.89,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=Olmo;marks=◊;from=olmoearth
+D,LCMAP land use,CONUS land use (B.Acc),general,second,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lu/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,LCMAP cover change,Cover change (B.Acc),clay,first,0.56,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,LCMAP cover change,Cover change (B.Acc),other_eo,first,0.62,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/aef_ov32_px/10/point,unknown,10-shot,5,tag=AEF;from=alphaearth
+D,LCMAP cover change,Cover change (B.Acc),general,first,0.50,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,LCMAP cover change,Cover change (B.Acc),clay,second,0.58,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,LCMAP cover change,Cover change (B.Acc),other_eo,second,0.78,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=AEF;marks=◊;from=alphaearth
+D,LCMAP cover change,Cover change (B.Acc),general,second,0.51,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_lcc/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,LCMAP use change,Use change (B.Acc),clay,first,0.53,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,LCMAP use change,Use change (B.Acc),other_eo,first,0.56,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,tag=TES;from=tessera
+D,LCMAP use change,Use change (B.Acc),general,first,0.49,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,LCMAP use change,Use change (B.Acc),clay,second,0.56,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,LCMAP use change,Use change (B.Acc),other_eo,second,0.79,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=AEF;marks=◊;from=alphaearth
+D,LCMAP use change,Use change (B.Acc),general,second,0.45,B.Acc,rerun_here,e1_e5_complete.json,tasks/lcmap_luc/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,Oil palm (Descals),Oil palm extent (B.Acc),clay,first,0.65,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,Oil palm (Descals),Oil palm extent (B.Acc),other_eo,first,0.76,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,Oil palm (Descals),Oil palm extent (B.Acc),general,first,0.65,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,Oil palm (Descals),Oil palm extent (B.Acc),clay,second,0.71,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,Oil palm (Descals),Oil palm extent (B.Acc),other_eo,second,0.84,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/olmo_center/max/point,center,Max,5,tag=Olmo;from=olmoearth
+D,Oil palm (Descals),Oil palm extent (B.Acc),general,second,0.79,B.Acc,rerun_here,e1_e5_complete.json,tasks/descals/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,GLanCE land cover,Global land cover (B.Acc),clay,first,0.49,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,GLanCE land cover,Global land cover (B.Acc),other_eo,first,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,GLanCE land cover,Global land cover (B.Acc),general,first,0.38,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,GLanCE land cover,Global land cover (B.Acc),clay,second,0.59,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,GLanCE land cover,Global land cover (B.Acc),other_eo,second,0.71,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=Olmo;marks=◊;from=olmoearth
+D,GLanCE land cover,Global land cover (B.Acc),general,second,0.44,B.Acc,rerun_here,e1_e5_complete.json,tasks/glance/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,LUCAS land use,Europe land use (B.Acc),clay,first,0.23,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,LUCAS land use,Europe land use (B.Acc),other_eo,first,0.30,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,LUCAS land use,Europe land use (B.Acc),general,first,0.18,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,LUCAS land use,Europe land use (B.Acc),clay,second,0.26,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,LUCAS land use,Europe land use (B.Acc),other_eo,second,0.39,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=AEF;marks=◊;from=alphaearth
+D,LUCAS land use,Europe land use (B.Acc),general,second,0.20,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lu/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,LUCAS land cover,Europe land cover (B.Acc),clay,first,0.18,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,LUCAS land cover,Europe land cover (B.Acc),other_eo,first,0.33,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,tag=TES;from=tessera
+D,LUCAS land cover,Europe land cover (B.Acc),general,first,0.10,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,LUCAS land cover,Europe land cover (B.Acc),clay,second,0.22,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,LUCAS land cover,Europe land cover (B.Acc),other_eo,second,0.41,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=TES;marks=◊;from=tessera
+D,LUCAS land cover,Europe land cover (B.Acc),general,second,0.12,B.Acc,rerun_here,e1_e5_complete.json,tasks/lucas_lc/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,Canada crops (crs.),Coarse crop types (B.Acc),clay,first,0.35,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,Canada crops (crs.),Coarse crop types (B.Acc),other_eo,first,0.57,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,Canada crops (crs.),Coarse crop types (B.Acc),general,first,0.24,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,Canada crops (crs.),Coarse crop types (B.Acc),clay,second,0.48,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,Canada crops (crs.),Coarse crop types (B.Acc),other_eo,second,0.74,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=Olmo;marks=◊;from=olmoearth
+D,Canada crops (crs.),Coarse crop types (B.Acc),general,second,0.29,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_coarse/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,Canada crops (fine),Fine crop types (B.Acc),clay,first,0.35,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,Canada crops (fine),Fine crop types (B.Acc),other_eo,first,0.54,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,Canada crops (fine),Fine crop types (B.Acc),general,first,0.17,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,Canada crops (fine),Fine crop types (B.Acc),clay,second,0.45,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,Canada crops (fine),Fine crop types (B.Acc),other_eo,second,0.66,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=Olmo;marks=◊;from=olmoearth
+D,Canada crops (fine),Fine crop types (B.Acc),general,second,0.22,B.Acc,rerun_here,e1_e5_complete.json,tasks/canada_crops_fine/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,Ethiopia crops,Smallholder crops (B.Acc),clay,first,0.31,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,Ethiopia crops,Smallholder crops (B.Acc),other_eo,first,0.37,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/tessera_pixel/10/point,unknown,10-shot,5,tag=TES;from=tessera
+D,Ethiopia crops,Smallholder crops (B.Acc),general,first,0.27,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,Ethiopia crops,Smallholder crops (B.Acc),clay,second,0.32,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,Ethiopia crops,Smallholder crops (B.Acc),other_eo,second,0.69,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=AEF;marks=◊;from=alphaearth
+D,Ethiopia crops,Smallholder crops (B.Acc),general,second,0.33,B.Acc,rerun_here,e1_e5_complete.json,tasks/ethiopia_crops/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,US tree genera,"Tree genera, 39c (B.Acc)",clay,first,0.07,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,US tree genera,"Tree genera, 39c (B.Acc)",other_eo,first,0.13,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,US tree genera,"Tree genera, 39c (B.Acc)",general,first,0.07,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,US tree genera,"Tree genera, 39c (B.Acc)",clay,second,0.09,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,US tree genera,"Tree genera, 39c (B.Acc)",other_eo,second,0.23,B.Acc,third_party:olmoearth2026v13,,,unknown,Max,,tag=Olmo;marks=◊;from=olmoearth
+D,US tree genera,"Tree genera, 39c (B.Acc)",general,second,0.07,B.Acc,rerun_here,e1_e5_complete.json,tasks/us_trees/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2
+D,OpenET monthly ET,S2 flux ($R^2$),clay,first,0.12,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/clay_center/10/point,center,10-shot,5,
+D,OpenET monthly ET,S2 flux ($R^2$),other_eo,first,0.15,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/olmo_center/10/point,center,10-shot,5,tag=Olmo;from=olmoearth
+D,OpenET monthly ET,S2 flux ($R^2$),general,first,-0.27,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/dinov2/10/point,unknown,10-shot,5,tag=DINOv2
+D,OpenET monthly ET,S2 flux ($R^2$),clay,second,0.45,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/clay_center/max/point,center,Max,5,
+D,OpenET monthly ET,S2 flux ($R^2$),other_eo,second,0.58,R^2,third_party:brown2025alphaearth,,,unknown,Max,,tag=AEF;marks=◊;from=alphaearth
+D,OpenET monthly ET,S2 flux ($R^2$),general,second,0.09,R^2,rerun_here,e1_e5_complete.json,tasks/openet_ensemble/sets/common/arm_results/dinov2/max/point,unknown,Max,5,tag=DINOv2

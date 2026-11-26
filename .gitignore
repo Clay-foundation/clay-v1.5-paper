@@ -1,0 +1,24 @@
+# Archives, raw exports, local review memos, and transient build artifacts stay local.
+archive/
+REVIEW*.md
+checkpoints/
+data/
+*.zip
+*.pyc
+**/__pycache__/
+.DS_Store
+.arxiv_stage_*
+latex/*.aux
+latex/*.blg
+latex/*.log
+latex/*.out
+latex/*.pdf
+
+# Python environments and run outputs
+.venv/
+.uv-cache/
+experiments/runs/
+*.egg-info/
+
+# The arXiv source archive is a build product: `make paper` regenerates it deterministically.
+Clay-v1.5-arxiv-source.tar.gz

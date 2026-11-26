@@ -1,0 +1,10 @@
+
+===== ft_m-so2sat =====
+[m-so2sat s0] ep 1/50 loss 2.4007 val 43.10 best_ep 1 t 83s
+[m-so2sat s0] ep 2/50 loss 1.3188 val 48.99 best_ep 2 t 164s
+[m-so2sat s0] ep 3/50 loss 0.7692 val 51.83 best_ep 3 t 245s
+[m-so2sat s0] ep 4/50 loss 0.5612 val 51.72 best_ep 3 t 326s
+[m-so2sat s0] ep 5/50 loss 0.4598 val 51.42 best_ep 3 t 407s
+[m-so2sat s0] ep 6/50 loss 0.3738 val 54.56 best_ep 6 t 489s
+[m-so2sat s0] ep 7/50 loss 0.2918 val 55.68 best_ep 7 t 571s
+[m-so2sat s0] ep 8/50 loss 0.2494 val 55.17 best_ep 7 t 654s

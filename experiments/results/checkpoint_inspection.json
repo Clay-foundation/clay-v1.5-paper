@@ -1,0 +1,247 @@
+{
+  "provenance": {
+    "script": "inspect_remote_checkpoint.py",
+    "git_commit": "1cdf44a7cdc3b449d71f66c60225e9c05e3e09f7",
+    "args": {
+      "out": "experiments/results",
+      "only": null
+    },
+    "python": "3.13.12",
+    "utc": "2026-11-17T21:39:00Z"
+  },
+  "artifacts": [
+    {
+      "tag": "v1.5",
+      "repo": "made-with-clay/Clay",
+      "revision": "70200ebcccdf67bf2a0cb9984c77ddee26c10ed2",
+      "path": "v1.5/clay-v1.5.ckpt",
+      "public_url": "https://huggingface.co/made-with-clay/Clay/resolve/70200ebcccdf67bf2a0cb9984c77ddee26c10ed2/v1.5/clay-v1.5.ckpt",
+      "advertised_bytes": 5158764629,
+      "advertised_lfs_sha256": "21432069250b9b3f9a65ffd0071c5ad56b793247285ab0604edf7f531d4798d0",
+      "kind": "ckpt",
+      "zip_entries": 1677,
+      "zip_uncompressed_bytes": 5158444127,
+      "pickle_bytes": 247543,
+      "pickle_sha256": "54ddd6cccb56a69c886ddebc4a64e1c2415324fb75023b7cdfd88e178b4b9c0d",
+      "epoch": 7,
+      "global_step": 106700,
+      "pytorch_lightning_version": "2.4.0",
+      "state_dict_tensors": 675,
+      "state_dict_elements": 632763392,
+      "tensor_groups": {
+        "model.teacher": {
+          "tensors": 343,
+          "elements": 304370688
+        },
+        "model.proj": {
+          "tensors": 2,
+          "elements": 1049600
+        },
+        "model.encoder": {
+          "tensors": 265,
+          "elements": 311442944
+        },
+        "model.decoder": {
+          "tensors": 65,
+          "elements": 15900160
+        }
+      },
+      "val_loss_from_checkpoint_callbacks": [
+        {
+          "value": 0.1718437224626541,
+          "where": "callbacks[ModelCheckpoint{'monitor': 'val/loss', 'mode': 'min', 'every].best_model_score",
+          "monitor": "val/loss"
+        },
+        {
+          "value": 0.1718437224626541,
+          "where": "callbacks[ModelCheckpoint{'monitor': 'val/loss', 'mode': 'min', 'every].current_score",
+          "monitor": "val/loss"
+        }
+      ],
+      "val_loss_from_filename": null,
+      "saved_metadata_keys": [
+        "epoch",
+        "global_step",
+        "pytorch-lightning_version",
+        "hparams_name",
+        "hyper_parameters"
+      ],
+      "downloaded_bytes": 355422
+    },
+    {
+      "tag": "v1.5-encoder-cpu-pt2",
+      "repo": "made-with-clay/Clay-legacy",
+      "revision": "f521faece53b6b15df4deb2fc7215a03e561fb46",
+      "path": "v1.5/compiled/clay-v1.5-encoder-cpu.pt2",
+      "public_url": "https://huggingface.co/made-with-clay/Clay-legacy/resolve/f521faece53b6b15df4deb2fc7215a03e561fb46/v1.5/compiled/clay-v1.5-encoder-cpu.pt2",
+      "advertised_bytes": 1247987208,
+      "advertised_lfs_sha256": "ba4e3f0378128e320bc7e1560da5dde391fd9718e93bd6ac26c1c722d3e8b544",
+      "kind": "pt2",
+      "zip_entries": 4,
+      "zip_uncompressed_bytes": 1247986710,
+      "downloaded_bytes": 312
+    },
+    {
+      "tag": "v1.5-encoder-pt2",
+      "repo": "made-with-clay/Clay-legacy",
+      "revision": "f521faece53b6b15df4deb2fc7215a03e561fb46",
+      "path": "v1.5/compiled/clay-v1.5-encoder.pt2",
+      "public_url": "https://huggingface.co/made-with-clay/Clay-legacy/resolve/f521faece53b6b15df4deb2fc7215a03e561fb46/v1.5/compiled/clay-v1.5-encoder.pt2",
+      "advertised_bytes": 1248026787,
+      "advertised_lfs_sha256": "096cfc51bb8ca9dafe7e0e833dd4e63209370a1b04760e0594add69a9add04b9",
+      "kind": "pt2",
+      "zip_entries": 4,
+      "zip_uncompressed_bytes": 1248026289,
+      "downloaded_bytes": 312
+    },
+    {
+      "tag": "v1.5-encoder-cpu-pt2-Clay-5bfb3c77",
+      "repo": "made-with-clay/Clay",
+      "revision": "5bfb3c778cf1b51f0ecb6b92395ebdebae893e24",
+      "path": "v1.5/compiled/clay-v1.5-encoder-cpu.pt2",
+      "public_url": "https://huggingface.co/made-with-clay/Clay/resolve/5bfb3c778cf1b51f0ecb6b92395ebdebae893e24/v1.5/compiled/clay-v1.5-encoder-cpu.pt2",
+      "advertised_bytes": 1247987208,
+      "advertised_lfs_sha256": "ba4e3f0378128e320bc7e1560da5dde391fd9718e93bd6ac26c1c722d3e8b544",
+      "kind": "pt2",
+      "zip_entries": 4,
+      "zip_uncompressed_bytes": 1247986710,
+      "downloaded_bytes": 312
+    },
+    {
+      "tag": "v1.0",
+      "repo": "made-with-clay/Clay-legacy",
+      "revision": "f521faece53b6b15df4deb2fc7215a03e561fb46",
+      "path": "v1/clay-v1-base.ckpt",
+      "public_url": "https://huggingface.co/made-with-clay/Clay-legacy/resolve/f521faece53b6b15df4deb2fc7215a03e561fb46/v1/clay-v1-base.ckpt",
+      "advertised_bytes": 1726997970,
+      "advertised_lfs_sha256": "6e41ece5741b41a4e4fdb57199e353702ec34524e334017b543ebdaad3d90184",
+      "kind": "ckpt",
+      "zip_entries": 1084,
+      "zip_uncompressed_bytes": 1726793378,
+      "pickle_bytes": 156362,
+      "pickle_sha256": "c676c44a186f08a44a5c63abe78ed788c78dd39f9406036a8425e250d55d92cc",
+      "epoch": 13,
+      "global_step": 683966,
+      "pytorch_lightning_version": "2.2.4",
+      "state_dict_tensors": 382,
+      "state_dict_elements": 201085440,
+      "tensor_groups": {
+        "model.teacher": {
+          "tensors": 150,
+          "elements": 85798656
+        },
+        "model.proj": {
+          "tensors": 2,
+          "elements": 590592
+        },
+        "model.encoder": {
+          "tensors": 145,
+          "elements": 92102144
+        },
+        "model.decoder": {
+          "tensors": 85,
+          "elements": 22594048
+        }
+      },
+      "val_loss_from_checkpoint_callbacks": [
+        {
+          "value": 0.30979856848716736,
+          "where": "callbacks[ModelCheckpoint{'monitor': 'val/loss', 'mode': 'min', 'every].best_model_score",
+          "monitor": "val/loss"
+        },
+        {
+          "value": 0.30979856848716736,
+          "where": "callbacks[ModelCheckpoint{'monitor': 'val/loss', 'mode': 'min', 'every].current_score",
+          "monitor": "val/loss"
+        }
+      ],
+      "val_loss_from_filename": null,
+      "saved_metadata_keys": [
+        "epoch",
+        "global_step",
+        "pytorch-lightning_version",
+        "hparams_name",
+        "hyper_parameters"
+      ],
+      "downloaded_bytes": 223798
+    },
+    {
+      "tag": "v0.0",
+      "repo": "made-with-clay/Clay-legacy",
+      "revision": "f521faece53b6b15df4deb2fc7215a03e561fb46",
+      "path": "v0/Clay-v0.0_epoch-02_val-loss-0.52.ckpt",
+      "public_url": "https://huggingface.co/made-with-clay/Clay-legacy/resolve/f521faece53b6b15df4deb2fc7215a03e561fb46/v0/Clay-v0.0_epoch-02_val-loss-0.52.ckpt",
+      "advertised_bytes": 510924971,
+      "advertised_lfs_sha256": "1578ae89ba12bb2553b768c06613a26dba43e5ec883fd3ce35c2def648efd6ee",
+      "kind": "ckpt",
+      "zip_entries": 269,
+      "zip_uncompressed_bytes": 510874507,
+      "pickle_bytes": 65417,
+      "pickle_sha256": "677fd50aa49f6eb1a14f9cce9446bdc5278571faa8cda4de000ab69c4fdcd8cd",
+      "epoch": 2,
+      "global_step": 12543,
+      "pytorch_lightning_version": "2.1.2",
+      "state_dict_tensors": 267,
+      "state_dict_elements": 127702272,
+      "tensor_groups": {
+        "model.encoder": {
+          "tensors": 162,
+          "elements": 95271168
+        },
+        "model.decoder": {
+          "tensors": 105,
+          "elements": 32431104
+        }
+      },
+      "val_loss_from_checkpoint_callbacks": [],
+      "val_loss_from_filename": 0.52,
+      "saved_metadata_keys": [
+        "epoch",
+        "global_step",
+        "pytorch-lightning_version",
+        "hparams_name",
+        "hyper_parameters"
+      ],
+      "downloaded_bytes": 82128
+    },
+    {
+      "tag": "v0.1",
+      "repo": "made-with-clay/Clay-legacy",
+      "revision": "f521faece53b6b15df4deb2fc7215a03e561fb46",
+      "path": "v0/Clay_v0.1_epoch-24_val-loss-0.46.ckpt",
+      "public_url": "https://huggingface.co/made-with-clay/Clay-legacy/resolve/f521faece53b6b15df4deb2fc7215a03e561fb46/v0/Clay_v0.1_epoch-24_val-loss-0.46.ckpt",
+      "advertised_bytes": 510924971,
+      "advertised_lfs_sha256": "b5efd4073b0602e5625cce629756abfd0f10fcb6fdfa9aee02088ea735d253cd",
+      "kind": "ckpt",
+      "zip_entries": 269,
+      "zip_uncompressed_bytes": 510874533,
+      "pickle_bytes": 65443,
+      "pickle_sha256": "3ccc3c219ec929f178e058593ded0c0fc99a12917528587af64873222e66aa90",
+      "epoch": 24,
+      "global_step": 104525,
+      "pytorch_lightning_version": "2.1.2",
+      "state_dict_tensors": 267,
+      "state_dict_elements": 127702272,
+      "tensor_groups": {
+        "model.encoder": {
+          "tensors": 162,
+          "elements": 95271168
+        },
+        "model.decoder": {
+          "tensors": 105,
+          "elements": 32431104
+        }
+      },
+      "val_loss_from_checkpoint_callbacks": [],
+      "val_loss_from_filename": 0.46,
+      "saved_metadata_keys": [
+        "epoch",
+        "global_step",
+        "pytorch-lightning_version",
+        "hparams_name",
+        "hyper_parameters"
+      ],
+      "downloaded_bytes": 82154
+    }
+  ]
+}

@@ -1,0 +1,2352 @@
+{
+ "model.encoder.latlon_embedding.weight": {
+  "shape": [
+   768,
+   2
+  ],
+  "stride": [
+   2,
+   1
+  ]
+ },
+ "model.encoder.latlon_embedding.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.time_embedding.weight": {
+  "shape": [
+   768,
+   3
+  ],
+  "stride": [
+   3,
+   1
+  ]
+ },
+ "model.encoder.time_embedding.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.rgb.proj.weight": {
+  "shape": [
+   768,
+   3,
+   32,
+   32
+  ],
+  "stride": [
+   3072,
+   1024,
+   32,
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.rgb.proj.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.rgb.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.rgb.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.rededge.proj.weight": {
+  "shape": [
+   768,
+   4,
+   32,
+   32
+  ],
+  "stride": [
+   4096,
+   1024,
+   32,
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.rededge.proj.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.rededge.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.rededge.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.nir.proj.weight": {
+  "shape": [
+   768,
+   1,
+   32,
+   32
+  ],
+  "stride": [
+   1024,
+   1024,
+   32,
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.nir.proj.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.nir.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.nir.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.swir.proj.weight": {
+  "shape": [
+   768,
+   2,
+   32,
+   32
+  ],
+  "stride": [
+   2048,
+   1024,
+   32,
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.swir.proj.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.swir.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.swir.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.sar.proj.weight": {
+  "shape": [
+   768,
+   2,
+   32,
+   32
+  ],
+  "stride": [
+   2048,
+   1024,
+   32,
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.sar.proj.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.sar.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.sar.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.dem.proj.weight": {
+  "shape": [
+   768,
+   1,
+   32,
+   32
+  ],
+  "stride": [
+   1024,
+   1024,
+   32,
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.dem.proj.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.dem.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.patch_embedding.dem.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.0.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.1.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.2.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.3.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.4.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.5.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.6.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.7.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.8.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.9.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.10.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.0.norm.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.0.norm.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.0.to_qkv.weight": {
+  "shape": [
+   2304,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.0.to_out.0.weight": {
+  "shape": [
+   768,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.0.to_out.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.1.net.0.weight": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.1.net.0.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.1.net.1.weight": {
+  "shape": [
+   3072,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.1.net.1.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.1.net.4.weight": {
+  "shape": [
+   768,
+   3072
+  ],
+  "stride": [
+   3072,
+   1
+  ]
+ },
+ "model.encoder.transformer.layers.11.1.net.4.bias": {
+  "shape": [
+   768
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.mask_patch": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.enc_to_dec.weight": {
+  "shape": [
+   512,
+   768
+  ],
+  "stride": [
+   768,
+   1
+  ]
+ },
+ "model.decoder.enc_to_dec.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.norm.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.norm.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.0.norm.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.0.norm.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.0.to_qkv.weight": {
+  "shape": [
+   1536,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.0.to_out.0.weight": {
+  "shape": [
+   512,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.0.to_out.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.1.net.0.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.1.net.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.1.net.1.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.1.net.1.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.1.net.4.weight": {
+  "shape": [
+   512,
+   2048
+  ],
+  "stride": [
+   2048,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.0.1.net.4.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.0.norm.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.0.norm.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.0.to_qkv.weight": {
+  "shape": [
+   1536,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.0.to_out.0.weight": {
+  "shape": [
+   512,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.0.to_out.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.1.net.0.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.1.net.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.1.net.1.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.1.net.1.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.1.net.4.weight": {
+  "shape": [
+   512,
+   2048
+  ],
+  "stride": [
+   2048,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.1.1.net.4.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.0.norm.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.0.norm.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.0.to_qkv.weight": {
+  "shape": [
+   1536,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.0.to_out.0.weight": {
+  "shape": [
+   512,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.0.to_out.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.1.net.0.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.1.net.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.1.net.1.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.1.net.1.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.1.net.4.weight": {
+  "shape": [
+   512,
+   2048
+  ],
+  "stride": [
+   2048,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.2.1.net.4.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.0.norm.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.0.norm.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.0.to_qkv.weight": {
+  "shape": [
+   1536,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.0.to_out.0.weight": {
+  "shape": [
+   512,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.0.to_out.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.1.net.0.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.1.net.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.1.net.1.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.1.net.1.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.1.net.4.weight": {
+  "shape": [
+   512,
+   2048
+  ],
+  "stride": [
+   2048,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.3.1.net.4.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.0.norm.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.0.norm.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.0.to_qkv.weight": {
+  "shape": [
+   1536,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.0.to_out.0.weight": {
+  "shape": [
+   512,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.0.to_out.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.1.net.0.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.1.net.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.1.net.1.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.1.net.1.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.1.net.4.weight": {
+  "shape": [
+   512,
+   2048
+  ],
+  "stride": [
+   2048,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.4.1.net.4.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.0.norm.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.0.norm.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.0.to_qkv.weight": {
+  "shape": [
+   1536,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.0.to_out.0.weight": {
+  "shape": [
+   512,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.0.to_out.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.1.net.0.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.1.net.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.1.net.1.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.1.net.1.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.1.net.4.weight": {
+  "shape": [
+   512,
+   2048
+  ],
+  "stride": [
+   2048,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.5.1.net.4.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.0.norm.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.0.norm.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.0.to_qkv.weight": {
+  "shape": [
+   1536,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.0.to_out.0.weight": {
+  "shape": [
+   512,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.0.to_out.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.1.net.0.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.1.net.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.1.net.1.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.1.net.1.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.1.net.4.weight": {
+  "shape": [
+   512,
+   2048
+  ],
+  "stride": [
+   2048,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.6.1.net.4.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.0.norm.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.0.norm.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.0.to_qkv.weight": {
+  "shape": [
+   1536,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.0.to_out.0.weight": {
+  "shape": [
+   512,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.0.to_out.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.1.net.0.weight": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.1.net.0.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.1.net.1.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.1.net.1.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.1.net.4.weight": {
+  "shape": [
+   512,
+   2048
+  ],
+  "stride": [
+   2048,
+   1
+  ]
+ },
+ "model.decoder.transformer.layers.7.1.net.4.bias": {
+  "shape": [
+   512
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.rgb.weight": {
+  "shape": [
+   3072,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.rgb.bias": {
+  "shape": [
+   3072
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.rededge.weight": {
+  "shape": [
+   4096,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.rededge.bias": {
+  "shape": [
+   4096
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.nir.weight": {
+  "shape": [
+   1024,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.nir.bias": {
+  "shape": [
+   1024
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.swir.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.swir.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.sar.weight": {
+  "shape": [
+   2048,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.sar.bias": {
+  "shape": [
+   2048
+  ],
+  "stride": [
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.dem.weight": {
+  "shape": [
+   1024,
+   512
+  ],
+  "stride": [
+   512,
+   1
+  ]
+ },
+ "model.decoder.embed_to_pixels.dem.bias": {
+  "shape": [
+   1024
+  ],
+  "stride": [
+   1
+  ]
+ }
+}

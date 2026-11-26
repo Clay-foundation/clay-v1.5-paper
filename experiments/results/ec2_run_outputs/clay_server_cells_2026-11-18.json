@@ -1,0 +1,1074 @@
+{
+  "cells": {
+    "pastis-s2/LP": {
+      "table2_row": "PASTIS-S2",
+      "cell": "LP",
+      "status": "rerun_here",
+      "metric": "test mIoU (%) over the 19 classes (void ignored)",
+      "value": 24.76,
+      "readout": "Z_patch per date (8x8 tokens), pooled over the 12 dates by mean (selected on val mIoU), 1x1 linear head, bilinear upsampling",
+      "head": "multinomial linear, val-selected C",
+      "seeds": "deterministic (fixed subsample seed 42)",
+      "split_sizes_tiles": [
+        5820,
+        1928,
+        1984
+      ],
+      "details": {
+        "by_pooling": {
+          "mean": {
+            "miou": 24.76,
+            "val_miou": 25.33,
+            "best_C": 0.1
+          },
+          "max": {
+            "miou": 24.02,
+            "val_miou": 23.99,
+            "best_C": 0.1
+          }
+        },
+        "pooling_selected": "mean",
+        "temporal_protocol": "each monthly composite encoded separately (single-date model), token grids pooled over dates"
+      },
+      "bands": [
+        "02 - Blue",
+        "03 - Green",
+        "04 - Red",
+        "05 - Vegetation Red Edge",
+        "06 - Vegetation Red Edge",
+        "07 - Vegetation Red Edge",
+        "08 - NIR",
+        "08A - Vegetation Red Edge",
+        "11 - SWIR",
+        "12 - SWIR"
+      ],
+      "waves_um": [
+        0.493,
+        0.56,
+        0.665,
+        0.704,
+        0.74,
+        0.783,
+        0.842,
+        0.865,
+        1.61,
+        2.19
+      ],
+      "old_transcribed": {
+        "value": 22.6,
+        "source": "OlmoEarth v1.3 report Table 6 (LP/kNN) / Table 4 (FT), Clay ViT Large row; attribution per audit issue 21"
+      },
+      "data": "https://storage.googleapis.com/ai2-olmoearth-projects-public-data/research_benchmarks/pastis_r (OlmoEarth public processing of PASTIS-R: 64 px quadrants, monthly means, folds 1-3/4/5)",
+      "provenance": {
+        "script": "run_clay_missing_cells.py",
+        "script_sha256": "c989a4a3baac6b88f3c5fd272a7a491687fed3e4c3a79f7c1d06ce5b78c5d8e0",
+        "git_commit": "unknown",
+        "argv": [
+          "--cells",
+          "lp_pastis",
+          "--out",
+          "~/clay-paper-audit/clay-cells2/out/clay_missing_cells.json"
+        ],
+        "utc_timestamp": "2026-11-18T07:51:42Z",
+        "packages": {
+          "torch": "2.5.1+cu124",
+          "torchgeo": "0.7.0",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.9.1",
+          "timm": "1.0.25",
+          "h5py": "3.16.0",
+          "rasterio": "1.4.4",
+          "olmoearth_pretrain": "n/a"
+        },
+        "python": "3.11.18",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "rsb_script_sha256": "5a9fed86bf2acccff540389f18b4004e1e06e8c0fbb7c66631b892173112d328"
+      }
+    },
+    "pastis-s2/FT": {
+      "table2_row": "PASTIS-S2",
+      "cell": "FT",
+      "status": "rerun_here",
+      "partial_seeds_done": true,
+      "metric": "test mIoU (%) over the 19 classes (void ignored)",
+      "value": 38.65,
+      "value_std_over_seeds": null,
+      "head": "E7 UPerNet neck+head on taps (6,12,18,24); each of the 12 monthly composites encoded separately by Clay, tapped token maps averaged over dates before the neck",
+      "recipe": {
+        "optimizer": "AdamW wd 0.05",
+        "lr_head": 0.0001,
+        "lr_encoder": 1e-05,
+        "schedule": "2-epoch warm-up + cosine",
+        "epochs": 10,
+        "batch_size": 8,
+        "input": "64 px tiles, 10 Clay S2 bands, train-split z-score, flips+rot90",
+        "precision": "bf16, gradient checkpointing",
+        "selection": "best-validation mIoU epoch (every epoch); test scored once"
+      },
+      "seeds": [
+        0
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "epochs": 10,
+          "best_val_miou": 40.62,
+          "best_epoch": 9,
+          "test_miou": 38.65,
+          "train_s": 2302,
+          "curve": [
+            [
+              1,
+              1.9483965111302806,
+              15.282027800243602
+            ],
+            [
+              2,
+              1.1455487602359646,
+              23.813815674659335
+            ],
+            [
+              3,
+              0.9517414836765645,
+              28.84447784504846
+            ],
+            [
+              4,
+              0.8552620867778967,
+              33.07947122074516
+            ],
+            [
+              5,
+              0.7989024077388611,
+              33.08702527177244
+            ],
+            [
+              6,
+              0.7491755492494001,
+              35.93043462625293
+            ],
+            [
+              7,
+              0.7100049322778053,
+              37.98367367840342
+            ],
+            [
+              8,
+              0.6729122977089751,
+              39.95316169702646
+            ],
+            [
+              9,
+              0.6543726939093936,
+              40.62292655466591
+            ],
+            [
+              10,
+              0.6381009484303521,
+              40.388426107985545
+            ]
+          ]
+        }
+      ],
+      "split_sizes_tiles": [
+        5820,
+        1928,
+        1984
+      ],
+      "bands": [
+        "02 - Blue",
+        "03 - Green",
+        "04 - Red",
+        "05 - Vegetation Red Edge",
+        "06 - Vegetation Red Edge",
+        "07 - Vegetation Red Edge",
+        "08 - NIR",
+        "08A - Vegetation Red Edge",
+        "11 - SWIR",
+        "12 - SWIR"
+      ],
+      "waves_um": [
+        0.493,
+        0.56,
+        0.665,
+        0.704,
+        0.74,
+        0.783,
+        0.842,
+        0.865,
+        1.61,
+        2.19
+      ],
+      "old_transcribed": {
+        "value": 48.9,
+        "source": "OlmoEarth v1.3 report Table 6 (LP/kNN) / Table 4 (FT), Clay ViT Large row; attribution per audit issue 21"
+      },
+      "data": "https://storage.googleapis.com/ai2-olmoearth-projects-public-data/research_benchmarks/pastis_r (OlmoEarth public processing of PASTIS-R)",
+      "provenance": {
+        "script": "run_clay_missing_cells.py",
+        "script_sha256": "c989a4a3baac6b88f3c5fd272a7a491687fed3e4c3a79f7c1d06ce5b78c5d8e0",
+        "git_commit": "unknown",
+        "argv": [
+          "--cells",
+          "ft_pastis",
+          "--seeds",
+          "0",
+          "--epochs",
+          "10",
+          "--out",
+          "~/clay-paper-audit/clay-cells2/out/clay_missing_cells.json"
+        ],
+        "utc_timestamp": "2026-11-18T08:31:03Z",
+        "packages": {
+          "torch": "2.5.1+cu124",
+          "torchgeo": "0.7.0",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.9.1",
+          "timm": "1.0.25",
+          "h5py": "3.16.0",
+          "rasterio": "1.4.4",
+          "olmoearth_pretrain": "n/a"
+        },
+        "python": "3.11.18",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "rsb_script_sha256": "5a9fed86bf2acccff540389f18b4004e1e06e8c0fbb7c66631b892173112d328"
+      }
+    },
+    "vessel-s1/FT": {
+      "table2_row": "Vessel Detect. (S1)",
+      "cell": "FT",
+      "status": "rerun_here",
+      "partial_seeds_done": false,
+      "metric": "test F1 (%), centre distance <= 15 px, best over score thresholds {0.05..0.95} (rslearn F1Metric, flatten_classes)",
+      "value": 63.14,
+      "value_std_over_seeds": 1.41,
+      "head": "torchvision Faster R-CNN (RPN + 2-MLP box head, one level at stride 8, anchors 32 x {0.5,1,2}) on the Clay last-layer 16x16 token map",
+      "recipe": {
+        "optimizer": "AdamW wd 0.05",
+        "lr_head": 0.0001,
+        "lr_encoder": 1e-05,
+        "schedule": "warm-up + cosine",
+        "steps": 6000,
+        "batch_size": 8,
+        "encoder_frozen_first_fraction": 0.2,
+        "patch": 128,
+        "box_half_size": 15,
+        "precision": "bf16 encoder, fp32 detection head, gradient checkpointing",
+        "selection": "best-validation F1 checkpoint (every 1000 steps); test scored once",
+        "relation_to_olmoearth": "same data, split tag, 128 px patches, 15 px boxes and F1 as data/olmoearth_evals/tasks/*_vessels.yaml; budget is reduced from 100 epochs x 32768 samples"
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "steps": 6000,
+          "batch_size": 8,
+          "best_val_f1": 60.0,
+          "best_step": 6000,
+          "last_step": 6000,
+          "test_f1_best_threshold": 65.06,
+          "test_f1_by_threshold": {
+            "0.05": 0.26,
+            "0.1": 0.45,
+            "0.2": 10.9,
+            "0.3": 57.36,
+            "0.4": 61.78,
+            "0.5": 65.06,
+            "0.6": 63.95,
+            "0.7": 53.38,
+            "0.8": 12.79,
+            "0.9": 0.0,
+            "0.95": 0.0
+          },
+          "test_f1_at_val_selected_threshold": 65.06,
+          "val_selected_threshold": 0.5,
+          "test_counts_at_best_threshold": {
+            "tp": 257,
+            "fp": 167,
+            "fn": 109
+          },
+          "test_tiles": 21301,
+          "test_vessels": 366,
+          "train_s": 1518,
+          "curve": [
+            [
+              1000,
+              0.05948726135176184,
+              6.74
+            ],
+            [
+              2000,
+              0.00287760953126417,
+              47.03
+            ],
+            [
+              3000,
+              0.0025553164902858043,
+              50.45
+            ],
+            [
+              4000,
+              0.0016625218610840874,
+              53.18
+            ],
+            [
+              5000,
+              0.001549049820622713,
+              59.15
+            ],
+            [
+              6000,
+              0.001721326515849796,
+              60.0
+            ]
+          ]
+        },
+        {
+          "seed": 1,
+          "steps": 6000,
+          "batch_size": 8,
+          "best_val_f1": 63.48,
+          "best_step": 5000,
+          "last_step": 6000,
+          "test_f1_best_threshold": 61.72,
+          "test_f1_by_threshold": {
+            "0.05": 0.16,
+            "0.1": 0.21,
+            "0.2": 1.11,
+            "0.3": 51.89,
+            "0.4": 57.21,
+            "0.5": 61.72,
+            "0.6": 59.11,
+            "0.7": 42.45,
+            "0.8": 4.79,
+            "0.9": 0.0,
+            "0.95": 0.0
+          },
+          "test_f1_at_val_selected_threshold": 59.11,
+          "val_selected_threshold": 0.6,
+          "test_counts_at_best_threshold": {
+            "tp": 233,
+            "fp": 156,
+            "fn": 133
+          },
+          "test_tiles": 21301,
+          "test_vessels": 366,
+          "train_s": 1500,
+          "curve": [
+            [
+              1000,
+              0.0589339215780783,
+              38.69
+            ],
+            [
+              2000,
+              0.002799188784963917,
+              42.96
+            ],
+            [
+              3000,
+              0.001615509614466191,
+              50.41
+            ],
+            [
+              4000,
+              0.001563289852726939,
+              58.24
+            ],
+            [
+              5000,
+              0.0015880783387917745,
+              63.48
+            ],
+            [
+              6000,
+              0.0017528188307649089,
+              62.66
+            ]
+          ]
+        },
+        {
+          "seed": 2,
+          "steps": 6000,
+          "batch_size": 8,
+          "best_val_f1": 58.0,
+          "best_step": 6000,
+          "last_step": 6000,
+          "test_f1_best_threshold": 62.64,
+          "test_f1_by_threshold": {
+            "0.05": 0.71,
+            "0.1": 1.11,
+            "0.2": 7.2,
+            "0.3": 48.67,
+            "0.4": 55.36,
+            "0.5": 61.12,
+            "0.6": 62.64,
+            "0.7": 53.75,
+            "0.8": 10.34,
+            "0.9": 0.0,
+            "0.95": 0.0
+          },
+          "test_f1_at_val_selected_threshold": 62.64,
+          "val_selected_threshold": 0.6,
+          "test_counts_at_best_threshold": {
+            "tp": 228,
+            "fp": 134,
+            "fn": 138
+          },
+          "test_tiles": 21301,
+          "test_vessels": 366,
+          "train_s": 1522,
+          "curve": [
+            [
+              1000,
+              0.05843415229244056,
+              35.98
+            ],
+            [
+              2000,
+              0.0024598814146338556,
+              46.67
+            ],
+            [
+              3000,
+              0.0024507276707513483,
+              57.2
+            ],
+            [
+              4000,
+              0.0016954851479217723,
+              54.04
+            ],
+            [
+              5000,
+              0.0017207043101811906,
+              57.94
+            ],
+            [
+              6000,
+              0.0017153705748555695,
+              58.0
+            ]
+          ]
+        }
+      ],
+      "n_windows": {
+        "train": 937,
+        "val": 404,
+        "test": 435
+      },
+      "bands": [
+        "VV_dB",
+        "VH_dB"
+      ],
+      "waves_um": [
+        3.5,
+        4.0
+      ],
+      "gsd_m": 10.0,
+      "old_transcribed": {
+        "value": 79.9,
+        "source": "OlmoEarth v1.3 report Table 6 (LP/kNN) / Table 4 (FT), Clay ViT Large row; attribution per audit issue 21"
+      },
+      "data": "https://storage.googleapis.com/ai2-olmoearth-projects-public-data/evals/partner_tasks/sentinel1_vessels.tar (CC BY 4.0, Allen Institute for AI; olmoearth_evals_split tags train/val/test)",
+      "provenance": {
+        "script": "run_clay_missing_cells.py",
+        "script_sha256": "027fcdca958018dfff96b6325bd214051cf09b9273b5076ee3456e66b0d4a204",
+        "git_commit": "unknown",
+        "argv": [
+          "--cells",
+          "ft_vessel-s1",
+          "--seeds",
+          "0,1,2",
+          "--epochs",
+          "6000",
+          "--out",
+          "~/clay-paper-audit/clay-cells2/out/clay_missing_cells.json"
+        ],
+        "utc_timestamp": "2026-11-18T10:49:35Z",
+        "packages": {
+          "torch": "2.5.1+cu124",
+          "torchgeo": "0.7.0",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.9.1",
+          "timm": "1.0.25",
+          "h5py": "3.16.0",
+          "rasterio": "1.4.4",
+          "olmoearth_pretrain": "n/a"
+        },
+        "python": "3.11.18",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "rsb_script_sha256": "5a9fed86bf2acccff540389f18b4004e1e06e8c0fbb7c66631b892173112d328"
+      },
+      "model": "clay_v1.5"
+    },
+    "vessel-l8/FT": {
+      "table2_row": "Vessel Detect. (L8)",
+      "cell": "FT",
+      "status": "rerun_here",
+      "partial_seeds_done": true,
+      "metric": "test F1 (%), centre distance <= 15 px, best over score thresholds {0.05..0.95} (rslearn F1Metric, flatten_classes)",
+      "value": 57.72,
+      "value_std_over_seeds": null,
+      "head": "torchvision Faster R-CNN (RPN + 2-MLP box head, one level at stride 8, anchors 32 x {0.5,1,2}) on the Clay last-layer 16x16 token map",
+      "recipe": {
+        "optimizer": "AdamW wd 0.05",
+        "lr_head": 0.0001,
+        "lr_encoder": 1e-05,
+        "schedule": "warm-up + cosine",
+        "steps": 6000,
+        "batch_size": 8,
+        "encoder_frozen_first_fraction": 0.2,
+        "patch": 128,
+        "box_half_size": 15,
+        "precision": "bf16 encoder, fp32 detection head, gradient checkpointing",
+        "selection": "best-validation F1 checkpoint (every 1000 steps); test scored once",
+        "relation_to_olmoearth": "same data, split tag, 128 px patches, 15 px boxes and F1 as data/olmoearth_evals/tasks/*_vessels.yaml; budget is reduced from 100 epochs x 32768 samples"
+      },
+      "seeds": [
+        0
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "steps": 6000,
+          "batch_size": 8,
+          "best_val_f1": 57.86,
+          "best_step": 6000,
+          "last_step": 6000,
+          "test_f1_best_threshold": 57.72,
+          "test_f1_by_threshold": {
+            "0.05": 22.66,
+            "0.1": 33.98,
+            "0.2": 46.86,
+            "0.3": 53.84,
+            "0.4": 57.02,
+            "0.5": 57.72,
+            "0.6": 55.2,
+            "0.7": 46.41,
+            "0.8": 22.08,
+            "0.9": 0.12,
+            "0.95": 0.0
+          },
+          "test_f1_at_val_selected_threshold": 57.72,
+          "val_selected_threshold": 0.5,
+          "test_counts_at_best_threshold": {
+            "tp": 2732,
+            "fp": 1902,
+            "fn": 2100
+          },
+          "test_tiles": 46522,
+          "test_vessels": 4832,
+          "train_s": 2469,
+          "curve": [
+            [
+              1000,
+              0.09090911459096242,
+              30.67
+            ],
+            [
+              2000,
+              0.016042786487334523,
+              40.85
+            ],
+            [
+              3000,
+              0.011758396733846894,
+              45.3
+            ],
+            [
+              4000,
+              0.011436530553854027,
+              54.46
+            ],
+            [
+              5000,
+              0.010704038394265808,
+              56.98
+            ],
+            [
+              6000,
+              0.01061875422801313,
+              57.86
+            ]
+          ]
+        }
+      ],
+      "n_windows": {
+        "train": 3974,
+        "val": 2020,
+        "test": 1986
+      },
+      "bands": [
+        "B4",
+        "B3",
+        "B2",
+        "B5",
+        "B6",
+        "B7"
+      ],
+      "waves_um": [
+        0.65,
+        0.56,
+        0.48,
+        0.86,
+        1.6,
+        2.2
+      ],
+      "gsd_m": 15.0,
+      "old_transcribed": {
+        "value": 70.7,
+        "source": "OlmoEarth v1.3 report Table 6 (LP/kNN) / Table 4 (FT), Clay ViT Large row; attribution per audit issue 21"
+      },
+      "data": "https://storage.googleapis.com/ai2-olmoearth-projects-public-data/evals/partner_tasks/landsat_vessels.tar (CC BY 4.0, Allen Institute for AI; olmoearth_evals_split tags train/val/test)",
+      "provenance": {
+        "script": "run_clay_missing_cells.py",
+        "script_sha256": "027fcdca958018dfff96b6325bd214051cf09b9273b5076ee3456e66b0d4a204",
+        "git_commit": "unknown",
+        "argv": [
+          "--cells",
+          "ft_vessel-l8",
+          "--seeds",
+          "0,1,2",
+          "--epochs",
+          "6000",
+          "--out",
+          "~/clay-paper-audit/clay-cells2/out/clay_missing_cells.json"
+        ],
+        "utc_timestamp": "2026-11-18T11:31:32Z",
+        "packages": {
+          "torch": "2.5.1+cu124",
+          "torchgeo": "0.7.0",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.9.1",
+          "timm": "1.0.25",
+          "h5py": "3.16.0",
+          "rasterio": "1.4.4",
+          "olmoearth_pretrain": "n/a"
+        },
+        "python": "3.11.18",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "rsb_script_sha256": "5a9fed86bf2acccff540389f18b4004e1e06e8c0fbb7c66631b892173112d328"
+      },
+      "model": "clay_v1.5"
+    },
+    "mados/FT": {
+      "table2_row": "MADOS",
+      "cell": "FT",
+      "status": "rerun_here",
+      "partial_seeds_done": false,
+      "metric": "test mIoU (%) over classes",
+      "value": 68.82,
+      "value_std_over_seeds": 1.28,
+      "head": "E7 UPerNet neck+head on taps (6,12,18,24), full encoder trainable",
+      "recipe": {
+        "optimizer": "AdamW wd 0.05",
+        "lr_head": 0.0001,
+        "lr_encoder": 1e-05,
+        "schedule": "5-epoch warm-up + cosine",
+        "epochs": 40,
+        "batch_size": 8,
+        "crop": 80,
+        "precision": "bf16, gradient checkpointing",
+        "selection": "best-validation mIoU epoch (every 5 epochs); test scored once",
+        "source": "experiments/suite/E7_finetune/code/train_e7.py classes"
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "lr": null,
+          "epochs": 40,
+          "best_val_miou": 71.61,
+          "best_epoch": 35,
+          "train_s": 938,
+          "curve": [
+            [
+              5,
+              0.42635175242952733,
+              36.38594077775316
+            ],
+            [
+              10,
+              0.2108403075968914,
+              57.70921133143345
+            ],
+            [
+              15,
+              0.09320908579526536,
+              67.34433220117734
+            ],
+            [
+              20,
+              0.08492295340359975,
+              66.71520471571203
+            ],
+            [
+              25,
+              0.07163808549367205,
+              66.01470125716996
+            ],
+            [
+              30,
+              0.03898200547692215,
+              69.32598399394432
+            ],
+            [
+              35,
+              0.03211200975775102,
+              71.60867715282973
+            ],
+            [
+              40,
+              0.03064879238677733,
+              71.01378113945775
+            ]
+          ],
+          "test_miou": 67.89
+        },
+        {
+          "seed": 1,
+          "lr": null,
+          "epochs": 40,
+          "best_val_miou": 75.36,
+          "best_epoch": 40,
+          "train_s": 941,
+          "curve": [
+            [
+              5,
+              0.43390948182330974,
+              49.136612646442515
+            ],
+            [
+              10,
+              0.20835860500516123,
+              61.50396174641576
+            ],
+            [
+              15,
+              0.10801783353244572,
+              68.22287029183293
+            ],
+            [
+              20,
+              0.07421671823073875,
+              72.77046700496103
+            ],
+            [
+              25,
+              0.04974394964604044,
+              71.50143915861374
+            ],
+            [
+              30,
+              0.04079626238847387,
+              75.01812418781178
+            ],
+            [
+              35,
+              0.03296770033912582,
+              74.5700959540803
+            ],
+            [
+              40,
+              0.03012070567620615,
+              75.3562716052182
+            ]
+          ],
+          "test_miou": 67.94
+        },
+        {
+          "seed": 2,
+          "lr": null,
+          "epochs": 40,
+          "best_val_miou": 71.01,
+          "best_epoch": 30,
+          "train_s": 932,
+          "curve": [
+            [
+              5,
+              0.4182544623176197,
+              46.29499590505767
+            ],
+            [
+              10,
+              0.18651612409171706,
+              64.98738787928548
+            ],
+            [
+              15,
+              0.133178276435545,
+              63.77918180458868
+            ],
+            [
+              20,
+              0.07605884712594786,
+              69.14012387378854
+            ],
+            [
+              25,
+              0.05219725109791069,
+              70.55333963948996
+            ],
+            [
+              30,
+              0.039328354772170504,
+              71.00678392667825
+            ],
+            [
+              35,
+              0.02896932853246949,
+              70.4592339791311
+            ],
+            [
+              40,
+              0.030760851730936185,
+              70.89225310969786
+            ]
+          ],
+          "test_miou": 70.64
+        }
+      ],
+      "split_sizes_tiles": [
+        2657,
+        1186,
+        1311
+      ],
+      "n_classes": 15,
+      "bands": [
+        "02 - Blue",
+        "03 - Green",
+        "04 - Red",
+        "05 - Vegetation Red Edge",
+        "06 - Vegetation Red Edge",
+        "07 - Vegetation Red Edge",
+        "08 - NIR",
+        "08A - Vegetation Red Edge",
+        "11 - SWIR",
+        "12 - SWIR"
+      ],
+      "data": "https://zenodo.org/records/10664073/files/MADOS.zip?download=1",
+      "old_transcribed": {
+        "value": 68.9,
+        "source": "OlmoEarth v1.3 report Table 6 (LP/kNN) / Table 4 (FT), Clay ViT Large row; attribution per audit issue 21"
+      },
+      "provenance": {
+        "script": "run_clay_missing_cells.py",
+        "script_sha256": "027fcdca958018dfff96b6325bd214051cf09b9273b5076ee3456e66b0d4a204",
+        "git_commit": "unknown",
+        "argv": [
+          "--cells",
+          "ft_mados",
+          "--seeds",
+          "0,1,2",
+          "--out",
+          "~/clay-paper-audit/clay-cells2/out/clay_missing_cells.json"
+        ],
+        "utc_timestamp": "2026-11-18T12:19:45Z",
+        "packages": {
+          "torch": "2.5.1+cu124",
+          "torchgeo": "0.7.0",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.9.1",
+          "timm": "1.0.25",
+          "h5py": "3.16.0",
+          "rasterio": "1.4.4",
+          "olmoearth_pretrain": "n/a"
+        },
+        "python": "3.11.18",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "rsb_script_sha256": "5a9fed86bf2acccff540389f18b4004e1e06e8c0fbb7c66631b892173112d328"
+      }
+    },
+    "vessel-l8/FT_long": {
+      "table2_row": "Vessel Detect. (L8)",
+      "cell": "FT",
+      "status": "rerun_here",
+      "partial_seeds_done": true,
+      "metric": "test F1 (%), centre distance <= 15 px, best over score thresholds {0.05..0.95} (rslearn F1Metric, flatten_classes)",
+      "value": 62.53,
+      "value_std_over_seeds": null,
+      "head": "torchvision Faster R-CNN (RPN + 2-MLP box head, one level at stride 8, anchors 32 x {0.5,1,2}) on the Clay last-layer 16x16 token map",
+      "recipe": {
+        "optimizer": "AdamW wd 0.05",
+        "lr_head": 0.0001,
+        "lr_encoder": 1e-05,
+        "schedule": "warm-up + cosine",
+        "steps": 12000,
+        "batch_size": 8,
+        "encoder_frozen_first_fraction": 0.2,
+        "patch": 128,
+        "box_half_size": 15,
+        "precision": "bf16 encoder, fp32 detection head, gradient checkpointing",
+        "selection": "best-validation F1 checkpoint (every 1000 steps); test scored once",
+        "relation_to_olmoearth": "same data, split tag, 128 px patches, 15 px boxes and F1 as data/olmoearth_evals/tasks/*_vessels.yaml; budget is reduced from 100 epochs x 32768 samples"
+      },
+      "seeds": [
+        0
+      ],
+      "per_seed": [
+        {
+          "seed": 0,
+          "steps": 12000,
+          "batch_size": 8,
+          "best_val_f1": 63.31,
+          "best_step": 12000,
+          "last_step": 12000,
+          "test_f1_best_threshold": 62.53,
+          "test_f1_by_threshold": {
+            "0.05": 29.6,
+            "0.1": 40.28,
+            "0.2": 51.76,
+            "0.3": 58.15,
+            "0.4": 61.99,
+            "0.5": 62.53,
+            "0.6": 61.07,
+            "0.7": 57.69,
+            "0.8": 48.41,
+            "0.9": 21.69,
+            "0.95": 1.8
+          },
+          "test_f1_at_val_selected_threshold": 62.53,
+          "val_selected_threshold": 0.5,
+          "test_counts_at_best_threshold": {
+            "tp": 3117,
+            "fp": 2020,
+            "fn": 1715
+          },
+          "test_tiles": 46522,
+          "test_vessels": 4832,
+          "train_s": 4983,
+          "curve": [
+            [
+              1000,
+              0.09090566335205222,
+              30.77
+            ],
+            [
+              2000,
+              0.018313812713953666,
+              34.18
+            ],
+            [
+              3000,
+              0.013919292519734882,
+              39.65
+            ],
+            [
+              4000,
+              0.012414974510707907,
+              48.8
+            ],
+            [
+              5000,
+              0.010835954810092517,
+              54.88
+            ],
+            [
+              6000,
+              0.010654144745913072,
+              57.85
+            ],
+            [
+              7000,
+              0.009447966353840457,
+              60.4
+            ],
+            [
+              8000,
+              0.009346540885111608,
+              61.44
+            ],
+            [
+              9000,
+              0.00888065000176175,
+              61.99
+            ],
+            [
+              10000,
+              0.008955286628695831,
+              62.84
+            ],
+            [
+              11000,
+              0.00830711644033363,
+              63.18
+            ],
+            [
+              12000,
+              0.0086795310734351,
+              63.31
+            ]
+          ]
+        }
+      ],
+      "n_windows": {
+        "train": 3974,
+        "val": 2020,
+        "test": 1986
+      },
+      "bands": [
+        "B4",
+        "B3",
+        "B2",
+        "B5",
+        "B6",
+        "B7"
+      ],
+      "waves_um": [
+        0.65,
+        0.56,
+        0.48,
+        0.86,
+        1.6,
+        2.2
+      ],
+      "gsd_m": 15.0,
+      "old_transcribed": {
+        "value": 70.7,
+        "source": "OlmoEarth v1.3 report Table 6 (LP/kNN) / Table 4 (FT), Clay ViT Large row; attribution per audit issue 21"
+      },
+      "data": "https://storage.googleapis.com/ai2-olmoearth-projects-public-data/evals/partner_tasks/landsat_vessels.tar (CC BY 4.0, Allen Institute for AI; olmoearth_evals_split tags train/val/test)",
+      "provenance": {
+        "script": "run_clay_missing_cells.py",
+        "script_sha256": "027fcdca958018dfff96b6325bd214051cf09b9273b5076ee3456e66b0d4a204",
+        "git_commit": "unknown",
+        "argv": [
+          "--cells",
+          "ft_vessel-l8",
+          "--seeds",
+          "0",
+          "--epochs",
+          "12000",
+          "--tag",
+          "_long",
+          "--out",
+          "~/clay-paper-audit/clay-cells2/out/clay_missing_cells.json"
+        ],
+        "utc_timestamp": "2026-11-18T13:43:43Z",
+        "packages": {
+          "torch": "2.5.1+cu124",
+          "torchgeo": "0.7.0",
+          "numpy": "1.26.4",
+          "scikit-learn": "1.9.1",
+          "timm": "1.0.25",
+          "h5py": "3.16.0",
+          "rasterio": "1.4.4",
+          "olmoearth_pretrain": "n/a"
+        },
+        "python": "3.11.18",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "rsb_script_sha256": "5a9fed86bf2acccff540389f18b4004e1e06e8c0fbb7c66631b892173112d328"
+      },
+      "model": "clay_v1.5"
+    }
+  }
+}

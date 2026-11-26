@@ -1,0 +1,1685 @@
+{
+  "tasks": {
+    "m-eurosat": {
+      "sensor": "Sentinel-2 (10 m, 10b)",
+      "gsd_m": 10.0,
+      "n_bands": 10,
+      "orig_hw": 64,
+      "splits": [
+        2000,
+        1000,
+        1000
+      ],
+      "kind": "cls",
+      "models": {
+        "clay_v15_cls": {
+          "oa": 96.3,
+          "macro_f1": 96.29,
+          "val_oa": 97.1,
+          "best_C": 0.01,
+          "lsvm_oa": 96.4,
+          "lsvm_macro_f1": 96.39
+        },
+        "clay_v15_mean": {
+          "oa": 96.5,
+          "macro_f1": 96.49,
+          "val_oa": 96.5,
+          "best_C": 10.0,
+          "lsvm_oa": 96.0,
+          "lsvm_macro_f1": 95.97
+        },
+        "clay_v15_224_cls": {
+          "oa": 95.8,
+          "macro_f1": 95.8,
+          "val_oa": 96.1,
+          "best_C": 1.0,
+          "lsvm_oa": 96.9,
+          "lsvm_macro_f1": 96.9
+        },
+        "clay_v15_224_mean": {
+          "oa": 96.2,
+          "macro_f1": 96.21,
+          "val_oa": 96.2,
+          "best_C": 0.1,
+          "lsvm_oa": 96.4,
+          "lsvm_macro_f1": 96.41
+        },
+        "clay_meta_cls": {
+          "oa": 95.3,
+          "macro_f1": 95.3,
+          "val_oa": 96.5,
+          "best_C": 0.01,
+          "lsvm_oa": 95.6,
+          "lsvm_macro_f1": 95.59
+        },
+        "clay_meta_mean": {
+          "oa": 95.2,
+          "macro_f1": 95.2,
+          "val_oa": 96.1,
+          "best_C": 10.0,
+          "lsvm_oa": 95.7,
+          "lsvm_macro_f1": 95.68
+        },
+        "dofa_l_cls": {
+          "oa": 96.3,
+          "macro_f1": 96.29,
+          "val_oa": 96.7,
+          "best_C": 0.1,
+          "lsvm_oa": 96.1,
+          "lsvm_macro_f1": 96.09
+        },
+        "dofa_l_mean": {
+          "oa": 97.0,
+          "macro_f1": 96.99,
+          "val_oa": 97.1,
+          "best_C": 1.0,
+          "lsvm_oa": 96.9,
+          "lsvm_macro_f1": 96.89
+        },
+        "scalemae_l_cls": {
+          "oa": 91.4,
+          "macro_f1": 91.39,
+          "val_oa": 91.8,
+          "best_C": 0.1,
+          "lsvm_oa": 92.1,
+          "lsvm_macro_f1": 92.07
+        },
+        "scalemae_l_mean": {
+          "oa": 91.6,
+          "macro_f1": 91.58,
+          "val_oa": 91.7,
+          "best_C": 0.1,
+          "lsvm_oa": 92.0,
+          "lsvm_macro_f1": 91.99
+        },
+        "dinov2_l_cls": {
+          "oa": 93.8,
+          "macro_f1": 93.79,
+          "val_oa": 95.4,
+          "best_C": 10.0,
+          "lsvm_oa": 93.8,
+          "lsvm_macro_f1": 93.8
+        },
+        "dinov2_l_mean": {
+          "oa": 95.0,
+          "macro_f1": 95.0,
+          "val_oa": 96.0,
+          "best_C": 0.1,
+          "lsvm_oa": 94.5,
+          "lsvm_macro_f1": 94.51
+        },
+        "band_stats": {
+          "oa": 86.2,
+          "macro_f1": 86.07,
+          "val_oa": 86.7,
+          "best_C": 10.0,
+          "lsvm_oa": 81.8,
+          "lsvm_macro_f1": 80.76
+        }
+      },
+      "input_contract": {
+        "bands": [
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B8A",
+          "B11",
+          "B12"
+        ],
+        "channel_indices_or_keys": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          12,
+          10,
+          11
+        ],
+        "wavelengths_um_clay": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "wavelengths_um_dofa": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "archive": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+        "archive_sha256": "ea1d66258e7a789b24e9f7cfdf7498f3c12129f7725e4710a73547db72329804",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+        "band_check": {
+          "stored_names_ok": true,
+          "n_chips": 300,
+          "true_order": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B06",
+            "B07",
+            "B08",
+            "B09",
+            "B10",
+            "B11",
+            "B12",
+            "B8A"
+          ],
+          "channel_min_mean_max": [
+            [
+              876.0,
+              1338.22,
+              3167.0
+            ],
+            [
+              562.0,
+              1103.44,
+              8027.0
+            ],
+            [
+              361.0,
+              1036.71,
+              8102.0
+            ],
+            [
+              210.0,
+              937.69,
+              11457.0
+            ],
+            [
+              182.0,
+              1206.51,
+              5858.0
+            ],
+            [
+              163.0,
+              2063.59,
+              10568.0
+            ],
+            [
+              133.0,
+              2455.35,
+              13501.0
+            ],
+            [
+              105.0,
+              2384.8,
+              10645.0
+            ],
+            [
+              41.0,
+              770.24,
+              2362.0
+            ],
+            [
+              2.0,
+              12.46,
+              46.0
+            ],
+            [
+              10.0,
+              1829.56,
+              11613.0
+            ],
+            [
+              1.0,
+              1112.5,
+              8931.0
+            ],
+            [
+              100.0,
+              2691.15,
+              13065.0
+            ]
+          ],
+          "corr": {
+            "B8A~B08": 0.9788,
+            "B06~B07": 0.9852,
+            "B11~B12": 0.9431
+          },
+          "physical_check_passed": true
+        }
+      },
+      "elapsed_s": 82.1,
+      "producer": {
+        "script_sha256": "36f0e1c2b93995140fcd472402c31321c2eb19720bc56033ae060cd1813f2bb5",
+        "cfg": "ca14914e57cc8830",
+        "utc_timestamp": "2026-11-18T01:54:59Z"
+      }
+    },
+    "m-brick-kiln": {
+      "sensor": "Sentinel-2 (10 m, 9b: no B06)",
+      "gsd_m": 10.0,
+      "n_bands": 9,
+      "orig_hw": 64,
+      "splits": [
+        15063,
+        999,
+        999
+      ],
+      "kind": "cls",
+      "models": {
+        "clay_v15_cls": {
+          "oa": 96.6,
+          "macro_f1": 96.18,
+          "val_oa": 97.5,
+          "best_C": 0.01,
+          "lsvm_oa": 97.2,
+          "lsvm_macro_f1": 96.86
+        },
+        "clay_v15_mean": {
+          "oa": 96.8,
+          "macro_f1": 96.41,
+          "val_oa": 96.7,
+          "best_C": 0.01,
+          "lsvm_oa": 96.7,
+          "lsvm_macro_f1": 96.3
+        },
+        "clay_v15_224_cls": {
+          "oa": 96.8,
+          "macro_f1": 96.4,
+          "val_oa": 98.1,
+          "best_C": 0.01,
+          "lsvm_oa": 97.1,
+          "lsvm_macro_f1": 96.73
+        },
+        "clay_v15_224_mean": {
+          "oa": 97.3,
+          "macro_f1": 96.95,
+          "val_oa": 97.7,
+          "best_C": 0.01,
+          "lsvm_oa": 97.5,
+          "lsvm_macro_f1": 97.18
+        },
+        "clay_meta_cls": {
+          "oa": 96.7,
+          "macro_f1": 96.3,
+          "val_oa": 98.0,
+          "best_C": 0.01,
+          "lsvm_oa": 96.9,
+          "lsvm_macro_f1": 96.52
+        },
+        "clay_meta_mean": {
+          "oa": 97.1,
+          "macro_f1": 96.76,
+          "val_oa": 97.3,
+          "best_C": 0.01,
+          "lsvm_oa": 97.2,
+          "lsvm_macro_f1": 96.87
+        },
+        "dofa_l_cls": {
+          "oa": 97.2,
+          "macro_f1": 96.86,
+          "val_oa": 97.4,
+          "best_C": 0.01,
+          "lsvm_oa": 97.1,
+          "lsvm_macro_f1": 96.74
+        },
+        "dofa_l_mean": {
+          "oa": 97.3,
+          "macro_f1": 96.97,
+          "val_oa": 96.8,
+          "best_C": 0.01,
+          "lsvm_oa": 97.3,
+          "lsvm_macro_f1": 96.96
+        },
+        "scalemae_l_cls": {
+          "oa": 95.3,
+          "macro_f1": 94.69,
+          "val_oa": 96.4,
+          "best_C": 0.01,
+          "lsvm_oa": 95.9,
+          "lsvm_macro_f1": 95.39
+        },
+        "scalemae_l_mean": {
+          "oa": 95.4,
+          "macro_f1": 94.77,
+          "val_oa": 97.0,
+          "best_C": 0.1,
+          "lsvm_oa": 95.5,
+          "lsvm_macro_f1": 94.87
+        },
+        "dinov2_l_cls": {
+          "oa": 94.79,
+          "macro_f1": 94.16,
+          "val_oa": 97.5,
+          "best_C": 0.1,
+          "lsvm_oa": 96.1,
+          "lsvm_macro_f1": 95.62
+        },
+        "dinov2_l_mean": {
+          "oa": 95.2,
+          "macro_f1": 94.57,
+          "val_oa": 97.2,
+          "best_C": 0.1,
+          "lsvm_oa": 95.5,
+          "lsvm_macro_f1": 94.91
+        },
+        "band_stats": {
+          "oa": 91.79,
+          "macro_f1": 90.72,
+          "val_oa": 93.09,
+          "best_C": 10.0,
+          "lsvm_oa": 91.59,
+          "lsvm_macro_f1": 90.5
+        }
+      },
+      "input_contract": {
+        "bands": [
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B07",
+          "B08",
+          "B8A",
+          "B11",
+          "B12"
+        ],
+        "channel_indices_or_keys": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          6,
+          8,
+          9
+        ],
+        "wavelengths_um_clay": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "wavelengths_um_dofa": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "archive": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+        "archive_sha256": "53cacc65013b74c6fb9c447486830111ed4a2a83dbb7c27c579fe417b309e265",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8",
+        "band_check": {
+          "stored_names_ok": true,
+          "n_chips": 300,
+          "true_order": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B07",
+            "B8A",
+            "B08",
+            "B11",
+            "B12",
+            "TCI_R",
+            "TCI_G",
+            "TCI_B"
+          ],
+          "channel_min_mean_max": [
+            [
+              76.77,
+              573.43,
+              1915.58
+            ],
+            [
+              98.09,
+              672.06,
+              3012.8
+            ],
+            [
+              155.0,
+              887.37,
+              3183.6
+            ],
+            [
+              104.25,
+              810.19,
+              3515.2
+            ],
+            [
+              154.75,
+              1124.16,
+              3438.7
+            ],
+            [
+              106.33,
+              1936.51,
+              5831.67
+            ],
+            [
+              95.58,
+              2044.43,
+              6264.17
+            ],
+            [
+              104.25,
+              2010.61,
+              7107.0
+            ],
+            [
+              78.42,
+              1584.01,
+              5034.0
+            ],
+            [
+              59.08,
+              1105.29,
+              5207.0
+            ],
+            [
+              11.08,
+              82.78,
+              255.0
+            ],
+            [
+              16.14,
+              90.65,
+              255.0
+            ],
+            [
+              9.82,
+              68.77,
+              248.8
+            ]
+          ],
+          "corr": {
+            "TCI_R~B04": 0.9997,
+            "TCI_G~B03": 0.9999,
+            "TCI_B~B02": 0.9997,
+            "B8A~B08": 0.9848,
+            "B07~B08": 0.9844,
+            "B11~B12": 0.9441
+          },
+          "physical_check_passed": true
+        }
+      },
+      "elapsed_s": 242.2,
+      "producer": {
+        "script_sha256": "36f0e1c2b93995140fcd472402c31321c2eb19720bc56033ae060cd1813f2bb5",
+        "cfg": "2357cee95d9f07c8",
+        "utc_timestamp": "2026-11-18T01:59:01Z"
+      }
+    },
+    "m-so2sat": {
+      "sensor": "Sentinel-2 + S1 (10 m, 10b / 12b)",
+      "gsd_m": 10.0,
+      "n_bands": 10,
+      "orig_hw": 32,
+      "splits": [
+        19992,
+        986,
+        986
+      ],
+      "kind": "cls",
+      "models": {
+        "clay_v15_cls": {
+          "oa": 56.69,
+          "macro_f1": 56.56,
+          "val_oa": 53.85,
+          "best_C": 0.01,
+          "lsvm_oa": 56.39,
+          "lsvm_macro_f1": 55.85
+        },
+        "clay_v15_mean": {
+          "oa": 55.27,
+          "macro_f1": 55.56,
+          "val_oa": 57.81,
+          "best_C": 0.01,
+          "lsvm_oa": 54.97,
+          "lsvm_macro_f1": 54.76
+        },
+        "clay_v15_224_cls": {
+          "oa": 57.91,
+          "macro_f1": 56.93,
+          "val_oa": 60.75,
+          "best_C": 0.01,
+          "lsvm_oa": 56.69,
+          "lsvm_macro_f1": 55.43
+        },
+        "clay_v15_224_mean": {
+          "oa": 60.85,
+          "macro_f1": 60.09,
+          "val_oa": 60.04,
+          "best_C": 0.01,
+          "lsvm_oa": 59.33,
+          "lsvm_macro_f1": 58.09
+        },
+        "dofa_l_cls": {
+          "oa": 60.04,
+          "macro_f1": 58.98,
+          "val_oa": 57.1,
+          "best_C": 0.01,
+          "lsvm_oa": 60.24,
+          "lsvm_macro_f1": 59.17
+        },
+        "dofa_l_mean": {
+          "oa": 60.34,
+          "macro_f1": 59.37,
+          "val_oa": 59.23,
+          "best_C": 0.01,
+          "lsvm_oa": 61.05,
+          "lsvm_macro_f1": 59.83
+        },
+        "clay_s1s2_64_cls": {
+          "oa": 58.72,
+          "macro_f1": 58.03,
+          "val_oa": 58.01,
+          "best_C": 0.01,
+          "lsvm_oa": 57.2,
+          "lsvm_macro_f1": 56.61
+        },
+        "clay_s1s2_64_mean": {
+          "oa": 59.63,
+          "macro_f1": 59.15,
+          "val_oa": 60.14,
+          "best_C": 0.01,
+          "lsvm_oa": 58.72,
+          "lsvm_macro_f1": 57.88
+        },
+        "dofa_s1s2_cls": {
+          "oa": 60.34,
+          "macro_f1": 59.58,
+          "val_oa": 58.82,
+          "best_C": 0.01,
+          "lsvm_oa": 61.26,
+          "lsvm_macro_f1": 60.35
+        },
+        "dofa_s1s2_mean": {
+          "oa": 60.45,
+          "macro_f1": 59.72,
+          "val_oa": 60.24,
+          "best_C": 0.01,
+          "lsvm_oa": 61.05,
+          "lsvm_macro_f1": 59.9
+        },
+        "scalemae_l_cls": {
+          "oa": 49.49,
+          "macro_f1": 48.12,
+          "val_oa": 52.43,
+          "best_C": 0.01,
+          "lsvm_oa": 50.0,
+          "lsvm_macro_f1": 48.82
+        },
+        "scalemae_l_mean": {
+          "oa": 50.1,
+          "macro_f1": 48.73,
+          "val_oa": 51.72,
+          "best_C": 0.01,
+          "lsvm_oa": 51.22,
+          "lsvm_macro_f1": 49.63
+        },
+        "dinov2_l_cls": {
+          "oa": 58.32,
+          "macro_f1": 57.68,
+          "val_oa": 55.88,
+          "best_C": 0.01,
+          "lsvm_oa": 58.11,
+          "lsvm_macro_f1": 57.07
+        },
+        "dinov2_l_mean": {
+          "oa": 58.72,
+          "macro_f1": 57.91,
+          "val_oa": 59.13,
+          "best_C": 0.01,
+          "lsvm_oa": 59.03,
+          "lsvm_macro_f1": 57.94
+        },
+        "band_stats": {
+          "oa": 44.32,
+          "macro_f1": 43.9,
+          "val_oa": 45.94,
+          "best_C": 10.0,
+          "lsvm_oa": 38.64,
+          "lsvm_macro_f1": 37.24
+        }
+      },
+      "input_contract": {
+        "bands": [
+          "02 - Blue",
+          "03 - Green",
+          "04 - Red",
+          "05 - Vegetation Red Edge",
+          "06 - Vegetation Red Edge",
+          "07 - Vegetation Red Edge",
+          "08 - NIR",
+          "08A - Vegetation Red Edge",
+          "11 - SWIR",
+          "12 - SWIR",
+          "06 - VV.LEE Filtered",
+          "05 - VH.LEE Filtered"
+        ],
+        "channel_indices_or_keys": [
+          "02 - Blue",
+          "03 - Green",
+          "04 - Red",
+          "05 - Vegetation Red Edge",
+          "06 - Vegetation Red Edge",
+          "07 - Vegetation Red Edge",
+          "08 - NIR",
+          "08A - Vegetation Red Edge",
+          "11 - SWIR",
+          "12 - SWIR",
+          "06 - VV.LEE Filtered",
+          "05 - VH.LEE Filtered"
+        ],
+        "wavelengths_um_clay": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "wavelengths_um_dofa": [
+          0.493,
+          0.56,
+          0.665,
+          0.704,
+          0.74,
+          0.783,
+          0.842,
+          0.865,
+          1.61,
+          2.19
+        ],
+        "archive": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+        "archive_sha256": "ec4d7cefeea4a326afe3c0f10333a565377d9b0004bcb780949d384e7eaf0704",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+      },
+      "elapsed_s": 440.3,
+      "producer": {
+        "script_sha256": "36f0e1c2b93995140fcd472402c31321c2eb19720bc56033ae060cd1813f2bb5",
+        "cfg": "53421efaa7d6f0ae",
+        "utc_timestamp": "2026-11-18T02:31:58Z"
+      }
+    },
+    "eurosat-s1": {
+      "sensor": "Sentinel-1 SAR (10 m, 2b VV/VH)",
+      "gsd_m": 10.0,
+      "n_bands": 2,
+      "orig_hw": 64,
+      "splits": [
+        16200,
+        5400,
+        5400
+      ],
+      "kind": "cls",
+      "models": {
+        "clay_v15_cls": {
+          "oa": 85.74,
+          "macro_f1": 85.17,
+          "val_oa": 86.83,
+          "best_C": 0.01,
+          "lsvm_oa": 85.93,
+          "lsvm_macro_f1": 85.34
+        },
+        "clay_v15_mean": {
+          "oa": 86.41,
+          "macro_f1": 85.82,
+          "val_oa": 87.09,
+          "best_C": 0.01,
+          "lsvm_oa": 86.15,
+          "lsvm_macro_f1": 85.52
+        },
+        "clay_v15_224_cls": {
+          "oa": 85.72,
+          "macro_f1": 85.22,
+          "val_oa": 85.98,
+          "best_C": 0.1,
+          "lsvm_oa": 85.48,
+          "lsvm_macro_f1": 84.89
+        },
+        "clay_v15_224_mean": {
+          "oa": 85.93,
+          "macro_f1": 85.41,
+          "val_oa": 86.02,
+          "best_C": 0.1,
+          "lsvm_oa": 85.74,
+          "lsvm_macro_f1": 85.14
+        },
+        "clay_meta_cls": {
+          "oa": 85.63,
+          "macro_f1": 85.11,
+          "val_oa": 86.46,
+          "best_C": 0.01,
+          "lsvm_oa": 85.89,
+          "lsvm_macro_f1": 85.29
+        },
+        "clay_meta_mean": {
+          "oa": 86.46,
+          "macro_f1": 85.88,
+          "val_oa": 86.57,
+          "best_C": 0.01,
+          "lsvm_oa": 86.07,
+          "lsvm_macro_f1": 85.44
+        },
+        "dofa_l_cls": {
+          "oa": 82.44,
+          "macro_f1": 82.15,
+          "val_oa": 82.74,
+          "best_C": 0.01,
+          "lsvm_oa": 82.44,
+          "lsvm_macro_f1": 82.05
+        },
+        "dofa_l_mean": {
+          "oa": 82.81,
+          "macro_f1": 82.55,
+          "val_oa": 82.83,
+          "best_C": 0.01,
+          "lsvm_oa": 82.78,
+          "lsvm_macro_f1": 82.41
+        },
+        "band_stats": {
+          "oa": 58.28,
+          "macro_f1": 54.99,
+          "val_oa": 56.87,
+          "best_C": 1.0,
+          "lsvm_oa": 52.57,
+          "lsvm_macro_f1": 45.02
+        }
+      },
+      "elapsed_s": 550.3,
+      "producer": {
+        "script_sha256": "36f0e1c2b93995140fcd472402c31321c2eb19720bc56033ae060cd1813f2bb5",
+        "cfg": "cde86924d4367be9",
+        "utc_timestamp": "2026-11-18T02:41:08Z"
+      }
+    },
+    "m-forestnet": {
+      "sensor": "Landsat-8 (15 m, 6b)",
+      "gsd_m": 15.0,
+      "n_bands": 6,
+      "orig_hw": 332,
+      "splits": [
+        6464,
+        989,
+        993
+      ],
+      "kind": "cls",
+      "models": {
+        "clay_v15_cls": {
+          "oa": 52.97,
+          "macro_f1": 47.51,
+          "val_oa": 57.74,
+          "best_C": 0.01,
+          "lsvm_oa": 53.68,
+          "lsvm_macro_f1": 47.12
+        },
+        "clay_v15_mean": {
+          "oa": 54.08,
+          "macro_f1": 46.31,
+          "val_oa": 57.23,
+          "best_C": 0.01,
+          "lsvm_oa": 55.59,
+          "lsvm_macro_f1": 47.34
+        },
+        "dofa_l_cls": {
+          "oa": 53.58,
+          "macro_f1": 50.1,
+          "val_oa": 52.98,
+          "best_C": 0.01,
+          "lsvm_oa": 53.78,
+          "lsvm_macro_f1": 48.61
+        },
+        "dofa_l_mean": {
+          "oa": 52.87,
+          "macro_f1": 48.67,
+          "val_oa": 54.6,
+          "best_C": 0.01,
+          "lsvm_oa": 54.38,
+          "lsvm_macro_f1": 48.39
+        },
+        "scalemae_l_cls": {
+          "oa": 42.2,
+          "macro_f1": 28.02,
+          "val_oa": 44.39,
+          "best_C": 0.01,
+          "lsvm_oa": 41.69,
+          "lsvm_macro_f1": 23.14
+        },
+        "scalemae_l_mean": {
+          "oa": 42.4,
+          "macro_f1": 32.21,
+          "val_oa": 42.47,
+          "best_C": 0.1,
+          "lsvm_oa": 41.79,
+          "lsvm_macro_f1": 28.28
+        },
+        "dinov2_l_cls": {
+          "oa": 48.74,
+          "macro_f1": 44.57,
+          "val_oa": 52.78,
+          "best_C": 0.01,
+          "lsvm_oa": 49.14,
+          "lsvm_macro_f1": 44.16
+        },
+        "dinov2_l_mean": {
+          "oa": 49.45,
+          "macro_f1": 43.64,
+          "val_oa": 52.78,
+          "best_C": 0.01,
+          "lsvm_oa": 50.86,
+          "lsvm_macro_f1": 43.42
+        },
+        "band_stats": {
+          "oa": 42.4,
+          "macro_f1": 27.45,
+          "val_oa": 49.34,
+          "best_C": 1.0,
+          "lsvm_oa": 41.79,
+          "lsvm_macro_f1": 21.09
+        }
+      },
+      "input_contract": {
+        "bands": [
+          "04 - Red_*",
+          "03 - Green_*",
+          "02 - Blue_*",
+          "05 - NIR_*",
+          "06 - SWIR1_*",
+          "07 - SWIR2_*"
+        ],
+        "channel_indices_or_keys": [
+          "04 - Red_*",
+          "03 - Green_*",
+          "02 - Blue_*",
+          "05 - NIR_*",
+          "06 - SWIR1_*",
+          "07 - SWIR2_*"
+        ],
+        "wavelengths_um_clay": [
+          0.65,
+          0.56,
+          0.48,
+          0.86,
+          1.6,
+          2.2
+        ],
+        "wavelengths_um_dofa": [
+          0.65,
+          0.56,
+          0.48,
+          0.86,
+          1.6,
+          2.2
+        ],
+        "archive": "7ae883180a5e64b0e30849419fc04f13cbef840f5dcc7dbddf63ac02027e7994",
+        "archive_sha256": "7ae883180a5e64b0e30849419fc04f13cbef840f5dcc7dbddf63ac02027e7994",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+      },
+      "elapsed_s": 466.8,
+      "producer": {
+        "script_sha256": "36f0e1c2b93995140fcd472402c31321c2eb19720bc56033ae060cd1813f2bb5",
+        "cfg": "219e6bcb7244d3d8",
+        "utc_timestamp": "2026-11-18T02:48:55Z"
+      }
+    },
+    "resisc45": {
+      "sensor": "Multi-Scale RGB (0.2-30 m, 3b)",
+      "gsd_m": 1.0,
+      "n_bands": 3,
+      "orig_hw": 256,
+      "splits": [
+        18900,
+        6300,
+        6300
+      ],
+      "kind": "cls",
+      "models": {
+        "clay_v15_cls": {
+          "oa": 87.97,
+          "macro_f1": 87.91,
+          "val_oa": 89.71,
+          "best_C": 0.1,
+          "lsvm_oa": 88.3,
+          "lsvm_macro_f1": 88.23
+        },
+        "clay_v15_mean": {
+          "oa": 87.17,
+          "macro_f1": 87.15,
+          "val_oa": 88.46,
+          "best_C": 0.1,
+          "lsvm_oa": 88.32,
+          "lsvm_macro_f1": 88.23
+        },
+        "clay_meta_cls": {
+          "oa": 87.67,
+          "macro_f1": 87.64,
+          "val_oa": 89.16,
+          "best_C": 0.1,
+          "lsvm_oa": 88.51,
+          "lsvm_macro_f1": 88.45
+        },
+        "clay_meta_mean": {
+          "oa": 87.27,
+          "macro_f1": 87.26,
+          "val_oa": 88.49,
+          "best_C": 0.1,
+          "lsvm_oa": 88.05,
+          "lsvm_macro_f1": 87.97
+        },
+        "dofa_l_cls": {
+          "oa": 92.17,
+          "macro_f1": 92.14,
+          "val_oa": 92.97,
+          "best_C": 0.01,
+          "lsvm_oa": 92.32,
+          "lsvm_macro_f1": 92.28
+        },
+        "dofa_l_mean": {
+          "oa": 92.16,
+          "macro_f1": 92.11,
+          "val_oa": 93.06,
+          "best_C": 0.1,
+          "lsvm_oa": 92.51,
+          "lsvm_macro_f1": 92.46
+        },
+        "scalemae_l_cls": {
+          "oa": 91.65,
+          "macro_f1": 91.59,
+          "val_oa": 92.67,
+          "best_C": 1.0,
+          "lsvm_oa": 91.98,
+          "lsvm_macro_f1": 91.92
+        },
+        "scalemae_l_mean": {
+          "oa": 92.35,
+          "macro_f1": 92.3,
+          "val_oa": 92.94,
+          "best_C": 0.1,
+          "lsvm_oa": 92.37,
+          "lsvm_macro_f1": 92.33
+        },
+        "dinov2_l_cls": {
+          "oa": 93.86,
+          "macro_f1": 93.81,
+          "val_oa": 94.67,
+          "best_C": 0.1,
+          "lsvm_oa": 93.94,
+          "lsvm_macro_f1": 93.9
+        },
+        "dinov2_l_mean": {
+          "oa": 94.86,
+          "macro_f1": 94.79,
+          "val_oa": 95.29,
+          "best_C": 0.1,
+          "lsvm_oa": 95.03,
+          "lsvm_macro_f1": 94.98
+        },
+        "band_stats": {
+          "oa": 29.21,
+          "macro_f1": 27.02,
+          "val_oa": 29.59,
+          "best_C": 10.0,
+          "lsvm_oa": 24.63,
+          "lsvm_macro_f1": 17.71
+        }
+      },
+      "elapsed_s": 915.4,
+      "producer": {
+        "script_sha256": "9517c5187f10222c2b0b3e6ddf6e1142a7c429ae7cb55d21e9646d0657009a8f",
+        "cfg": "cb695dfae9dfa793",
+        "utc_timestamp": "2026-11-18T03:33:09Z"
+      }
+    },
+    "m-chesapeake": {
+      "sensor": "USDA NAIP (1.0 m, 4b)",
+      "gsd_m": 1.0,
+      "n_bands": 4,
+      "orig_hw": 256,
+      "splits": [
+        3000,
+        1000,
+        1000
+      ],
+      "kind": "seg",
+      "models": {
+        "clay_v15_patch": {
+          "miou": 66.93,
+          "val_miou": 69.96,
+          "best_C": 0.01
+        },
+        "clay_meta_patch": {
+          "miou": 67.03,
+          "val_miou": 70.07,
+          "best_C": 0.01
+        },
+        "dofa_l_patch": {
+          "miou": 46.85,
+          "val_miou": 60.81,
+          "best_C": 0.01
+        },
+        "scalemae_l_patch": {
+          "miou": 58.11,
+          "val_miou": 60.91,
+          "best_C": 0.01
+        },
+        "dinov2_l_patch": {
+          "miou": 60.18,
+          "val_miou": 64.17,
+          "best_C": 0.01
+        },
+        "band_stats": {
+          "miou": 47.56,
+          "val_miou": 47.66,
+          "best_C": 10.0
+        }
+      },
+      "input_contract": {
+        "bands": [
+          "Red",
+          "Green",
+          "Blue",
+          "NearInfrared"
+        ],
+        "channel_indices_or_keys": [
+          "Red",
+          "Green",
+          "Blue",
+          "NearInfrared"
+        ],
+        "wavelengths_um_clay": [
+          0.65,
+          0.56,
+          0.48,
+          0.842
+        ],
+        "wavelengths_um_dofa": [
+          0.65,
+          0.56,
+          0.48,
+          0.842
+        ],
+        "archive": "64aa9e0b28e18e7dd28874797914eeb23a93011aa90a5a4a629a802aed677bb9",
+        "archive_sha256": "64aa9e0b28e18e7dd28874797914eeb23a93011aa90a5a4a629a802aed677bb9",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+      },
+      "elapsed_s": 194.2,
+      "producer": {
+        "script_sha256": "9517c5187f10222c2b0b3e6ddf6e1142a7c429ae7cb55d21e9646d0657009a8f",
+        "cfg": "0d31b3f6d2cc576a",
+        "utc_timestamp": "2026-11-18T03:36:23Z"
+      }
+    },
+    "lc100cls-s3": {
+      "sensor": "Sentinel-3 OLCI (300 m, 21b, unseen)",
+      "gsd_m": 300.0,
+      "n_bands": 21,
+      "orig_hw": 96,
+      "splits": [
+        5181,
+        1727,
+        1727
+      ],
+      "kind": "multilabel",
+      "models": {
+        "clay_v15_cls": {
+          "macro_map": 70.26,
+          "micro_map": 89.71,
+          "val_macro_map": 68.8,
+          "n_eval_classes": 23,
+          "best_C": 0.01
+        },
+        "clay_v15_mean": {
+          "macro_map": 70.68,
+          "micro_map": 89.44,
+          "val_macro_map": 70.36,
+          "n_eval_classes": 23,
+          "best_C": 0.1
+        },
+        "clay_v15_224_cls": {
+          "macro_map": 71.29,
+          "micro_map": 90.09,
+          "val_macro_map": 69.94,
+          "n_eval_classes": 23,
+          "best_C": 0.01
+        },
+        "clay_v15_224_mean": {
+          "macro_map": 71.59,
+          "micro_map": 90.06,
+          "val_macro_map": 71.7,
+          "n_eval_classes": 23,
+          "best_C": 0.1
+        },
+        "dofa_l_cls": {
+          "macro_map": 71.22,
+          "micro_map": 89.37,
+          "val_macro_map": 70.62,
+          "n_eval_classes": 23,
+          "best_C": 0.01
+        },
+        "dofa_l_mean": {
+          "macro_map": 71.72,
+          "micro_map": 90.03,
+          "val_macro_map": 71.94,
+          "n_eval_classes": 23,
+          "best_C": 0.01
+        },
+        "scalemae_l_cls": {
+          "macro_map": 61.19,
+          "micro_map": 85.35,
+          "val_macro_map": 61.09,
+          "n_eval_classes": 23,
+          "best_C": 0.01
+        },
+        "scalemae_l_mean": {
+          "macro_map": 60.97,
+          "micro_map": 84.96,
+          "val_macro_map": 60.64,
+          "n_eval_classes": 23,
+          "best_C": 0.1
+        },
+        "dinov2_l_cls": {
+          "macro_map": 69.13,
+          "micro_map": 88.61,
+          "val_macro_map": 69.1,
+          "n_eval_classes": 23,
+          "best_C": 0.01
+        },
+        "dinov2_l_mean": {
+          "macro_map": 69.22,
+          "micro_map": 88.55,
+          "val_macro_map": 68.93,
+          "n_eval_classes": 23,
+          "best_C": 0.01
+        },
+        "band_stats": {
+          "macro_map": 65.67,
+          "micro_map": 87.14,
+          "val_macro_map": 65.47,
+          "n_eval_classes": 23,
+          "best_C": 10.0
+        }
+      },
+      "elapsed_s": 329.8,
+      "producer": {
+        "script_sha256": "9517c5187f10222c2b0b3e6ddf6e1142a7c429ae7cb55d21e9646d0657009a8f",
+        "cfg": "83fe4b8326efa820",
+        "utc_timestamp": "2026-11-18T03:41:53Z"
+      }
+    },
+    "biomass-s3": {
+      "sensor": "Sentinel-3 OLCI (300 m, 21b, unseen)",
+      "gsd_m": 300.0,
+      "n_bands": 21,
+      "orig_hw": 96,
+      "splits": [
+        3000,
+        1000,
+        1000
+      ],
+      "kind": "biomass",
+      "models": {
+        "clay_v15_patch": {
+          "pixel_rmse": 81.45,
+          "pixel_r2": 0.5375,
+          "val_pixel_rmse": 82.44,
+          "best_alpha": 1.0
+        },
+        "clay_v15_cls": {
+          "chip_r2": 0.7525,
+          "chip_rmse": 49.8
+        },
+        "clay_v15_mean": {
+          "chip_r2": 0.7896,
+          "chip_rmse": 45.92
+        },
+        "dofa_l_patch": {
+          "pixel_rmse": 82.25,
+          "pixel_r2": 0.5283,
+          "val_pixel_rmse": 83.37,
+          "best_alpha": 1000.0
+        },
+        "dofa_l_cls": {
+          "chip_r2": 0.7395,
+          "chip_rmse": 51.09
+        },
+        "dofa_l_mean": {
+          "chip_r2": 0.7613,
+          "chip_rmse": 48.91
+        },
+        "scalemae_l_patch": {
+          "pixel_rmse": 92.09,
+          "pixel_r2": 0.4087,
+          "val_pixel_rmse": 92.88,
+          "best_alpha": 1.0
+        },
+        "scalemae_l_cls": {
+          "chip_r2": 0.6155,
+          "chip_rmse": 62.07
+        },
+        "scalemae_l_mean": {
+          "chip_r2": 0.6238,
+          "chip_rmse": 61.39
+        },
+        "dinov2_l_patch": {
+          "pixel_rmse": 88.72,
+          "pixel_r2": 0.4512,
+          "val_pixel_rmse": 89.04,
+          "best_alpha": 1.0
+        },
+        "dinov2_l_cls": {
+          "chip_r2": 0.7183,
+          "chip_rmse": 53.13
+        },
+        "dinov2_l_mean": {
+          "chip_r2": 0.6866,
+          "chip_rmse": 56.04
+        },
+        "band_stats": {
+          "pixel_rmse": 87.46,
+          "pixel_r2": 0.4667,
+          "val_pixel_rmse": 88.84,
+          "best_alpha": 1.0,
+          "chip_r2": 0.7332,
+          "chip_rmse": 51.7
+        }
+      },
+      "elapsed_s": 143.3,
+      "producer": {
+        "script_sha256": "9517c5187f10222c2b0b3e6ddf6e1142a7c429ae7cb55d21e9646d0657009a8f",
+        "cfg": "967a1b0f65cb016b",
+        "utc_timestamp": "2026-11-18T03:44:17Z"
+      }
+    },
+    "ucmerced": {
+      "sensor": "USGS Aerial RGB (0.3 m, 3b)",
+      "gsd_m": 0.3,
+      "n_bands": 3,
+      "orig_hw": 256,
+      "splits": [
+        1260,
+        420,
+        420
+      ],
+      "kind": "cls",
+      "models": {
+        "clay_v15_cls": {
+          "oa": 95.95,
+          "macro_f1": 95.9,
+          "val_oa": 96.19,
+          "best_C": 0.1,
+          "lsvm_oa": 95.48,
+          "lsvm_macro_f1": 95.51
+        },
+        "clay_v15_mean": {
+          "oa": 95.48,
+          "macro_f1": 95.59,
+          "val_oa": 96.67,
+          "best_C": 1.0,
+          "lsvm_oa": 95.48,
+          "lsvm_macro_f1": 95.61
+        },
+        "clay_meta_cls": {
+          "oa": 95.95,
+          "macro_f1": 96.12,
+          "val_oa": 96.19,
+          "best_C": 0.1,
+          "lsvm_oa": 95.48,
+          "lsvm_macro_f1": 95.6
+        },
+        "clay_meta_mean": {
+          "oa": 95.0,
+          "macro_f1": 95.27,
+          "val_oa": 96.43,
+          "best_C": 1.0,
+          "lsvm_oa": 94.05,
+          "lsvm_macro_f1": 94.21
+        },
+        "dofa_l_cls": {
+          "oa": 98.33,
+          "macro_f1": 98.28,
+          "val_oa": 98.33,
+          "best_C": 10.0,
+          "lsvm_oa": 97.86,
+          "lsvm_macro_f1": 97.56
+        },
+        "dofa_l_mean": {
+          "oa": 97.86,
+          "macro_f1": 97.69,
+          "val_oa": 97.86,
+          "best_C": 0.1,
+          "lsvm_oa": 97.62,
+          "lsvm_macro_f1": 97.27
+        },
+        "scalemae_l_cls": {
+          "oa": 94.52,
+          "macro_f1": 94.34,
+          "val_oa": 96.67,
+          "best_C": 0.01,
+          "lsvm_oa": 96.43,
+          "lsvm_macro_f1": 96.37
+        },
+        "scalemae_l_mean": {
+          "oa": 96.19,
+          "macro_f1": 95.95,
+          "val_oa": 96.67,
+          "best_C": 1.0,
+          "lsvm_oa": 95.95,
+          "lsvm_macro_f1": 95.69
+        },
+        "dinov2_l_cls": {
+          "oa": 98.57,
+          "macro_f1": 98.47,
+          "val_oa": 98.1,
+          "best_C": 0.1,
+          "lsvm_oa": 98.1,
+          "lsvm_macro_f1": 97.94
+        },
+        "dinov2_l_mean": {
+          "oa": 98.57,
+          "macro_f1": 98.47,
+          "val_oa": 98.1,
+          "best_C": 0.01,
+          "lsvm_oa": 98.57,
+          "lsvm_macro_f1": 98.47
+        },
+        "band_stats": {
+          "oa": 40.95,
+          "macro_f1": 37.62,
+          "val_oa": 39.05,
+          "best_C": 10.0,
+          "lsvm_oa": 33.81,
+          "lsvm_macro_f1": 25.95
+        }
+      },
+      "elapsed_s": 198.5,
+      "producer": {
+        "script_sha256": "9517c5187f10222c2b0b3e6ddf6e1142a7c429ae7cb55d21e9646d0657009a8f",
+        "cfg": "b0a9ac94047b6b1e",
+        "utc_timestamp": "2026-11-18T03:52:51Z"
+      }
+    },
+    "m-pv4ger": {
+      "sensor": "Aerial RGB (0.1 m, 3b)",
+      "gsd_m": 0.1,
+      "n_bands": 3,
+      "orig_hw": 320,
+      "splits": [
+        11814,
+        999,
+        999
+      ],
+      "kind": "cls",
+      "models": {
+        "clay_v15_cls": {
+          "oa": 96.5,
+          "macro_f1": 92.75,
+          "val_oa": 93.99,
+          "best_C": 0.01,
+          "lsvm_oa": 96.3,
+          "lsvm_macro_f1": 92.29
+        },
+        "clay_v15_mean": {
+          "oa": 96.1,
+          "macro_f1": 91.78,
+          "val_oa": 93.09,
+          "best_C": 0.01,
+          "lsvm_oa": 96.2,
+          "lsvm_macro_f1": 92.01
+        },
+        "clay_meta_cls": {
+          "oa": 96.2,
+          "macro_f1": 92.06,
+          "val_oa": 94.39,
+          "best_C": 0.01,
+          "lsvm_oa": 96.3,
+          "lsvm_macro_f1": 92.25
+        },
+        "clay_meta_mean": {
+          "oa": 95.6,
+          "macro_f1": 91.02,
+          "val_oa": 93.19,
+          "best_C": 0.1,
+          "lsvm_oa": 95.1,
+          "lsvm_macro_f1": 90.09
+        },
+        "dofa_l_cls": {
+          "oa": 97.2,
+          "macro_f1": 94.25,
+          "val_oa": 96.3,
+          "best_C": 0.1,
+          "lsvm_oa": 97.2,
+          "lsvm_macro_f1": 94.25
+        },
+        "dofa_l_mean": {
+          "oa": 96.7,
+          "macro_f1": 93.36,
+          "val_oa": 96.2,
+          "best_C": 1.0,
+          "lsvm_oa": 97.4,
+          "lsvm_macro_f1": 94.73
+        },
+        "scalemae_l_cls": {
+          "oa": 96.5,
+          "macro_f1": 92.92,
+          "val_oa": 95.1,
+          "best_C": 0.01,
+          "lsvm_oa": 96.9,
+          "lsvm_macro_f1": 93.77
+        },
+        "scalemae_l_mean": {
+          "oa": 96.4,
+          "macro_f1": 92.61,
+          "val_oa": 94.09,
+          "best_C": 0.01,
+          "lsvm_oa": 96.3,
+          "lsvm_macro_f1": 92.29
+        },
+        "dinov2_l_cls": {
+          "oa": 98.0,
+          "macro_f1": 95.94,
+          "val_oa": 96.8,
+          "best_C": 0.1,
+          "lsvm_oa": 98.1,
+          "lsvm_macro_f1": 96.16
+        },
+        "dinov2_l_mean": {
+          "oa": 97.3,
+          "macro_f1": 94.48,
+          "val_oa": 96.3,
+          "best_C": 0.01,
+          "lsvm_oa": 97.4,
+          "lsvm_macro_f1": 94.66
+        },
+        "band_stats": {
+          "oa": 88.99,
+          "macro_f1": 70.98,
+          "val_oa": 87.39,
+          "best_C": 1.0,
+          "lsvm_oa": 88.59,
+          "lsvm_macro_f1": 69.41
+        }
+      },
+      "input_contract": {
+        "bands": [
+          "Red",
+          "Green",
+          "Blue"
+        ],
+        "channel_indices_or_keys": [
+          "Red",
+          "Green",
+          "Blue"
+        ],
+        "wavelengths_um_clay": [
+          0.65,
+          0.56,
+          0.48
+        ],
+        "wavelengths_um_dofa": [
+          0.65,
+          0.56,
+          0.48
+        ],
+        "archive": "b7f2ebb77e543b3bb7c38f498180976b64d72d541ec712c853e39e5d33e01dca",
+        "archive_sha256": "b7f2ebb77e543b3bb7c38f498180976b64d72d541ec712c853e39e5d33e01dca",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+      },
+      "elapsed_s": 491.6,
+      "producer": {
+        "script_sha256": "9517c5187f10222c2b0b3e6ddf6e1142a7c429ae7cb55d21e9646d0657009a8f",
+        "cfg": "6ab75dddc82a6ade",
+        "utc_timestamp": "2026-11-18T04:01:03Z"
+      }
+    },
+    "m-pv4ger-seg": {
+      "sensor": "Aerial RGB (0.1 m, 3b)",
+      "gsd_m": 0.1,
+      "n_bands": 3,
+      "orig_hw": 320,
+      "splits": [
+        3000,
+        403,
+        403
+      ],
+      "kind": "seg",
+      "models": {
+        "clay_v15_patch": {
+          "miou": 84.26,
+          "val_miou": 86.2,
+          "best_C": 0.01,
+          "fg_iou": 74.4
+        },
+        "clay_meta_patch": {
+          "miou": 84.35,
+          "val_miou": 86.0,
+          "best_C": 0.01,
+          "fg_iou": 74.55
+        },
+        "dofa_l_patch": {
+          "miou": 75.73,
+          "val_miou": 77.54,
+          "best_C": 0.01,
+          "fg_iou": 60.74
+        },
+        "scalemae_l_patch": {
+          "miou": 74.47,
+          "val_miou": 76.86,
+          "best_C": 0.01,
+          "fg_iou": 58.78
+        },
+        "dinov2_l_patch": {
+          "miou": 77.93,
+          "val_miou": 79.1,
+          "best_C": 0.01,
+          "fg_iou": 64.18
+        },
+        "band_stats": {
+          "miou": 61.79,
+          "val_miou": 62.49,
+          "best_C": 10.0,
+          "fg_iou": 38.27
+        }
+      },
+      "input_contract": {
+        "bands": [
+          "Red",
+          "Green",
+          "Blue"
+        ],
+        "channel_indices_or_keys": [
+          "Red",
+          "Green",
+          "Blue"
+        ],
+        "wavelengths_um_clay": [
+          0.65,
+          0.56,
+          0.48
+        ],
+        "wavelengths_um_dofa": [
+          0.65,
+          0.56,
+          0.48
+        ],
+        "archive": "621e00b64198ba4a4abef263ae0af6df9f657428b2e895fc87a54c4ffb378555",
+        "archive_sha256": "621e00b64198ba4a4abef263ae0af6df9f657428b2e895fc87a54c4ffb378555",
+        "hf_repo": "recursix/geo-bench-1.0",
+        "hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+      },
+      "elapsed_s": 123.1,
+      "producer": {
+        "script_sha256": "9517c5187f10222c2b0b3e6ddf6e1142a7c429ae7cb55d21e9646d0657009a8f",
+        "cfg": "7d6c914540b756eb",
+        "utc_timestamp": "2026-11-18T04:03:06Z"
+      }
+    }
+  },
+  "meta": {
+    "script": "run_standard_benchmarks.py",
+    "script_sha256": "9517c5187f10222c2b0b3e6ddf6e1142a7c429ae7cb55d21e9646d0657009a8f",
+    "git_commit": "unknown",
+    "argv": [
+      "--output-dir",
+      "std_final",
+      "--resume",
+      "--tasks",
+      "ucmerced,m-pv4ger-seg,m-pv4ger"
+    ],
+    "utc_timestamp": "2026-11-18T04:03:06Z",
+    "packages": {
+      "torch": "2.5.1+cu124",
+      "torchgeo": "0.7.0",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.9.1",
+      "timm": "1.0.25",
+      "h5py": "n/a",
+      "rasterio": "1.4.4",
+      "olmoearth_pretrain": "0.1.2"
+    },
+    "python": "3.11.18",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "peak_vram_gb": 2.363,
+    "clay_ckpt_sha256": "21432069250b9b3f9a65ffd0071c5ad56b793247285ab0604edf7f531d4798d0",
+    "geobench_hf_repo": "recursix/geo-bench-1.0",
+    "geobench_hf_revision": "1e5754337032f097396db62cc15a5ff88f4618e8"
+  }
+}

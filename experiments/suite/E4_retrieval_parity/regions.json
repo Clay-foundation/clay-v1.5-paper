@@ -1,0 +1,38 @@
+[
+ {
+  "state": "CA",
+  "tile": "11SLU",
+  "n_sites": 114,
+  "pv_km2": 92.22298769489512,
+  "item": "S2B_MSIL2A_20230727T182929_R027_T11SLU_20241010T173201",
+  "cloud": 0.004356,
+  "nodata": 0.0,
+  "baseline": "05.10",
+  "datetime": "2023-07-27T18:29:29.024000Z",
+  "epsg": null
+ },
+ {
+  "state": "TX",
+  "tile": "15STT",
+  "n_sites": 5,
+  "pv_km2": 28.54729232059542,
+  "item": "S2B_MSIL2A_20230630T165849_R069_T15STT_20241003T133505",
+  "cloud": 0.000352,
+  "nodata": 0.0,
+  "baseline": "05.10",
+  "datetime": "2023-06-30T16:58:49.024000Z",
+  "epsg": null
+ },
+ {
+  "state": "NC",
+  "tile": "18STE",
+  "n_sites": 148,
+  "pv_km2": 21.374427521512978,
+  "item": "S2A_MSIL2A_20230823T154821_R054_T18STE_20241025T054611",
+  "cloud": 0.000697,
+  "nodata": 3e-06,
+  "baseline": "05.10",
+  "datetime": "2023-08-23T15:48:21.024000Z",
+  "epsg": null
+ }
+]

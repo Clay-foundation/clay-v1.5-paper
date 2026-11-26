@@ -1,0 +1,164 @@
+{
+  "issue": 22,
+  "manuscript_value": 0.044,
+  "stored_code_value": 0.7358,
+  "definitions_trained_checkpoint": {
+    "stored_definition_uncentered_each_set_in_own_context": {
+      "mean_abs_cos": 0.7358,
+      "mean_signed_cos": 0.7358,
+      "max_abs_cos": 0.9033
+    },
+    "uncentered_joint_12band_context": {
+      "mean_abs_cos": 0.7946,
+      "mean_signed_cos": 0.7946,
+      "max_abs_cos": 0.9429
+    },
+    "centred_each_set_on_own_band_mean": {
+      "mean_abs_cos": 0.3876,
+      "mean_signed_cos": -0.0,
+      "max_abs_cos": 0.7427
+    },
+    "centred_joint_context_on_joint_band_mean": {
+      "mean_abs_cos": 0.2718,
+      "mean_signed_cos": -0.2252,
+      "max_abs_cos": 0.466
+    },
+    "both_centred_on_S2_band_mean": {
+      "mean_abs_cos": 0.2662,
+      "mean_signed_cos": -0.0599,
+      "max_abs_cos": 0.7334
+    },
+    "both_centred_on_EMIT285_band_mean": {
+      "mean_abs_cos": 0.3111,
+      "mean_signed_cos": 0.016,
+      "max_abs_cos": 0.6417
+    },
+    "joint_285_plus_S1_plus_S2_uncentred": {
+      "mean_abs_cos": 0.8296,
+      "mean_signed_cos": 0.8296,
+      "max_abs_cos": 0.9457
+    },
+    "joint_285_plus_S1_plus_S2_centred_on_EMIT_rows": {
+      "mean_abs_cos": 0.212,
+      "mean_signed_cos": 0.0499,
+      "max_abs_cos": 0.5133
+    },
+    "row_centred_pearson_over_65536_weights": {
+      "mean_abs_cos": 0.6498,
+      "mean_signed_cos": 0.6498,
+      "max_abs_cos": 0.8689
+    },
+    "per_output_channel_64d_kernel_cosine": {
+      "mean_abs_cos": 0.789,
+      "mean_signed_cos": 0.7509
+    },
+    "raw_sincos_wavelength_encodings": {
+      "mean_abs_cos": 0.8347,
+      "mean_signed_cos": 0.8347,
+      "max_abs_cos": 0.9513
+    },
+    "after_fclayer_before_weight_generator": {
+      "mean_abs_cos": 0.6015,
+      "mean_signed_cos": 0.6015,
+      "max_abs_cos": 0.8447
+    },
+    "S1_vs_S2_visible_bands_only_BGR": {
+      "mean_abs_cos": 0.7144,
+      "mean_signed_cos": 0.7144,
+      "max_abs_cos": 0.7893
+    },
+    "S1_vs_top_centred_S2_modes_mean_abs_cos_modes_1_to_9": [
+      0.196,
+      0.169,
+      0.123,
+      0.029,
+      0.321,
+      0.158,
+      0.112,
+      0.243,
+      0.3
+    ]
+  },
+  "controls": {
+    "s2_vs_s2_within_optical_uncentred_offdiag_mean_abs": 0.6549,
+    "s2_vs_s2_within_optical_centred_offdiag_mean_abs": 0.4365,
+    "s1_vv_vh_cosine": 0.8191,
+    "random_gaussian_65536d_mean_abs": 0.0039,
+    "s1_energy_fraction_inside_span_of_s2_filters_VV_VH": [
+      0.9855,
+      0.9729
+    ]
+  },
+  "untrained_init_controls": {
+    "seed0": {
+      "uncentered": {
+        "mean_abs_cos": 0.733,
+        "mean_signed_cos": 0.733,
+        "max_abs_cos": 0.9215
+      },
+      "centred_on_S2_band_mean": {
+        "mean_abs_cos": 0.7541,
+        "mean_signed_cos": -0.4729,
+        "max_abs_cos": 0.9664
+      }
+    },
+    "seed1": {
+      "uncentered": {
+        "mean_abs_cos": 0.7233,
+        "mean_signed_cos": 0.7233,
+        "max_abs_cos": 0.9163
+      },
+      "centred_on_S2_band_mean": {
+        "mean_abs_cos": 0.7787,
+        "mean_signed_cos": -0.486,
+        "max_abs_cos": 0.9668
+      }
+    },
+    "seed2": {
+      "uncentered": {
+        "mean_abs_cos": 0.7805,
+        "mean_signed_cos": 0.7805,
+        "max_abs_cos": 0.9371
+      },
+      "centred_on_S2_band_mean": {
+        "mean_abs_cos": 0.7569,
+        "mean_signed_cos": -0.4749,
+        "max_abs_cos": 0.9682
+      }
+    }
+  },
+  "closest_definition_to_0.044": {
+    "name": "joint_285_plus_S1_plus_S2_centred_on_EMIT_rows",
+    "mean_abs_cos": 0.212
+  },
+  "conclusion": "No tested definition gives 0.044. The stored code implements the first entry. The Sentinel-1 filters are strongly aligned with Sentinel-2 filters (>0.97 of their energy lies in the span of the S2 filters), and an untrained DynamicEmbedding is aligned to the same degree, so 'orthogonal' is not supported.",
+  "provenance": {
+    "script": "issue22_s1_s2_cosine.py",
+    "git_commit": "3deb4bf",
+    "git_dirty": true,
+    "args": {
+      "out": "issue22_s1_s2_cosine.json"
+    },
+    "python": "3.12.14",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "packages": {
+      "torch": "2.7.1",
+      "torchvision": "0.22.1",
+      "numpy": "2.5.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "pandas": "3.1.1",
+      "timm": "1.0.31",
+      "rasterio": "1.5.2",
+      "pystac-client": "0.9.1",
+      "planetary-computer": "1.0.0",
+      "odc-stac": null,
+      "torchgeo": null
+    },
+    "cuda_available": false,
+    "torch_cuda": "12.6",
+    "device": null,
+    "utc": "2026-11-17T22:30:55Z",
+    "git_commit_note": "run on a plain copy of the working tree at base commit 3deb4bf plus the uncommitted audit edits; not a git checkout"
+  }
+}
