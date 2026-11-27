@@ -8,16 +8,16 @@
       "pending_cells": 0
     },
     "B": {
-      "rows": 19,
-      "rows_with_clay_value": 0,
-      "median_pct_best": null,
-      "pending_cells": 19
+      "rows": 3,
+      "rows_with_clay_value": 3,
+      "median_pct_best": 96.04863221884499,
+      "pending_cells": 0
     },
     "C": {
-      "rows": 11,
-      "rows_with_clay_value": 7,
-      "median_pct_best": 93.71727748691097,
-      "pending_cells": 5
+      "rows": 10,
+      "rows_with_clay_value": 10,
+      "median_pct_best": 93.60149588631262,
+      "pending_cells": 0
     },
     "D": {
       "rows": 15,
@@ -27,36 +27,35 @@
     }
   },
   "all_panels": {
-    "rows": 60,
-    "rows_with_clay_value": 37,
+    "rows": 43,
+    "rows_with_clay_value": 43,
     "median_pct_best": 93.71727748691097
   },
-  "pending": [
-    "B sen1floods11-s2",
-    "B sen1floods11-s1",
-    "B pastis",
-    "B burn_scars",
-    "B cloudsen12",
-    "B fotw",
-    "B flair2",
-    "B loveda",
-    "B spacenet2",
-    "B spacenet7",
-    "B hotosm_buildings",
-    "B open_cities",
-    "B levir-cd-post",
-    "B kuro_siwo",
-    "B caffe",
-    "B openearthmap-sar",
-    "B bright-post-sar",
-    "B bright-post-sar-rgb",
-    "B dynamic_earthnet",
-    "C Vessel Detect. (S1)",
-    "C Vessel Detect. (L8)",
-    "C Solar Farm Detect.",
-    "C MADOS",
-    "C m-cashewplant"
-  ],
+  "families": {
+    "other_eo": [
+      "AEF",
+      "DEO-B-RGB",
+      "DINOv3-SAT",
+      "DOFA-L",
+      "FarSLIP",
+      "Gal.",
+      "OlmoEarth",
+      "Pan.",
+      "Pr.-2",
+      "TES",
+      "TerraMind"
+    ],
+    "general": [
+      "ConvNeXt-L",
+      "DINO",
+      "EfficientNetV2-L",
+      "Swin-L",
+      "SwinV2-B",
+      "SwinV2-L",
+      "ViT-L/16"
+    ]
+  },
+  "pending": [],
   "rows": [
     {
       "panel": "A",
@@ -151,116 +150,20 @@
     {
       "panel": "B",
       "task": "sen1floods11-s2",
-      "pct_best": null,
-      "n_pending": 1
+      "pct_best": 97.730847000674,
+      "n_pending": 0
     },
     {
       "panel": "B",
       "task": "sen1floods11-s1",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "pastis",
-      "pct_best": null,
-      "n_pending": 1
+      "pct_best": 96.04863221884499,
+      "n_pending": 0
     },
     {
       "panel": "B",
       "task": "burn_scars",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "cloudsen12",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "fotw",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "flair2",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "loveda",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "spacenet2",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "spacenet7",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "hotosm_buildings",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "open_cities",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "levir-cd-post",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "kuro_siwo",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "caffe",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "openearthmap-sar",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "bright-post-sar",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "bright-post-sar-rgb",
-      "pct_best": null,
-      "n_pending": 1
-    },
-    {
-      "panel": "B",
-      "task": "dynamic_earthnet",
-      "pct_best": null,
-      "n_pending": 1
+      "pct_best": 91.59574468085107,
+      "n_pending": 0
     },
     {
       "panel": "C",
@@ -295,37 +198,31 @@
     {
       "panel": "C",
       "task": "Vessel Detect. (S1)",
-      "pct_best": null,
-      "n_pending": 1
+      "pct_best": 97.36180904522614,
+      "n_pending": 0
     },
     {
       "panel": "C",
       "task": "Vessel Detect. (L8)",
-      "pct_best": null,
-      "n_pending": 1
+      "pct_best": 88.65153538050735,
+      "n_pending": 0
     },
     {
       "panel": "C",
       "task": "Solar Farm Detect.",
-      "pct_best": null,
-      "n_pending": 1
+      "pct_best": 93.48571428571428,
+      "n_pending": 0
     },
     {
       "panel": "C",
       "task": "MADOS",
-      "pct_best": 76.60818713450291,
-      "n_pending": 1
+      "pct_best": 92.22520107238607,
+      "n_pending": 0
     },
     {
       "panel": "C",
       "task": "m-cashewplant",
-      "pct_best": 38.07763401109057,
-      "n_pending": 1
-    },
-    {
-      "panel": "C",
-      "task": "Nandi (S2)",
-      "pct_best": null,
+      "pct_best": 86.96186961869618,
       "n_pending": 0
     },
     {

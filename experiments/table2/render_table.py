@@ -74,7 +74,7 @@ class Md:
         return "| " + " | ".join(cells) + " |"
 
     def head(self):
-        return [self.row(HEADER), "|---|---|---:|---:|---|---|---|"]
+        return [self.row(HEADER), "|---|---|---:|---:|---|---|"]
 
     def table(self, lines):
         return lines
